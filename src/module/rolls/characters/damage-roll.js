@@ -52,8 +52,12 @@ export class DamageRoll extends BaseRoll {
     return formula;
   }
 
-  formula(bonus, attackMode) {
+  formula(bonus, attackMode, critical) {
     let formula = `${this.item.system.damage}`;
+
+    if (critical) {
+      formula += `*2`;
+    }
 
     if (attackMode === 'melee' || attackMode === 'throwing') {
       formula += `+${this.actor.system.mod_forca}`;
@@ -79,8 +83,8 @@ export class DamageRoll extends BaseRoll {
    * @param {number} bonus - The bonus to add to the roll.
    * @returns {Promise<Roll>} The result of the roll.
    */
-  async roll(bonus, attackMode) {
-    const rollResult = await calculateRollResult(this.formula(bonus, attackMode));
+  async roll(bonus, attackMode, critical) {
+    const rollResult = await calculateRollResult(this.formula(bonus, attackMode, critical));
 
     this.roll_result = rollResult;
 
