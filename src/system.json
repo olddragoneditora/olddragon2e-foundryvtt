@@ -8,15 +8,15 @@
       "url": "https://deipriori.com/"
     },
     {
-      "name": "Buró do Brasil",
-      "url": "https://burobrasil.com/"
+      "name": "Old Dragon Editora",
+      "url": "https://olddragon.com.br/"
     }
   ],
   "url": "This is auto replaced",
   "license": "https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br",
-  "readme": "https://github.com/burobrasil/olddragon2e-foundryvtt/blob/main/README.md",
-  "bugs": "https://github.com/burobrasil/olddragon2e-foundryvtt/issues",
-  "changelog": "https://github.com/burobrasil/olddragon2e-foundryvtt/releases",
+  "readme": "https://github.com/olddragoneditora/olddragon2e-foundryvtt/blob/main/README.md",
+  "bugs": "https://github.com/olddragoneditora/olddragon2e-foundryvtt/issues",
+  "changelog": "https://github.com/olddragoneditora/olddragon2e-foundryvtt/releases",
   "version": "This is auto replaced",
   "compatibility": {
     "minimum": "13",

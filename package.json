@@ -6,10 +6,10 @@
   "homepage": "https://foundryvtt.com/packages/olddragon2e",
   "repository": {
     "type": "git",
-    "url": "https://github.com/burobrasil/olddragon2e-foundryvtt"
+    "url": "https://github.com/olddragoneditora/olddragon2e-foundryvtt"
   },
   "bugs": {
-    "url": "https://github.com/burobrasil/olddragon2e-foundryvtt/issues"
+    "url": "https://github.com/olddragoneditora/olddragon2e-foundryvtt/issues"
   },
   "contributors": [],
   "type": "module",
