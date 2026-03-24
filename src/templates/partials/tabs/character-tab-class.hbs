@@ -63,9 +63,13 @@
                 </a>
                 <span class="talent-name" {{#if talent.description}}title="{{talent.description}}"{{/if}}><strong>{{talent.label}}</strong></span>
                 <span class="talent-score">{{talent.score}}</span>
-                <input class="talent-points-input" name="system.rogue_talent_points.{{talent.key}}"
-                       type="number" value="{{talent.points}}" min="0"
-                       data-dtype="Number">
+                <label class="talent-points-label">{{localize "olddragon2e.rogue_talent_points"}}:</label>
+                <select class="talent-points-select" name="system.rogue_talent_points.{{talent.key}}" data-dtype="Number">
+                    <option value="0" {{#ifCond talent.points '===' 0}}selected{{/ifCond}}>0</option>
+                    <option value="1" {{#ifCond talent.points '===' 1}}selected{{/ifCond}}>1</option>
+                    <option value="2" {{#ifCond talent.points '===' 2}}selected{{/ifCond}}>2</option>
+                    <option value="3" {{#ifCond talent.points '===' 3}}selected{{/ifCond}}>3</option>
+                </select>
                 {{#if talent.race_bonus}}
                 <span class="talent-race-bonus">(+{{talent.race_bonus}} {{localize "olddragon2e.race"}})</span>
                 {{/if}}

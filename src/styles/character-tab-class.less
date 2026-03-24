@@ -80,6 +80,98 @@
       }
     }
 
+    .rogue-talents {
+      display: flex;
+      flex-direction: column;
+
+      .tab-title {
+        width: 100%;
+        padding: 5px;
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+        background-color: @carmesim-600;
+        color: white;
+        text-align: center;
+        font-size: larger;
+        font-weight: bold;
+      }
+
+      .talent-points-summary {
+        padding: 0.25rem 0.5rem;
+        background-color: white;
+        font-size: 0.875rem;
+        text-align: center;
+      }
+
+      .talent-list {
+        margin: 0;
+        padding: 0.5rem;
+        list-style: none;
+        background-color: white;
+        border-bottom-left-radius: 0.25rem;
+        border-bottom-right-radius: 0.25rem;
+
+        .talent-item {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 0.5rem;
+          padding: 0.25rem 0;
+
+          .talent-roll {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            font-size: 1.25rem;
+            color: @carmesim-600;
+            cursor: pointer;
+            flex-shrink: 0;
+
+            &:hover {
+              color: @carmesim-800;
+            }
+          }
+
+          .talent-name {
+            flex: 1;
+          }
+
+          .talent-score {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: @carmesim-600;
+            color: white;
+            font-weight: bold;
+            font-size: 0.875rem;
+            border-radius: 0.25rem;
+            flex-shrink: 0;
+          }
+
+          .talent-points-label {
+            font-size: 0.75rem;
+            color: @cinza-600;
+            flex-shrink: 0;
+          }
+
+          .talent-points-select {
+            width: 3rem;
+            flex-shrink: 0;
+          }
+
+          .talent-race-bonus {
+            font-size: 0.75rem;
+            color: @cinza-600;
+            flex-shrink: 0;
+          }
+        }
+      }
+    }
+
     .equipment-restrictions {
       ol {
         margin: 0;
