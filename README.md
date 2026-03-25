@@ -43,8 +43,7 @@ O sistema `olddragon2e` para Foundry VTT está em desenvolvimento contínuo, por
 
 - Bônus nos pontos de experiência proveniente de Habilidades de Raça;
 - Bônus no dano com arcos proveniente de Habilidades de Raça;
-- Bônus em Talentos de Ladrão proveniente de Habilidades de Raça;
-- Habilidades de Classe não tiveram suas mecânicas implementadas. Apenas a descrição e a capacidade de uso diário dessas habilidades estão sendo exibidos;
+- Algumas Habilidades de Classe não tiveram suas mecânicas implementadas. Nesses casos, apenas o nome, a descrição e a capacidade de uso diário estão sendo exibidos;
 
 ## Importação de personagens
 
@@ -59,10 +58,12 @@ Esta funcionalidade ainda será aprimorada.
 ## Colaboradores (Collaborators)
 
 - [Guilherme Mir](https://github.com/guilhermemir)
+- [Julio Monteiro](https://github.com/jmonteiro)
 - [Igor Téuri](https://github.com/igorteuri)
 - [Brayan Hemel](https://www.youtube.com/@BrayanHemel)
 - [Samuel Grave](https://github.com/itsmegrave)
 - [Edson Junior](https://github.com/eddsonjrk1/)
+- [João Vítor Castro](https://github.com/JVitorCastro)
 
 ## Development
 
