@@ -1,0 +1,47 @@
+{
+  "folder": "pSA1kfvCGifgCZE3",
+  "name": "Detectar Magias",
+  "type": "class_ability",
+  "_id": "oDseTX3qu3ldQ5iJ",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 1,
+    "description": "<p>Um Bruxo &eacute; capaz de uma vez ao dia por n&iacute;vel perceber em lugares, pessoas ou coisas em uma &aacute;rea de at&eacute; 9m + 3m por n&iacute;vel, a presen&ccedil;a de magia, desde que esteja concentrado e procurando ativamente por isso.</p>\n<p>O Bruxo percebe uma t&ecirc;nue aura m&aacute;gica ao redor dos lugares, pessoas ou coisas encantadas, mas n&atilde;o &eacute; capaz de identificar a magia, o n&iacute;vel de poder do conjurador ou o efeito presente no alvo.</p>\n<p>Um Bruxo precisa se concentrar 1d8 rodadas na &aacute;rea desejada para conseguir detectar, caso haja, alguma presen&ccedil;a m&aacute;gica. Esse tempo cai para 1d4 rodadas no 6&ordm; n&iacute;vel e para 1 rodada no 10&ordm; n&iacute;vel.</p>",
+    "daily_uses": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707392528,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 75000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!oDseTX3qu3ldQ5iJ"
+}

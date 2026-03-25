@@ -1,0 +1,47 @@
+{
+  "folder": "jrdUsethErsPWdUP",
+  "name": "Fúria",
+  "type": "class_ability",
+  "_id": "j6jTLvo8ZWnKn2A5",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 6,
+    "description": "<p>O Xam&atilde; pode iniciar uma cantoria sagrada e ritmada para estimular um dos seus seguidores a entrar em f&uacute;ria. Um alvo aliado, enquanto o Xam&atilde; for capaz de manter a cantoria ritual&iacute;stica, sobe o dado de dano da sua arma para o dado imediatamente superior (d4 para d6, d6 para d8 etc.) e realiza todos seus ataques como ataques muito f&aacute;ceis. Em contrapartida, o furioso passa a ser considerado um alvo f&aacute;cil para todos os ataques que receber.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707623913,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 400000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!j6jTLvo8ZWnKn2A5"
+}

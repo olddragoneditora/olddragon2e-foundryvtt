@@ -1,0 +1,37 @@
+{
+  "folder": "6gcf42NI5cH77vcH",
+  "name": "Avaliadores",
+  "type": "race_ability",
+  "_id": "wLmcS3YrTVAM3iKY",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "xp": null,
+    "jp": {
+      "jpc": false,
+      "jpd": false,
+      "jps": false
+    },
+    "bonus_damage_archery": false,
+    "rogue_talent": "none",
+    "description": "<p>Precisos, gnomos possuem a habilidade de conhecer o real valor de objetos de arte, gemas, joias ou outros objetos de luxo finamente trabalhados, possuindo 1-4 chances em 1d6 de acertar o valor real do item.</p>\n<p>Se o resultado for um 5, a avalia&ccedil;&atilde;o se dar&aacute; 25% abaixo do valor real, se for um 6, ser&aacute; 25% acima do valor real. Este teste deve ser realizado, em segredo, pelo Mestre.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726706632011,
+    "modifiedTime": 1726706671439,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!wLmcS3YrTVAM3iKY"
+}

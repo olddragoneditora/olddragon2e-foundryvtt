@@ -1,0 +1,22 @@
+{
+  "name": "Ranger",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "AVZRSl7zfi0pcQvO",
+  "description": "",
+  "sort": 0,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259269,
+    "modifiedTime": 1726707259269,
+    "lastModifiedBy": "23TLgqGgbkAhWsum"
+  },
+  "_key": "!folders!AVZRSl7zfi0pcQvO"
+}

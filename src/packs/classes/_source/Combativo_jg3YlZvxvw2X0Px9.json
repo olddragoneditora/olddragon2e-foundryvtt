@@ -1,0 +1,47 @@
+{
+  "folder": "2rstdPWNgeRFCUX4",
+  "name": "Combativo",
+  "type": "class_ability",
+  "_id": "jg3YlZvxvw2X0Px9",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 3,
+    "description": "<p>O Ranger passa a poder usar armas grandes e escudos sem penalidades, mas continua limitado a usar Armaduras Leves.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707601300,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!jg3YlZvxvw2X0Px9"
+}

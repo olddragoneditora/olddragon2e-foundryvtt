@@ -1,0 +1,47 @@
+{
+  "folder": "wxsm0wTyPaQ0EztN",
+  "name": "Esplendor Arcano",
+  "type": "class_ability",
+  "_id": "noSyByFheGYz553K",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 6,
+    "description": "<p>Elfo Aventureiro passa a ser capaz de lan&ccedil;ar magias arcanas diariamente como um Mago cinco n&iacute;veis abaixo do seu. Um Elfo Aventureiro de 6&ordm; n&iacute;vel memoriza e lan&ccedil;a magias como um Mago de 1&ordm; n&iacute;vel. Se estiver usando um escudo ou armadura, um Elfo Aventureiro possui 1-2 chances em 1d6 de perder a magia sem que qualquer efeito ocorra.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707445554,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 75000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!noSyByFheGYz553K"
+}

@@ -1,0 +1,124 @@
+{
+  "folder": "tt7amtB87iRVhhAs",
+  "name": "Elfo Aventureiro",
+  "type": "class",
+  "_id": "HufLva6gVWRi1l48",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "equipment_restrictions": {
+      "weapons": "Podem usar todas armas.",
+      "armors": "Podem usar todas armaduras.",
+      "magic_items": "Podem usar todos os tipos."
+    },
+    "hp": null,
+    "high_level_hp_bonus": null,
+    "restrictions": {
+      "alignments": [],
+      "races": ["Elfo"]
+    },
+    "levels": {
+      "1": {
+        "ba": 0,
+        "jp": 5
+      },
+      "2": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 3000
+      },
+      "3": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 6000
+      },
+      "4": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 10000
+      },
+      "5": {
+        "ba": 2,
+        "jp": 7,
+        "xp": 13000
+      },
+      "6": {
+        "ba": 2,
+        "jp": 7,
+        "xp": 26000
+      },
+      "7": {
+        "ba": 2,
+        "jp": 7,
+        "xp": 36000
+      },
+      "8": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 46000
+      },
+      "9": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 56000
+      },
+      "10": {
+        "ba": 3,
+        "jp": 10,
+        "xp": 112000
+      },
+      "11": {
+        "ba": 4,
+        "jp": 10,
+        "xp": 220000
+      },
+      "12": {
+        "ba": 4,
+        "jp": 10,
+        "xp": 340000
+      },
+      "13": {
+        "ba": 4,
+        "jp": 10,
+        "xp": 460000
+      },
+      "14": {
+        "ba": 5,
+        "jp": 13,
+        "xp": 580000
+      },
+      "15": {
+        "ba": 5,
+        "jp": 13,
+        "xp": 700000
+      }
+    },
+    "class_abilities": [
+      "Compendium.olddragon2e.classes.Item.gPj5O50GnrOQyrBs",
+      "Compendium.olddragon2e.classes.Item.wM9NofPq0HGTjRWQ",
+      "Compendium.olddragon2e.classes.Item.noSyByFheGYz553K",
+      "Compendium.olddragon2e.classes.Item.sRRH2O2kqHUfwTHg",
+      "Compendium.olddragon2e.classes.Item.lxxVKRk8ji7qALLX"
+    ],
+    "flavor": "",
+    "description": "<p>Estes Magos elfos s&atilde;o os campe&otilde;es de sua ra&ccedil;a, treinados em uma mescla de artes arcanas e em combate pessoal para formar os melhores aventureiros j&aacute; vistos por sua ra&ccedil;a.</p>\n<p>Costumam concluir seus treinamentos em aventuras pelo mundo para retornar &agrave; sua terra cobertos de gl&oacute;ria, conhecimentos e respeito de seus semelhantes.</p>\n<h1>Restri&ccedil;&otilde;es</h1>\n<p>Al&eacute;m de seguir a evolu&ccedil;&atilde;o de experi&ecirc;ncia de um Mago especialista, o Elfo Aventureiro est&aacute; limitado apenas a personagens elfos.</p>\n<p>Al&eacute;m disso, inicialmente n&atilde;o s&atilde;o aptos a conjurar magias (habilidade que desenvolver&atilde;o com treinamento), e perdem acesso &agrave;s habilidades <em>Ler Magias</em> e <em>Detectar Magias</em>, mas podem usar todos os itens m&aacute;gicos como um Mago padr&atilde;o faria.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726774357942,
+    "lastModifiedBy": "Up6xAmRvZ0ZirlvK",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!HufLva6gVWRi1l48"
+}

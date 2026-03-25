@@ -1,0 +1,47 @@
+{
+  "folder": "wlhc3hPsHTA1JFq4",
+  "name": "Talentos Selvagens",
+  "type": "class_ability",
+  "_id": "WxcHvAhUkco6nohs",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 3,
+    "description": "<p>O B&aacute;rbaro adquire alguns talentos ligados &agrave; sua vida nos ermos selvagens:</p>\n<p>⬥ <strong>Escalar</strong> escalam como Ladr&otilde;es qualquer superf&iacute;cie natural como &aacute;rvores, barrancos, encostas rochosas, escorregadias ou n&atilde;o, com 1-3 chances em 1d6. Em caso de falha, B&aacute;rbaros caem da metade da altura total da escalada, recebendo 1d6 pontos de dano para cada 3 metros da queda.</p>\n<p>⬥ <strong>Camuflagem Natural</strong> em ambientes naturais, como vegeta&ccedil;&atilde;o rasteira ou &aacute;rvores com uma chance de 1-2 em 1d6. O mestre deve lan&ccedil;ar os dados em segredo para que o B&aacute;rbaro n&atilde;o saiba se sua tentativa de camuflagem foi bem-sucedida ou n&atilde;o.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707347820,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 256250,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!WxcHvAhUkco6nohs"
+}

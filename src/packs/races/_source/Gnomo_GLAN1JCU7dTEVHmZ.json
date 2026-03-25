@@ -1,0 +1,38 @@
+{
+  "folder": "3VjeeVVEF5EVwQ0E",
+  "name": "Gnomo",
+  "type": "race",
+  "_id": "GLAN1JCU7dTEVHmZ",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "movement": 6,
+    "infravision": 18,
+    "alignment_tendency": "neutro",
+    "race_abilities": [
+      "Compendium.olddragon2e.races.Item.wLmcS3YrTVAM3iKY",
+      "Compendium.olddragon2e.races.Item.Y38WpEKldW3GbkOh",
+      "Compendium.olddragon2e.races.Item.eRX4MlHOZiWk7nuR"
+    ],
+    "flavor": "<p>Os desconfiados, mas galhofeiros, habitantes de minas.</p>",
+    "description": "<p>Gnomos s&atilde;o parentes distantes dos an&otilde;es, sendo um pouco mais baixos e de apar&ecirc;ncia mais r&uacute;stica.</p>\n<p>O nariz se destaca pelo tamanho grande e pelo formato arredondado, uma esp&eacute;cie de s&iacute;mbolo do orgulho racial.</p>\n<p>A pele dos gnomos &eacute; sempre enrugada, morena e bronzeada com tons terrosos e vermelhos escuros. Os cabelos s&atilde;o brancos, platinados e claros, fazendo os humanos acreditarem que todos os gnomos s&atilde;o velhos.</p>\n<p>Outra caracter&iacute;stica racial famosa &eacute; o uso do espec&iacute;fico chap&eacute;u de feltro, c&ocirc;nico, alto e pontudo, sempre de cores fortes ligadas &agrave;s suas fam&iacute;lias. Gnomos aventureiros frequentemente abrem m&atilde;o do chap&eacute;u em favor da praticidade, mas nas suas terras e em momentos de paz, o chap&eacute;u pontudo sempre estar&aacute; em uso.</p>\n<p>S&atilde;o conhecidos pelo bom humor e o apre&ccedil;o pelas boas piadas, bem como objetos finamente trabalhados, como joias e gemas.</p>\n<p>Estas &uacute;ltimas geram uma verdadeira obsess&atilde;o entre os gnomos, pois s&atilde;o conhecidos como habilidosos joalheiros e lapidadores, fazendo deles &oacute;timos avaliadores de gemas e joias.</p>\n<p>Vivem em ambientes isolados nas colinas, em suas comunidades sem muita aproxima&ccedil;&atilde;o com povoados de outras ra&ccedil;as. H&aacute; uma certa desconfian&ccedil;a nutrida pelo povo alto, como s&atilde;o chamados os elfos e humanos.</p>\n<p>Muito dificilmente esta desconfian&ccedil;a evoluir&aacute; para a hostilidade, a verdade &eacute; que gnomos s&atilde;o reservados, preferindo viver mais afastados em suas cidades nas colinas, constru&iacute;das sempre em torno de suas minas.</p>\n<p>A mina &eacute; o ponto central da comunidade dos gnomos. Onde os an&otilde;es escavam a pedra, os gnomos escavam a terra. Se an&otilde;es procuram a&ccedil;o e outros metais para forjar, gnomos se preocupam mais com metais brilhosos e valiosos. Tais metais almejados pelos gnomos s&atilde;o usados por estes para a fabrica&ccedil;&atilde;o de joias e gemas.</p>\n<h1>Personalidade</h1>\n<p>Quando &agrave; vontade, s&atilde;o festeiros, divertidos e galhofeiros, donos de um senso de humor sem igual. Caso contr&aacute;rio, s&atilde;o arredios, desconfiados e calados.</p>\n<p>Essa dicotomia define o gnomo, fazendo dele uma inc&oacute;gnita para quem n&atilde;o conhece sua forma de agir: uma curiosa mistura entre um ser obstinado e calculista que sabe a hora certa de agir.</p>\n<p>Curioso porque possuem uma inata vontade de entender o funcionamento das coisas. Seja um material ou mecanismo, os gnomos precisam entender como funciona. Precisa fazer sentido pra eles.</p>\n<p>E a&iacute; entra a obstina&ccedil;&atilde;o. Gnomos n&atilde;o s&atilde;o dados a desist&ecirc;ncias. Quando enfiam algo na cabe&ccedil;a, far&atilde;o assim que conseguirem.</p>\n<p>Mas n&atilde;o com a teimosia irritante dos an&otilde;es que pode fazer com que fiquem cegos sem entender o risco que est&atilde;o sofrendo. Os gnomos sabem esperar, mas n&atilde;o se esquecer&atilde;o do que precisam fazer. Na primeira oportunidade segura encontrada&hellip; L&aacute; estar&aacute; o gnomo.</p>\n<h1>O Gnomo nas Aventuras</h1>\n<p>Os gnomos possuem alguns gatilhos que os empurram para o mundo das aventuras e, assim como os halflings, a curiosidade pelo mundo l&aacute; fora &eacute; uma das mais frequentes, mas n&atilde;o a &uacute;nica.</p>\n<p>Certamente gnomos abandonam a pacificidade de sua terra para compreender o mundo ao seu redor e, claro, por motivos mais mundanos como acumular riquezas, ver o que est&aacute; acontecendo e se expor aos riscos.</p>\n<p>E quando isso vira uma obstina&ccedil;&atilde;o, a estrada &eacute; o &uacute;nico caminho o qual eles podem trilhar.</p>\n<p>Gnomos gostam de participar, gostam de estar no teatro dos acontecimentos. Contar como o Drag&atilde;o Velho foi morto &eacute; pouco para ele.</p>\n<p>O ideal &eacute; que o gnomo possa dizer como ELE ajudou a matar o Drag&atilde;o Velho e, principalmente, como ele hoje ostenta todas aquelas maravilhosas joias roubadas do covil do Drag&atilde;o Velho.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726706632011,
+    "modifiedTime": 1726713200330,
+    "lastModifiedBy": "qL3iBUN7HcwSiU0i",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!GLAN1JCU7dTEVHmZ"
+}

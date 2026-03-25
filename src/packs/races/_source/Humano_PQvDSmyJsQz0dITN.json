@@ -1,0 +1,22 @@
+{
+  "name": "Humano",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "PQvDSmyJsQz0dITN",
+  "description": "",
+  "sort": 100000,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726706631993,
+    "modifiedTime": 1726706631993,
+    "lastModifiedBy": "23TLgqGgbkAhWsum"
+  },
+  "_key": "!folders!PQvDSmyJsQz0dITN"
+}

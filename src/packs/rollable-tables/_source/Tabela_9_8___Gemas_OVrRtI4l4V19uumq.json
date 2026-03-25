@@ -1,0 +1,99 @@
+{
+  "folder": null,
+  "name": "Tabela 9.8 - Gemas",
+  "_id": "OVrRtI4l4V19uumq",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [2, 3],
+      "drawn": false,
+      "_id": "3i9tnhpAHpnSkwiQ",
+      "text": "Preciosa (500 PO)",
+      "documentId": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/gem.svg",
+      "_key": "!tables.results!OVrRtI4l4V19uumq.3i9tnhpAHpnSkwiQ"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [4, 5],
+      "drawn": false,
+      "_id": "Cymih3903vNm3KJF",
+      "text": "Ornamental (50 PO)",
+      "documentId": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/gem.svg",
+      "_key": "!tables.results!OVrRtI4l4V19uumq.Cymih3903vNm3KJF"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [6, 7],
+      "drawn": false,
+      "_id": "LJGYzxGMAnwp41Ng",
+      "text": "Decorativa (10 PO)",
+      "documentId": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/gem.svg",
+      "_key": "!tables.results!OVrRtI4l4V19uumq.LJGYzxGMAnwp41Ng"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [8, 9],
+      "drawn": false,
+      "_id": "e2OFryDNtCPHGrXd",
+      "text": "Decorativa (10 PO)",
+      "documentId": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/gem.svg",
+      "_key": "!tables.results!OVrRtI4l4V19uumq.e2OFryDNtCPHGrXd"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [10, 11],
+      "drawn": false,
+      "_id": "zkqDVYEEFQqaiNQh",
+      "text": "Semipreciosa (100 PO)",
+      "documentId": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/gem.svg",
+      "_key": "!tables.results!OVrRtI4l4V19uumq.zkqDVYEEFQqaiNQh"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [12, 12],
+      "drawn": false,
+      "_id": "aT8Gm5jQp1UjfWPU",
+      "text": "Joia (1.000 PO)",
+      "documentId": null,
+      "flags": {},
+      "img": "systems/olddragon2e/assets/icons/gem.svg",
+      "_key": "!tables.results!OVrRtI4l4V19uumq.aT8Gm5jQp1UjfWPU"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "coreVersion": "11.315",
+    "createdTime": 1701290353928,
+    "modifiedTime": 1701295372859,
+    "lastModifiedBy": "sHlguNLILDsjMUbV"
+  },
+  "formula": "2d6",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "sHlguNLILDsjMUbV": 3
+  },
+  "_key": "!tables!OVrRtI4l4V19uumq"
+}

@@ -1,0 +1,47 @@
+{
+  "folder": "jrdUsethErsPWdUP",
+  "name": "Animal Sagrado",
+  "type": "class_ability",
+  "_id": "76ZY7onDUbhFLdPq",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 1,
+    "description": "<p>O Xam&atilde; seleciona um animal ou criatura para representar sua divindade junto a sua tribo. Sempre que este s&iacute;mbolo divino estiver presente, o Xam&atilde; pode fazer seus seguidores realizarem ataques f&aacute;ceis durante um combate, enquanto for capaz de proferir can&ccedil;&otilde;es sagradas e ritmadas, colocando todos em transe.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707623913,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!76ZY7onDUbhFLdPq"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Halfling",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "y3I9Ax4MSmqjQWqP",
+  "description": "",
+  "sort": 0,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726706631993,
+    "modifiedTime": 1726706631993,
+    "lastModifiedBy": "23TLgqGgbkAhWsum"
+  },
+  "_key": "!folders!y3I9Ax4MSmqjQWqP"
+}

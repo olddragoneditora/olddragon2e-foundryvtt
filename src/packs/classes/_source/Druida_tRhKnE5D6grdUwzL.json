@@ -1,0 +1,124 @@
+{
+  "folder": "de2NXxoUboACmXR8",
+  "name": "Druida",
+  "type": "class",
+  "_id": "tRhKnE5D6grdUwzL",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "equipment_restrictions": {
+      "weapons": "Não pode usar nenhuma arma metálica.",
+      "armors": "Não pode usar nenhuma armadura metálica.",
+      "magic_items": "Pode usar qualquer item mágico."
+    },
+    "hp": null,
+    "high_level_hp_bonus": null,
+    "restrictions": {
+      "alignments": [],
+      "races": []
+    },
+    "levels": {
+      "1": {
+        "ba": 1,
+        "jp": 5
+      },
+      "2": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 2000
+      },
+      "3": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 4000
+      },
+      "4": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 7000
+      },
+      "5": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 10000
+      },
+      "6": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 20000
+      },
+      "7": {
+        "ba": 5,
+        "jp": 9,
+        "xp": 30000
+      },
+      "8": {
+        "ba": 5,
+        "jp": 9,
+        "xp": 40000
+      },
+      "9": {
+        "ba": 5,
+        "jp": 9,
+        "xp": 50000
+      },
+      "10": {
+        "ba": 7,
+        "jp": 11,
+        "xp": 100000
+      },
+      "11": {
+        "ba": 7,
+        "jp": 11,
+        "xp": 200000
+      },
+      "12": {
+        "ba": 7,
+        "jp": 11,
+        "xp": 300000
+      },
+      "13": {
+        "ba": 9,
+        "jp": 13,
+        "xp": 400000
+      },
+      "14": {
+        "ba": 9,
+        "jp": 13,
+        "xp": 500000
+      },
+      "15": {
+        "ba": 9,
+        "jp": 13,
+        "xp": 600000
+      }
+    },
+    "class_abilities": [
+      "Compendium.olddragon2e.classes.Item.VLvFW5KXyz8B617Q",
+      "Compendium.olddragon2e.classes.Item.xW24B89VvXnd4TAJ",
+      "Compendium.olddragon2e.classes.Item.HaKnVm78W1c8girj",
+      "Compendium.olddragon2e.classes.Item.2q0Ou4hbRuYrlXMX",
+      "Compendium.olddragon2e.classes.Item.dse1zkq608PLWWzC"
+    ],
+    "flavor": "<p>Um Druida &eacute; um Cl&eacute;rigo especialista silvestre, tendo como sua divindade a Deusa-M&atilde;e da natureza e as for&ccedil;as dela al&eacute;m do neutro equil&iacute;brio da roda da vida.</p>",
+    "description": "<p>Os ambientes naturais s&atilde;o seus templos, e os animais e as criaturas silvestres s&atilde;o representa&ccedil;&otilde;es vivas do seu sagrado.</p>\n<p>Druidas passam seu tempo tratando do t&ecirc;nue equil&iacute;brio que a natureza precisa para se manter saud&aacute;vel, al&eacute;m de ministrar servi&ccedil;os sacerdotais em comunidades rurais isoladas.</p>\n<h1>Restri&ccedil;&otilde;es</h1>\n<p>Al&eacute;m de seguir a evolu&ccedil;&atilde;o de experi&ecirc;ncia de um Cl&eacute;rigo especialista, o Druida deve possuir alinhamento neutro e n&atilde;o pode usar nenhuma arma ou armadura met&aacute;lica ou perder&aacute; acesso a todas as suas habilidades de Druida.</p>\n<p>O Druida perde o acesso as habilidades de <em>Cura Milagrosa</em> e <em>Afastar Mortos-Vivos</em> possu&iacute;da por um Cl&eacute;rigo normal, mas mant&eacute;m a capacidade de conjurar Magias normalmente tal qual um Cl&eacute;rigo de mesmo n&iacute;vel faria.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726713409608,
+    "lastModifiedBy": "qL3iBUN7HcwSiU0i",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!tRhKnE5D6grdUwzL"
+}

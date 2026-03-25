@@ -1,0 +1,123 @@
+{
+  "folder": "kR9toNdwkvDu8OO5",
+  "name": "Clérigo",
+  "type": "class",
+  "_id": "cYfvA9p2XprFpamU",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "equipment_restrictions": {
+      "weapons": "Só podem usar armas impactantes. Usar armas cortantes ou perfurantes faz o Clérigo perder suas magias até realizar uma penitência para restaurar o abalo na sua fé.",
+      "armors": "Podem usar todas as armaduras.",
+      "magic_items": "O Clérigo é capaz de usar todos os tipos de itens mágicos desde que sejam ordeiros."
+    },
+    "hp": null,
+    "high_level_hp_bonus": null,
+    "restrictions": {
+      "alignments": [],
+      "races": []
+    },
+    "levels": {
+      "1": {
+        "ba": 1,
+        "jp": 5
+      },
+      "2": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 1500
+      },
+      "3": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 3000
+      },
+      "4": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 5500
+      },
+      "5": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 8500
+      },
+      "6": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 17000
+      },
+      "7": {
+        "ba": 5,
+        "jp": 9,
+        "xp": 27000
+      },
+      "8": {
+        "ba": 5,
+        "jp": 9,
+        "xp": 37000
+      },
+      "9": {
+        "ba": 5,
+        "jp": 9,
+        "xp": 47000
+      },
+      "10": {
+        "ba": 7,
+        "jp": 11,
+        "xp": 94000
+      },
+      "11": {
+        "ba": 7,
+        "jp": 11,
+        "xp": 190000
+      },
+      "12": {
+        "ba": 7,
+        "jp": 11,
+        "xp": 280000
+      },
+      "13": {
+        "ba": 9,
+        "jp": 13,
+        "xp": 370000
+      },
+      "14": {
+        "ba": 9,
+        "jp": 13,
+        "xp": 460000
+      },
+      "15": {
+        "ba": 9,
+        "jp": 13,
+        "xp": 550000
+      }
+    },
+    "class_abilities": [
+      "Compendium.olddragon2e.classes.Item.AsCIYZaMacXEs4M2",
+      "Compendium.olddragon2e.classes.Item.l15jhNum8mkGy0zS",
+      "Compendium.olddragon2e.classes.Item.Yi704UiBhtHLlYPd",
+      "Compendium.olddragon2e.classes.Item.uIuw6jY4CNzpg2he"
+    ],
+    "flavor": "<p>Aventureiro religioso e devoto das for&ccedil;as divinas do pante&atilde;o. Determinado e virtuoso, protege a todos usando seus milagres divinos.</p>",
+    "description": "<h1>A Carreira do Cl&eacute;rigo</h1>\n<p>O Cl&eacute;rigo dos n&iacute;veis baixos &eacute; o sacerdote rec&eacute;m-ordenado, treinado pela sua igreja para defender e propagar os dogmas de seu Deus ordeiro.</p>\n<p>Nem todo fiel entra sozinho pelas portas das igrejas e alguns precisam ser estimulados, convencidos e inspirados pela for&ccedil;a e o poder de sua divindade.</p>\n<p>A parte mais recompensadora da sua miss&atilde;o, no entanto, &eacute; expurgar o mundo do caos e das ofensas por meio dos ensinamentos de seu Deus.</p>\n<p>Voc&ecirc; sabe que foi escolhido para ser a arma de Deus a qual livrar&aacute; o mundo do pecado. Essa miss&atilde;o trar&aacute; reconhecimento ao seu trabalho, e seus superiores o avaliar&atilde;o. E, quando isso acontecer, voc&ecirc; sabe que se tornar&aacute; a inspira&ccedil;&atilde;o para que outros jovens o sucedam na incans&aacute;vel luta contra o caos.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726713394427,
+    "lastModifiedBy": "qL3iBUN7HcwSiU0i",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!cYfvA9p2XprFpamU"
+}

@@ -1,0 +1,47 @@
+{
+  "folder": "jrdUsethErsPWdUP",
+  "name": "Fúria da Natureza",
+  "type": "class_ability",
+  "_id": "UsmQT6Al04ZGO6b9",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 10,
+    "description": "<p>O Xam&atilde; invoca o poder de sua divindade natural representada em uma for&ccedil;a da natureza, recebendo a habilidade de trocar uma das suas magias preparadas de 5&ordm; c&iacute;rculo pela magia de 7&ordm; c&iacute;rculo Controlar o Clima.</p>\n<p>Um Xam&atilde; &eacute; capaz de conjurar esta magia mesmo se ainda n&atilde;o tiver acesso &agrave;s magias de 7&ordm; c&iacute;rculo.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707623913,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 500000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!UsmQT6Al04ZGO6b9"
+}

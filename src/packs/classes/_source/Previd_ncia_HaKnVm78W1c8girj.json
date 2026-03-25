@@ -1,0 +1,47 @@
+{
+  "folder": "IBMPu4wrPSgENUs8",
+  "name": "Previdência",
+  "type": "class_ability",
+  "_id": "HaKnVm78W1c8girj",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 3,
+    "description": "<p>O Druida adquire a habilidade da Previd&ecirc;ncia nos acampamentos os quais monta. Acampamentos criados nos ermos por um Druida sempre ser&atilde;o do tipo seguro.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707427091,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 300000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!HaKnVm78W1c8girj"
+}

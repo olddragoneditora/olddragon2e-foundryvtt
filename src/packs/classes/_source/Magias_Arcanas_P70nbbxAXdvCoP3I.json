@@ -1,0 +1,47 @@
+{
+  "folder": "EP1QX9SkKVUkPV2Y",
+  "name": "Magias Arcanas",
+  "type": "class_ability",
+  "_id": "P70nbbxAXdvCoP3I",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 1,
+    "description": "<p>Um Ilusionista &eacute; capaz de lan&ccedil;ar magias arcanas diariamente. Para memoriz&aacute;-las, o Ilusionista deve estudar seu livro de magias, o grim&oacute;rio, e decidir quais magias ser&atilde;o memorizadas naquele dia.</p>\n<p><strong>Grim&oacute;rio</strong>: Livro no qual o Ilusionista escreve sua cole&ccedil;&atilde;o de magias, como um grande livro de receitas arcanas. Sem ele, um Ilusionista perde a capacidade de memorizar novas magias. Por isso, um Ilusionista zeloso guardar&aacute; seu grim&oacute;rio como se fosse a pr&oacute;pria vida.</p>\n<p><strong>Magias Iniciais</strong>: No 1&ordm; n&iacute;vel, o grim&oacute;rio do Ilusionista cont&eacute;m tr&ecirc;s magias de 1&ordm; c&iacute;rculo &agrave; escolha do Ilusionista e uma magia escolhida aleatoriamente da sua lista de magias de 1&ordm; c&iacute;rculo.</p>\n<p><strong>Novas Magias</strong>: Um Ilusionista pode acrescentar livremente novas magias ao seu grim&oacute;rio copiando de outros grim&oacute;rios ou de pergaminhos.</p>\n<p><strong>C&iacute;rculos Superiores</strong>: Um Ilusionista pode escrever no grim&oacute;rio magias de c&iacute;rculos acima de sua capacidade, mas n&atilde;o pode memoriz&aacute;-las at&eacute; atingir o n&iacute;vel necess&aacute;rio.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707489886,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!P70nbbxAXdvCoP3I"
+}

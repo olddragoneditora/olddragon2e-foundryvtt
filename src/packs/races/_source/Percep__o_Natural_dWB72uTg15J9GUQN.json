@@ -1,0 +1,37 @@
+{
+  "folder": "3MFJEb265IFyALkx",
+  "name": "Percepção Natural",
+  "type": "race_ability",
+  "_id": "dWB72uTg15J9GUQN",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "xp": null,
+    "jp": {
+      "jpc": false,
+      "jpd": false,
+      "jps": false
+    },
+    "bonus_damage_archery": false,
+    "rogue_talent": "none",
+    "description": "<p>A forma como as casas &eacute;lficas s&atilde;o constru&iacute;das, respeitando a forma natural das &aacute;rvores e abrigos, d&aacute; aos elfos uma percep&ccedil;&atilde;o especial no que diz respeito a portas e passagens n&atilde;o convencionais e at&eacute; mesmo secretas.</p>\n<p>Ao passarem a at&eacute; 6 metros de uma porta secreta, mesmo que n&atilde;o a estejam procurando, os elfos podem detect&aacute;-la com um resultado 1 em 1d6, ou com um resultado de 1-2 em 1d6 caso estejam efetivamente procurando pela porta secreta.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726706632011,
+    "modifiedTime": 1726706656975,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!dWB72uTg15J9GUQN"
+}

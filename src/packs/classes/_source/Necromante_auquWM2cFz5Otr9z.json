@@ -1,0 +1,127 @@
+{
+  "folder": "urfHCumR08v8ucB9",
+  "name": "Necromante",
+  "type": "class",
+  "_id": "auquWM2cFz5Otr9z",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "equipment_restrictions": {
+      "weapons": "Apenas pequenas. Armas grandes ou médias geram ataques difíceis para Necromantes.",
+      "armors": "Nenhuma. Usar escudos ou armaduras impede a conjuração de magias e protegem apenas metade da CA normal.",
+      "magic_items": "Podem usar todos os tipos."
+    },
+    "hp": null,
+    "high_level_hp_bonus": null,
+    "restrictions": {
+      "alignments": [],
+      "races": []
+    },
+    "levels": {
+      "1": {
+        "ba": 0,
+        "jp": 5
+      },
+      "2": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 3000
+      },
+      "3": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 6000
+      },
+      "4": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 10000
+      },
+      "5": {
+        "ba": 2,
+        "jp": 7,
+        "xp": 13000
+      },
+      "6": {
+        "ba": 2,
+        "jp": 7,
+        "xp": 26000
+      },
+      "7": {
+        "ba": 2,
+        "jp": 7,
+        "xp": 36000
+      },
+      "8": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 46000
+      },
+      "9": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 56000
+      },
+      "10": {
+        "ba": 3,
+        "jp": 10,
+        "xp": 112000
+      },
+      "11": {
+        "ba": 4,
+        "jp": 10,
+        "xp": 220000
+      },
+      "12": {
+        "ba": 4,
+        "jp": 10,
+        "xp": 340000
+      },
+      "13": {
+        "ba": 4,
+        "jp": 10,
+        "xp": 460000
+      },
+      "14": {
+        "ba": 5,
+        "jp": 13,
+        "xp": 580000
+      },
+      "15": {
+        "ba": 5,
+        "jp": 13,
+        "xp": 700000
+      }
+    },
+    "class_abilities": [
+      "Compendium.olddragon2e.classes.Item.Nduc9eJ8mKliNAFl",
+      "Compendium.olddragon2e.classes.Item.3W7wOPXa6E4G0dcX",
+      "Compendium.olddragon2e.classes.Item.Bi08rgavJvS8MykU",
+      "Compendium.olddragon2e.classes.Item.kFuAFXLeuExWr8d7",
+      "Compendium.olddragon2e.classes.Item.drhjuF2UvEwVjVUA",
+      "Compendium.olddragon2e.classes.Item.nAdkq2SH4g3WPvJK",
+      "Compendium.olddragon2e.classes.Item.GyTLRc3TRYUVmokw",
+      "Compendium.olddragon2e.classes.Item.2pN2elJDYIKCbGzD"
+    ],
+    "description": "<p>Os conhecimentos da mais m&oacute;rbida das artes arcanas s&atilde;o supersticiosamente tidos como uma coisa ruim, ainda que o ciclo da vida seja a mais neutra das for&ccedil;as da natureza.</p>\n<p>Viver e morrer s&atilde;o parte do ciclo de estudo do Necromante, e isso n&atilde;o necessariamente o torna maligno, mas apenas algu&eacute;m a buscar o entendmento destes conceitos de forma precisa.</p>\n<p>Embora qualquer Mago possa criar efeitos necr&oacute;ticos, o estudo da morte de um Necromante faz com que ele atinja um grau de perfei&ccedil;&atilde;o acima do conquist&aacute;vel por um Mago comum.</p>\n<h1>Restri&ccedil;&otilde;es</h1>\n<p>Al&eacute;m de seguir a evolu&ccedil;&atilde;o de experi&ecirc;ncia de um Mago especialista, o Necromante abre m&atilde;o da lista de magias de 7&ordm; ao 9&ordm; c&iacute;rculo a qual um Mago normalmente teria acesso, conseguindo conjurar apenas magias at&eacute; o 6&ordm; c&iacute;rculo, mas as habilidades de Mago <em>Ler Magias</em> e <em>Detectar Magias</em> s&atilde;o mantidas e evoluem normalmente.</p>",
+    "flavor": "<p>O Necromante &eacute; um estudioso dos fatos obscuros os quais cercam a vida e a morte, estudando as energias m&iacute;sticas que interferem nos efeitos destes conceitos sobre os seres vivos ou n&atilde;o.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726713524486,
+    "lastModifiedBy": "qL3iBUN7HcwSiU0i",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!auquWM2cFz5Otr9z"
+}

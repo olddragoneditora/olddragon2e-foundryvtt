@@ -1,0 +1,47 @@
+{
+  "folder": "IZiC2QJHLeqcdN4n",
+  "name": "Aura de Proteção",
+  "type": "class_ability",
+  "_id": "nRJE7evRDnUi3hum",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>O Paladino adquire a habilidade de criar uma barreira permanente de prote&ccedil;&atilde;o ao seu redor, exatamente como o efeito da magia Prote&ccedil;&atilde;o contra Alinhamento, a qual o protege contra criaturas ca&oacute;ticas.</p>",
+    "level": 6,
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707563024,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 200000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!nRJE7evRDnUi3hum"
+}

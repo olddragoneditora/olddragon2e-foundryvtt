@@ -1,0 +1,47 @@
+{
+  "folder": "6tqhmPFmMQanLL97",
+  "name": "Bastião Racial",
+  "type": "class_ability",
+  "_id": "rEd1rFMetALcOipu",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 6,
+    "description": "<p>O An&atilde;o Aventureiro intensifica seu treinamento contra os principais inimigos da sua ra&ccedil;a &ndash; Orcs, Ogros e Hobgoblins &ndash; e, por isso, os ataques destas criaturas contra um An&atilde;o Aventureiro s&atilde;o considerados ataques dif&iacute;ceis.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707290602,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 175000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!rEd1rFMetALcOipu"
+}

@@ -1,0 +1,127 @@
+{
+  "folder": "ONhFVKz0wKGbwdeV",
+  "name": "Ilusionista",
+  "type": "class",
+  "_id": "PBtvkfo69YBlKrGY",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "equipment_restrictions": {
+      "weapons": "Apenas pequenas. Armas grandes ou médias geram ataques difíceis para Ilusionistas.",
+      "armors": "Nenhuma. Usar escudos ou armaduras impede a conjuração de magias e protegem apenas metade da CA normal.",
+      "magic_items": "Podem usar todos os tipos."
+    },
+    "hp": null,
+    "high_level_hp_bonus": null,
+    "restrictions": {
+      "alignments": [],
+      "races": []
+    },
+    "levels": {
+      "1": {
+        "ba": 0,
+        "jp": 5
+      },
+      "2": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 3000
+      },
+      "3": {
+        "ba": 1,
+        "jp": 2,
+        "xp": 6000
+      },
+      "4": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 10000
+      },
+      "5": {
+        "ba": 2,
+        "jp": 7,
+        "xp": 13000
+      },
+      "6": {
+        "ba": 2,
+        "jp": 7,
+        "xp": 26000
+      },
+      "7": {
+        "ba": 2,
+        "jp": 7,
+        "xp": 36000
+      },
+      "8": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 46000
+      },
+      "9": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 56000
+      },
+      "10": {
+        "ba": 3,
+        "jp": 10,
+        "xp": 112000
+      },
+      "11": {
+        "ba": 4,
+        "jp": 10,
+        "xp": 220000
+      },
+      "12": {
+        "ba": 4,
+        "jp": 10,
+        "xp": 340000
+      },
+      "13": {
+        "ba": 4,
+        "jp": 10,
+        "xp": 460000
+      },
+      "14": {
+        "ba": 5,
+        "jp": 13,
+        "xp": 580000
+      },
+      "15": {
+        "ba": 5,
+        "jp": 13,
+        "xp": 700000
+      }
+    },
+    "class_abilities": [
+      "Compendium.olddragon2e.classes.Item.P70nbbxAXdvCoP3I",
+      "Compendium.olddragon2e.classes.Item.HTNnKQXy1EsQy6C4",
+      "Compendium.olddragon2e.classes.Item.cH4HgtnAZGYAPetY",
+      "Compendium.olddragon2e.classes.Item.q0qWJWJJWR9FNdwi",
+      "Compendium.olddragon2e.classes.Item.uEiOv55R0tW8jOLI",
+      "Compendium.olddragon2e.classes.Item.VSrpwrNgdSVqMY2a",
+      "Compendium.olddragon2e.classes.Item.sivfjebkgc5jC3Xb",
+      "Compendium.olddragon2e.classes.Item.3o8YEC1OOyEaNKdF"
+    ],
+    "flavor": "<p>O Ilusionista &eacute; um personagem ligado &agrave;s artes das ilus&otilde;es, o que significa oculta&ccedil;&otilde;es, prestidigita&ccedil;&atilde;o e manipula&ccedil;&atilde;o da realidade.</p>",
+    "description": "<p>Aplicam as energias m&iacute;sticas com foco em criar efeitos visuais n&atilde;o reais e, embora qualquer Mago possa criar alguns efeitos ilus&oacute;rios com suas magias, uma ilus&atilde;o criada por um Ilusionista possui um acabamento superior em rela&ccedil;&atilde;o a ilus&atilde;o criada por um Mago n&atilde;o Ilusionista.</p>\n<h1>Restri&ccedil;&otilde;es</h1>\n<p>Al&eacute;m de seguir a evolu&ccedil;&atilde;o de experi&ecirc;ncia de um Mago especialista, o Ilusionista abre m&atilde;o da lista de magias de 7&ordm; ao 9&ordm; c&iacute;rculo a qual um Mago normalmente teria acesso, conseguindo conjurar apenas magias at&eacute; o 6&ordm; c&iacute;rculo, mas as habilidades de Mago <em>Ler Magias</em> e <em>Detectar Magias</em> s&atilde;o mantidas e evoluem normalmente.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726713475200,
+    "lastModifiedBy": "qL3iBUN7HcwSiU0i",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!PBtvkfo69YBlKrGY"
+}

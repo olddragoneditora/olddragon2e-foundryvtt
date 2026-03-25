@@ -1,0 +1,50 @@
+{
+  "folder": "JLtCk7JhejKEa0pw",
+  "name": "Ouvir Ruídos",
+  "type": "class_ability",
+  "_id": "oqZspgbKsZDmUnAu",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 1,
+    "description": "<p>O Ladr&atilde;o consegue ouvir ru&iacute;dos como uma conversa do outro lado de uma porta ou sons de monstros se aproximando. Para isso, ele deve estar em um ambiente silencioso, como em uma masmorra e fora de um combate.</p>\n<p>O Ladr&atilde;o possui uma chance de 1-2 em 1d6 para conseguir ouvir ru&iacute;dos.</p>",
+    "level3": "<p>A chance aumenta para 1-3 em 1d6.</p>",
+    "level6": "<p>A chance aumenta para 1-4 em 1d6.</p>",
+    "level10": "<p>A chance aumenta para 1-5 em 1d6.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707515961,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 200000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!oqZspgbKsZDmUnAu"
+}

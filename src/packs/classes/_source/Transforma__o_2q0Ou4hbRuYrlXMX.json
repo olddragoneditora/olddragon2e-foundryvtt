@@ -1,0 +1,49 @@
+{
+  "folder": "IBMPu4wrPSgENUs8",
+  "name": "Transformação",
+  "type": "class_ability",
+  "_id": "2q0Ou4hbRuYrlXMX",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 6,
+    "description": "<p>O Druida pode Assumir a Forma de um animal pequeno n&atilde;o-m&aacute;gico de at&eacute; 6 DV por at&eacute; 3 vezes ao dia.</p>\n<p>O Druida pode adotar uma habilidade especial deste animal como, por exemplo, o abra&ccedil;o de um Urso, mas mant&eacute;m todas as suas pr&oacute;prias estat&iacute;sticas como b&ocirc;nus de ataque, Jogadas de Prote&ccedil;&atilde;o, classe de armadura e pontos de vida.</p>",
+    "level6": "",
+    "level10": "<p>O Druida evolui sua capacidade de Assumir a Forma de animais at&eacute; 3 vezes ao dia, podendo assumir a forma de um animal n&atilde;o-m&aacute;gico de qualquer tamanho com at&eacute; 10 DV.</p>\n<p>O Druida pode adotar todas as habilidades especiais deste animal como, por exemplo, o abra&ccedil;o de um Urso, mas mant&eacute;m todas as suas pr&oacute;prias estat&iacute;sticas como b&ocirc;nus de ataque, Jogadas de Prote&ccedil;&atilde;o, classe de armadura e pontos de vida.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 3,
+      "7": 3,
+      "8": 3,
+      "9": 3,
+      "10": 3,
+      "11": 3,
+      "12": 3,
+      "13": 3,
+      "14": 3,
+      "15": 3
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707431778,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 350000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!2q0Ou4hbRuYrlXMX"
+}

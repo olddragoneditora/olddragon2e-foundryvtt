@@ -1,0 +1,1106 @@
+{
+  "folder": "ioFK1o5VvQyJzswK",
+  "name": "Isiscarus (5º nível)",
+  "type": "character",
+  "img": "systems/olddragon2e/assets/basic-characters/isiscarus.webp",
+  "system": {
+    "odo_id": "",
+    "level": 5,
+    "hp": {
+      "value": 18,
+      "max": 18
+    },
+    "forca": 12,
+    "destreza": 15,
+    "constituicao": 9,
+    "inteligencia": 9,
+    "sabedoria": 14,
+    "carisma": 10,
+    "jpd": {
+      "class": 5,
+      "race": 0
+    },
+    "jpc": {
+      "class": 5,
+      "race": 0
+    },
+    "jps": {
+      "class": 5,
+      "race": 1
+    },
+    "economy": {
+      "cp": 0,
+      "sp": 0,
+      "gp": 10,
+      "count": 0,
+      "load": 0
+    },
+    "details": {
+      "alignment": "ordeiro",
+      "languages": "Comum, Halfling",
+      "reputation": 0,
+      "appearance": "<p>Franzino (Corpo); Lindo (Cabelos); Barbicha (Geral)</p>",
+      "personality": "<p>Galanteador (Sobre todo o resto); Agitado (Sobre si mesmo); Extrovertido (Sobre outras pessoas)</p>",
+      "background": "<p>Oriundo de um enorme cl&atilde; circense, Isiscarus tornou-se um ex&iacute;mio atirador de facas. Mas, como seu desejo de conhecer o mundo e ficar rico era maior que um circo que mal sa&iacute;a do reino, ele deixou seu of&iacute;cio para ganhar gl&oacute;ria e dinheiro &ndash; de prefer&ecirc;ncia &agrave;s custas dos outros.</p>",
+      "notes": ""
+    },
+    "campanha_url": "",
+    "url": "",
+    "ac_extra": 0,
+    "class_jpd": 0,
+    "class_jpc": 0,
+    "class_jps": 0,
+    "current_xp": 10199,
+    "jp_race_bonus": "jps",
+    "rogue_talent_points": {
+      "armadilha": 1,
+      "furtividade": 1,
+      "punga": 1
+    }
+  },
+  "prototypeToken": {
+    "name": "Isiscarus",
+    "displayName": 30,
+    "actorLink": true,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "systems/olddragon2e/assets/basic-characters/isiscarus-token.webp",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "color": null,
+      "negative": false,
+      "priority": 0
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0,
+      "color": null
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null
+  },
+  "items": [
+    {
+      "folder": "bkBRbMCUMv15wltn",
+      "name": "Adaga",
+      "type": "weapon",
+      "_id": "VDCfKOduqtTAbtt1",
+      "img": "systems/olddragon2e/assets/equipment-concepts/weapon.svg",
+      "system": {
+        "odo_id": "adaga",
+        "quantity": 1,
+        "cost": "2 PO",
+        "description": "Pequena, Perfurante, Arremesso (9)",
+        "weight_in_load": 1,
+        "weight_in_grams": null,
+        "magic_item": false,
+        "bonus_ca": null,
+        "type": "throwing",
+        "damage_type": "piercing",
+        "damage": "1d4",
+        "bonus_damage": null,
+        "bonus_ba": null,
+        "shoot_range": null,
+        "throw_range": 9,
+        "arrow": false,
+        "bolt": false,
+        "bolt_small": false,
+        "polearm": false,
+        "two_handed": false,
+        "versatile": false,
+        "is_equipped": true
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.KhvqaenfjWfcZhJi",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "_key": "!actors.items!bWVyYIpKNJi2tOno.VDCfKOduqtTAbtt1"
+    },
+    {
+      "folder": "bkBRbMCUMv15wltn",
+      "name": "Adaga",
+      "type": "weapon",
+      "_id": "h5ujZAG5K7PYcHIv",
+      "img": "systems/olddragon2e/assets/equipment-concepts/weapon.svg",
+      "system": {
+        "odo_id": "adaga",
+        "quantity": 1,
+        "cost": "2 PO",
+        "description": "Pequena, Perfurante, Arremesso (9)",
+        "weight_in_load": 1,
+        "weight_in_grams": null,
+        "magic_item": false,
+        "bonus_ca": null,
+        "type": "throwing",
+        "damage_type": "piercing",
+        "damage": "1d4",
+        "bonus_damage": null,
+        "bonus_ba": null,
+        "shoot_range": null,
+        "throw_range": 9,
+        "arrow": false,
+        "bolt": false,
+        "bolt_small": false,
+        "polearm": false,
+        "two_handed": false,
+        "versatile": false,
+        "is_equipped": true
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.KhvqaenfjWfcZhJi",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "_key": "!actors.items!bWVyYIpKNJi2tOno.h5ujZAG5K7PYcHIv"
+    },
+    {
+      "folder": "jMvjD9l8URkPiaXR",
+      "name": "Armadura de Couro Batido",
+      "type": "armor",
+      "_id": "pN05RA8Wz2juiALE",
+      "img": "systems/olddragon2e/assets/equipment-concepts/armor.svg",
+      "system": {
+        "odo_id": "armadura-de-couro-batido",
+        "quantity": 1,
+        "cost": "30 PO",
+        "description": "Média, Couro.",
+        "weight_in_load": 2,
+        "weight_in_grams": null,
+        "magic_item": false,
+        "bonus_ca": 3,
+        "is_equipped": true
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.p8CLrJjCAIeuURqI",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "_key": "!actors.items!bWVyYIpKNJi2tOno.pN05RA8Wz2juiALE"
+    },
+    {
+      "folder": "PAnTXGXA0MQpkYub",
+      "name": "Corda de Cânhamo",
+      "type": "misc",
+      "_id": "QzQ6WBMtwgtnMZVS",
+      "img": "systems/olddragon2e/assets/equipment-concepts/misc.svg",
+      "system": {
+        "odo_id": "corda-de-canhamo",
+        "quantity": 1,
+        "cost": "1 PO",
+        "description": "15 metros. Suporta erguer até 250 kg.",
+        "weight_in_load": null,
+        "weight_in_grams": 2000,
+        "magic_item": false,
+        "is_equipped": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.kfJ87B98XKmjUhHM",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "_key": "!actors.items!bWVyYIpKNJi2tOno.QzQ6WBMtwgtnMZVS"
+    },
+    {
+      "folder": "PAnTXGXA0MQpkYub",
+      "name": "Ferramentas de Ladrão",
+      "type": "misc",
+      "_id": "fgAmO34rZtI9DcM0",
+      "img": "systems/olddragon2e/assets/equipment-concepts/misc.svg",
+      "system": {
+        "odo_id": "ferramentas-de-ladrao",
+        "quantity": 1,
+        "cost": "25 PO",
+        "description": "Chave, pinça, martelo e serra para arrombar e desarmar armadilhas.",
+        "weight_in_load": null,
+        "weight_in_grams": 500,
+        "magic_item": false,
+        "is_equipped": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.xaUXiRmUpCz0UPUE",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "_key": "!actors.items!bWVyYIpKNJi2tOno.fgAmO34rZtI9DcM0"
+    },
+    {
+      "folder": "PAnTXGXA0MQpkYub",
+      "name": "Ração de viagem",
+      "type": "misc",
+      "_id": "I3XgDTl3PxzMKj6G",
+      "img": "systems/olddragon2e/assets/equipment-concepts/misc.svg",
+      "system": {
+        "odo_id": "racao-de-viagem",
+        "quantity": 3,
+        "cost": "1 PO",
+        "description": "Ração diária de comida para viagem para uma pessoa.",
+        "weight_in_load": null,
+        "weight_in_grams": 500,
+        "magic_item": false,
+        "is_equipped": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.aHD8O1QCMitXy3I9",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "_key": "!actors.items!bWVyYIpKNJi2tOno.I3XgDTl3PxzMKj6G"
+    },
+    {
+      "folder": "PAnTXGXA0MQpkYub",
+      "name": "Tocha",
+      "type": "misc",
+      "_id": "AyVNgiWGj59Y9xPf",
+      "img": "systems/olddragon2e/assets/equipment-concepts/misc.svg",
+      "system": {
+        "odo_id": "tocha",
+        "quantity": 2,
+        "cost": "1 PO",
+        "description": "5 unidades.",
+        "weight_in_load": null,
+        "weight_in_grams": 500,
+        "magic_item": false,
+        "is_equipped": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.D20RuafQR6u26MF1",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "_key": "!actors.items!bWVyYIpKNJi2tOno.AyVNgiWGj59Y9xPf"
+    },
+    {
+      "folder": "vUaRYqh0qGZgJ326",
+      "name": "Mochila",
+      "type": "container",
+      "_id": "2h5wnWeuy02CCmiX",
+      "img": "systems/olddragon2e/assets/equipment-concepts/container.svg",
+      "system": {
+        "odo_id": "mochila",
+        "quantity": 1,
+        "cost": "2 PO",
+        "description": "De couro, com compartimentos para exploradores e reforço para peso. Adiciona 5 ao valor de carga do personagem. Comporta até 400 moedas.",
+        "weight_in_load": null,
+        "weight_in_grams": null,
+        "magic_item": false,
+        "increases_load_by": 5,
+        "is_equipped": true
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.K5bh3HGT8fC4Fuzb",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "_key": "!actors.items!bWVyYIpKNJi2tOno.2h5wnWeuy02CCmiX"
+    },
+    {
+      "folder": "y3I9Ax4MSmqjQWqP",
+      "name": "Halfling",
+      "type": "race",
+      "_id": "2pe038Sewyu6wgqN",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "movement": 6,
+        "infravision": null,
+        "alignment_tendency": "neutro",
+        "race_abilities": [
+          "Compendium.olddragon2e.races.Item.4POPuC9jLG7wQgO4",
+          "Compendium.olddragon2e.races.Item.XUXBrUsiUVfPELAI",
+          "Compendium.olddragon2e.races.Item.wUT3Rw5aXKf4Ijq3",
+          "Compendium.olddragon2e.races.Item.maknb5fmH6XjUzWw",
+          "Compendium.olddragon2e.races.Item.T0YYYR4LgllcfBA7"
+        ],
+        "flavor": "<p>Os mais Perspicazes e Curiosos Aventureiros.</p>",
+        "description": "<p>Pequenos, roli&ccedil;os, met&oacute;dicos e corajosos, os halflings s&atilde;o um povo pac&iacute;fico e rural habitando as colinas verdejantes, vivendo do que plantam e criam, formando comunidades buc&oacute;licas e pequenas, quase sempre pr&oacute;ximas &agrave;s fronteiras das terras dos humanos.</p>\n<p>Possuem uma apar&ecirc;ncia muito similar a dos humanos, como se fossem mini-homens. Suas orelhas levemente pontiagudas, mas n&atilde;o o suficiente para se parecerem com as dos elfos, se destacam juntamente de seus p&eacute;s, os quais s&atilde;o grandes, robustos e cobertos com uma espessa cobertura de pelos desgrenhados. Halflings est&atilde;o, quase sempre, descal&ccedil;os.</p>\n<p>Suas fei&ccedil;&otilde;es s&atilde;o bonachonas, com bochechas grandes brilhosas e rosadas, seus cabelos s&atilde;o encaracolados, grossos e volumosos, como se tivessem sido penteados despretensiosamente com as m&atilde;os.</p>\n<p>S&atilde;o trabalhadores eficientes e met&oacute;dicos. Buscam realizar suas tarefas com disciplina e corre&ccedil;&atilde;o para poderem desfrutar daquilo que mais gostam: o &oacute;cio regado a doses cavalares de conforto.</p>\n<p>Gostam de viver bem, de comer com fartura, contar hist&oacute;rias exageradamente longas e de humor duvidoso. Apesar disso, s&atilde;o bons companheiros, sempre amig&aacute;veis, se voc&ecirc; n&atilde;o se importar com hist&oacute;rias intermin&aacute;veis e piadas com pouco sentido.</p>\n<p>O ideal de vida dos Halflings &eacute; viver em paz e sob o signo da calma, trabalhar diariamente, descansar &agrave; beira do rio, ler, comer (de prefer&ecirc;ncia 6 refei&ccedil;&otilde;es por dia) e ver o tempo passar, em paz, na tranquilidade e longe da correria e das preocupa&ccedil;&otilde;es.</p>\n<p>Se o conforto &eacute; o objeto de desejo de um halfling, outra caracter&iacute;stica &eacute; importante para defini-los: a curiosidade.</p>\n<p>Halflings sentem um magnetismo com coisas que n&atilde;o conhecem e com assuntos que n&atilde;o dominam. Um halfling explora, investiga, toca. As lendas e hist&oacute;rias de locais distantes e de terras desconhecidas aliadas ao seu conhecido destemor, s&atilde;o uma das poucas coisas capazes de faz&ecirc;-los abandonar suas tocas e um bom livro &agrave; beira da lareira.</p>\n<p>Tolerantes, est&aacute;veis e soci&aacute;veis, os halflings s&atilde;o sem d&uacute;vida os amigos mais f&aacute;ceis de se fazer, fora de um indiv&iacute;duo de sua pr&oacute;pria ra&ccedil;a.</p>\n<h1>Personalidade</h1>\n<p>Se estabilidade &eacute; o adjetivo do halfling, a curiosidade &eacute; a contradi&ccedil;&atilde;o que os define. Vivendo em constante conflito entre comodidade e curiosidade, halflings t&ecirc;m &ldquo;contradi&ccedil;&atilde;o&rdquo; como nome do meio.</p>\n<p>Contradi&ccedil;&atilde;o a qual se une a outra igualmente intrigante: a quest&atilde;o ambi&ccedil;&atilde;o-riqueza. N&atilde;o que eles n&atilde;o se importem com dinheiro, sim, eles se importam, mas, se para outras ra&ccedil;as dinheiro &eacute; poder, para os halflings dinheiro &eacute; conforto e tranquilidade.</p>\n<p>Uma cadeira estofada com tecido confort&aacute;vel, ideal para uma sesta ap&oacute;s uma das muitas refei&ccedil;&otilde;es di&aacute;rias, faz mais a cabe&ccedil;a de um halfling do que um trono cravejado de gemas preciosas.</p>\n<p>Ao mesmo tempo, halflings n&atilde;o possuem um forte desejo de ac&uacute;mulo e ambi&ccedil;&otilde;es por poder. Voc&ecirc; dificilmente ver&aacute; um halfling ostentando riqueza ou divagando sobre conquistas pol&iacute;ticas. Eles s&atilde;o muito mais pr&aacute;ticos nos seus desejos: a sensa&ccedil;&atilde;o de pertencimento, a vida em comunidade, as amizades, o conforto, as viagens ao desconhecido, tudo isso temperado com uma boa dose de destemor.</p>\n<h1>O Halfling nas Aventuras</h1>\n<p>Halflings precisam de poucos motivos para se tornarem aventureiros, como sua curiosidade e seu destemor.</p>\n<p>J&aacute; suas buscas podem ser bem mais variadas. Podem estar indo atr&aacute;s de um rem&eacute;dio para o t&eacute;dio, de divers&atilde;o ou de uma boa hist&oacute;ria para contar. Os cl&aacute;ssicos liter&aacute;rios dos halflings quase sempre descrevem aventuras, her&oacute;is e seus feitos e, em menor n&uacute;mero, biografias de halflings aventureiros com uma boa dose de exagero (ou n&atilde;o).</p>\n<p>Halflings se aventuram porque querem expandir seus horizontes, e n&atilde;o t&ecirc;m nenhum medo do desconhecido.</p>\n<p>Eles querem conhecer, ocupar-se, entender e participar.</p>"
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.races.Item.3VqpR0B3GFRHm9i7",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 1774458778834,
+        "modifiedTime": 1774458778834,
+        "lastModifiedBy": "gBC6G9KqVbM6lcsS"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "gBC6G9KqVbM6lcsS": 3
+      },
+      "_key": "!actors.items!bWVyYIpKNJi2tOno.2pe038Sewyu6wgqN"
+    },
+    {
+      "folder": "nZTV9fep6rIexzLF",
+      "name": "Furtivos",
+      "type": "race_ability",
+      "_id": "TmE6oaqQiEztwEwv",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "xp": null,
+        "jp": {
+          "jpc": false,
+          "jpd": false,
+          "jps": false
+        },
+        "bonus_damage_archery": false,
+        "rogue_talent": "furtividade",
+        "description": "<p>S&atilde;o especialistas em se esconder e em passar despercebidos, conseguindo se esconder com uma chance de 1-2 em 1d6. Se o Halfling adotar a classe Ladr&atilde;o, ele acrescenta ainda um b&ocirc;nus de 1 no seu talento Furtividade.</p>"
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 1774458778853,
+        "modifiedTime": 1774458778853,
+        "lastModifiedBy": "gBC6G9KqVbM6lcsS"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "gBC6G9KqVbM6lcsS": 3
+      },
+      "_key": "!actors.items!bWVyYIpKNJi2tOno.TmE6oaqQiEztwEwv"
+    },
+    {
+      "folder": "nZTV9fep6rIexzLF",
+      "name": "Destemidos",
+      "type": "race_ability",
+      "_id": "KoTzwgAUpv1Ap9Vj",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "xp": null,
+        "jp": {
+          "jpc": false,
+          "jpd": false,
+          "jps": true
+        },
+        "bonus_damage_archery": false,
+        "rogue_talent": "none",
+        "description": "<p>Os halflings s&atilde;o muito resistentes a efeitos que afetem sua for&ccedil;a de vontade, recebendo um b&ocirc;nus de +1 em qualquer teste de JPS.</p>"
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 1774458778877,
+        "modifiedTime": 1774458778877,
+        "lastModifiedBy": "gBC6G9KqVbM6lcsS"
+      },
+      "sort": 50000,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "gBC6G9KqVbM6lcsS": 3
+      },
+      "_key": "!actors.items!bWVyYIpKNJi2tOno.KoTzwgAUpv1Ap9Vj"
+    },
+    {
+      "folder": "nZTV9fep6rIexzLF",
+      "name": "Bons de Mira",
+      "type": "race_ability",
+      "_id": "wXAWWzpzCP4aJMPF",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "xp": null,
+        "jp": {
+          "jpc": false,
+          "jpd": false,
+          "jps": false
+        },
+        "bonus_damage_archery": false,
+        "rogue_talent": "none",
+        "description": "<p>Pela tradi&ccedil;&atilde;o racial de jogos de arremesso, para os halflings qualquer ataque &agrave; dist&acirc;ncia com uma arma de arremesso &eacute; considerado um ataque f&aacute;cil.</p>"
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 1774458778897,
+        "modifiedTime": 1774458778897,
+        "lastModifiedBy": "gBC6G9KqVbM6lcsS"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "gBC6G9KqVbM6lcsS": 3
+      },
+      "_key": "!actors.items!bWVyYIpKNJi2tOno.wXAWWzpzCP4aJMPF"
+    },
+    {
+      "folder": "nZTV9fep6rIexzLF",
+      "name": "Pequenos",
+      "type": "race_ability",
+      "_id": "XLcR5xdmYGAEX5iY",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "xp": null,
+        "jp": {
+          "jpc": false,
+          "jpd": false,
+          "jps": false
+        },
+        "bonus_damage_archery": false,
+        "rogue_talent": "none",
+        "description": "<p>Devido &agrave; baixa estatura e agilidade, todos os ataques provenientes de criaturas grandes ou maiores s&atilde;o considerados ataques dif&iacute;ceis para acertar um halfling.</p>"
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 1774458778916,
+        "modifiedTime": 1774458778916,
+        "lastModifiedBy": "gBC6G9KqVbM6lcsS"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "gBC6G9KqVbM6lcsS": 3
+      },
+      "_key": "!actors.items!bWVyYIpKNJi2tOno.XLcR5xdmYGAEX5iY"
+    },
+    {
+      "folder": "nZTV9fep6rIexzLF",
+      "name": "Restrições",
+      "type": "race_ability",
+      "_id": "X6I6pZBHRrgddSeg",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "xp": null,
+        "jp": {
+          "jpc": false,
+          "jpd": false,
+          "jps": false
+        },
+        "bonus_damage_archery": false,
+        "rogue_talent": "none",
+        "description": "<p>Por n&atilde;o terem tradi&ccedil;&atilde;o na forja de armaduras, os halflings usam apenas armaduras de couro, a n&atilde;o ser se armadura for confeccionada especialmente para ele.</p>\n<p>Um halfling n&atilde;o pode usar armas grandes, sendo restrito apenas a armas pequenas ou m&eacute;dias. Um halfling s&oacute; consegue usar uma arma m&eacute;dia como se fosse uma arma de duas m&atilde;os.</p>"
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 1774458778935,
+        "modifiedTime": 1774458778935,
+        "lastModifiedBy": "gBC6G9KqVbM6lcsS"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "gBC6G9KqVbM6lcsS": 3
+      },
+      "_key": "!actors.items!bWVyYIpKNJi2tOno.X6I6pZBHRrgddSeg"
+    },
+    {
+      "folder": "pTnLkX9il2MwVfxU",
+      "name": "Ladrão",
+      "type": "class",
+      "_id": "uXg8OEVvmnTv0fwq",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "equipment_restrictions": {
+          "weapons": "Apenas pequenas ou médias. Armas grandes geram ataques difíceis para Ladrões.",
+          "armors": "Apenas as leves. Escudos, Armaduras Média ou Pesadas, impedem o uso das suas habilidades e protegem apenas a metade da CA normal.",
+          "magic_items": "Não podem usar cajados, varinhas e pergaminhos mágicos com exceção dos pergaminhos de proteção."
+        },
+        "hp": null,
+        "high_level_hp_bonus": null,
+        "restrictions": {
+          "alignments": [],
+          "races": [""]
+        },
+        "levels": {
+          "1": {
+            "ba": 1,
+            "jp": 5
+          },
+          "2": {
+            "ba": 1,
+            "jp": 5,
+            "xp": 1000
+          },
+          "3": {
+            "ba": 2,
+            "jp": 5,
+            "xp": 2000
+          },
+          "4": {
+            "ba": 2,
+            "jp": 5,
+            "xp": 4000
+          },
+          "5": {
+            "ba": 3,
+            "jp": 8,
+            "xp": 7000
+          },
+          "6": {
+            "ba": 3,
+            "jp": 8,
+            "xp": 14000
+          },
+          "7": {
+            "ba": 4,
+            "jp": 8,
+            "xp": 24000
+          },
+          "8": {
+            "ba": 4,
+            "jp": 8,
+            "xp": 34000
+          },
+          "9": {
+            "ba": 5,
+            "jp": 11,
+            "xp": 44000
+          },
+          "10": {
+            "ba": 5,
+            "jp": 11,
+            "xp": 88000
+          },
+          "11": {
+            "ba": 6,
+            "jp": 11,
+            "xp": 180000
+          },
+          "12": {
+            "ba": 6,
+            "jp": 11,
+            "xp": 260000
+          },
+          "13": {
+            "ba": 7,
+            "jp": 14,
+            "xp": 34000
+          },
+          "14": {
+            "ba": 7,
+            "jp": 14,
+            "xp": 420000
+          },
+          "15": {
+            "ba": 8,
+            "jp": 14,
+            "xp": 500000
+          }
+        },
+        "class_abilities": [
+          "Compendium.olddragon2e.classes.Item.4GGLAwptWJ8VhYuV",
+          "Compendium.olddragon2e.classes.Item.oqZspgbKsZDmUnAu",
+          "Compendium.olddragon2e.classes.Item.qKSkyfweojoOHRv8",
+          "Compendium.olddragon2e.classes.Item.jqNG7o6oSqwCdS3w"
+        ],
+        "flavor": "<p>Aventureiro t&aacute;ctico, perito em sobreviver em masmorras. Furtivo, trai&ccedil;oeiro e fatal quando ataca suas v&iacute;timas sorrateiramente.</p>",
+        "description": "<h1 id=\"a-carreira-do-ladrao\">A Carreira do Ladr&atilde;o</h1>\n<p>O Ladr&atilde;o de n&iacute;veis baixos &eacute;, antes de tudo, um sobrevivente. Algu&eacute;m que, a custo da sua perspic&aacute;cia e destreza, superou tudo para chegar aonde j&aacute; chegou, o que claro, ainda &eacute; pouco.</p>\n<p>Suas especialidades o far&atilde;o evoluir de batedor de carteira descal&ccedil;o a um grande ladino, reconhecido e temido. Voc&ecirc; s&oacute; precisa praticar e praticar, ficar melhor, mais eficiente, mais r&aacute;pido, mais trai&ccedil;oeiro e, claro, &eacute; importante ser tamb&eacute;m mais&hellip; mortal.</p>\n<p>Assim, voc&ecirc; galga os passos da perigosa e dissimulada hierarquia do submundo, na qual os premiados nem sempre s&atilde;o os melhores, e sim os mais influentes e poderosos.</p>"
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.classes.Item.o8cAybQI9lQp2MTd",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 1774458785140,
+        "modifiedTime": 1774458785140,
+        "lastModifiedBy": "gBC6G9KqVbM6lcsS"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "gBC6G9KqVbM6lcsS": 3
+      },
+      "_key": "!actors.items!bWVyYIpKNJi2tOno.uXg8OEVvmnTv0fwq"
+    },
+    {
+      "folder": "JLtCk7JhejKEa0pw",
+      "name": "Ataque Furtivo",
+      "type": "class_ability",
+      "_id": "mbFjnkKcabYEdTfm",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "level": 1,
+        "description": "<p>O Ladr&atilde;o que ataca ap&oacute;s ter se aproximado do inimigo furtivamente, &eacute; capaz de realizar um ataque muito f&aacute;cil, causando dano multiplicado por 2.</p>",
+        "level6": "<p>O dano do Ataque Furtivo &eacute; multiplicado por 3.</p>",
+        "level10": "<p>O dano do Ataque Furtivo &eacute; multiplicado por 4.</p>",
+        "daily_uses": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0,
+          "13": 0,
+          "14": 0,
+          "15": 0
+        },
+        "rogue_talents": []
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 1774458785161,
+        "modifiedTime": 1774458785161,
+        "lastModifiedBy": "gBC6G9KqVbM6lcsS"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "gBC6G9KqVbM6lcsS": 3
+      },
+      "_key": "!actors.items!bWVyYIpKNJi2tOno.mbFjnkKcabYEdTfm"
+    },
+    {
+      "folder": "JLtCk7JhejKEa0pw",
+      "name": "Ouvir Ruídos",
+      "type": "class_ability",
+      "_id": "0KkumYqEzl0udIvO",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "level": 1,
+        "description": "<p>O Ladr&atilde;o consegue ouvir ru&iacute;dos como uma conversa do outro lado de uma porta ou sons de monstros se aproximando. Para isso, ele deve estar em um ambiente silencioso, como em uma masmorra e fora de um combate.</p>\n<p>O Ladr&atilde;o possui uma chance de 1-2 em 1d6 para conseguir ouvir ru&iacute;dos.</p>",
+        "level3": "<p>A chance aumenta para 1-3 em 1d6.</p>",
+        "level6": "<p>A chance aumenta para 1-4 em 1d6.</p>",
+        "level10": "<p>A chance aumenta para 1-5 em 1d6.</p>",
+        "daily_uses": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0,
+          "13": 0,
+          "14": 0,
+          "15": 0
+        },
+        "rogue_talents": []
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 1774458785181,
+        "modifiedTime": 1774458785181,
+        "lastModifiedBy": "gBC6G9KqVbM6lcsS"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "gBC6G9KqVbM6lcsS": 3
+      },
+      "_key": "!actors.items!bWVyYIpKNJi2tOno.0KkumYqEzl0udIvO"
+    },
+    {
+      "folder": "JLtCk7JhejKEa0pw",
+      "name": "Talentos de Ladrão",
+      "type": "class_ability",
+      "_id": "xBJ2hSsiD5PzSVat",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "level": 1,
+        "description": "<p>Ladr&otilde;es possuem algumas habilidades as quais representam seus principais campos de atua&ccedil;&atilde;o, come&ccedil;ando com 2 pontos em cada um dos cinco talentos e 2 pontos adicionais para distribuir como desejar.</p>",
+        "level3": "<p>Recebe 2 pontos para evoluir seus talentos.</p>",
+        "level6": "<p>Recebe 2 pontos para evoluir seus talentos.</p>",
+        "level10": "<p>Recebe 2 pontos para evoluir seus talentos.</p>",
+        "daily_uses": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0,
+          "13": 0,
+          "14": 0,
+          "15": 0
+        },
+        "rogue_talents": [
+          {
+            "key": "armadilha",
+            "name": "Armadilha",
+            "description": "Detecta e desarma silenciosamente armadilhas em lugares ou objetos."
+          },
+          {
+            "key": "arrombar",
+            "name": "Arrombar",
+            "description": "Permite destrancar e abrir fechaduras, cadeados, algemas e trancas em geral de forma silenciosa sem danificá-las."
+          },
+          {
+            "key": "escalar",
+            "name": "Escalar",
+            "description": "Permite escalar superfícies sem uso de cordas e de forma segura, incluindo as íngremes, lisas e sem apoios para mãos e pés."
+          },
+          {
+            "key": "furtividade",
+            "name": "Furtividade",
+            "description": "Permite se esconder de maneira imóvel nas sombras, não podendo ser detectado por outros alvos sem o uso de magia."
+          },
+          {
+            "key": "punga",
+            "name": "Punga",
+            "description": "Permite retirar pequenos itens de bolsos, algibeiras, mochilas etc. de outras pessoas, além de realizar pequenos truques de prestidigitação com as mãos."
+          }
+        ]
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 1774458785202,
+        "modifiedTime": 1774458785202,
+        "lastModifiedBy": "gBC6G9KqVbM6lcsS"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "gBC6G9KqVbM6lcsS": 3
+      },
+      "_key": "!actors.items!bWVyYIpKNJi2tOno.xBJ2hSsiD5PzSVat"
+    },
+    {
+      "folder": "JLtCk7JhejKEa0pw",
+      "name": "Reputação",
+      "type": "class_ability",
+      "_id": "SBykDMKTVexEEwjl",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "level": 11,
+        "description": "<p>O Ladr&atilde;o de alto n&iacute;vel atinge um grau superior de reconhecimento pelos seus feitos, obtendo Reputa&ccedil;&atilde;o 1 em 1d6. O valor de Reputa&ccedil;&atilde;o evolui em 1 at&eacute; o m&aacute;ximo de 1-5 em 1d6 no 15&ordm; n&iacute;vel.</p>",
+        "daily_uses": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0,
+          "13": 0,
+          "14": 0,
+          "15": 0
+        },
+        "rogue_talents": []
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": 1774458785225,
+        "modifiedTime": 1774458785225,
+        "lastModifiedBy": "gBC6G9KqVbM6lcsS"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "gBC6G9KqVbM6lcsS": 3
+      },
+      "_key": "!actors.items!bWVyYIpKNJi2tOno.SBykDMKTVexEEwjl"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726729526743,
+    "modifiedTime": 1774458920684,
+    "lastModifiedBy": "gBC6G9KqVbM6lcsS",
+    "exportSource": null
+  },
+  "_id": "bWVyYIpKNJi2tOno",
+  "sort": 50000,
+  "ownership": {
+    "default": 0,
+    "OuolyBMu1taVMYDC": 3
+  },
+  "_key": "!actors!bWVyYIpKNJi2tOno"
+}

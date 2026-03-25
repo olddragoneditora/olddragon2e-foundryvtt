@@ -1,0 +1,39 @@
+{
+  "folder": "VjiHPA3pWMHszOzP",
+  "name": "Meio-Elfo",
+  "type": "race",
+  "_id": "sdsNB4qd7pXkRBy9",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "movement": 9,
+    "infravision": 9,
+    "alignment_tendency": "caotico",
+    "race_abilities": [
+      "Compendium.olddragon2e.races.Item.5yYdlJuKzY62WbX0",
+      "Compendium.olddragon2e.races.Item.N7OMFcAxJW5AeJwD",
+      "Compendium.olddragon2e.races.Item.OyYSHuFkUr8hVhgi",
+      "Compendium.olddragon2e.races.Item.zDwEfaXozcnT2nzT"
+    ],
+    "flavor": "<p>Metade de dois mundos, sem pertencer a nenhum deles.</p>",
+    "description": "<p>Os meio-elfos s&atilde;o o fruto incomum da uni&atilde;o entre elfos e humanos e, como resultado, acabam sendo vistos com reserva entre as duas civiliza&ccedil;&otilde;es.</p>\n<p>Para eles h&aacute; pouca margem de manobra, sobre onde se colocar. Ou se retraem, vivendo &agrave; margem de tudo e de todos, ou usam sua meia entrada entre humanos e elfos como uma oportunidade de se destacar pela intera&ccedil;&atilde;o.</p>\n<p>Meio-elfos est&atilde;o exatamente no meio do caminho entre homens e elfos quando falamos de apar&ecirc;ncia f&iacute;sica.</p>\n<p>S&atilde;o mais franzinos que um homem, com uma complei&ccedil;&atilde;o f&iacute;sica mais delicada, mas s&atilde;o sensivelmente mais encorpados e menos longil&iacute;neos que os elfos.</p>\n<p>Suas fei&ccedil;&otilde;es s&atilde;o ora t&iacute;picas de uma origem ora de outra. Se seus olhos s&atilde;o amendoados e as orelhas levemente mais pontudas que o normal, como a dos elfos, tamb&eacute;m desenvolvem barbas e possuem cabelos e olhos mais t&iacute;picos dos humanos.</p>\n<p>Possuem a versatilidade e a praticidade dos humanos, mas mant&ecirc;m o gosto pelas artes arcanas e a vida silvestre. Alguns, principalmente os criados entres os elfos, podem ser inclusive xen&oacute;fobos, repassando aos outros o sentimento de segrega&ccedil;&atilde;o que costumam sofrer de seus pares de sangue puro.</p>\n<p>Um meio-elfo vive onde seus pais se estabelecem. Se crescerem entre os humanos, ser&atilde;o oriundos de cidades ou comunidades rurais, mas, se cresceram entre os elfos, compartilhar&atilde;o com estes os ambientes florestais, devido a liga&ccedil;&atilde;o da ra&ccedil;a com as &aacute;rvores e a vida silvestre em geral.</p>\n<p>Meio-elfos n&atilde;o criam agrupamentos raciais e n&atilde;o possuem cultura pr&oacute;pria, visto que vivem entre comunidades &eacute;lficas e humanas.</p>\n<h1>Personalidade</h1>\n<p>Sendo sempre muito humano para ser um elfo, e elfo o bastante para ser um humano de verdade, essa &eacute; a dicotomia que um meio-elfo sente desde que passa a se entender como gente.</p>\n<p>Mais do que algo que o destaca, &eacute; algo que o define. Que faz ele ser o que ele &eacute;.</p>\n<p>Os efeitos dessa divis&atilde;o constante na sua cabe&ccedil;a &eacute; uma personalidade em eterno conflito.</p>\n<p>Ser o que todos gostariam que ele fosse, ou dar vaz&atilde;o &agrave;quilo que ele sente que &eacute; verdadeiramente?</p>\n<p>Ocultar aquilo que n&atilde;o corresponde &agrave;s expectativas de todos ao seu redor ou dar ainda mais destaque e se diferenciar dando pouca ou nenhuma aten&ccedil;&atilde;o ao que todos pensam?</p>\n<p>Boa parte das respostas a estas perguntas prov&eacute;m da sua inf&acirc;ncia. Onde nasceu, onde cresceu, que ra&ccedil;a ele teve no seu entorno ao ser criado e formar sua personalidade. Este &eacute; um &oacute;timo ponto de partida para entender um meio-elfo.</p>\n<h1>O Meio-Elfo nas Aventuras</h1>\n<p>Se abandonar uma vida pregressa &eacute; sempre doloroso, para um meio-elfo isso passa a ser uma quest&atilde;o de autoconhecimento. Meio-elfos s&atilde;o aventureiros ideais por isso. Partir, para meio-elfos, &eacute; natural.</p>\n<p>Entender sua outra origem faz parte dessa busca incessante de conhecer o mundo. E tamb&eacute;m &eacute; a melhor forma para se conectar com uma cultura que faz parte de sua hist&oacute;ria, mas que n&atilde;o esteve presente na sua inf&acirc;ncia.</p>\n<p>Al&eacute;m disso, h&aacute; a necessidade de provar-se capaz, para ambos os lados, de mostrar que n&atilde;o &eacute; um arremedo de duas ra&ccedil;as, e sim um indiv&iacute;duo que deve, que pode e que consegue.</p>\n<p>Se entre os elfos tudo muda de forma extremamente devagar, e entre humanos a curiosidade pode ser cruel, empunhar uma espada num ermo qualquer pode ser o meio ideal de entender onde est&aacute; o seu lugar neste mundo.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726706632011,
+    "modifiedTime": 1726713246399,
+    "lastModifiedBy": "qL3iBUN7HcwSiU0i",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!sdsNB4qd7pXkRBy9"
+}
