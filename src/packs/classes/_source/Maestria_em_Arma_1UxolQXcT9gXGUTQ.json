@@ -1,0 +1,49 @@
+{
+  "folder": "96RMq2HZS5SVLUTT",
+  "name": "Maestria em Arma",
+  "type": "class_ability",
+  "_id": "1UxolQXcT9gXGUTQ",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>O Guerreiro se torna Mestre em uma arma &agrave; sua escolha, recebendo um b&ocirc;nus de +1 no dano daquela arma.</p>",
+    "level3": "<p>O Guerreiro evolui sua maestria para uma segunda arma &agrave; sua escolha e melhora o b&ocirc;nus no dano de ambas as armas para +2.</p>",
+    "level10": "<p>O Guerreiro evolui sua maestria para todas as armas semelhantes &agrave;quelas que ele j&aacute; possui maestria, recebendo b&ocirc;nus em todas as armas pertencentes a estes grupos.</p>\n<p>Os grupos de armas dispon&iacute;veis s&atilde;o: cortantes, perfurante, impactantes, disparos, hastes ou arremesso. Todas as armas desses grupos melhoram seus b&ocirc;nus de dano para +3.</p>",
+    "level": 1,
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707457018,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 150000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!1UxolQXcT9gXGUTQ"
+}

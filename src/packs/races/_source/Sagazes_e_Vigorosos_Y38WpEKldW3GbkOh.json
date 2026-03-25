@@ -1,0 +1,37 @@
+{
+  "folder": "6gcf42NI5cH77vcH",
+  "name": "Sagazes e Vigorosos",
+  "type": "race_ability",
+  "_id": "Y38WpEKldW3GbkOh",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "xp": null,
+    "jp": {
+      "jpc": true,
+      "jpd": false,
+      "jps": true
+    },
+    "bonus_damage_archery": false,
+    "rogue_talent": "none",
+    "description": "<p>Os gnomos s&atilde;o muito espertos e desconfiados, al&eacute;m de vigorosos contra efeitos negativos que afetem sua mente e corpo, assim, podem escolher entre receber um b&ocirc;nus de +1 em uma das duas jogadas de prote&ccedil;&atilde;o, JPC ou JPS.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726706632011,
+    "modifiedTime": 1726706671439,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 200000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!Y38WpEKldW3GbkOh"
+}

@@ -1,0 +1,123 @@
+{
+  "folder": "BJaYANjw0NaKNxsi",
+  "name": "Guerreiro",
+  "type": "class",
+  "_id": "bkzh1k7B0ncxQfHR",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "hp": null,
+    "high_level_hp_bonus": null,
+    "restrictions": {
+      "alignments": [],
+      "races": []
+    },
+    "levels": {
+      "1": {
+        "ba": 1,
+        "jp": 5
+      },
+      "2": {
+        "ba": 2,
+        "jp": 5,
+        "xp": 2000
+      },
+      "3": {
+        "ba": 3,
+        "jp": 6,
+        "xp": 4000
+      },
+      "4": {
+        "ba": 4,
+        "jp": 6,
+        "xp": 7000
+      },
+      "5": {
+        "ba": 5,
+        "jp": 8,
+        "xp": 10000
+      },
+      "6": {
+        "ba": 6,
+        "jp": 8,
+        "xp": 20000
+      },
+      "7": {
+        "ba": 7,
+        "jp": 10,
+        "xp": 30000
+      },
+      "8": {
+        "ba": 8,
+        "jp": 10,
+        "xp": 40000
+      },
+      "9": {
+        "ba": 9,
+        "jp": 11,
+        "xp": 50000
+      },
+      "10": {
+        "ba": 10,
+        "jp": 11,
+        "xp": 100000
+      },
+      "11": {
+        "ba": 11,
+        "jp": 13,
+        "xp": 200000
+      },
+      "12": {
+        "ba": 12,
+        "jp": 13,
+        "xp": 300000
+      },
+      "13": {
+        "ba": 13,
+        "jp": 14,
+        "xp": 400000
+      },
+      "14": {
+        "ba": 14,
+        "jp": 14,
+        "xp": 500000
+      },
+      "15": {
+        "ba": 15,
+        "jp": 16,
+        "xp": 600000
+      }
+    },
+    "class_abilities": [
+      "Compendium.olddragon2e.classes.Item.SGRYNvbZzIPqTvJI",
+      "Compendium.olddragon2e.classes.Item.1UxolQXcT9gXGUTQ",
+      "Compendium.olddragon2e.classes.Item.nnSEQlCZFymP3Jy3",
+      "Compendium.olddragon2e.classes.Item.VJpr0IcKxyhDGYaR"
+    ],
+    "flavor": "<p>Aventureiros especializados em combate, est&atilde;o sempre na linha de frente e s&atilde;o mortais quando desembainham suas armas.</p>",
+    "description": "<h1>A Carreira do Guerreiro</h1>\n<p>O Guerreiro dos n&iacute;veis baixos &eacute; o homem comum com alguma per&iacute;cia em armas que se torna um aventureiro.</p>\n<p>Pouco a pouco ele se torna o her&oacute;i da vila, acumulando experi&ecirc;ncia e riquezas, expandindo sua fama para al&eacute;m das fronteiras da sua &aacute;rea de atua&ccedil;&atilde;o, at&eacute; que seu nome seja reconhecido em terras distantes.</p>\n<p>Essa fase da sua carreira &eacute; quase que totalmente focada em acumular recursos e tornar seu nome reconhecido como grande l&iacute;der militar.</p>\n<p>Ele sabe que se fizer seu trabalho corretamente, seu poder o credenciar&aacute; a coisas grandes</p>\n<p>Al&eacute;m de manter-se vivo, faz o poss&iacute;vel para vencer seus desafios, sobreviver a miss&otilde;es cada vez mais perigosas e, claro, criar la&ccedil;os profissionais, e talvez pessoais, com nobres poderosos.</p>\n<p>Vender-se como algu&eacute;m militarmente combativo e destemido &eacute; importante para suas pretens&otilde;es, ent&atilde;o o Guerreiro procura usar o tempo dispon&iacute;vel para isso, pois sabe que se o trabalho for bem realizado agora, coisas grandes o aguardar&atilde;o.</p>\n<p>A nobreza o espera, e tudo o que ela significa (riqueza, poder e conforto) dependem apenas do Guerreiro e de sua habilidade em combater.</p>",
+    "equipment_restrictions": {
+      "weapons": "Pode usar todas as armas.",
+      "armors": "Pode usar todas as armaduras.",
+      "magic_items": "Não pode usar cajados, varinhas e pergaminhos mágicos com exceção dos pergaminhos de proteção."
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726713436170,
+    "lastModifiedBy": "qL3iBUN7HcwSiU0i",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!bkzh1k7B0ncxQfHR"
+}

@@ -1,0 +1,77 @@
+{
+  "folder": "2rstdPWNgeRFCUX4",
+  "name": "Talentos de Ladrão",
+  "type": "class_ability",
+  "_id": "IXdUeK1tPCFkcPra",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 1,
+    "description": "<p>Rangers possuem algumas habilidades as quais representam seus principais campos de atua&ccedil;&atilde;o, come&ccedil;ando com 2 pontos em cada um dos cinco talentos e 2 pontos adicionais para distribuir como desejar.</p>\n<p><strong>Armadilha</strong>: Detecta e desarma silenciosamente armadilhas em lugares ou objetos.</p>\n<p><strong>Escalar</strong>: Permite escalar superf&iacute;cies sem uso de cordas e de forma segura, incluindo as &iacute;ngremes, lisas e sem apoios para m&atilde;os e p&eacute;s.</p>\n<p><strong>Furtividade</strong>: Permite se esconder de maneira im&oacute;vel nas sombras, n&atilde;o podendo ser detectado por outros alvos sem o uso de magia.</p>\n<p><strong>Percep&ccedil;&atilde;o</strong>: Uma vez a cada hora enquanto estiver nos ermos, &eacute; capaz de sentir presen&ccedil;as, de perceber altera&ccedil;&otilde;es no ambiente e de sentir que h&aacute; alguma coisa errada ou se ocultando.</p>\n<p><strong>Rastrear</strong>: Nos Ermos, pode tentar seguir rastros, a trilha de um inimigo, um animal perdido ou uma erva, al&eacute;m de conseguir procurar comida e &aacute;gua para si e seu grupo.</p>",
+    "level3": "<p>Recebe 2 pontos para evoluir seus talentos.</p>",
+    "level6": "<p>Recebe 2 pontos para evoluir seus talentos.</p>",
+    "level10": "<p>Recebe 2 pontos para evoluir seus talentos.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    },
+    "rogue_talents": [
+      {
+        "key": "armadilha",
+        "name": "Armadilha",
+        "description": "Detectar e desarmar armadilhas. Teste em 1d6 turnos (varia com pontuação). Requer dois testes: encontrar e desarmar. Falha impede nova tentativa até o próximo nível."
+      },
+      {
+        "key": "escalar",
+        "name": "Escalar",
+        "description": "Escalar qualquer superfície (lisa, íngreme, >90°). Dano de queda: 1d6 por 5 metros. Um teste por escalada."
+      },
+      {
+        "key": "furtividade",
+        "name": "Furtividade",
+        "description": "Esconder-se imóvel ou mover-se silenciosamente. Pode ser usado para Ataque Furtivo. Torna-se visível após atacar ou errar."
+      },
+      {
+        "key": "percepcao",
+        "name": "Percepção",
+        "description": "Uma vez por hora em áreas selvagens, sentir presenças, mudanças ambientais e coisas ocultas."
+      },
+      {
+        "key": "rastrear",
+        "name": "Rastrear",
+        "description": "Seguir rastros e trilhas, encontrar comida e água. Funciona apenas em áreas selvagens."
+      }
+    ]
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707602429,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!IXdUeK1tPCFkcPra"
+}

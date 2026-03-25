@@ -1,0 +1,47 @@
+{
+  "folder": "xOuMBXLnPpZaoKRg",
+  "name": "Arma Racial",
+  "type": "class_ability",
+  "_id": "PchOzdcfujOJIwZk",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 1,
+    "description": "<p>O Halfling Aventureiro mant&eacute;m todas as habilidades raciais recebidas por ser um halfling e, devido ao intenso treinamento, atinge um grau de especializa&ccedil;&atilde;o em uma arma de arremesso &agrave; sua escolha, recebendo um b&ocirc;nus de +2 no dano da arma escolhida. Esta arma passa a ser tratada como sua arma racial.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707468861,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!PchOzdcfujOJIwZk"
+}

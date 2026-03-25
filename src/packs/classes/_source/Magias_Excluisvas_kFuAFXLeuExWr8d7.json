@@ -1,0 +1,47 @@
+{
+  "folder": "X4He3u7tp351qKDU",
+  "name": "Magias Excluisvas",
+  "type": "class_ability",
+  "_id": "kFuAFXLeuExWr8d7",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 1,
+    "description": "<p>O Necromante escreve em seu grim&oacute;rio, Toque Sombrio e Aterrorizar, exclusivas para Necromantes.</p>\n<p>⬥ <strong>Sem Memorizar</strong>: Magias exclusivas n&atilde;o precisam ser memorizadas para serem conjuradas pelo Necromante.</p>\n<p>⬥ <strong>Usos por dia</strong>: Cada magia exclusiva do Necromante em seu grim&oacute;rio pode ser usada at&eacute; uma vez ao dia, adicionalmente &agrave;s magias di&aacute;rias do Necromante.</p>\n<p>⬥ <strong>Usos Adicionais</strong>: Caso outros usos sejam realizados, a magia exclusiva consumir&aacute; o espa&ccedil;o ocupado na mem&oacute;ria do Necromante por outra magia j&aacute; previamente memorizada.</p>\n<p>⬥ <strong>Jogada de Prote&ccedil;&atilde;o</strong>: Todas as Jogadas de Prote&ccedil;&atilde;o contra as magias exclusivas s&atilde;o realizadas com um teste dif&iacute;cil.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707545690,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 87500,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!kFuAFXLeuExWr8d7"
+}

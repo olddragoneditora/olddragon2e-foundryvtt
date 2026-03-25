@@ -1,0 +1,47 @@
+{
+  "folder": "eu4GKQDw52soYs9F",
+  "name": "Influenciar",
+  "type": "class_ability",
+  "_id": "VwoMOb949soE6nDr",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 1,
+    "description": "<p>O Bardo por meio da m&uacute;sica, orat&oacute;rias e baladas heroicas consegue influenciar as rea&ccedil;&otilde;es de monstros ou personagens do Mestre com uma chance de 1-2 em 1d6. O Bardo recebe um modificador de +1 ou -1 no Teste de Rea&ccedil;&atilde;o destas audi&ecirc;ncias para melhorar a rea&ccedil;&atilde;o dos alvos (+1) ou para torn&aacute;-los mais hostis (-1).</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707369907,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!VwoMOb949soE6nDr"
+}

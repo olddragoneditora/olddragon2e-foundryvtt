@@ -1,0 +1,47 @@
+{
+  "folder": "eu4GKQDw52soYs9F",
+  "name": "Fascinar",
+  "type": "class_ability",
+  "_id": "mwx6VFRpsY9KicSj",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 6,
+    "description": "<p>O Bardo por meio da m&uacute;sica, orat&oacute;ria e baladas heroicas consegue deixar uma audi&ecirc;ncia de monstros ou personagens do Mestre n&atilde;o hostis, que tenham at&eacute; 2 Dados de vida a cada 3 n&iacute;veis do Bardo, desde que entenda o idioma usado pelo Bardo, envolvida e concentrada no seu desempenho art&iacute;stico.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707362317,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!mwx6VFRpsY9KicSj"
+}

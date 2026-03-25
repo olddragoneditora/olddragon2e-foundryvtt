@@ -1,0 +1,47 @@
+{
+  "folder": "9urJqCJiEUPcoGCw",
+  "name": "Lendas e Tradições",
+  "type": "class_ability",
+  "_id": "pXUlUUSRNXfC1hyx",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 6,
+    "description": "<p>Com seu conhecimento acad&ecirc;mico, &eacute; capaz tamb&eacute;m de identificar lendas, tradi&ccedil;&otilde;es, eventos, personalidades e vultos hist&oacute;ricos, al&eacute;m de curiosidades e perigos de lugares, regi&otilde;es e cidades. O Acad&ecirc;mico conhece ainda um rumor adicional sobre o lugar em quest&atilde;o por modificador de sabedoria que possuir. A chance de conseguir usar a habilidade Conhecimento Acad&ecirc;mico evolui para 1-4 chances em 1d6.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707275825,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 350000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!pXUlUUSRNXfC1hyx"
+}

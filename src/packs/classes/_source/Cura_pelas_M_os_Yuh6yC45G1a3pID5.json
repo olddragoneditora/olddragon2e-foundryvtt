@@ -1,0 +1,47 @@
+{
+  "folder": "IZiC2QJHLeqcdN4n",
+  "name": "Cura pelas Mãos",
+  "type": "class_ability",
+  "_id": "Yuh6yC45G1a3pID5",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>O Paladino adquire a habilidade de curar pela simples imposi&ccedil;&atilde;o das suas m&atilde;os, at&eacute; uma vez por dia.</p>\n<p>O alvo tocado cura 1 ponto de vida por n&iacute;vel do Paladino. Essa habilidade n&atilde;o cura doen&ccedil;as e nem regenera membros amputados, mas pode ser usada para prestar aux&iacute;lio a um alvo que esteja agonizando.</p>",
+    "level": 3,
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1,
+      "7": 1,
+      "8": 1,
+      "9": 1,
+      "10": 1,
+      "11": 1,
+      "12": 1,
+      "13": 1,
+      "14": 1,
+      "15": 1
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707569783,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 187500,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!Yuh6yC45G1a3pID5"
+}

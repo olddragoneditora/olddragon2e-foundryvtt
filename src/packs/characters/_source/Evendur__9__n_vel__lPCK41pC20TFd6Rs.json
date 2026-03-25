@@ -1,0 +1,946 @@
+{
+  "folder": "qIpsRvt0zjvYuoHE",
+  "name": "Evendur (9º nível)",
+  "type": "character",
+  "img": "systems/olddragon2e/assets/basic-characters/evendur.webp",
+  "system": {
+    "odo_id": "",
+    "level": 9,
+    "hp": {
+      "value": 50,
+      "max": 50
+    },
+    "forca": 15,
+    "destreza": 14,
+    "constituicao": 12,
+    "inteligencia": 10,
+    "sabedoria": 9,
+    "carisma": 9,
+    "jpd": {
+      "class": 5,
+      "race": 0
+    },
+    "jpc": {
+      "class": 5,
+      "race": 1
+    },
+    "jps": {
+      "class": 5,
+      "race": 0
+    },
+    "economy": {
+      "cp": 0,
+      "sp": 0,
+      "gp": 10,
+      "count": 0,
+      "load": 0
+    },
+    "details": {
+      "alignment": "neutro",
+      "languages": "Comum, Anão",
+      "reputation": 0,
+      "appearance": "<div>Bonito (Corpo); Cabelos curtos (Cabelos); Barba fechada (Geral)</div>",
+      "personality": "<p>Humilde (Sobre todo o resto); Calmo (Sobre si mesmo); Extrovertido (Sobre outras pessoas)</p>",
+      "background": "<p>Filho de um ferreiro das montanhas do norte de Valansia, Evendur aprendeu desde cedo o valor da honra e for&ccedil;a em batalha.Depois de perder seu grupo de amigos, vagou at&eacute; conhecer Dorgauth, o an&atilde;o guerreiro, que se tornou seu irm&atilde;o-em-armas e o incentivou a viver e ganhar gl&oacute;rias para honrar seus amigos mortos.</p>",
+      "notes": ""
+    },
+    "campanha_url": "",
+    "url": "",
+    "ac_extra": 0,
+    "class_jpd": 0,
+    "class_jpc": 0,
+    "class_jps": 0,
+    "current_xp": 58297,
+    "jp_race_bonus": "jpc"
+  },
+  "prototypeToken": {
+    "name": "Evendur",
+    "displayName": 30,
+    "actorLink": true,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "systems/olddragon2e/assets/basic-characters/evendur-token.webp",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "color": null,
+      "negative": false,
+      "priority": 0
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0,
+      "color": null
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null
+  },
+  "items": [
+    {
+      "folder": "PAnTXGXA0MQpkYub",
+      "name": "Corda de Cânhamo",
+      "type": "misc",
+      "_id": "K6Xd2s40GNFJw8IU",
+      "img": "systems/olddragon2e/assets/equipment-concepts/misc.svg",
+      "system": {
+        "odo_id": "corda-de-canhamo",
+        "quantity": 1,
+        "cost": "1 PO",
+        "description": "15 metros. Suporta erguer até 250 kg.",
+        "weight_in_load": null,
+        "weight_in_grams": 2000,
+        "magic_item": false,
+        "is_equipped": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.kfJ87B98XKmjUhHM",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "_key": "!actors.items!lPCK41pC20TFd6Rs.K6Xd2s40GNFJw8IU"
+    },
+    {
+      "folder": "PAnTXGXA0MQpkYub",
+      "name": "Pederneira",
+      "type": "misc",
+      "_id": "J02R7060pgwe0q8q",
+      "img": "systems/olddragon2e/assets/equipment-concepts/misc.svg",
+      "system": {
+        "odo_id": "pederneira",
+        "quantity": 1,
+        "cost": "5 PC",
+        "description": "Gera faíscas para acender pavios, lanternas ou fogueiras.",
+        "weight_in_load": null,
+        "weight_in_grams": null,
+        "magic_item": false,
+        "is_equipped": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.dhb7N7GHFrWJwv5K",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "_key": "!actors.items!lPCK41pC20TFd6Rs.J02R7060pgwe0q8q"
+    },
+    {
+      "folder": "PAnTXGXA0MQpkYub",
+      "name": "Tocha",
+      "type": "misc",
+      "_id": "gTHGnH2RCQfsghez",
+      "img": "systems/olddragon2e/assets/equipment-concepts/misc.svg",
+      "system": {
+        "odo_id": "tocha",
+        "quantity": 2,
+        "cost": "1 PO",
+        "description": "5 unidades.",
+        "weight_in_load": null,
+        "weight_in_grams": 500,
+        "magic_item": false,
+        "is_equipped": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.D20RuafQR6u26MF1",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "_key": "!actors.items!lPCK41pC20TFd6Rs.gTHGnH2RCQfsghez"
+    },
+    {
+      "folder": "PAnTXGXA0MQpkYub",
+      "name": "Ração de viagem",
+      "type": "misc",
+      "_id": "VGBUAZ3fE2uTrh1d",
+      "img": "systems/olddragon2e/assets/equipment-concepts/misc.svg",
+      "system": {
+        "odo_id": "racao-de-viagem",
+        "quantity": 3,
+        "cost": "1 PO",
+        "description": "Ração diária de comida para viagem para uma pessoa.",
+        "weight_in_load": null,
+        "weight_in_grams": 500,
+        "magic_item": false,
+        "is_equipped": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.aHD8O1QCMitXy3I9",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "_key": "!actors.items!lPCK41pC20TFd6Rs.VGBUAZ3fE2uTrh1d"
+    },
+    {
+      "folder": "vUaRYqh0qGZgJ326",
+      "name": "Mochila",
+      "type": "container",
+      "_id": "wjazSbUz3sd71tI3",
+      "img": "systems/olddragon2e/assets/equipment-concepts/container.svg",
+      "system": {
+        "odo_id": "mochila",
+        "quantity": 1,
+        "cost": "2 PO",
+        "description": "De couro, com compartimentos para exploradores e reforço para peso. Adiciona 5 ao valor de carga do personagem. Comporta até 400 moedas.",
+        "weight_in_load": null,
+        "weight_in_grams": null,
+        "magic_item": false,
+        "increases_load_by": 5,
+        "is_equipped": true
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.K5bh3HGT8fC4Fuzb",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "_key": "!actors.items!lPCK41pC20TFd6Rs.wjazSbUz3sd71tI3"
+    },
+    {
+      "folder": "bkBRbMCUMv15wltn",
+      "name": "Espada Curta",
+      "type": "weapon",
+      "_id": "ILIZfgXUeq4XG0pP",
+      "img": "systems/olddragon2e/assets/equipment-concepts/weapon.svg",
+      "system": {
+        "odo_id": "espada-curta",
+        "quantity": 1,
+        "cost": "6 PO",
+        "description": "Pequena, Cortante.",
+        "weight_in_load": 1,
+        "weight_in_grams": null,
+        "magic_item": false,
+        "bonus_ca": null,
+        "type": "melee",
+        "damage_type": "slashing",
+        "damage": "1d6",
+        "bonus_damage": 2,
+        "bonus_ba": null,
+        "shoot_range": null,
+        "throw_range": null,
+        "arrow": false,
+        "bolt": false,
+        "bolt_small": false,
+        "polearm": false,
+        "two_handed": false,
+        "versatile": false,
+        "is_equipped": true
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.w55Rv0qrnQ9DqvTF",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "_key": "!actors.items!lPCK41pC20TFd6Rs.ILIZfgXUeq4XG0pP"
+    },
+    {
+      "folder": "bkBRbMCUMv15wltn",
+      "name": "Espada Longa",
+      "type": "weapon",
+      "_id": "7Tw0SRULAn7nIOSP",
+      "img": "systems/olddragon2e/assets/equipment-concepts/weapon.svg",
+      "system": {
+        "odo_id": "espada-longa",
+        "quantity": 1,
+        "cost": "10 PO",
+        "description": "Média, Cortante.",
+        "weight_in_load": 2,
+        "weight_in_grams": null,
+        "magic_item": false,
+        "bonus_ca": null,
+        "type": "melee",
+        "damage_type": "slashing",
+        "damage": "1d8",
+        "bonus_damage": 2,
+        "bonus_ba": null,
+        "shoot_range": null,
+        "throw_range": null,
+        "arrow": false,
+        "bolt": false,
+        "bolt_small": false,
+        "polearm": false,
+        "two_handed": false,
+        "versatile": false,
+        "is_equipped": true
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.oWAlui23AapLSV7s",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "_key": "!actors.items!lPCK41pC20TFd6Rs.7Tw0SRULAn7nIOSP"
+    },
+    {
+      "folder": "PQvDSmyJsQz0dITN",
+      "name": "Humano",
+      "type": "race",
+      "_id": "lXic4MEGUA5yRHrf",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "movement": 9,
+        "infravision": null,
+        "alignment_tendency": "none",
+        "race_abilities": [
+          "Compendium.olddragon2e.races.Item.5AgoZPuWUz4MzkVu",
+          "Compendium.olddragon2e.races.Item.owGdW6FzPNnWQmzU"
+        ],
+        "flavor": "<p>Os mais Comuns, Vers&aacute;teis e Adapt&aacute;veis Aventureiros.</p>",
+        "description": "<p>Com enorme variabilidade cultural e disseminados por todos os cantos do mundo, os humanos possuem muita facilidade em assumir o lugar central na maioria dos cen&aacute;rios e, quando analisados sob essa &oacute;tica, revelam sua verdadeira for&ccedil;a.</p>\n<p>Voc&ecirc; conseguir&aacute; encontrar humanos em praticamente todos os habitats poss&iacute;veis, vivendo sob todos os climas, domando o ambiente ao seu bel prazer. Eles se adaptam, se moldam e se espalham como quase nenhuma outra ra&ccedil;a &ndash; e fazem isso r&aacute;pido, muito r&aacute;pido.</p>\n<p>Possuem as mais variadas caracter&iacute;sticas f&iacute;sicas, muitos tons de cabelo, cores de olhos, pesos e alturas. S&atilde;o encontrados dos mais franzinos aos mais brutamontes. Se aparentam serem fr&aacute;geis, com uma vida curta, carecendo de poderes ou habilidades especiais, compensam com sua capacidade de organiza&ccedil;&atilde;o e expans&atilde;o, que podem ser impressionantes.</p>\n<p>Para o padr&atilde;o dos mundos de fantasia, humanos se reproduzem muito r&aacute;pido. Expandem-se com extrema velocidade, ocupam &aacute;reas as quais outras ra&ccedil;as n&atilde;o conseguem e, por viverem pouco se comparados a outras ra&ccedil;as, se relacionam com o tempo de uma forma totalmente diferente. Durante o per&iacute;odo da inf&acirc;ncia de um elfo, um Imp&eacute;rio humano pode se erguer, viver seu apogeu e desaparecer por completo. Acredite, isso pode ser assustador para um elfo ou um an&atilde;o.</p>\n<p>Isso faz com que os humanos sejam a ra&ccedil;a padr&atilde;o dos mundos de Fantasia, menos pelo seu poder como indiv&iacute;duo e muito mais pela sua capacidade de se organizar, de assimilar, se desenvolver e ocupar.</p>\n<h1>Personalidade</h1>\n<p>Como na apar&ecirc;ncia f&iacute;sica, os humanos s&atilde;o diversos e vers&aacute;teis. Sua personalidade &eacute; plural. Abra&ccedil;am todas as linhas de pensamento e &eacute; dif&iacute;cil estabelecer um padr&atilde;o de pensamento e comportamento quando falamos de humanos.</p>\n<p>Se observados pelo prisma temporal, os humanos s&atilde;o ultrarr&aacute;pidos, pois aprendem t&eacute;cnicas e tecnologias as quais avan&ccedil;am e melhoram no espa&ccedil;o de uma &uacute;nica gera&ccedil;&atilde;o. Quando se expandem, nunca atacam e fogem em seguida. Sempre dominam, se estabelecem, permanecem, colonizam e s&oacute; v&atilde;o embora quando sua for&ccedil;a pol&iacute;tica e de organiza&ccedil;&atilde;o social os impede de continuar onde est&atilde;o.</p>\n<p>Humanos s&atilde;o afeitos a quantidade. Se um elfo leva anos para forjar uma cimitarra obra-prima, aplicando t&eacute;cnicas beirando o sobrenatural na forja, humanos abra&ccedil;am a produtividade e quantidade.</p>\n<p>Do ponto de vista da pluralidade, apesar de parecer um contrassenso, os humanos aceitam bem as diferen&ccedil;as, sobretudo se comparados com outras ra&ccedil;as. Convivem com an&otilde;es, halflings e elfos, algumas vezes at&eacute; mesmo at&eacute; assimilando suas col&ocirc;nias, desde que, claro, estes estrangeiros n&atilde;o impe&ccedil;am seus cont&iacute;nuos planos de expans&atilde;o, ac&uacute;mulo de poder e sobreviv&ecirc;ncia.</p>\n<h1>O Humano nas Aventuras</h1>\n<p>O humano aventureiro &eacute; um retrato do humano padr&atilde;o. Adapt&aacute;vel, imaginativo, aguerrido e ambicioso.</p>\n<p>Aventuram-se pelas mais diversas raz&otilde;es &ndash; desde para se sustentar at&eacute; para acumular poder, gl&oacute;ria ou fama. A ambi&ccedil;&atilde;o do humano, por qualquer motivo que seja, &eacute; a for&ccedil;a motriz a qual os tira do conforto de suas choupanas levando-os aos t&uacute;neis escuros dos subterr&acirc;neos.</p>\n<p>Eles querem deixar um legado, fazer seu nome famoso, virar uma lenda e se tornar um exemplo.</p>\n<p>Humanos aventureiros s&atilde;o orgulhosos por deixarem sua marca no mundo.</p>"
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.races.Item.LVAnPRB3y5OexOmz",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "OuolyBMu1taVMYDC": 3
+      },
+      "_key": "!actors.items!lPCK41pC20TFd6Rs.lXic4MEGUA5yRHrf"
+    },
+    {
+      "name": "Aprendizado",
+      "type": "race_ability",
+      "_id": "SkRJSbfhR7R5U926",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "xp": 10,
+        "jp": {
+          "jpc": false,
+          "jpd": false,
+          "jps": false
+        },
+        "bonus_damage_archery": false,
+        "rogue_talent": "none",
+        "description": "<p>Humanos aprendem tudo o que se prop&otilde;em a fazer de forma muito mais r&aacute;pida que as outras ra&ccedil;as. Com isso, um humano recebe um b&ocirc;nus de 10% sobre toda experi&ecirc;ncia (XP) recebida.</p>"
+      },
+      "effects": [],
+      "folder": "OtfJxpNOiAyYBI0T",
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": -100000,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "OuolyBMu1taVMYDC": 3
+      },
+      "_key": "!actors.items!lPCK41pC20TFd6Rs.SkRJSbfhR7R5U926"
+    },
+    {
+      "name": "Adaptabilidade",
+      "type": "race_ability",
+      "_id": "liQLa16dVfEB3zYG",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "xp": null,
+        "jp": {
+          "jpc": true,
+          "jpd": true,
+          "jps": true
+        },
+        "bonus_damage_archery": false,
+        "rogue_talent": "none",
+        "description": "<p>Os humanos s&atilde;o muito adapt&aacute;veis e diversos entre si, fazendo com que possam escolher onde alocar um b&ocirc;nus nas suas Jogadas de Prote&ccedil;&atilde;o. Humanos recebem um b&ocirc;nus de +1 em uma &uacute;nica JP &agrave; sua escolha.</p>"
+      },
+      "effects": [],
+      "folder": "OtfJxpNOiAyYBI0T",
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "OuolyBMu1taVMYDC": 3
+      },
+      "_key": "!actors.items!lPCK41pC20TFd6Rs.liQLa16dVfEB3zYG"
+    },
+    {
+      "folder": "BJaYANjw0NaKNxsi",
+      "name": "Guerreiro",
+      "type": "class",
+      "_id": "HWxmNkkYvZzOnQA7",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "hp": null,
+        "high_level_hp_bonus": null,
+        "restrictions": {
+          "alignments": [],
+          "races": []
+        },
+        "levels": {
+          "1": {
+            "ba": 1,
+            "jp": 5
+          },
+          "2": {
+            "ba": 2,
+            "jp": 5,
+            "xp": 2000
+          },
+          "3": {
+            "ba": 3,
+            "jp": 6,
+            "xp": 4000
+          },
+          "4": {
+            "ba": 4,
+            "jp": 6,
+            "xp": 7000
+          },
+          "5": {
+            "ba": 5,
+            "jp": 8,
+            "xp": 10000
+          },
+          "6": {
+            "ba": 6,
+            "jp": 8,
+            "xp": 20000
+          },
+          "7": {
+            "ba": 7,
+            "jp": 10,
+            "xp": 30000
+          },
+          "8": {
+            "ba": 8,
+            "jp": 10,
+            "xp": 40000
+          },
+          "9": {
+            "ba": 9,
+            "jp": 11,
+            "xp": 50000
+          },
+          "10": {
+            "ba": 10,
+            "jp": 11,
+            "xp": 100000
+          },
+          "11": {
+            "ba": 11,
+            "jp": 13,
+            "xp": 200000
+          },
+          "12": {
+            "ba": 12,
+            "jp": 13,
+            "xp": 300000
+          },
+          "13": {
+            "ba": 13,
+            "jp": 14,
+            "xp": 400000
+          },
+          "14": {
+            "ba": 14,
+            "jp": 14,
+            "xp": 500000
+          },
+          "15": {
+            "ba": 15,
+            "jp": 16,
+            "xp": 600000
+          }
+        },
+        "class_abilities": [
+          "Compendium.olddragon2e.classes.Item.SGRYNvbZzIPqTvJI",
+          "Compendium.olddragon2e.classes.Item.1UxolQXcT9gXGUTQ",
+          "Compendium.olddragon2e.classes.Item.nnSEQlCZFymP3Jy3",
+          "Compendium.olddragon2e.classes.Item.VJpr0IcKxyhDGYaR"
+        ],
+        "flavor": "<p>Aventureiros especializados em combate, est&atilde;o sempre na linha de frente e s&atilde;o mortais quando desembainham suas armas.</p>",
+        "description": "<h1>A Carreira do Guerreiro</h1>\n<p>O Guerreiro dos n&iacute;veis baixos &eacute; o homem comum com alguma per&iacute;cia em armas que se torna um aventureiro.</p>\n<p>Pouco a pouco ele se torna o her&oacute;i da vila, acumulando experi&ecirc;ncia e riquezas, expandindo sua fama para al&eacute;m das fronteiras da sua &aacute;rea de atua&ccedil;&atilde;o, at&eacute; que seu nome seja reconhecido em terras distantes.</p>\n<p>Essa fase da sua carreira &eacute; quase que totalmente focada em acumular recursos e tornar seu nome reconhecido como grande l&iacute;der militar.</p>\n<p>Ele sabe que se fizer seu trabalho corretamente, seu poder o credenciar&aacute; a coisas grandes</p>\n<p>Al&eacute;m de manter-se vivo, faz o poss&iacute;vel para vencer seus desafios, sobreviver a miss&otilde;es cada vez mais perigosas e, claro, criar la&ccedil;os profissionais, e talvez pessoais, com nobres poderosos.</p>\n<p>Vender-se como algu&eacute;m militarmente combativo e destemido &eacute; importante para suas pretens&otilde;es, ent&atilde;o o Guerreiro procura usar o tempo dispon&iacute;vel para isso, pois sabe que se o trabalho for bem realizado agora, coisas grandes o aguardar&atilde;o.</p>\n<p>A nobreza o espera, e tudo o que ela significa (riqueza, poder e conforto) dependem apenas do Guerreiro e de sua habilidade em combater.</p>",
+        "equipment_restrictions": {
+          "weapons": "Pode usar todas as armas.",
+          "armors": "Pode usar todas as armaduras.",
+          "magic_items": "Não pode usar cajados, varinhas e pergaminhos mágicos com exceção dos pergaminhos de proteção."
+        }
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.classes.Item.bkzh1k7B0ncxQfHR",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "OuolyBMu1taVMYDC": 3
+      },
+      "_key": "!actors.items!lPCK41pC20TFd6Rs.HWxmNkkYvZzOnQA7"
+    },
+    {
+      "folder": "96RMq2HZS5SVLUTT",
+      "name": "Aparar",
+      "type": "class_ability",
+      "_id": "noLxkJCjMAmh61QX",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Um Guerreiro pode, ap&oacute;s receber um ataque f&iacute;sico que o atinja e antes da jogada de dano desse ataque, escolher sacrificar seu escudo ou uma arma que esteja portando para absorver todo o dano do ataque recebido.</p>\n<p>Armas e Escudos usados em um aparar ficar&atilde;o inutilizados e danificados. Armas e Escudos m&aacute;gicos possuem uma chance de 1-2 em 1d6 de se danificarem, reduzindo seus b&ocirc;nus (de ataque/defesa) em 1 de modo que um escudo +3 ao ser usado em um aparar, e se danificado, passa ter como b&ocirc;nus de defesa +2 e assim sucessivamente.</p>\n<p>Um item m&aacute;gico que perder todos os b&ocirc;nus estar&aacute; permanentemente destru&iacute;do. Apenas ataques provenientes de inimigos grandes ou menores poder&atilde;o ser aparados.</p>",
+        "level": 1,
+        "daily_uses": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0,
+          "13": 0,
+          "14": 0,
+          "15": 0
+        }
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "OuolyBMu1taVMYDC": 3
+      },
+      "_key": "!actors.items!lPCK41pC20TFd6Rs.noLxkJCjMAmh61QX"
+    },
+    {
+      "folder": "96RMq2HZS5SVLUTT",
+      "name": "Maestria em Arma",
+      "type": "class_ability",
+      "_id": "xIwZBQRuZOKmYk9S",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>O Guerreiro se torna Mestre em uma arma &agrave; sua escolha, recebendo um b&ocirc;nus de +1 no dano daquela arma.</p>",
+        "level3": "<p>O Guerreiro evolui sua maestria para uma segunda arma &agrave; sua escolha e melhora o b&ocirc;nus no dano de ambas as armas para +2.</p>",
+        "level10": "<p>O Guerreiro evolui sua maestria para todas as armas semelhantes &agrave;quelas que ele j&aacute; possui maestria, recebendo b&ocirc;nus em todas as armas pertencentes a estes grupos.</p>\n<p>Os grupos de armas dispon&iacute;veis s&atilde;o: cortantes, perfurante, impactantes, disparos, hastes ou arremesso. Todas as armas desses grupos melhoram seus b&ocirc;nus de dano para +3.</p>",
+        "level": 1,
+        "daily_uses": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0,
+          "13": 0,
+          "14": 0,
+          "15": 0
+        }
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 150000,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "OuolyBMu1taVMYDC": 3
+      },
+      "_key": "!actors.items!lPCK41pC20TFd6Rs.xIwZBQRuZOKmYk9S"
+    },
+    {
+      "folder": "96RMq2HZS5SVLUTT",
+      "name": "Ataque Extra",
+      "type": "class_ability",
+      "_id": "BtDevSMs3XSMaUt2",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Um Guerreiro no 6&ordm; n&iacute;vel adquire um segundo ataque, corpo a corpo ou &agrave; dist&acirc;ncia, com uma mesma arma na qual possua maestria.</p>\n<p>Este segundo ataque &eacute; realizado ap&oacute;s o primeiro ataque, logo em sequ&ecirc;ncia, antes da a&ccedil;&atilde;o do pr&oacute;ximo jogador na ordem da iniciativa com a mesma BA usada no primeiro ataque.</p>",
+        "level": 6,
+        "daily_uses": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0,
+          "13": 0,
+          "14": 0,
+          "15": 0
+        }
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "OuolyBMu1taVMYDC": 3
+      },
+      "_key": "!actors.items!lPCK41pC20TFd6Rs.BtDevSMs3XSMaUt2"
+    },
+    {
+      "folder": "96RMq2HZS5SVLUTT",
+      "name": "Reputação",
+      "type": "class_ability",
+      "_id": "7x1FXlEmtHYV4fEo",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>O Guerreiro de alto n&iacute;vel atinge um grau superior de reconhecimento pelos seus feitos, obtendo Reputa&ccedil;&atilde;o 1 em 1d6. O valor de Reputa&ccedil;&atilde;o evolui em 1 at&eacute; o m&aacute;ximo de 1-5 em 1d6 no 15&ordm; n&iacute;vel.</p>",
+        "level": 11,
+        "daily_uses": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0,
+          "13": 0,
+          "14": 0,
+          "15": 0
+        }
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "OuolyBMu1taVMYDC": 3
+      },
+      "_key": "!actors.items!lPCK41pC20TFd6Rs.7x1FXlEmtHYV4fEo"
+    },
+    {
+      "folder": "jMvjD9l8URkPiaXR",
+      "name": "Armadura de Placas",
+      "type": "armor",
+      "_id": "LMmkRmE4oTTURZbg",
+      "img": "systems/olddragon2e/assets/equipment-concepts/armor.svg",
+      "system": {
+        "odo_id": "armadura-de-placas",
+        "quantity": 1,
+        "cost": "300 PO",
+        "description": "Pesada, Metal.",
+        "weight_in_load": 3,
+        "weight_in_grams": null,
+        "magic_item": false,
+        "bonus_ca": 5,
+        "is_equipped": true
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.zBIRg3zkST6ivDrg",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "OuolyBMu1taVMYDC": 3
+      },
+      "_key": "!actors.items!lPCK41pC20TFd6Rs.LMmkRmE4oTTURZbg"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726729526743,
+    "modifiedTime": 1726729546155,
+    "lastModifiedBy": "OuolyBMu1taVMYDC",
+    "exportSource": null
+  },
+  "_id": "lPCK41pC20TFd6Rs",
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "OuolyBMu1taVMYDC": 3
+  },
+  "_key": "!actors!lPCK41pC20TFd6Rs"
+}

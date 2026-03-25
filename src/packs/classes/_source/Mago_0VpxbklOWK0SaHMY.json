@@ -1,0 +1,123 @@
+{
+  "folder": "MO0gmi5xUlAe4NIf",
+  "name": "Mago",
+  "type": "class",
+  "_id": "0VpxbklOWK0SaHMY",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "equipment_restrictions": {
+      "weapons": "Apenas pequenas. Armas grandes ou médias geram ataques difíceis para Magos.",
+      "armors": "Nenhuma. Usar escudos ou armaduras impede a conjuração de magias e protegem apenas metade da CA normal.",
+      "magic_items": "Podem usar todos os tipos."
+    },
+    "hp": null,
+    "high_level_hp_bonus": null,
+    "restrictions": {
+      "alignments": [],
+      "races": []
+    },
+    "levels": {
+      "1": {
+        "ba": 0,
+        "jp": 5
+      },
+      "2": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 2500
+      },
+      "3": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 5000
+      },
+      "4": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 8500
+      },
+      "5": {
+        "ba": 2,
+        "jp": 7,
+        "xp": 11500
+      },
+      "6": {
+        "ba": 2,
+        "jp": 7,
+        "xp": 23000
+      },
+      "7": {
+        "ba": 2,
+        "jp": 7,
+        "xp": 33000
+      },
+      "8": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 43000
+      },
+      "9": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 53000
+      },
+      "10": {
+        "ba": 3,
+        "jp": 10,
+        "xp": 106000
+      },
+      "11": {
+        "ba": 4,
+        "jp": 10,
+        "xp": 210000
+      },
+      "12": {
+        "ba": 4,
+        "jp": 10,
+        "xp": 320000
+      },
+      "13": {
+        "ba": 4,
+        "jp": 10,
+        "xp": 430000
+      },
+      "14": {
+        "ba": 5,
+        "jp": 13,
+        "xp": 540000
+      },
+      "15": {
+        "ba": 5,
+        "jp": 13,
+        "xp": 650000
+      }
+    },
+    "class_abilities": [
+      "Compendium.olddragon2e.classes.Item.O1qcEoKJbnjLyeA5",
+      "Compendium.olddragon2e.classes.Item.ox0atEvFOeV2vyYx",
+      "Compendium.olddragon2e.classes.Item.SQHJbzbyrZ9heyj7",
+      "Compendium.olddragon2e.classes.Item.azIGiri8ypfssgvc"
+    ],
+    "flavor": "<p>Aventureiro estudioso, especializado nas artes arcanas, dedicado a conjurar magias escritas em grim&oacute;rios e pergaminhos.</p>",
+    "description": "<h1>A Carreira do Mago</h1>\n<p>O Mago de n&iacute;veis baixos &eacute; um aficionado por obter conhecimento arcano.</p>\n<p>A estrada, o desconforto, as masmorras escuras e frias e at&eacute; as tediosas companhias do seu grupo de aventureiro, s&atilde;o o pre&ccedil;o a se pagar para ter acesso ao conhecimento em uma carreira na qual o poder &eacute; medido por aquilo que se sabe e se conhece.</p>\n<p>Abaixo do brilho dos metais preciosos, voc&ecirc; sabe que h&aacute; conhecimentos ancestrais a serem adquiridos. Cada tumba milenar profanada esconde segredos h&aacute; muito perdidos, e foi para isso que voc&ecirc; resolveu se aventurar.</p>\n<p>Com o tempo, seu conhecimento se reverter&aacute; em poder e isso o tornar&aacute; temido. Afinal, &eacute; natural ter medo daquilo que n&atilde;o se compreende, e ser&aacute; a&iacute; que voc&ecirc; ter&aacute; conhecimento suficiente para se estabelecer em algum canto e terminar seus dias estudando tudo o que juntou ao longo da vida.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726713499377,
+    "lastModifiedBy": "qL3iBUN7HcwSiU0i",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!0VpxbklOWK0SaHMY"
+}

@@ -1,0 +1,1097 @@
+{
+  "folder": "7bWy8xmda2WLdRQV",
+  "name": "Eledriel (2º nível)",
+  "type": "character",
+  "img": "systems/olddragon2e/assets/basic-characters/eledriel.webp",
+  "system": {
+    "odo_id": "",
+    "level": 2,
+    "hp": {
+      "value": 12,
+      "max": 12
+    },
+    "forca": 14,
+    "destreza": 12,
+    "constituicao": 9,
+    "inteligencia": 9,
+    "sabedoria": 15,
+    "carisma": 10,
+    "jpd": {
+      "class": 5,
+      "race": 1
+    },
+    "jpc": {
+      "class": 5,
+      "race": 0
+    },
+    "jps": {
+      "class": 5,
+      "race": 0
+    },
+    "economy": {
+      "cp": 0,
+      "sp": 0,
+      "gp": 10,
+      "count": 0,
+      "load": 0
+    },
+    "details": {
+      "alignment": "ordeiro",
+      "languages": "Comum, Élfico",
+      "reputation": 0,
+      "appearance": "<p>Linda (Corpo); Cabelos longos (Cabelos); Jovem (Geral)</p>",
+      "personality": "<p>Otimista (Sobre todo o resto); Alerta (Sobre si mesmo); Gentil (Sobre outras pessoas)</p>",
+      "background": "<p>Esta sacerdotisa cresceu em uma regi&atilde;o de conflitos entre o povo &eacute;lfico e os orcs. Aprendeu a ser uma curandeira de batalha, mas acabou tendo que entrar tamb&eacute;m para combater. Seu pai ent&atilde;o a orientou a buscar sabedoria no mundo exterior para um dia regressar e ajudar seu povo a vencer a guerra.</p>",
+      "notes": ""
+    },
+    "campanha_url": "",
+    "url": "",
+    "ac_extra": 0,
+    "class_jpd": 0,
+    "class_jpc": 0,
+    "class_jps": 0,
+    "current_xp": 2275,
+    "jp_race_bonus": "jpd"
+  },
+  "prototypeToken": {
+    "name": "Eledriel",
+    "displayName": 30,
+    "actorLink": true,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "systems/olddragon2e/assets/basic-characters/eledriel-token.webp",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "color": null,
+      "negative": false,
+      "priority": 0
+    },
+    "sight": {
+      "enabled": true,
+      "range": 18,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0,
+      "color": null
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null
+  },
+  "items": [
+    {
+      "folder": null,
+      "name": "Arma Abençoada",
+      "type": "spell",
+      "_id": "n6ba7OEvHoueyKJw",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "odo_id": "arma-abencoada",
+        "description": "<p>Esta magia permite ao conjurador abençoar qualquer arma não mágica. Todo ataque com essa arma é um ataque fácil. Caso a arma abençoada seja uma arma natural, de madeira ou de pedra, receberá ainda um bônus de +1d4 no dano causado.</p>",
+        "school": "arcane",
+        "circle": "1",
+        "arcane": "null",
+        "divine": "1",
+        "necromancer": "null",
+        "illusionist": "null",
+        "reverse": false,
+        "range": "toque",
+        "duration": "1 turno",
+        "jp": "nenhuma"
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.spells.Item.3OpAGYsRMi1EDdf8",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "qoQCD0ZieZJRQUgb": 3
+      },
+      "_key": "!actors.items!3zfuVwBn4EaZG6fm.n6ba7OEvHoueyKJw"
+    },
+    {
+      "folder": null,
+      "name": "Santuário",
+      "type": "spell",
+      "_id": "Gxq88SAVQEndQndv",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "odo_id": "santuario",
+        "description": "<p>Esta magia cria uma aura de proteção no conjurador.  Todos que desejarem atacar o conjurador, devem realizar uma JPS. Caso falhem, não conseguirão atacá-lo, ignorando sua presença até o final do efeito da magia.</p>\n\n<p>Santuário não protege do efeito de magias de área, e perde o efeito (dissipando-se) caso o conjurador ataque ou conjure magias de ataque.</p>",
+        "school": "arcane",
+        "circle": "1",
+        "arcane": "null",
+        "divine": "1",
+        "necromancer": "null",
+        "illusionist": "null",
+        "reverse": false,
+        "range": "pessoal",
+        "duration": "1 turno + 1/nível",
+        "jp": "JPS nega"
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.spells.Item.GoHFkDpBBAW4uYsn",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "qoQCD0ZieZJRQUgb": 3
+      },
+      "_key": "!actors.items!3zfuVwBn4EaZG6fm.Gxq88SAVQEndQndv"
+    },
+    {
+      "folder": "bkBRbMCUMv15wltn",
+      "name": "Maça",
+      "type": "weapon",
+      "_id": "U1k4PKUvBId3aW5V",
+      "img": "systems/olddragon2e/assets/equipment-concepts/weapon.svg",
+      "system": {
+        "odo_id": "maca",
+        "quantity": 1,
+        "cost": "6 PO",
+        "description": "Média, Impactante.",
+        "weight_in_load": 2,
+        "weight_in_grams": null,
+        "magic_item": false,
+        "bonus_ca": null,
+        "type": "melee",
+        "damage_type": "bludgeoning",
+        "damage": "1d8",
+        "bonus_damage": null,
+        "bonus_ba": null,
+        "shoot_range": null,
+        "throw_range": null,
+        "arrow": false,
+        "bolt": false,
+        "bolt_small": false,
+        "polearm": false,
+        "two_handed": false,
+        "versatile": false,
+        "is_equipped": true
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.xBcBQL5MqrJ95y4n",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "_key": "!actors.items!3zfuVwBn4EaZG6fm.U1k4PKUvBId3aW5V"
+    },
+    {
+      "folder": "jMvjD9l8URkPiaXR",
+      "name": "Cota de Malha",
+      "type": "armor",
+      "_id": "BNxBrkpCtFdwIW0c",
+      "img": "systems/olddragon2e/assets/equipment-concepts/armor.svg",
+      "system": {
+        "odo_id": "cota-de-malha",
+        "quantity": 1,
+        "cost": "60 PO",
+        "description": "Média, Metal.",
+        "weight_in_load": 2,
+        "weight_in_grams": null,
+        "magic_item": false,
+        "bonus_ca": 4,
+        "is_equipped": true
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.D4y6KejFy4pzVRh4",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "_key": "!actors.items!3zfuVwBn4EaZG6fm.BNxBrkpCtFdwIW0c"
+    },
+    {
+      "folder": "FruQBTgNDrI3j59d",
+      "name": "Escudo",
+      "type": "shield",
+      "_id": "1KPww8Jng4UNK9hu",
+      "img": "systems/olddragon2e/assets/equipment-concepts/shield.svg",
+      "system": {
+        "odo_id": "escudo",
+        "quantity": 1,
+        "cost": "8 PO",
+        "description": "Leve, Mão Exclusiva, Madeira.",
+        "weight_in_load": 1,
+        "weight_in_grams": null,
+        "magic_item": false,
+        "bonus_ca": 1,
+        "is_equipped": true
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.TKq2Uwsx5rBKeyvs",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "_key": "!actors.items!3zfuVwBn4EaZG6fm.1KPww8Jng4UNK9hu"
+    },
+    {
+      "folder": "PAnTXGXA0MQpkYub",
+      "name": "Água Benta",
+      "type": "misc",
+      "_id": "lkCtQJr5p8V5y2i7",
+      "img": "systems/olddragon2e/assets/equipment-concepts/misc.svg",
+      "system": {
+        "odo_id": "agua-benta",
+        "quantity": 2,
+        "cost": "25 PO",
+        "description": "Frasco de 500 ml. Dano ácido de 1d6 em mortos-vivos e demônios.",
+        "weight_in_load": null,
+        "weight_in_grams": 500,
+        "magic_item": false,
+        "is_equipped": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.7YKcvEijMDXjnG2m",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "_key": "!actors.items!3zfuVwBn4EaZG6fm.lkCtQJr5p8V5y2i7"
+    },
+    {
+      "name": "Poção de Cura",
+      "type": "misc",
+      "_id": "NIX5L13aRttKUjCe",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "quantity": 2,
+        "weight_in_load": null,
+        "weight_in_grams": 250,
+        "magic_item": true,
+        "is_equipped": false,
+        "description": "Cura 1d8+1 pontos de vida perdidos como uma magia divina de 1º círculo \"Curar Ferimentos\".",
+        "cost": "40 PO"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!3zfuVwBn4EaZG6fm.NIX5L13aRttKUjCe"
+    },
+    {
+      "folder": "PAnTXGXA0MQpkYub",
+      "name": "Ração de viagem",
+      "type": "misc",
+      "_id": "Tzp01KD1QWq8ApoT",
+      "img": "systems/olddragon2e/assets/equipment-concepts/misc.svg",
+      "system": {
+        "odo_id": "racao-de-viagem",
+        "quantity": 3,
+        "cost": "1 PO",
+        "description": "Ração diária de comida para viagem para uma pessoa.",
+        "weight_in_load": null,
+        "weight_in_grams": 500,
+        "magic_item": false,
+        "is_equipped": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.aHD8O1QCMitXy3I9",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "_key": "!actors.items!3zfuVwBn4EaZG6fm.Tzp01KD1QWq8ApoT"
+    },
+    {
+      "folder": "PAnTXGXA0MQpkYub",
+      "name": "Símbolo divino",
+      "type": "misc",
+      "_id": "AMtGflWoEin0HEhz",
+      "img": "systems/olddragon2e/assets/equipment-concepts/misc.svg",
+      "system": {
+        "odo_id": "simbolo-divino",
+        "quantity": 1,
+        "cost": "1 PO",
+        "description": "Simples e pequeno, de madeira ou latão, para Afastar Mortos-Vivos.",
+        "weight_in_load": null,
+        "weight_in_grams": 500,
+        "magic_item": false,
+        "is_equipped": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.L1vzHoA0kso2cRr9",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "_key": "!actors.items!3zfuVwBn4EaZG6fm.AMtGflWoEin0HEhz"
+    },
+    {
+      "folder": "vUaRYqh0qGZgJ326",
+      "name": "Mochila",
+      "type": "container",
+      "_id": "tMSKO02MxjSXd6Uk",
+      "img": "systems/olddragon2e/assets/equipment-concepts/container.svg",
+      "system": {
+        "odo_id": "mochila",
+        "quantity": 1,
+        "cost": "2 PO",
+        "description": "De couro, com compartimentos para exploradores e reforço para peso. Adiciona 5 ao valor de carga do personagem. Comporta até 400 moedas.",
+        "weight_in_load": null,
+        "weight_in_grams": null,
+        "magic_item": false,
+        "increases_load_by": 5,
+        "is_equipped": true
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.K5bh3HGT8fC4Fuzb",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "_key": "!actors.items!3zfuVwBn4EaZG6fm.tMSKO02MxjSXd6Uk"
+    },
+    {
+      "folder": "kmiIksN2a1Lt6IPN",
+      "name": "Elfo",
+      "type": "race",
+      "_id": "TXLIrZzWTc6xmJBh",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "movement": 9,
+        "infravision": 18,
+        "alignment_tendency": "neutro",
+        "race_abilities": [
+          "Compendium.olddragon2e.races.Item.dWB72uTg15J9GUQN",
+          "Compendium.olddragon2e.races.Item.1JK73DDEmWlYpWPN",
+          "Compendium.olddragon2e.races.Item.HhAlOQoDwqclrZkv",
+          "Compendium.olddragon2e.races.Item.FnK8iEyKG0kMsb54"
+        ],
+        "flavor": "<p>Misteriosos, Longevos e Graciosos habitantes das Florestas.</p>",
+        "description": "<p>Os elfos s&atilde;o das mais longevas ra&ccedil;as encontradas nos mundos de fantasia e a sua rela&ccedil;&atilde;o com o tempo doutrina boa parte das suas caracter&iacute;sticas, personalidade e a forma como as outras ra&ccedil;as os enxergam e se relacionam com eles.</p>\n<p>Fisicamente s&atilde;o esguios e at&eacute; um pouco franzinos se comparados a um humano, al&eacute;m de ligeiramente mais baixos. Seus cabelos, compridos para machos e f&ecirc;meas, est&atilde;o sempre penteados, adornados com acess&oacute;rios e podem ser encontrados em praticamente todas as cores.</p>\n<p>A caracter&iacute;stica f&iacute;sica mais marcante de um elfo est&aacute; nas suas orelhas &ndash; pontudas e longas &ndash;, muito embora o tra&ccedil;o dos seus olhos &ndash; amendoados, delicados e levemente alongados &ndash; seja uma caracter&iacute;stica igualmente marcante.</p>\n<p>A rela&ccedil;&atilde;o do elfo com o tempo dita sua forma de pensar e agir. Como frequentemente atingem 1.000 anos de vida, elfos se sentem compelidos a ocuparem suas vidas com o que mais valorizam como a dan&ccedil;a, a m&uacute;sica, a esgrima, o arqueirismo e a magia arcana.</p>\n<p>Isso pode fazer as pessoas acreditarem que Elfos s&atilde;o distantes ou, de certa forma, um pouco f&uacute;teis. Um erro comum cometido pelos observadores menos atentos.</p>\n<p>Outra caracter&iacute;stica dos elfos, sobretudo os que est&atilde;o fora da sua terra, &eacute; a dist&acirc;ncia, dando-lhes uma certa caracter&iacute;stica de frieza e at&eacute; prepot&ecirc;ncia. Por se considerarem estranhos fora de suas fronteiras, possuem dificuldade de se envolver nos problemas das outras ra&ccedil;as, refletindo na dificuldade de criar la&ccedil;os de amizade.</p>\n<p>No entanto, quando um elfo &eacute; conquistado como amigo, a amizade se mostrar&aacute; duradoura. A amizade de um elfo dura mais do que muitas vidas, costumam dizer os humanos os quais puderam provar desse relacionamento. Vivendo tantos s&eacute;culos, esta &eacute; uma verdade incontest&aacute;vel.</p>\n<h1>Personalidade</h1>\n<p>Viver tanto tempo molda a personalidade de um elfo. O ritmo do tempo &eacute; excepcional para um elfo. As mudan&ccedil;as ocorrem t&atilde;o depressa que se tornam complicadas de seguir, ent&atilde;o, para que se importar? Melhor &eacute; focar na qualidade e n&atilde;o na quantidade. Se 100 espadas medianas podem ser confeccionadas, um elfo prefere gastar o mesmo tempo numa &uacute;nica pe&ccedil;a exemplar em qualidade e perfei&ccedil;&atilde;o.</p>\n<p>Com tanto tempo dispon&iacute;vel para aprender tantas coisas, desperdi&ccedil;ar tempo seria uma op&ccedil;&atilde;o bem &oacute;bvia, mas a&iacute; se esconde uma grandeza da sua ra&ccedil;a. Ao contr&aacute;rio do que possa parecer, elfos gostam de coisas bem-feitas e duradouras, assim como eles. Servi&ccedil;o bem-feito &eacute; sempre aquele com a maior dura&ccedil;&atilde;o.</p>\n<p>Essa rela&ccedil;&atilde;o entre qualidade, tempo e perfei&ccedil;&atilde;o molda todo o pensamento &eacute;lfico e a constru&ccedil;&atilde;o da sua personalidade.</p>\n<h1>O Elfo nas Aventuras</h1>\n<p>Apesar de bem mais raros que os humanos, elfos n&atilde;o s&atilde;o aventureiros improv&aacute;veis. A fome por conhecimento, desejo por viajar, a vontade de provar-se para os seus como um elfo exemplar e, principalmente, o tempo dispon&iacute;vel, s&atilde;o as principais for&ccedil;as a empurrar um elfo para a vida aventureira.</p>\n<p>As coisas mudam t&atilde;o rapidamente que acompanhar as mudan&ccedil;as, ou mesmo fazer parte destas mudan&ccedil;as, pode ser uma interessante for&ccedil;a motriz para eles.</p>\n<p>Eles querem acompanhar o que acontece, se aperfei&ccedil;oarem e se provarem como capazes.</p>\n<p>Elfos s&atilde;o aventureiros observadores que querem entender o mundo onde vivem.</p>"
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.races.Item.qZ5T7ZHQpGlmdfOq",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "OuolyBMu1taVMYDC": 3
+      },
+      "_key": "!actors.items!3zfuVwBn4EaZG6fm.TXLIrZzWTc6xmJBh"
+    },
+    {
+      "folder": "3MFJEb265IFyALkx",
+      "name": "Percepção Natural",
+      "type": "race_ability",
+      "_id": "BByQqYdWukW52z4c",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "xp": null,
+        "jp": {
+          "jpc": false,
+          "jpd": false,
+          "jps": false
+        },
+        "bonus_damage_archery": false,
+        "rogue_talent": "none",
+        "description": "<p>A forma como as casas &eacute;lficas s&atilde;o constru&iacute;das, respeitando a forma natural das &aacute;rvores e abrigos, d&aacute; aos elfos uma percep&ccedil;&atilde;o especial no que diz respeito a portas e passagens n&atilde;o convencionais e at&eacute; mesmo secretas.</p>\n<p>Ao passarem a at&eacute; 6 metros de uma porta secreta, mesmo que n&atilde;o a estejam procurando, os elfos podem detect&aacute;-la com um resultado 1 em 1d6, ou com um resultado de 1-2 em 1d6 caso estejam efetivamente procurando pela porta secreta.</p>"
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "OuolyBMu1taVMYDC": 3
+      },
+      "_key": "!actors.items!3zfuVwBn4EaZG6fm.BByQqYdWukW52z4c"
+    },
+    {
+      "folder": "3MFJEb265IFyALkx",
+      "name": "Graciosos",
+      "type": "race_ability",
+      "_id": "WyedHZhXZm9YP2ZT",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "xp": null,
+        "jp": {
+          "jpc": false,
+          "jpd": true,
+          "jps": false
+        },
+        "bonus_damage_archery": false,
+        "rogue_talent": "none",
+        "description": "<p>Os elfos controlam com precis&atilde;o seus movimentos no espa&ccedil;o ao redor do seu corpo, recebendo um b&ocirc;nus de +1 em qualquer teste de JPD.</p>"
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 50000,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "OuolyBMu1taVMYDC": 3
+      },
+      "_key": "!actors.items!3zfuVwBn4EaZG6fm.WyedHZhXZm9YP2ZT"
+    },
+    {
+      "folder": "3MFJEb265IFyALkx",
+      "name": "Arma Racial",
+      "type": "race_ability",
+      "_id": "Tl1swtl9MGLF4ZRh",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "xp": null,
+        "jp": {
+          "jpc": false,
+          "jpd": false,
+          "jps": false
+        },
+        "bonus_damage_archery": true,
+        "rogue_talent": "none",
+        "description": "<p>Os elfos possuem familiaridade com o arqueirismo, o qual consideram uma arte marcial, recebendo um b&ocirc;nus de +1 nos danos causados em seus ataques &agrave; dist&acirc;ncia com os arcos.</p>"
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "OuolyBMu1taVMYDC": 3
+      },
+      "_key": "!actors.items!3zfuVwBn4EaZG6fm.Tl1swtl9MGLF4ZRh"
+    },
+    {
+      "folder": "3MFJEb265IFyALkx",
+      "name": "Imunidades",
+      "type": "race_ability",
+      "_id": "GPBTy305XMZYZxbL",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "xp": null,
+        "jp": {
+          "jpc": false,
+          "jpd": false,
+          "jps": false
+        },
+        "bonus_damage_archery": false,
+        "rogue_talent": "none",
+        "description": "<p>Os elfos s&atilde;o imunes a efeitos ou magias que envolvam sono e tamb&eacute;m contra a paralisa&ccedil;&atilde;o causada por um Ghoul.</p>"
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "OuolyBMu1taVMYDC": 3
+      },
+      "_key": "!actors.items!3zfuVwBn4EaZG6fm.GPBTy305XMZYZxbL"
+    },
+    {
+      "folder": "kR9toNdwkvDu8OO5",
+      "name": "Clérigo",
+      "type": "class",
+      "_id": "bgCtQiwBTeTxIoIW",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "equipment_restrictions": {
+          "weapons": "Só podem usar armas impactantes. Usar armas cortantes ou perfurantes faz o Clérigo perder suas magias até realizar uma penitência para restaurar o abalo na sua fé.",
+          "armors": "Podem usar todas as armaduras.",
+          "magic_items": "O Clérigo é capaz de usar todos os tipos de itens mágicos desde que sejam ordeiros."
+        },
+        "hp": null,
+        "high_level_hp_bonus": null,
+        "restrictions": {
+          "alignments": [],
+          "races": []
+        },
+        "levels": {
+          "1": {
+            "ba": 1,
+            "jp": 5
+          },
+          "2": {
+            "ba": 1,
+            "jp": 5,
+            "xp": 1500
+          },
+          "3": {
+            "ba": 1,
+            "jp": 5,
+            "xp": 3000
+          },
+          "4": {
+            "ba": 3,
+            "jp": 7,
+            "xp": 5500
+          },
+          "5": {
+            "ba": 3,
+            "jp": 7,
+            "xp": 8500
+          },
+          "6": {
+            "ba": 3,
+            "jp": 7,
+            "xp": 17000
+          },
+          "7": {
+            "ba": 5,
+            "jp": 9,
+            "xp": 27000
+          },
+          "8": {
+            "ba": 5,
+            "jp": 9,
+            "xp": 37000
+          },
+          "9": {
+            "ba": 5,
+            "jp": 9,
+            "xp": 47000
+          },
+          "10": {
+            "ba": 7,
+            "jp": 11,
+            "xp": 94000
+          },
+          "11": {
+            "ba": 7,
+            "jp": 11,
+            "xp": 190000
+          },
+          "12": {
+            "ba": 7,
+            "jp": 11,
+            "xp": 280000
+          },
+          "13": {
+            "ba": 9,
+            "jp": 13,
+            "xp": 370000
+          },
+          "14": {
+            "ba": 9,
+            "jp": 13,
+            "xp": 460000
+          },
+          "15": {
+            "ba": 9,
+            "jp": 13,
+            "xp": 550000
+          }
+        },
+        "class_abilities": [
+          "Compendium.olddragon2e.classes.Item.AsCIYZaMacXEs4M2",
+          "Compendium.olddragon2e.classes.Item.l15jhNum8mkGy0zS",
+          "Compendium.olddragon2e.classes.Item.Yi704UiBhtHLlYPd",
+          "Compendium.olddragon2e.classes.Item.uIuw6jY4CNzpg2he"
+        ],
+        "flavor": "<p>Aventureiro religioso e devoto das for&ccedil;as divinas do pante&atilde;o. Determinado e virtuoso, protege a todos usando seus milagres divinos.</p>",
+        "description": "<h1>A Carreira do Cl&eacute;rigo</h1>\n<p>O Cl&eacute;rigo dos n&iacute;veis baixos &eacute; o sacerdote rec&eacute;m-ordenado, treinado pela sua igreja para defender e propagar os dogmas de seu Deus ordeiro.</p>\n<p>Nem todo fiel entra sozinho pelas portas das igrejas e alguns precisam ser estimulados, convencidos e inspirados pela for&ccedil;a e o poder de sua divindade.</p>\n<p>A parte mais recompensadora da sua miss&atilde;o, no entanto, &eacute; expurgar o mundo do caos e das ofensas por meio dos ensinamentos de seu Deus.</p>\n<p>Voc&ecirc; sabe que foi escolhido para ser a arma de Deus a qual livrar&aacute; o mundo do pecado. Essa miss&atilde;o trar&aacute; reconhecimento ao seu trabalho, e seus superiores o avaliar&atilde;o. E, quando isso acontecer, voc&ecirc; sabe que se tornar&aacute; a inspira&ccedil;&atilde;o para que outros jovens o sucedam na incans&aacute;vel luta contra o caos.</p>"
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.classes.Item.cYfvA9p2XprFpamU",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "OuolyBMu1taVMYDC": 3
+      },
+      "_key": "!actors.items!3zfuVwBn4EaZG6fm.bgCtQiwBTeTxIoIW"
+    },
+    {
+      "folder": "ufgmdrL462rx4CSR",
+      "name": "Magias Divinas",
+      "type": "class_ability",
+      "_id": "rincMJMIa9T8lhuU",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "level": 1,
+        "description": "<p>Um Cl&eacute;rigo &eacute; capaz de lan&ccedil;ar magias divinas diariamente a partir do 1&ordm; n&iacute;vel. Para prepar&aacute;-las, o Cl&eacute;rigo deve rezar para o Pante&atilde;o e pedir que magias lhe sejam concedidas naquele dia, respeitando os seus limites de n&iacute;vel e de sabedoria.</p>",
+        "daily_uses": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0,
+          "13": 0,
+          "14": 0,
+          "15": 0
+        }
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "OuolyBMu1taVMYDC": 3
+      },
+      "_key": "!actors.items!3zfuVwBn4EaZG6fm.rincMJMIa9T8lhuU"
+    },
+    {
+      "folder": "ufgmdrL462rx4CSR",
+      "name": "Afastar Mortos-Vivos",
+      "type": "class_ability",
+      "_id": "io7XkxiaK10u5KWW",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "level": 1,
+        "description": "<p>O Cl&eacute;rigo &eacute; capaz de invocar o nome e o poder de sua divindade brandindo seu s&iacute;mbolo sagrado, fazendo os mortos-vivos a at&eacute; 18 metros e que n&atilde;o passem em um teste de moral no final da rodada, se contorcerem e tentarem a todo custo fugir do Cl&eacute;rigo.</p>\n<p><strong>Reduzir a P&oacute;</strong>: Se o morto-vivo n&atilde;o passar no Teste de Moral e o resultado dos dados for igual (tirando dois 4 nos dados, ou dois 5, ou ainda dois 6) o morto-vivo n&atilde;o &eacute; apenas afastado, mas tamb&eacute;m destru&iacute;do e reduzido a p&oacute;.</p>\n<p><strong>Alvo</strong>: Todos os mortos-vivos num raio de at&eacute; 18 metros do Cl&eacute;rigo s&atilde;o afetados pelo Afastar Mortos-vivos. Mortos-vivos bem-sucedidos no teste de moral no final da rodada ficam imunes a um novo Afastar Mortos-vivos proferidos por este Cl&eacute;rigo, at&eacute; este adquirir um novo n&iacute;vel.</p>",
+        "level3": "<p>O Cl&eacute;rigo recebe um b&ocirc;nus de +1 nos seus testes de Afastar Mortos-Vivos e pode tentar Afastar Mortos-Vivos duas vezes ao dia.</p>",
+        "level10": "<p>O Cl&eacute;rigo recebe um b&ocirc;nus de +2 nos seus testes de Afastar Mortos-Vivos e pode tentar Afastar Mortos-Vivos tr&ecirc;s vezes ao dia.</p>",
+        "daily_uses": {
+          "1": 1,
+          "2": 1,
+          "3": 2,
+          "4": 2,
+          "5": 2,
+          "6": 2,
+          "7": 2,
+          "8": 2,
+          "9": 2,
+          "10": 3,
+          "11": 3,
+          "12": 3,
+          "13": 3,
+          "14": 3,
+          "15": 3
+        }
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "OuolyBMu1taVMYDC": 3
+      },
+      "_key": "!actors.items!3zfuVwBn4EaZG6fm.io7XkxiaK10u5KWW"
+    },
+    {
+      "folder": "ufgmdrL462rx4CSR",
+      "name": "Cura Milagrosa",
+      "type": "class_ability",
+      "_id": "ZwcefI0PIiky0Kfg",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "level": 1,
+        "description": "<p>Cl&eacute;rigos podem trocar uma magia previamente memorizada por uma magia de Curar Ferimentos de 1&ordm; c&iacute;rculo.</p>",
+        "level6": "<p>O Cl&eacute;rigo evolui seu poder de Cura, podendo trocar uma magia memorizada por Curar Ferimentos de 3&ordm; c&iacute;rculo, que cura at&eacute; 2d8 pontos de vida.</p>",
+        "level10": "<p>O Cl&eacute;rigo evolui seu poder de Cura, podendo trocar uma magia memorizada por Curar Ferimentos de 5&ordm; c&iacute;rculo, que cura at&eacute; 3d8 pontos de vida.</p>",
+        "daily_uses": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0,
+          "13": 0,
+          "14": 0,
+          "15": 0
+        }
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "OuolyBMu1taVMYDC": 3
+      },
+      "_key": "!actors.items!3zfuVwBn4EaZG6fm.ZwcefI0PIiky0Kfg"
+    },
+    {
+      "folder": "ufgmdrL462rx4CSR",
+      "name": "Reputação",
+      "type": "class_ability",
+      "_id": "727IoqkVnkSyNVx2",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "level": 11,
+        "description": "<p>O Cl&eacute;rigo de alto n&iacute;vel atinge um grau superior de reconhecimento pelos seus feitos, obtendo Reputa&ccedil;&atilde;o 1 em 1d6. O valor de Reputa&ccedil;&atilde;o evolui em 1 at&eacute; o m&aacute;ximo de 1-5 em 1d6 no 15&ordm; n&iacute;vel.</p>",
+        "daily_uses": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0,
+          "13": 0,
+          "14": 0,
+          "15": 0
+        }
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "OuolyBMu1taVMYDC": 3
+      },
+      "_key": "!actors.items!3zfuVwBn4EaZG6fm.727IoqkVnkSyNVx2"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726729526743,
+    "modifiedTime": 1726729535718,
+    "lastModifiedBy": "OuolyBMu1taVMYDC",
+    "exportSource": null
+  },
+  "_id": "3zfuVwBn4EaZG6fm",
+  "sort": 300000,
+  "ownership": {
+    "default": 0,
+    "OuolyBMu1taVMYDC": 3
+  },
+  "_key": "!actors!3zfuVwBn4EaZG6fm"
+}

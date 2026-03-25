@@ -1,0 +1,47 @@
+{
+  "folder": "wxsm0wTyPaQ0EztN",
+  "name": "Ataque Extra",
+  "type": "class_ability",
+  "_id": "sRRH2O2kqHUfwTHg",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 10,
+    "description": "<p>O Elfo Aventureiro adquire um segundo ataque com sua arma racial escolhida no 1&ordm; n&iacute;vel (cimitarra ou arco). Este segundo ataque &eacute; realizado ap&oacute;s o primeiro ataque, logo em sequ&ecirc;ncia, antes da a&ccedil;&atilde;o do pr&oacute;ximo jogador na ordem da iniciativa com a mesma BA usada no primeiro ataque.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707440525,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!sRRH2O2kqHUfwTHg"
+}

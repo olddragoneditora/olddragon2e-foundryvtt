@@ -1,0 +1,47 @@
+{
+  "folder": "eu4GKQDw52soYs9F",
+  "name": "Inspirar",
+  "type": "class_ability",
+  "_id": "ZyJTKhSgUOavAFO6",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 3,
+    "description": "<p>O Bardo se for capaz de passar ao menos uma rodada atuando, e enquanto continuar mantendo a atua&ccedil;&atilde;o, consegue que seus aliados se tornem mais confiantes no sucesso. Um alvo inspirado pelo Bardo faz com que seus testes de atributos e ataques fiquem como se fossem um n&iacute;vel mais f&aacute;cil do que realmente s&atilde;o, tornando, por exemplo, testes muito dif&iacute;ceis em apenas testes dif&iacute;ceis.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707372669,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 50000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!ZyJTKhSgUOavAFO6"
+}

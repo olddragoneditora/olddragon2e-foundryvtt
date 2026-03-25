@@ -1,0 +1,49 @@
+{
+  "folder": "JLtCk7JhejKEa0pw",
+  "name": "Ataque Furtivo",
+  "type": "class_ability",
+  "_id": "4GGLAwptWJ8VhYuV",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 1,
+    "description": "<p>O Ladr&atilde;o que ataca ap&oacute;s ter se aproximado do inimigo furtivamente, &eacute; capaz de realizar um ataque muito f&aacute;cil, causando dano multiplicado por 2.</p>",
+    "level6": "<p>O dano do Ataque Furtivo &eacute; multiplicado por 3.</p>",
+    "level10": "<p>O dano do Ataque Furtivo &eacute; multiplicado por 4.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707515961,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!4GGLAwptWJ8VhYuV"
+}

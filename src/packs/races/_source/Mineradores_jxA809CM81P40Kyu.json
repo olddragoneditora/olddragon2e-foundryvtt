@@ -1,0 +1,37 @@
+{
+  "folder": "Iv107ixXe5rYPZ5w",
+  "name": "Mineradores",
+  "type": "race_ability",
+  "_id": "jxA809CM81P40Kyu",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "xp": null,
+    "jp": {
+      "jpc": false,
+      "jpd": false,
+      "jps": false
+    },
+    "bonus_damage_archery": false,
+    "rogue_talent": "none",
+    "description": "<p>Por mil&ecirc;nios, an&otilde;es aprendem desde cedo a avaliar passagens e condi&ccedil;&otilde;es de muralhas e portais.</p>\n<p>Por isso s&atilde;o capazes de detectar, mesmo que n&atilde;o estejam analisando ativamente, com um resultado de 1 em 1d6, anomalias em pedras, como armadilhas em cavernas ou fossos escondidos, ou com um resultado de 1-2 em 1d6 caso estejam efetivamente procurando.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726706632011,
+    "modifiedTime": 1726706642142,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!jxA809CM81P40Kyu"
+}

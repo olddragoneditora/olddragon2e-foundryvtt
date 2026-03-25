@@ -1,0 +1,37 @@
+{
+  "folder": "3MFJEb265IFyALkx",
+  "name": "Arma Racial",
+  "type": "race_ability",
+  "_id": "HhAlOQoDwqclrZkv",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "xp": null,
+    "jp": {
+      "jpc": false,
+      "jpd": false,
+      "jps": false
+    },
+    "bonus_damage_archery": true,
+    "rogue_talent": "none",
+    "description": "<p>Os elfos possuem familiaridade com o arqueirismo, o qual consideram uma arte marcial, recebendo um b&ocirc;nus de +1 nos danos causados em seus ataques &agrave; dist&acirc;ncia com os arcos.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726706632011,
+    "modifiedTime": 1726706655805,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!HhAlOQoDwqclrZkv"
+}

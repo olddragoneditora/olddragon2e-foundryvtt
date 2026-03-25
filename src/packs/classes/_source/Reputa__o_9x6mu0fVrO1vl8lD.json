@@ -1,0 +1,47 @@
+{
+  "folder": "pSA1kfvCGifgCZE3",
+  "name": "Reputação",
+  "type": "class_ability",
+  "_id": "9x6mu0fVrO1vl8lD",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 11,
+    "description": "<p>O Bruxo de alto n&iacute;vel atinge um grau superior de reconhecimento pelos seus feitos, obtendo Reputa&ccedil;&atilde;o 1 em 1d6. O valor de Reputa&ccedil;&atilde;o evolui em 1 at&eacute; o m&aacute;ximo de 1-5 em 1d6 no 15&ordm; n&iacute;vel.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707386975,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 800000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!9x6mu0fVrO1vl8lD"
+}
