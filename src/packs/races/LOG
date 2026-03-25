@@ -1,3 +1,9 @@
-2024/09/18-21:41:08.135 32bc Recovering log #3
-2024/09/18-21:41:08.169 32bc Delete type=0 #3
-2024/09/18-21:41:08.176 32bc Delete type=3 #2
+2026/03/25-13:24:42.390 3af0 Recovering log #5
+2026/03/25-13:24:42.393 3af0 Level-0 table #7: started
+2026/03/25-13:24:42.419 3af0 Level-0 table #7: 33051 bytes OK
+2026/03/25-13:24:42.433 3af0 Recovering log #8
+2026/03/25-13:24:42.437 3af0 Level-0 table #8: started
+2026/03/25-13:24:42.478 3af0 Level-0 table #8: 132678 bytes OK
+2026/03/25-13:24:42.505 3af0 Delete type=0 #8
+2026/03/25-13:24:42.507 3af0 Delete type=3 #4
+2026/03/25-13:24:42.509 3af0 Delete type=0 #5

@@ -5,3 +5,4 @@ export { KnockoutRoll } from './knockout-roll';
 export { JPRoll } from './jp-roll';
 export { BARoll } from './ba-roll';
 export { StatRoll } from './stat-roll';
+export { TalentRoll } from './talent-roll';

@@ -17,6 +17,53 @@
       }
     }
 
+    .rogue-talents {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+
+      .rogue-talents-header {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        align-items: center;
+
+        a.rogue-talent-add {
+          padding: 0.1rem;
+          border: 1px solid #666;
+          border-radius: 3px;
+          background-color: transparent;
+        }
+      }
+
+      ol {
+        margin: 0.5rem 0 0.2rem 0;
+        padding: 0;
+
+        li {
+          display: flex;
+          flex-direction: column;
+          gap: 0.2rem;
+          margin-bottom: 1rem;
+          padding: 0.5rem;
+          border: 1px solid #666;
+          border-radius: 3px;
+          background-color: transparent;
+
+          .rogue-talent-fields {
+            display: flex;
+            flex-direction: row;
+            gap: 0.5rem;
+            align-items: center;
+          }
+
+          textarea {
+            border-color: #7a7971;
+          }
+        }
+      }
+    }
+
     .daily-uses {
       display: flex;
       flex-direction: column;

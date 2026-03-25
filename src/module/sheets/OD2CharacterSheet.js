@@ -1,5 +1,14 @@
 import { showDialog } from '../helpers';
-import { AttackRoll, UnarmedAttackRoll, DamageRoll, KnockoutRoll, StatRoll, JPRoll, BARoll } from '../rolls';
+import {
+  AttackRoll,
+  UnarmedAttackRoll,
+  DamageRoll,
+  KnockoutRoll,
+  StatRoll,
+  JPRoll,
+  BARoll,
+  TalentRoll,
+} from '../rolls';
 import { updateActor } from '../api/characterImporter.js';
 
 export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
@@ -64,6 +73,23 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
       });
     }
 
+    // Talentos de Ladrão
+    const rogueTalents = [];
+    if (baseData.actor.system.has_rogue_talents) {
+      const raceBonuses = baseData.actor.system.rogue_talent_race_bonus;
+      const scores = baseData.actor.system.rogue_talent_scores;
+      for (const talent of baseData.actor.system.available_rogue_talents) {
+        rogueTalents.push({
+          key: talent.key,
+          label: talent.name,
+          description: talent.description,
+          score: scores[talent.key],
+          points: baseData.actor.system.rogue_talent_points[talent.key] || 0,
+          race_bonus: raceBonuses[talent.key] || 0,
+        });
+      }
+    }
+
     let sheetData = {
       owner: this.actor.isOwner,
       editable: this.isEditable,
@@ -81,6 +107,7 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
       vehicle: baseData.actor.system.vehicle_items,
       spell: baseData.actor.system.spell_items,
       spell_by_circle: spellByCircle,
+      rogue_talents: rogueTalents,
       config: CONFIG.olddragon2e,
     };
 
@@ -193,6 +220,7 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
       html.find('.stat-roll').click(this._onStatRoll.bind(this));
       html.find('.jp-roll').click(this._onJPRoll.bind(this));
       html.find('.ba-roll').click(this._onBARoll.bind(this));
+      html.find('.talent-roll').click(this._onTalentRoll.bind(this));
     }
 
     super.activateListeners(html);
@@ -641,6 +669,37 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
 
             await baRoll.roll(bonus, adjustment);
             baRoll.sendMessage(mode, adjustment);
+          },
+        },
+      },
+    });
+  }
+
+  // Teste de Talento de Ladrão
+  async _onTalentRoll(event) {
+    event.preventDefault();
+    const target = event.currentTarget;
+    const talentLabel = target.dataset.talentLabel;
+    const talentScore = parseInt(target.dataset.talentScore);
+
+    const talentRoll = new TalentRoll(this.actor, talentLabel, talentScore);
+
+    await showDialog({
+      title: `Teste de ${talentLabel}`,
+      content: 'systems/olddragon2e/templates/dialog/characters/talent-roll-dialog.hbs',
+      data: {
+        formula: talentRoll.formula(),
+      },
+      buttons: {
+        roll: {
+          icon: "<i class='fa-solid fa-dice-d6'></i>",
+          label: 'Rolar',
+          callback: async (html) => {
+            const bonus = html.find('#bonus').val();
+            const mode = html.find('#rollMode').val();
+
+            await talentRoll.roll(bonus);
+            talentRoll.sendMessage(mode);
           },
         },
       },

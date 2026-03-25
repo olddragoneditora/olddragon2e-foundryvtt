@@ -9,9 +9,30 @@
             <label class="font-bold">{{localize "olddragon2e.level"}}</label>
             <input name="system.level" type="text" value="{{system.level}}" data-dtype="Number">
         </div>
+        {{!-- Talentos de Ladrão --}}
+        <div class="rogue-talents">
+            <div class="rogue-talents-header">
+                <div class="font-bold">{{localize "olddragon2e.rogue_talents"}}</div>
+                <a class="rogue-talent-add"><i class="fa-solid fa-plus"></i> {{localize "olddragon2e.create"}}</a>
+            </div>
+            {{#if (gt system.rogue_talents.length 0)}}
+                <ol>
+                    {{#each system.rogue_talents as |talent|}}
+                    <li>
+                        <div class="rogue-talent-fields">
+                            <input name="system.rogue_talents.{{@index}}.key" type="text" value="{{talent.key}}" placeholder="Chave">
+                            <a class="rogue-talent-delete" data-index="{{@index}}" title="{{localize 'olddragon2e.delete'}}"><i class="fa-solid fa-trash"></i></a>
+                        </div>
+                        <input name="system.rogue_talents.{{@index}}.name" type="text" value="{{talent.name}}" placeholder="Nome">
+                        <textarea name="system.rogue_talents.{{@index}}.description" placeholder="Descrição">{{talent.description}}</textarea>
+                    </li>
+                    {{/each}}
+                </ol>
+            {{/if}}
+        </div>        
         {{!-- Usos Diários --}}
         <div class="daily-uses">
-            <div class="font-bold">{{localize "olddragon2e.class_ability.daily_uses"}}:</div>
+            <div class="font-bold">{{localize "olddragon2e.class_ability.daily_uses"}}</div>
             <div class="daily-uses-loop">
                 {{#each system.daily_uses as |level key|}}
                     <div class="on-level">

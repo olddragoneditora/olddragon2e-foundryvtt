@@ -42,6 +42,8 @@ export default class OD2ItemSheet extends foundry.appv1.sheets.ItemSheet {
       html.find('.weapon-checkbox').change(this._isWeapon.bind(this));
       html.find('.item-edit').click(this._onItemEdit.bind(this));
       html.find('.item-delete').click(this._onItemDelete.bind(this));
+      html.find('.rogue-talent-add').click(this._onRogueTalentAdd.bind(this));
+      html.find('.rogue-talent-delete').click(this._onRogueTalentDelete.bind(this));
     }
 
     html.on('drop', this._onDropItem.bind(this));
@@ -155,6 +157,21 @@ export default class OD2ItemSheet extends foundry.appv1.sheets.ItemSheet {
       },
       no: () => {},
     });
+  }
+
+  async _onRogueTalentAdd() {
+    const talents = foundry.utils.duplicate(this.item.system.rogue_talents || []);
+    const index = talents.length;
+    talents.push({ key: `talent_${index}`, name: '', description: '' });
+    await this.item.update({ 'system.rogue_talents': talents });
+  }
+
+  async _onRogueTalentDelete(event) {
+    event.preventDefault();
+    const index = parseInt(event.currentTarget.dataset.index);
+    const talents = foundry.utils.duplicate(this.item.system.rogue_talents || []);
+    talents.splice(index, 1);
+    await this.item.update({ 'system.rogue_talents': talents });
   }
 
   async _isWeapon(event) {

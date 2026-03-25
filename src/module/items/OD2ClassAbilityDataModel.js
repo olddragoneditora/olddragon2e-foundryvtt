@@ -11,6 +11,14 @@ export class OD2ClassAbilityDataModel extends foundry.abstract.TypeDataModel {
       level3: new fields.StringField(),
       level6: new fields.StringField(),
       level10: new fields.StringField(),
+      rogue_talents: new fields.ArrayField(
+        new fields.SchemaField({
+          key: new fields.StringField({ required: true }),
+          name: new fields.StringField({ required: true }),
+          description: new fields.StringField({ default: '' }),
+        }),
+        { default: [] },
+      ),
       daily_uses: new fields.SchemaField({
         1: new fields.NumberField({
           integer: true,

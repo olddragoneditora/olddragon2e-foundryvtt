@@ -149,6 +149,7 @@ export class OD2CharacterDataModel extends foundry.abstract.TypeDataModel {
       }),
       campanha_url: new fields.StringField(),
       url: new fields.StringField(),
+      rogue_talent_points: new fields.ObjectField({ initial: {} }),
     };
   }
 
@@ -539,5 +540,60 @@ export class OD2CharacterDataModel extends foundry.abstract.TypeDataModel {
 
   get class_abilities() {
     return getItemsOfActorOfType(this.parent, 'class_ability');
+  }
+
+  // Talentos de Ladrão
+  get has_rogue_talents() {
+    return this.class_abilities.some((ability) => (ability.system.rogue_talents || []).length > 0);
+  }
+
+  get available_rogue_talents() {
+    const ability = this.class_abilities.find((a) => (a.system.rogue_talents || []).length > 0);
+    return ability?.system.rogue_talents ?? [];
+  }
+
+  get rogue_talent_race_bonus() {
+    const bonuses = {};
+    for (const ability of this.race_abilities) {
+      const talent = ability.system.rogue_talent;
+      if (talent && talent !== 'none') {
+        bonuses[talent] = (bonuses[talent] || 0) + 1;
+      }
+    }
+    return bonuses;
+  }
+
+  get rogue_talent_scores() {
+    const scores = {};
+    const raceBonuses = this.rogue_talent_race_bonus;
+    for (const talent of this.available_rogue_talents) {
+      const base = 2;
+      const allocated = this.rogue_talent_points[talent.key] || 0;
+      const raceBonus = raceBonuses[talent.key] || 0;
+      scores[talent.key] = Math.min(5, base + allocated + raceBonus);
+    }
+    return scores;
+  }
+
+  get rogue_talent_total_points_available() {
+    if (!this.has_rogue_talents) return 0;
+    const level = this.level;
+    let points = 2 + Math.max(0, this.mod_destreza);
+    if (level >= 3) points += 2;
+    if (level >= 6) points += 2;
+    if (level >= 10) points += 2;
+    return points;
+  }
+
+  get rogue_talent_points_spent() {
+    let spent = 0;
+    for (const talent of this.available_rogue_talents) {
+      spent += this.rogue_talent_points[talent.key] || 0;
+    }
+    return spent;
+  }
+
+  get rogue_talent_points_remaining() {
+    return this.rogue_talent_total_points_available - this.rogue_talent_points_spent;
   }
 }
