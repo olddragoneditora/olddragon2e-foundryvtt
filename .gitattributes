@@ -1,7 +1,7 @@
-/src/packs/**/*.ldb
-/src/packs/**/*.log
-/src/packs/**/CURRENT
-/src/packs/**/LOG
-/src/packs/**/LOG.old
-/src/packs/**/MANIFEST-*
-/src/packs/**/LOCK
+src/packs/**/*.ldb binary
+src/packs/**/*.log binary
+src/packs/**/CURRENT binary
+src/packs/**/LOG binary
+src/packs/**/LOG.old binary
+src/packs/**/MANIFEST-* binary
+src/packs/**/LOCK binary
