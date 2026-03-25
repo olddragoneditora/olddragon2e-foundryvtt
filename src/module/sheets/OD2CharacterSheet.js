@@ -367,8 +367,9 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
             const bonus = html.find('#bonus').val();
             const mode = html.find('#rollMode').val();
             const attackMode = html.find('#attack-mode').val();
+            const critical = html.find('#critical').is(':checked');
 
-            await damageRoll.roll(bonus, attackMode);
+            await damageRoll.roll(bonus, attackMode, critical);
 
             damageRoll.sendMessage(mode);
           },
