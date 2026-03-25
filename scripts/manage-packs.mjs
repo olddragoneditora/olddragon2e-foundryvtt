@@ -25,28 +25,32 @@ if (existsSync(resolve(rootDir, 'src/system.json'))) {
 const projectId = manifest.id;
 const packs = manifest.packs.map((p) => p.name);
 
+const ACTIONS = ['extract', 'extract:dist', 'pack'];
 const action = process.argv[2];
-if (!['extract', 'pack'].includes(action)) {
-  console.error('Usage: node scripts/manage-packs.mjs <extract|pack>');
+if (!ACTIONS.includes(action)) {
+  console.error(`Usage: node scripts/manage-packs.mjs <${ACTIONS.join('|')}>`);
   process.exit(1);
 }
 
 console.log(`${projectType}: ${projectId} (${packs.length} packs)\n`);
 
+const isExtract = action === 'extract' || action === 'extract:dist';
+const sourceDir = action === 'extract:dist' ? 'dist/packs' : 'src/packs';
+
 for (const pack of packs) {
-  if (action === 'extract') {
-    console.log(`Extracting ${pack}...`);
+  if (isExtract) {
+    console.log(`Extracting ${pack} from ${sourceDir}...`);
     execSync(
-      `npx fvtt package unpack --type ${projectType} --id ${projectId} "${pack}" --out "src/packs/${pack}/_source"`,
+      `npx fvtt package unpack --type ${projectType} --id ${projectId} "${pack}" --in "${sourceDir}" --out "src/packs/${pack}/_source"`,
       {
         cwd: rootDir,
         stdio: 'inherit',
       },
     );
   } else {
-    console.log(`Packing ${pack}...`);
+    console.log(`Packing ${pack} to src/packs...`);
     execSync(
-      `npx fvtt package pack --type ${projectType} --id ${projectId} "${pack}" --in "src/packs/${pack}/_source"`,
+      `npx fvtt package pack --type ${projectType} --id ${projectId} "${pack}" --in "src/packs/${pack}/_source" --out "src/packs"`,
       {
         cwd: rootDir,
         stdio: 'inherit',
@@ -56,7 +60,7 @@ for (const pack of packs) {
 }
 
 // After extracting, format JSON files so they match prettier and stay clean on commit
-if (action === 'extract') {
+if (isExtract) {
   console.log('\nFormatting extracted files with prettier...');
   execSync('npx prettier --write "src/packs/**/_source/*.json"', {
     cwd: rootDir,

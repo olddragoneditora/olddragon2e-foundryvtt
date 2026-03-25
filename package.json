@@ -26,7 +26,9 @@
     "test:watch": "vitest",
     "test:ci": "vitest run --reporter=junit --outputFile=junit.xml",
     "packs:extract": "node scripts/manage-packs.mjs extract",
+    "packs:extract:dist": "node scripts/manage-packs.mjs extract:dist",
     "packs:pack": "node scripts/manage-packs.mjs pack",
+    "packs:sync": "node scripts/manage-packs.mjs extract:dist && node scripts/manage-packs.mjs pack && gulp build",
     "postinstall": "husky install"
   },
   "devDependencies": {
