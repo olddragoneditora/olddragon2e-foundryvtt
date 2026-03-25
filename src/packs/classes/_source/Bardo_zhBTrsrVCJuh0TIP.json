@@ -1,0 +1,126 @@
+{
+  "folder": "mklReO9t2Ejbfuhk",
+  "name": "Bardo",
+  "type": "class",
+  "_id": "zhBTrsrVCJuh0TIP",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "equipment_restrictions": {
+      "weapons": "Apenas pequenas ou médias. Armas grandes geram ataques difíceis para o Bardo.",
+      "armors": "Apenas as leves. Escudos, Armaduras Média ou Pesadas, impedem o uso das suas habilidades e protegem apenas a metade da CA normal.",
+      "magic_items": "Podem usar todos os pergaminhos mágicos com metade dos níveis que possuir."
+    },
+    "hp": null,
+    "high_level_hp_bonus": null,
+    "restrictions": {
+      "alignments": [],
+      "races": [""]
+    },
+    "levels": {
+      "1": {
+        "ba": 1,
+        "jp": 5
+      },
+      "2": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 1500
+      },
+      "3": {
+        "ba": 2,
+        "jp": 5,
+        "xp": 3000
+      },
+      "4": {
+        "ba": 2,
+        "jp": 5,
+        "xp": 5500
+      },
+      "5": {
+        "ba": 3,
+        "jp": 8,
+        "xp": 8500
+      },
+      "6": {
+        "ba": 3,
+        "jp": 8,
+        "xp": 17000
+      },
+      "7": {
+        "ba": 4,
+        "jp": 8,
+        "xp": 27000
+      },
+      "8": {
+        "ba": 4,
+        "jp": 8,
+        "xp": 37000
+      },
+      "9": {
+        "ba": 5,
+        "jp": 11,
+        "xp": 47000
+      },
+      "10": {
+        "ba": 5,
+        "jp": 11,
+        "xp": 94000
+      },
+      "11": {
+        "ba": 6,
+        "jp": 11,
+        "xp": 190000
+      },
+      "12": {
+        "ba": 6,
+        "jp": 11,
+        "xp": 280000
+      },
+      "13": {
+        "ba": 7,
+        "jp": 14,
+        "xp": 370000
+      },
+      "14": {
+        "ba": 7,
+        "jp": 14,
+        "xp": 460000
+      },
+      "15": {
+        "ba": 8,
+        "jp": 14,
+        "xp": 550000
+      }
+    },
+    "class_abilities": [
+      "Compendium.olddragon2e.classes.Item.lLVzxDZ8VNdHDNkE",
+      "Compendium.olddragon2e.classes.Item.tWPnyEO4FJHdJkh5",
+      "Compendium.olddragon2e.classes.Item.VwoMOb949soE6nDr",
+      "Compendium.olddragon2e.classes.Item.ZyJTKhSgUOavAFO6",
+      "Compendium.olddragon2e.classes.Item.mwx6VFRpsY9KicSj",
+      "Compendium.olddragon2e.classes.Item.Eo8pULaQUalCjxTf",
+      "Compendium.olddragon2e.classes.Item.wr5QdpbuByYGbCfa"
+    ],
+    "flavor": "<p>O Bardo &eacute; um personagem ligado &agrave;s artes e &agrave; performance. S&atilde;o viajantes, rep&oacute;rteres da vida cotidiana e divulgadores de feitos &eacute;picos.</p>",
+    "description": "<p>Percorre as estradas cantando, atuando e inspirando emo&ccedil;&otilde;es &agrave; plateia, sempre atr&aacute;s da oportunidade de estar pr&oacute;ximo dos acontecimentos e utilizando como ferramentas de sobreviv&ecirc;ncia seu magnetismo pessoal e ast&uacute;cia.</p>\n<h1>Restri&ccedil;&otilde;es</h1>\n<p>Al&eacute;m de seguir a evolu&ccedil;&atilde;o de experi&ecirc;ncia de um Ladr&atilde;o especialista, o Bardo perde a habilidade de Ladr&atilde;o <em>Ataque Furtivo</em>, mas mant&eacute;m e evolui <em>Ouvir Ru&iacute;dos</em> e seus talentos de Ladr&atilde;o, possuindo uma vers&atilde;o modificada de alguns talentos adaptados:</p>\n<p><em>Cultura</em> substitui o talento <em>Arrombar</em>. O Bardo est&aacute; a todo momento em contato com novos conhecimentos, pessoas e culturas, permitindo-lhe saber de coisas como folclore, lendas, hist&oacute;ria antiga e geografia.</p>\n<p><em>Decifrar</em> substitui o talento <em>Armadilha</em>. O Bardo conhece diferentes alfabetos e idiomas o que permite, uma vez por objeto, tentar decifrar o significado de textos em outros idiomas, realizando dois testes: um para identificar o idioma e outro para decifr&aacute;-lo.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726774389681,
+    "lastModifiedBy": "Up6xAmRvZ0ZirlvK",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!zhBTrsrVCJuh0TIP"
+}

@@ -1,0 +1,39 @@
+{
+  "folder": "tzOl945hphZGo7cG",
+  "name": "Anão",
+  "type": "race",
+  "_id": "d9seo5qPELZJetH6",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "movement": 6,
+    "infravision": 18,
+    "alignment_tendency": "ordeiro",
+    "race_abilities": [
+      "Compendium.olddragon2e.races.Item.jxA809CM81P40Kyu",
+      "Compendium.olddragon2e.races.Item.Av5T0edF1R3C7Ktw",
+      "Compendium.olddragon2e.races.Item.klaWaVw108mUY5wx",
+      "Compendium.olddragon2e.races.Item.KKrOc8TsRkY7ktkA"
+    ],
+    "flavor": "<p>Orgulhosos Habitantes dos Sal&otilde;es sob a Montanha.</p>",
+    "description": "<p>Honrados, perfeccionistas e reservados, os an&otilde;es s&atilde;o conhecidos n&atilde;o s&oacute; pela sua peculiar apar&ecirc;ncia, mas sobretudo pela forma como se relacionam com as outras ra&ccedil;as e com a sua pr&oacute;pria hist&oacute;ria.</p>\n<p>De apar&ecirc;ncia robustas e r&uacute;stica, corpulentos e com uma inconfund&iacute;vel grande barba, an&otilde;es vivem junto dos seus cl&atilde;s com as montanhas sobre suas cabe&ccedil;as, minerando, forjando, reverenciando seus antepassados e comemorando com cerveja e suas famosas bebidas fortes.</p>\n<p>Os Sal&otilde;es sob a Montanha, onde vivem isolados, s&atilde;o locais sagrados e reverenciados por eles. L&aacute;, adotam um estilo de vida comedido, voltado ao trabalho, entrecortando o sil&ecirc;ncio apenas com suas can&ccedil;&otilde;es de trabalho e suas frequentes comemora&ccedil;&otilde;es.</p>\n<p>S&atilde;o guiados pela honra e pelo sentimento de gratid&atilde;o por todos aqueles que ajudaram a construir o orgulho que sentem das suas origens, quando lideraram a ra&ccedil;a an&atilde; em feitos de supera&ccedil;&atilde;o, conquista e guerra contra seus inimigos.</p>\n<p>Como bons tradicionalistas, colocam sua fam&iacute;lia, seu cl&atilde; e principalmente sua ra&ccedil;a acima de todas as coisas, inclusive de si mesmos e de suas vontades pessoais.</p>\n<p>Buscam honrar suas origens tentando demonstrar que s&atilde;o dignos de fazer parte do que eles costumam chamar: povo perfeito.</p>\n<p>Ex&iacute;mios forjadores, trabalham o metal &agrave; sua vontade. N&atilde;o h&aacute; nada que eles n&atilde;o possam forjar, e n&atilde;o h&aacute; nenhum objeto de metal que n&atilde;o fique perfeito ap&oacute;s um an&atilde;o aplicar suas t&eacute;cnicas ancestrais de metalurgia.</p>\n<p>Com pensamento l&oacute;gico acurado, se destacam na engenharia, nas constru&ccedil;&otilde;es, nos trabalhos pesados, mas, ao mesmo tempo, demonstram pouca aptid&atilde;o &agrave;s artes arcanas.</p>\n<p>Fora de suas terras, se mostram orgulhosos e defensores de suas origens, fazendo quest&atilde;o de sempre comparar tudo &agrave; volta com a vers&atilde;o melhorada a qual os an&otilde;es s&atilde;o capazes de criar.</p>\n<h1>Personalidade</h1>\n<p>Orgulho, tradi&ccedil;&atilde;o e obsess&atilde;o s&atilde;o tr&ecirc;s importantes palavras para descrever a personalidade an&atilde;.</p>\n<p>Orgulhosos de tudo relativo ao seu povo, est&atilde;o a todo tempo lembrando a todos da import&acirc;ncia, da impon&ecirc;ncia, da qualidade, da grandiosidade do seu povo, das can&ccedil;&otilde;es que glorificam as vit&oacute;rias sobre seus inimigos.</p>\n<p>Um an&atilde;o &eacute; quase um escravo dos feitos dos seus antepassados. Um her&oacute;i an&atilde;o &eacute;, antes de tudo, uma r&eacute;gua de perfei&ccedil;&atilde;o. Um grau a admirar, perseguir e atingir.</p>\n<p>Tradi&ccedil;&atilde;o, para eles, n&atilde;o &eacute; uma mera forma de passar aos mais novos os costumes de seu povo, e sim um estilo de vida e um c&oacute;digo de honra. Uma esp&eacute;cie de linha guia para basear suas a&ccedil;&otilde;es e seu pensamento.</p>\n<p>O an&atilde;o &eacute; um ser obcecado. Pela defesa dos seus ideais, pelo seu povo, pela perfei&ccedil;&atilde;o do seu trabalho.</p>\n<p>Seja a excel&ecirc;ncia em batalha, o minucioso trabalho de forja de armas e armaduras, a fermenta&ccedil;&atilde;o precisa da cerveja, a composi&ccedil;&atilde;o da can&ccedil;&atilde;o que zomba dos orcs, o ideal de vida do an&atilde;o est&aacute; centrado na perfei&ccedil;&atilde;o num n&iacute;vel pr&oacute;ximo da idolatria espiritual.</p>\n<h1>O An&atilde;o nas Aventuras</h1>\n<p>Partir para as aventuras &eacute; mais do que uma op&ccedil;&atilde;o para alguns an&otilde;es, sendo, em alguns casos, uma forma de reverenciar as tradi&ccedil;&otilde;es do seu povo.</p>\n<p>Com uma mem&oacute;ria repleta de feitos &eacute;picos e exemplos a admirar e a seguir, provar-se capaz jogando-se no mundo &eacute;, sem d&uacute;vida, o mais importante dos motivadores para um an&atilde;o aventurar-se.</p>\n<p>O an&atilde;o quer provar sua capacidade, sua habilidade, resili&ecirc;ncia e ser digno de portar o nome de seu cl&atilde;.</p>\n<p>An&otilde;es aventureiros s&atilde;o guiados pelo exemplo e pelo orgulho dos feitos os quais podem realizar e que deixar&atilde;o para as futuras gera&ccedil;&otilde;es.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726706632011,
+    "modifiedTime": 1726713045443,
+    "lastModifiedBy": "qL3iBUN7HcwSiU0i",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!d9seo5qPELZJetH6"
+}

@@ -1,0 +1,47 @@
+{
+  "folder": "pFqy2TCCY4BBxYvN",
+  "name": "Truques com Flechas",
+  "type": "class_ability",
+  "_id": "xffc4uj1QR7iRvlx",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 6,
+    "description": "<p>O Arqueiro &eacute; capaz de realizar truques com seus disparos, podendo grampear alvos na madeira macia, desarm&aacute;-los ou para realizar outros efeitos como, por exemplo, modificar uma flecha para que ela possa apitar ao se deslocar no ar. O Arqueiro realiza um ataque normal contra a CA + DV do alvo e, se for bem-sucedido, o alvo deve decidir entre sofrer as consequ&ecirc;ncias do ataque com truque ou receber o dano normalmente. O Mestre deve ser consultado sobre os efeitos dos truques e a possibilidade de realiz&aacute;-los.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707306415,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 400000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!xffc4uj1QR7iRvlx"
+}

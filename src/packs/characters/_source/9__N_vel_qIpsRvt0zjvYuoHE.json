@@ -1,0 +1,22 @@
+{
+  "name": "9º Nível",
+  "sorting": "m",
+  "folder": null,
+  "type": "Actor",
+  "_id": "qIpsRvt0zjvYuoHE",
+  "description": "",
+  "sort": 0,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726729526655,
+    "modifiedTime": 1726729526655,
+    "lastModifiedBy": "OuolyBMu1taVMYDC"
+  },
+  "_key": "!folders!qIpsRvt0zjvYuoHE"
+}

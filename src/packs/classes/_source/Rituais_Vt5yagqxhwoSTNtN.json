@@ -1,0 +1,47 @@
+{
+  "folder": "pSA1kfvCGifgCZE3",
+  "name": "Rituais",
+  "type": "class_ability",
+  "_id": "Vt5yagqxhwoSTNtN",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 1,
+    "description": "<p>O Bruxo se concentra no efeito desejado iniciando um pequeno ritual de palavras e gestos que canalizam o poder extraplanar no seu corpo, realizando o efeito da magia.</p>\n<p>⬥ <strong>Metal</strong>: Objetos de metal como armas, armaduras, escudos etc. atrapalham a canaliza&ccedil;&atilde;o do ritual, impedindo a conjura&ccedil;&atilde;o das magias. Se estiver em contato com objetos de metal, o Bruxo possui 1-2 chances em 1d6 de perder o ritual sem que qualquer efeito ocorra.</p>\n<p>⬥ <strong>Execu&ccedil;&atilde;o</strong>: Um ritual leva uma rodada para ser executado. Uma magia conjurada nesta rodada iniciar&aacute; seus efeitos no in&iacute;cio da pr&oacute;xima rodada, antes das outras a&ccedil;&otilde;es.</p>\n<p>⬥ <strong>Lista de Rituais</strong>: O Bruxo pode escolher livremente suas magias dentre todas as magias dos c&iacute;rculos dispon&iacute;veis para seu n&iacute;vel, como se estivessem escritas no seu grim&oacute;rio.</p>\n<p>⬥ <strong>Rituais Extras</strong>: O Bruxo n&atilde;o recebe magias adicionais por um alto valor de Intelig&ecirc;ncia.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707388128,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!Vt5yagqxhwoSTNtN"
+}

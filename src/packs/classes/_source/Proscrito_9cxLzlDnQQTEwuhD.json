@@ -1,0 +1,123 @@
+{
+  "folder": "xzRQoO6Gl2VWfPRF",
+  "name": "Proscrito",
+  "type": "class",
+  "_id": "9cxLzlDnQQTEwuhD",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "equipment_restrictions": {
+      "weapons": "Pode usar todas as armas.",
+      "armors": "Pode usar todas as armaduras.",
+      "magic_items": "O Poscrito é capaz de usar todos os tipos de itens mágicos."
+    },
+    "hp": null,
+    "high_level_hp_bonus": null,
+    "restrictions": {
+      "alignments": [],
+      "races": []
+    },
+    "levels": {
+      "1": {
+        "ba": 1,
+        "jp": 5
+      },
+      "2": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 2000
+      },
+      "3": {
+        "ba": 2,
+        "jp": 5,
+        "xp": 4000
+      },
+      "4": {
+        "ba": 4,
+        "jp": 7,
+        "xp": 7000
+      },
+      "5": {
+        "ba": 4,
+        "jp": 7,
+        "xp": 10000
+      },
+      "6": {
+        "ba": 4,
+        "jp": 7,
+        "xp": 20000
+      },
+      "7": {
+        "ba": 6,
+        "jp": 9,
+        "xp": 30000
+      },
+      "8": {
+        "ba": 6,
+        "jp": 9,
+        "xp": 40000
+      },
+      "9": {
+        "ba": 6,
+        "jp": 9,
+        "xp": 50000
+      },
+      "10": {
+        "ba": 8,
+        "jp": 11,
+        "xp": 100000
+      },
+      "11": {
+        "ba": 8,
+        "jp": 11,
+        "xp": 200000
+      },
+      "12": {
+        "ba": 8,
+        "jp": 11,
+        "xp": 300000
+      },
+      "13": {
+        "ba": 10,
+        "jp": 13,
+        "xp": 400000
+      },
+      "14": {
+        "ba": 10,
+        "jp": 13,
+        "xp": 500000
+      },
+      "15": {
+        "ba": 10,
+        "jp": 13,
+        "xp": 600000
+      }
+    },
+    "class_abilities": [
+      "Compendium.olddragon2e.classes.Item.NLfoVSAKdlzcYV41",
+      "Compendium.olddragon2e.classes.Item.lunTage4Zq91RY57",
+      "Compendium.olddragon2e.classes.Item.HRYX46ncA1d7XWjF",
+      "Compendium.olddragon2e.classes.Item.AvYfPI3bq8bUzQjH",
+      "Compendium.olddragon2e.classes.Item.PorOPXVjL2f23b24"
+    ],
+    "flavor": "<p>Estes Cl&eacute;rigos especialistas s&atilde;o sacerdotes que foram banidos das suas igrejas e religi&otilde;es ou que abandonaram sua ordem religiosa por descr&eacute;dito em suas divindades ou por algum motivo pessoal.</p>\n<p>Sem se encaixarem na estrutura religiosa, optam por viver como aventureiros, mas sem o &iacute;mpeto religioso e moral que costumam rondar os sacerdotes e suas divindades.</p>\n<h1>Restri&ccedil;&otilde;es</h1>\n<p>Al&eacute;m de seguir a evolu&ccedil;&atilde;o de experi&ecirc;ncia de um Cl&eacute;rigo especialista, o Proscrito &eacute; capaz de ter qualquer alinhamento e de usar qualquer arma ou armadura sem perder o acesso a todas as suas habilidades de Proscrito.</p>\n<p>O Proscrito perde o acesso &agrave;s habilidades de <em>Cura Milagrosa</em>, <em>Afastar Mortos-Vivos</em> e <em>Conjurar Magias</em> de um Cl&eacute;rigo normal e acaba desenvolvendo habilidades similares n&atilde;o-dependentes da b&ecirc;n&ccedil;&atilde;o da sua divindade e da sua igreja.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726713561862,
+    "lastModifiedBy": "qL3iBUN7HcwSiU0i",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!9cxLzlDnQQTEwuhD"
+}

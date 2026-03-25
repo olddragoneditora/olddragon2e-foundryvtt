@@ -1,0 +1,37 @@
+{
+  "name": "Adaptabilidade",
+  "type": "race_ability",
+  "_id": "owGdW6FzPNnWQmzU",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "xp": null,
+    "jp": {
+      "jpc": true,
+      "jpd": true,
+      "jps": true
+    },
+    "bonus_damage_archery": false,
+    "rogue_talent": "none",
+    "description": "<p>Os humanos s&atilde;o muito adapt&aacute;veis e diversos entre si, fazendo com que possam escolher onde alocar um b&ocirc;nus nas suas Jogadas de Prote&ccedil;&atilde;o. Humanos recebem um b&ocirc;nus de +1 em uma &uacute;nica JP &agrave; sua escolha.</p>"
+  },
+  "effects": [],
+  "folder": "OtfJxpNOiAyYBI0T",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726706632011,
+    "modifiedTime": 1726706632011,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!owGdW6FzPNnWQmzU"
+}

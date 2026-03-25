@@ -1,0 +1,47 @@
+{
+  "folder": "2rstdPWNgeRFCUX4",
+  "name": "Inimigo Mortal",
+  "type": "class_ability",
+  "_id": "o8345bRQyKg1aSkP",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 1,
+    "description": "<p>Assumindo seu papel de guardi&atilde;o de uma regi&atilde;o dos ermos, adota um inimigo que assola sua regi&atilde;o para combat&ecirc;-lo.</p>\n<p>Inimigos Mortais podem ser escolhidos dentre Orcs, Goblins, Homens Lagartos, Trolls ou Gigantes. Contra estas criaturas, todo ataque &eacute; considerado um <strong>ataque f&aacute;cil</strong> e todo <strong>teste de rea&ccedil;&atilde;o</strong> possui uma penalizador de -2</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707608222,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 75000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!o8345bRQyKg1aSkP"
+}

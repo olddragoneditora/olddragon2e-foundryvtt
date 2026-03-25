@@ -1,0 +1,126 @@
+{
+  "folder": "bZyDsWvD06Znca3j",
+  "name": "Bárbaro",
+  "type": "class",
+  "_id": "XyMxtlkHTVeuXict",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "equipment_restrictions": {
+      "weapons": "Pode usar todas as armas.",
+      "armors": "Apenas armaduras de couro, ou perderá acesso a todas as suas habilidades de Bárbaro.",
+      "magic_items": "Não pode usar nenhum item mágico, ou perderá acesso a todas as suas habilidades de Bárbaro."
+    },
+    "hp": null,
+    "high_level_hp_bonus": null,
+    "restrictions": {
+      "alignments": [],
+      "races": []
+    },
+    "levels": {
+      "1": {
+        "ba": 1,
+        "jp": 5
+      },
+      "2": {
+        "ba": 2,
+        "jp": 5,
+        "xp": 2500
+      },
+      "3": {
+        "ba": 3,
+        "jp": 6,
+        "xp": 5000
+      },
+      "4": {
+        "ba": 4,
+        "jp": 6,
+        "xp": 8500
+      },
+      "5": {
+        "ba": 5,
+        "jp": 8,
+        "xp": 11500
+      },
+      "6": {
+        "ba": 6,
+        "jp": 8,
+        "xp": 23000
+      },
+      "7": {
+        "ba": 7,
+        "jp": 10,
+        "xp": 33000
+      },
+      "8": {
+        "ba": 8,
+        "jp": 10,
+        "xp": 43000
+      },
+      "9": {
+        "ba": 9,
+        "jp": 11,
+        "xp": 53000
+      },
+      "10": {
+        "ba": 10,
+        "jp": 11,
+        "xp": 106000
+      },
+      "11": {
+        "ba": 11,
+        "jp": 13,
+        "xp": 210000
+      },
+      "12": {
+        "ba": 12,
+        "jp": 13,
+        "xp": 320000
+      },
+      "13": {
+        "ba": 13,
+        "jp": 14,
+        "xp": 430000
+      },
+      "14": {
+        "ba": 14,
+        "jp": 14,
+        "xp": 540000
+      },
+      "15": {
+        "ba": 15,
+        "jp": 16,
+        "xp": 650000
+      }
+    },
+    "class_abilities": [
+      "Compendium.olddragon2e.classes.Item.DSh74KzayosCFpqA",
+      "Compendium.olddragon2e.classes.Item.K7FugNYLPHLTlxbJ",
+      "Compendium.olddragon2e.classes.Item.D9yTnB0dzUkxTMLF",
+      "Compendium.olddragon2e.classes.Item.WxcHvAhUkco6nohs",
+      "Compendium.olddragon2e.classes.Item.oZdvYV5bLYJCUkhV",
+      "Compendium.olddragon2e.classes.Item.T7nBihAfXnO7WEPW",
+      "Compendium.olddragon2e.classes.Item.4WC660E4LNMgG6J8"
+    ],
+    "flavor": "<p>B&aacute;rbaros s&atilde;o Guerreiros nascidos em culturas remotas de regi&otilde;es distantes e r&uacute;sticas, em comunh&atilde;o com a terra.</p>",
+    "description": "<p>Ao contr&aacute;rio daqueles que vivem na civiliza&ccedil;&atilde;o, a exposi&ccedil;&atilde;o dos B&aacute;rbaros a elementos adversos os preparou com instintos agu&ccedil;ados, capacidade atl&eacute;tica e resist&ecirc;ncia acima do comum. Por&eacute;m, o pre&ccedil;o foi cobrado na supersti&ccedil;&atilde;o, na falta de instru&ccedil;&atilde;o formal e em uma permanente desconfian&ccedil;a &agrave; magia arcana.</p>\n<h1>Restri&ccedil;&otilde;es</h1>\n<p>Al&eacute;m de seguir a evolu&ccedil;&atilde;o de experi&ecirc;ncia de um Guerreiro especialista, o B&aacute;rbaro n&atilde;o pode usar nenhum item m&aacute;gico e nenhuma armadura que n&atilde;o seja de couro, ou perder&aacute; acesso a todas as suas habilidades de B&aacute;rbaro.</p>\n<p>O B&aacute;rbaro mant&eacute;m suas habilidades de Guerreiro <em>Aparar</em> e <em>Maestria em Arma</em>, mas deixa de receber qualquer evolu&ccedil;&atilde;o ao se tornar especialista.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726713342045,
+    "lastModifiedBy": "qL3iBUN7HcwSiU0i",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!XyMxtlkHTVeuXict"
+}

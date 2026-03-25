@@ -1,0 +1,39 @@
+{
+  "folder": "kmiIksN2a1Lt6IPN",
+  "name": "Elfo",
+  "type": "race",
+  "_id": "qZ5T7ZHQpGlmdfOq",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "movement": 9,
+    "infravision": 18,
+    "alignment_tendency": "neutro",
+    "race_abilities": [
+      "Compendium.olddragon2e.races.Item.dWB72uTg15J9GUQN",
+      "Compendium.olddragon2e.races.Item.1JK73DDEmWlYpWPN",
+      "Compendium.olddragon2e.races.Item.HhAlOQoDwqclrZkv",
+      "Compendium.olddragon2e.races.Item.FnK8iEyKG0kMsb54"
+    ],
+    "flavor": "<p>Misteriosos, Longevos e Graciosos habitantes das Florestas.</p>",
+    "description": "<p>Os elfos s&atilde;o das mais longevas ra&ccedil;as encontradas nos mundos de fantasia e a sua rela&ccedil;&atilde;o com o tempo doutrina boa parte das suas caracter&iacute;sticas, personalidade e a forma como as outras ra&ccedil;as os enxergam e se relacionam com eles.</p>\n<p>Fisicamente s&atilde;o esguios e at&eacute; um pouco franzinos se comparados a um humano, al&eacute;m de ligeiramente mais baixos. Seus cabelos, compridos para machos e f&ecirc;meas, est&atilde;o sempre penteados, adornados com acess&oacute;rios e podem ser encontrados em praticamente todas as cores.</p>\n<p>A caracter&iacute;stica f&iacute;sica mais marcante de um elfo est&aacute; nas suas orelhas &ndash; pontudas e longas &ndash;, muito embora o tra&ccedil;o dos seus olhos &ndash; amendoados, delicados e levemente alongados &ndash; seja uma caracter&iacute;stica igualmente marcante.</p>\n<p>A rela&ccedil;&atilde;o do elfo com o tempo dita sua forma de pensar e agir. Como frequentemente atingem 1.000 anos de vida, elfos se sentem compelidos a ocuparem suas vidas com o que mais valorizam como a dan&ccedil;a, a m&uacute;sica, a esgrima, o arqueirismo e a magia arcana.</p>\n<p>Isso pode fazer as pessoas acreditarem que Elfos s&atilde;o distantes ou, de certa forma, um pouco f&uacute;teis. Um erro comum cometido pelos observadores menos atentos.</p>\n<p>Outra caracter&iacute;stica dos elfos, sobretudo os que est&atilde;o fora da sua terra, &eacute; a dist&acirc;ncia, dando-lhes uma certa caracter&iacute;stica de frieza e at&eacute; prepot&ecirc;ncia. Por se considerarem estranhos fora de suas fronteiras, possuem dificuldade de se envolver nos problemas das outras ra&ccedil;as, refletindo na dificuldade de criar la&ccedil;os de amizade.</p>\n<p>No entanto, quando um elfo &eacute; conquistado como amigo, a amizade se mostrar&aacute; duradoura. A amizade de um elfo dura mais do que muitas vidas, costumam dizer os humanos os quais puderam provar desse relacionamento. Vivendo tantos s&eacute;culos, esta &eacute; uma verdade incontest&aacute;vel.</p>\n<h1>Personalidade</h1>\n<p>Viver tanto tempo molda a personalidade de um elfo. O ritmo do tempo &eacute; excepcional para um elfo. As mudan&ccedil;as ocorrem t&atilde;o depressa que se tornam complicadas de seguir, ent&atilde;o, para que se importar? Melhor &eacute; focar na qualidade e n&atilde;o na quantidade. Se 100 espadas medianas podem ser confeccionadas, um elfo prefere gastar o mesmo tempo numa &uacute;nica pe&ccedil;a exemplar em qualidade e perfei&ccedil;&atilde;o.</p>\n<p>Com tanto tempo dispon&iacute;vel para aprender tantas coisas, desperdi&ccedil;ar tempo seria uma op&ccedil;&atilde;o bem &oacute;bvia, mas a&iacute; se esconde uma grandeza da sua ra&ccedil;a. Ao contr&aacute;rio do que possa parecer, elfos gostam de coisas bem-feitas e duradouras, assim como eles. Servi&ccedil;o bem-feito &eacute; sempre aquele com a maior dura&ccedil;&atilde;o.</p>\n<p>Essa rela&ccedil;&atilde;o entre qualidade, tempo e perfei&ccedil;&atilde;o molda todo o pensamento &eacute;lfico e a constru&ccedil;&atilde;o da sua personalidade.</p>\n<h1>O Elfo nas Aventuras</h1>\n<p>Apesar de bem mais raros que os humanos, elfos n&atilde;o s&atilde;o aventureiros improv&aacute;veis. A fome por conhecimento, desejo por viajar, a vontade de provar-se para os seus como um elfo exemplar e, principalmente, o tempo dispon&iacute;vel, s&atilde;o as principais for&ccedil;as a empurrar um elfo para a vida aventureira.</p>\n<p>As coisas mudam t&atilde;o rapidamente que acompanhar as mudan&ccedil;as, ou mesmo fazer parte destas mudan&ccedil;as, pode ser uma interessante for&ccedil;a motriz para eles.</p>\n<p>Eles querem acompanhar o que acontece, se aperfei&ccedil;oarem e se provarem como capazes.</p>\n<p>Elfos s&atilde;o aventureiros observadores que querem entender o mundo onde vivem.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726706632011,
+    "modifiedTime": 1726713191127,
+    "lastModifiedBy": "qL3iBUN7HcwSiU0i",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!qZ5T7ZHQpGlmdfOq"
+}

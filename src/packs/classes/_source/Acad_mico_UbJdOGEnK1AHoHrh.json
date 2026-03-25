@@ -1,0 +1,125 @@
+{
+  "folder": "oVfYnBvyjXwdVF97",
+  "name": "Acadêmico",
+  "type": "class",
+  "_id": "UbJdOGEnK1AHoHrh",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "equipment_restrictions": {
+      "weapons": "Só podem usar armas impactantes.",
+      "armors": "Pode usar todas as armaduras.",
+      "magic_items": "Pode usar qualquer item mágico."
+    },
+    "hp": null,
+    "high_level_hp_bonus": null,
+    "restrictions": {
+      "alignments": [],
+      "races": []
+    },
+    "levels": {
+      "1": {
+        "ba": 1,
+        "jp": 5
+      },
+      "2": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 2000
+      },
+      "3": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 4000
+      },
+      "4": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 7000
+      },
+      "5": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 10000
+      },
+      "6": {
+        "ba": 3,
+        "jp": 7,
+        "xp": 20000
+      },
+      "7": {
+        "ba": 5,
+        "jp": 9,
+        "xp": 30000
+      },
+      "8": {
+        "ba": 5,
+        "jp": 9,
+        "xp": 40000
+      },
+      "9": {
+        "ba": 5,
+        "jp": 9,
+        "xp": 50000
+      },
+      "10": {
+        "ba": 7,
+        "jp": 11,
+        "xp": 100000
+      },
+      "11": {
+        "ba": 7,
+        "jp": 11,
+        "xp": 200000
+      },
+      "12": {
+        "ba": 7,
+        "jp": 11,
+        "xp": 300000
+      },
+      "13": {
+        "ba": 9,
+        "jp": 13,
+        "xp": 400000
+      },
+      "14": {
+        "ba": 9,
+        "jp": 13,
+        "xp": 500000
+      },
+      "15": {
+        "ba": 9,
+        "jp": 13,
+        "xp": 600000
+      }
+    },
+    "class_abilities": [
+      "Compendium.olddragon2e.classes.Item.waUI56vnHUm1oVRn",
+      "Compendium.olddragon2e.classes.Item.5hscC263Vb74rIIQ",
+      "Compendium.olddragon2e.classes.Item.eOLJgTlDWuN195XM",
+      "Compendium.olddragon2e.classes.Item.pXUlUUSRNXfC1hyx",
+      "Compendium.olddragon2e.classes.Item.tb2ImNI96AsYTeho",
+      "Compendium.olddragon2e.classes.Item.DnEIpriReTYm2bUZ"
+    ],
+    "flavor": "<p>Um Acad&ecirc;mico &eacute; um Cl&eacute;rigo especialista motivado pelo amplo desejo de conhecimento, reverenciando as ci&ecirc;ncias, estudos e o ac&uacute;mulo de informa&ccedil;&otilde;es concedidas pelo deus Curioso.</p>",
+    "description": "<p>Com forma&ccedil;&atilde;o te&oacute;rica, focada em estudos, bibliotecas, laborat&oacute;rios e salas de aula, o Acad&ecirc;mico v&ecirc; nas aventuras e explora&ccedil;&otilde;es uma oportunidade sem igual de conhecer in loco e dar cores &agrave; teoria que domina t&atilde;o bem.</p>\n<h1>Restri&ccedil;&otilde;es</h1>\n<p>Al&eacute;m de seguir a evolu&ccedil;&atilde;o de experi&ecirc;ncia de um Cl&eacute;rigo especialista, o Acad&ecirc;mico deve possuir alinhamento neutro e n&atilde;o pode usar nenhuma arma cortante ou perfurante ou perder&aacute; acesso a todas as suas habilidades de Acad&ecirc;mico.</p>\n<p>O Acad&ecirc;mico perde o acesso as habilidades de <em>Cura Milagrosa</em> e <em>Afastar Mortos-Vivos</em> que um Cl&eacute;rigo normal possui, mas mant&eacute;m a capacidade de conjurar Magias normalmente tal qual um Cl&eacute;rigo de mesmo n&iacute;vel faria.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726713081360,
+    "lastModifiedBy": "qL3iBUN7HcwSiU0i",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!UbJdOGEnK1AHoHrh"
+}

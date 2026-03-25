@@ -1,0 +1,47 @@
+{
+  "folder": "9urJqCJiEUPcoGCw",
+  "name": "Conhecimento Acadêmico",
+  "type": "class_ability",
+  "_id": "5hscC263Vb74rIIQ",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 1,
+    "description": "<p>O Acad&ecirc;mico &eacute; capaz de identificar monstros e animais al&eacute;m de conhecer seus ataques e defesas, habilidades e fraquezas, al&eacute;m dos seus h&aacute;bitos mais comuns com 1-2 chances em 1d6.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707270239,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!5hscC263Vb74rIIQ"
+}

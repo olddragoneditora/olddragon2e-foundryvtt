@@ -1,0 +1,125 @@
+{
+  "folder": "mtfYIhbyWExouKLR",
+  "name": "Assassino",
+  "type": "class",
+  "_id": "qmcr4miRTUGaUZgr",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "equipment_restrictions": {
+      "weapons": "Apenas pequenas ou médias. Armas grandes geram ataques difíceis para o Assassino.",
+      "armors": "Apenas as leves. Escudos, Armaduras Média ou Pesadas, impedem o uso das suas habilidades e protegem apenas a metade da CA normal.",
+      "magic_items": "Não pode usar cajados, varinhas e pergaminhos mágicos com exceção dos pergaminhos de proteção."
+    },
+    "hp": null,
+    "high_level_hp_bonus": null,
+    "restrictions": {
+      "alignments": [],
+      "races": []
+    },
+    "levels": {
+      "1": {
+        "ba": 1,
+        "jp": 5
+      },
+      "2": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 1500
+      },
+      "3": {
+        "ba": 2,
+        "jp": 5,
+        "xp": 3000
+      },
+      "4": {
+        "ba": 2,
+        "jp": 5,
+        "xp": 5500
+      },
+      "5": {
+        "ba": 3,
+        "jp": 8,
+        "xp": 8500
+      },
+      "6": {
+        "ba": 3,
+        "jp": 8,
+        "xp": 17000
+      },
+      "7": {
+        "ba": 4,
+        "jp": 8,
+        "xp": 27000
+      },
+      "8": {
+        "ba": 4,
+        "jp": 8,
+        "xp": 37000
+      },
+      "9": {
+        "ba": 5,
+        "jp": 11,
+        "xp": 47000
+      },
+      "10": {
+        "ba": 5,
+        "jp": 11,
+        "xp": 94000
+      },
+      "11": {
+        "ba": 6,
+        "jp": 11,
+        "xp": 190000
+      },
+      "12": {
+        "ba": 6,
+        "jp": 11,
+        "xp": 280000
+      },
+      "13": {
+        "ba": 7,
+        "jp": 14,
+        "xp": 370000
+      },
+      "14": {
+        "ba": 7,
+        "jp": 14,
+        "xp": 460000
+      },
+      "15": {
+        "ba": 8,
+        "jp": 14,
+        "xp": 550000
+      }
+    },
+    "class_abilities": [
+      "Compendium.olddragon2e.classes.Item.5G2z4AhRtDM2WJck",
+      "Compendium.olddragon2e.classes.Item.BuuQCEb8XzH8XGIL",
+      "Compendium.olddragon2e.classes.Item.HqTX0ICPD8YyxGNn",
+      "Compendium.olddragon2e.classes.Item.VVg96uuKLwyBq7X6",
+      "Compendium.olddragon2e.classes.Item.0eSdQLVgC7qfVmvV",
+      "Compendium.olddragon2e.classes.Item.c1vQkPq1rM7YvxuL"
+    ],
+    "flavor": "",
+    "description": "<p>Sorrateiros, furtivos e sombrios, Assassinos s&atilde;o seguidores fan&aacute;ticos do Deus da Mentira e dos Venenos Demogorgon. Usam suas habilidades profissionais, e quase religiosas, na arte da morte, colocando em pr&aacute;tica todas as t&eacute;cnicas dispon&iacute;veis para cumprir com suas obriga&ccedil;&otilde;es como disfarces e venenos.</p>\n<p>Iniciando suas carreiras como meros bandidos com algum treinamento, Assassinos se convertem em arautos da morte, sendo vistos quase como sacerdotes enlouquecidos, fan&aacute;ticos e cegos pelo amor &agrave; sua f&eacute;, capazes de qualquer coisa para defender sua Divindade e ascender em poder, ca&ccedil;ando alvos poderosos cuja vida traz preju&iacute;zo para seus contratantes.</p>\n<h1>Restri&ccedil;&otilde;es</h1>\n<p>Al&eacute;m de seguir a evolu&ccedil;&atilde;o de experi&ecirc;ncia de um Ladr&atilde;o especialista, o Assassino perde as habilidades <em>Ouvir Ru&iacute;dos</em> e <em>Ataque Furtivo</em>, mas mant&eacute;m e evolui seus <em>Talentos de Ladr&atilde;o</em>, possuindo uma vers&atilde;o modificada de alguns talentos adaptados ao seu of&iacute;cio:</p>\n<p><em>Veneno</em> substitui o talento <em>Armadilha</em>. Este talento permite ao Assassino manipular venenos para seus ataques sem se envenenar. Dois testes s&atilde;o realizados, um para a prepara&ccedil;&atilde;o e outro para aplica&ccedil;&atilde;o na arma. Cada dose custa 1d6 x 10 PO para ser preparada e perde os efeitos nocivos ap&oacute;s 24 horas.</p>\n<p><em>Disfarce</em> substitui o talento <em>Punga</em>. O Assassino consegue parecer um pouco mais alto, baixo, gordo, magro ou at&eacute; se disfar&ccedil;ar em membros do outro sexo da sua ra&ccedil;a.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726713322667,
+    "lastModifiedBy": "qL3iBUN7HcwSiU0i",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!qmcr4miRTUGaUZgr"
+}

@@ -1,0 +1,47 @@
+{
+  "folder": "wlhc3hPsHTA1JFq4",
+  "name": "Vigor Bárbaro",
+  "type": "class_ability",
+  "_id": "D9yTnB0dzUkxTMLF",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 1,
+    "description": "<p>A cada n&iacute;vel, o B&aacute;rbaro recebe um B&ocirc;nus de +2 nos seus pontos de vida adicionais &agrave; tabela de Guerreiro e um b&ocirc;nus de +2 na sua JPC.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707337210,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 250000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!D9yTnB0dzUkxTMLF"
+}

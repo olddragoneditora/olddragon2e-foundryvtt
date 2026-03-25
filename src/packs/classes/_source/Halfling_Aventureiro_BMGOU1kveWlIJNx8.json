@@ -1,0 +1,124 @@
+{
+  "folder": "WLKztYMGYxWJ52RC",
+  "name": "Halfling Aventureiro",
+  "type": "class",
+  "_id": "BMGOU1kveWlIJNx8",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "equipment_restrictions": {
+      "weapons": "Apenas pequenas ou médias. Armas grandes geram ataques difíceis para o Halfling Aventureiro.",
+      "armors": "Apenas as leves. Escudos, Armaduras Média ou Pesadas, impedem o uso das suas habilidades e protegem apenas a metade da CA normal.",
+      "magic_items": "Não pode usar cajados, varinhas e pergaminhos mágicos com exceção dos pergaminhos de proteção."
+    },
+    "hp": null,
+    "high_level_hp_bonus": null,
+    "restrictions": {
+      "alignments": [],
+      "races": ["Halfling"]
+    },
+    "levels": {
+      "1": {
+        "ba": 1,
+        "jp": 5
+      },
+      "2": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 1500
+      },
+      "3": {
+        "ba": 2,
+        "jp": 5,
+        "xp": 3000
+      },
+      "4": {
+        "ba": 2,
+        "jp": 5,
+        "xp": 5500
+      },
+      "5": {
+        "ba": 3,
+        "jp": 8,
+        "xp": 8500
+      },
+      "6": {
+        "ba": 3,
+        "jp": 8,
+        "xp": 17000
+      },
+      "7": {
+        "ba": 4,
+        "jp": 8,
+        "xp": 27000
+      },
+      "8": {
+        "ba": 4,
+        "jp": 8,
+        "xp": 37000
+      },
+      "9": {
+        "ba": 5,
+        "jp": 11,
+        "xp": 47000
+      },
+      "10": {
+        "ba": 5,
+        "jp": 11,
+        "xp": 94000
+      },
+      "11": {
+        "ba": 6,
+        "jp": 11,
+        "xp": 190000
+      },
+      "12": {
+        "ba": 6,
+        "jp": 11,
+        "xp": 280000
+      },
+      "13": {
+        "ba": 7,
+        "jp": 14,
+        "xp": 370000
+      },
+      "14": {
+        "ba": 7,
+        "jp": 14,
+        "xp": 460000
+      },
+      "15": {
+        "ba": 8,
+        "jp": 14,
+        "xp": 550000
+      }
+    },
+    "class_abilities": [
+      "Compendium.olddragon2e.classes.Item.h8vuv3WKMxWKc5jY",
+      "Compendium.olddragon2e.classes.Item.PchOzdcfujOJIwZk",
+      "Compendium.olddragon2e.classes.Item.NsoyZDs6f4dqcUYp",
+      "Compendium.olddragon2e.classes.Item.zkDaG8qE2Xnm7cZB",
+      "Compendium.olddragon2e.classes.Item.nGECwmvUqc7CHrLR",
+      "Compendium.olddragon2e.classes.Item.pAPjjkgRzKm4fuWC"
+    ],
+    "description": "<p>Estes Ladr&otilde;es halflings e especialistas s&atilde;o um dos her&oacute;is mais incomuns de se encontrar pelos escuros corredores das masmorras.</p>\n<p>Cansado de sua pacata vida junto dos seus, o halfling munido de sua coragem e esp&iacute;rito aventureiro parte em busca de terras das quais nunca ouviu falar, enfrentando perigos que nunca pensou vencer e conquistando riquezas que nunca pensou conseguir.</p>\n<p>&Agrave; primeira vista, um Halfling Aventureiro parece ser despreparado, talvez pela falta de pirotecnia de suas habilidades, mas esta impress&atilde;o se esgota quando um halfling aponta sua arma para o seu alvo.</p>\n<h1>Restri&ccedil;&otilde;es</h1>\n<p>Al&eacute;m de seguir a evolu&ccedil;&atilde;o de experi&ecirc;ncia de um Ladr&atilde;o especialista, o Halfling Aventureiro est&aacute; limitado apenas a personagens halflings.</p>\n<p>O Halfling Aventureiro perde as habilidades <em>Ouvir Ru&iacute;dos</em> e <em>Ataque Furtivo</em>, mas mant&eacute;m e evolui seus <em>Talentos de Ladr&atilde;o</em>, tendo uma vers&atilde;o modificada de alguns talentos adaptados ao seu of&iacute;cio:</p>\n<p><em>Senso de Perigo</em> substitui o talento <em>Armadilhas</em>. O Halfling Aventureiro &eacute; capaz de perceber situa&ccedil;&otilde;es de risco e perigo, como armadilhas ou ataques iminentes, passivamente (teste realizado pelo Mestre). Ele n&atilde;o &eacute; capaz de entender exatamente a fonte do perigo, mas sabe que algo est&aacute; por acontecer. Se detectar o perigo, o Halfling Aventureiro n&atilde;o ser&aacute; surpreendido.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726774371509,
+    "lastModifiedBy": "Up6xAmRvZ0ZirlvK",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!BMGOU1kveWlIJNx8"
+}

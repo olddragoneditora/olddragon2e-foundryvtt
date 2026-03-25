@@ -1,0 +1,47 @@
+{
+  "folder": "wxsm0wTyPaQ0EztN",
+  "name": "Brilho Mágico",
+  "type": "class_ability",
+  "_id": "wM9NofPq0HGTjRWQ",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 3,
+    "description": "<p>O Elfo Aventureiro come&ccedil;a a dominar as artes arcanas na pr&aacute;tica, sendo capaz de conjurar uma &uacute;nica magia de 1&ordm; c&iacute;rculo por dia, como um Mago de 1&ordm; n&iacute;vel.<br>Todas as regras de conjura&ccedil;&atilde;o, uso de armaduras, memoriza&ccedil;&atilde;o, lista de magias e grim&oacute;rio de um Mago s&atilde;o compartilhadas por um Elfo Aventureiro.<br>Se estiver usando um escudo ou armadura, um Elfo Aventureiro possui 1-3 chances em 1d6 de perder a magia sem que qualquer efeito ocorra.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707444212,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 50000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!wM9NofPq0HGTjRWQ"
+}

@@ -1,0 +1,47 @@
+{
+  "folder": "xOuMBXLnPpZaoKRg",
+  "name": "No Alvo",
+  "type": "class_ability",
+  "_id": "zkDaG8qE2Xnm7cZB",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 6,
+    "description": "<p>Devido ao constante treinamento, o Halfling Aventureiro evolui ainda mais a habilidade natural de mira em arremessos. Deste ponto em diante, qualquer ataque &agrave; dist&acirc;ncia realizado com sua arma racial &eacute; considerado um ataque muito f&aacute;cil.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707476578,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 250000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!zkDaG8qE2Xnm7cZB"
+}

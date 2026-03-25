@@ -1,0 +1,47 @@
+{
+  "folder": "2rstdPWNgeRFCUX4",
+  "name": "Previdência",
+  "type": "class_ability",
+  "_id": "b2rT5IGrFbdEwhgx",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 6,
+    "description": "<p>O Ranger est&aacute; sempre alerta e prevenido quando estiver nos ermos. Nestas condi&ccedil;&otilde;es, um Ranger s&oacute; pode ser surpreendido com um resultado de 1 em 1d6, e todo acampamento criado por um Ranger nos ermos sempre ser&aacute; do tipo seguro.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707612259,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 200000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!b2rT5IGrFbdEwhgx"
+}

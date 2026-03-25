@@ -1,0 +1,37 @@
+{
+  "folder": "PQvDSmyJsQz0dITN",
+  "name": "Humano",
+  "type": "race",
+  "_id": "LVAnPRB3y5OexOmz",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "movement": 9,
+    "infravision": null,
+    "alignment_tendency": "none",
+    "race_abilities": [
+      "Compendium.olddragon2e.races.Item.5AgoZPuWUz4MzkVu",
+      "Compendium.olddragon2e.races.Item.owGdW6FzPNnWQmzU"
+    ],
+    "flavor": "<p>Os mais Comuns, Vers&aacute;teis e Adapt&aacute;veis Aventureiros.</p>",
+    "description": "<p>Com enorme variabilidade cultural e disseminados por todos os cantos do mundo, os humanos possuem muita facilidade em assumir o lugar central na maioria dos cen&aacute;rios e, quando analisados sob essa &oacute;tica, revelam sua verdadeira for&ccedil;a.</p>\n<p>Voc&ecirc; conseguir&aacute; encontrar humanos em praticamente todos os habitats poss&iacute;veis, vivendo sob todos os climas, domando o ambiente ao seu bel prazer. Eles se adaptam, se moldam e se espalham como quase nenhuma outra ra&ccedil;a &ndash; e fazem isso r&aacute;pido, muito r&aacute;pido.</p>\n<p>Possuem as mais variadas caracter&iacute;sticas f&iacute;sicas, muitos tons de cabelo, cores de olhos, pesos e alturas. S&atilde;o encontrados dos mais franzinos aos mais brutamontes. Se aparentam serem fr&aacute;geis, com uma vida curta, carecendo de poderes ou habilidades especiais, compensam com sua capacidade de organiza&ccedil;&atilde;o e expans&atilde;o, que podem ser impressionantes.</p>\n<p>Para o padr&atilde;o dos mundos de fantasia, humanos se reproduzem muito r&aacute;pido. Expandem-se com extrema velocidade, ocupam &aacute;reas as quais outras ra&ccedil;as n&atilde;o conseguem e, por viverem pouco se comparados a outras ra&ccedil;as, se relacionam com o tempo de uma forma totalmente diferente. Durante o per&iacute;odo da inf&acirc;ncia de um elfo, um Imp&eacute;rio humano pode se erguer, viver seu apogeu e desaparecer por completo. Acredite, isso pode ser assustador para um elfo ou um an&atilde;o.</p>\n<p>Isso faz com que os humanos sejam a ra&ccedil;a padr&atilde;o dos mundos de Fantasia, menos pelo seu poder como indiv&iacute;duo e muito mais pela sua capacidade de se organizar, de assimilar, se desenvolver e ocupar.</p>\n<h1>Personalidade</h1>\n<p>Como na apar&ecirc;ncia f&iacute;sica, os humanos s&atilde;o diversos e vers&aacute;teis. Sua personalidade &eacute; plural. Abra&ccedil;am todas as linhas de pensamento e &eacute; dif&iacute;cil estabelecer um padr&atilde;o de pensamento e comportamento quando falamos de humanos.</p>\n<p>Se observados pelo prisma temporal, os humanos s&atilde;o ultrarr&aacute;pidos, pois aprendem t&eacute;cnicas e tecnologias as quais avan&ccedil;am e melhoram no espa&ccedil;o de uma &uacute;nica gera&ccedil;&atilde;o. Quando se expandem, nunca atacam e fogem em seguida. Sempre dominam, se estabelecem, permanecem, colonizam e s&oacute; v&atilde;o embora quando sua for&ccedil;a pol&iacute;tica e de organiza&ccedil;&atilde;o social os impede de continuar onde est&atilde;o.</p>\n<p>Humanos s&atilde;o afeitos a quantidade. Se um elfo leva anos para forjar uma cimitarra obra-prima, aplicando t&eacute;cnicas beirando o sobrenatural na forja, humanos abra&ccedil;am a produtividade e quantidade.</p>\n<p>Do ponto de vista da pluralidade, apesar de parecer um contrassenso, os humanos aceitam bem as diferen&ccedil;as, sobretudo se comparados com outras ra&ccedil;as. Convivem com an&otilde;es, halflings e elfos, algumas vezes at&eacute; mesmo at&eacute; assimilando suas col&ocirc;nias, desde que, claro, estes estrangeiros n&atilde;o impe&ccedil;am seus cont&iacute;nuos planos de expans&atilde;o, ac&uacute;mulo de poder e sobreviv&ecirc;ncia.</p>\n<h1>O Humano nas Aventuras</h1>\n<p>O humano aventureiro &eacute; um retrato do humano padr&atilde;o. Adapt&aacute;vel, imaginativo, aguerrido e ambicioso.</p>\n<p>Aventuram-se pelas mais diversas raz&otilde;es &ndash; desde para se sustentar at&eacute; para acumular poder, gl&oacute;ria ou fama. A ambi&ccedil;&atilde;o do humano, por qualquer motivo que seja, &eacute; a for&ccedil;a motriz a qual os tira do conforto de suas choupanas levando-os aos t&uacute;neis escuros dos subterr&acirc;neos.</p>\n<p>Eles querem deixar um legado, fazer seu nome famoso, virar uma lenda e se tornar um exemplo.</p>\n<p>Humanos aventureiros s&atilde;o orgulhosos por deixarem sua marca no mundo.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726706632011,
+    "modifiedTime": 1726713223951,
+    "lastModifiedBy": "qL3iBUN7HcwSiU0i",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!LVAnPRB3y5OexOmz"
+}

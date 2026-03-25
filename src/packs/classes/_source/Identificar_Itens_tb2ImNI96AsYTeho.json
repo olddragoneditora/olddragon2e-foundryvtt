@@ -1,0 +1,47 @@
+{
+  "folder": "9urJqCJiEUPcoGCw",
+  "name": "Identificar Itens",
+  "type": "class_ability",
+  "_id": "tb2ImNI96AsYTeho",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 10,
+    "description": "<p>Permite ao Acad&ecirc;mico, ao observar minuciosamente um item m&aacute;gico por ao menos 1d4 turnos e com uma chance de 1-2 em 1d6, identificar seus prop&oacute;sitos gerais (exemplo &mdash; esta &eacute; uma espada encantada para ser usada contra licantropos; ou ainda &mdash; estas botas parecem ter sido costuradas por elfos) mesmo que suas fun&ccedil;&otilde;es exatas n&atilde;o sejam reveladas.</p>\n<p>Itens m&aacute;gicos ca&oacute;ticos se camuflam e n&atilde;o podem ser reconhecidos desta maneira, sempre for&ccedil;ando um reconhecimento errado do seu prop&oacute;sito geral.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707270239,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 400000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!tb2ImNI96AsYTeho"
+}

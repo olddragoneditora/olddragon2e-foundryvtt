@@ -1,0 +1,47 @@
+{
+  "folder": "95Q26FIk0Kn8LItO",
+  "name": "Cura Natural",
+  "type": "class_ability",
+  "_id": "NLfoVSAKdlzcYV41",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 1,
+    "description": "<p>Apesar de incapaz de conjurar magias de cura, gra&ccedil;as a sua experi&ecirc;ncia acumulada em cuidar de enfermos, um Proscrito desenvolve a habilidade de curar ferimentos como um curandeiro ou m&eacute;dico, aumentando para 2 a cura natural de um alvo ou para 1d4+1 para alvos que permane&ccedil;am em repouso. A Cura Natural do Proscrito pode ser usada para evitar a morte de personagens agonizando.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707586215,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!NLfoVSAKdlzcYV41"
+}

@@ -1,0 +1,49 @@
+{
+  "folder": "ufgmdrL462rx4CSR",
+  "name": "Cura Milagrosa",
+  "type": "class_ability",
+  "_id": "Yi704UiBhtHLlYPd",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 1,
+    "description": "<p>Cl&eacute;rigos podem trocar uma magia previamente memorizada por uma magia de Curar Ferimentos de 1&ordm; c&iacute;rculo.</p>",
+    "level6": "<p>O Cl&eacute;rigo evolui seu poder de Cura, podendo trocar uma magia memorizada por Curar Ferimentos de 3&ordm; c&iacute;rculo, que cura at&eacute; 2d8 pontos de vida.</p>",
+    "level10": "<p>O Cl&eacute;rigo evolui seu poder de Cura, podendo trocar uma magia memorizada por Curar Ferimentos de 5&ordm; c&iacute;rculo, que cura at&eacute; 3d8 pontos de vida.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707414417,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 300000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!Yi704UiBhtHLlYPd"
+}

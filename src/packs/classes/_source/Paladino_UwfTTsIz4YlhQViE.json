@@ -1,0 +1,126 @@
+{
+  "folder": "Uttpw1QqqibXnI0K",
+  "name": "Paladino",
+  "type": "class",
+  "_id": "UwfTTsIz4YlhQViE",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "hp": null,
+    "high_level_hp_bonus": null,
+    "restrictions": {
+      "alignments": [],
+      "races": []
+    },
+    "levels": {
+      "1": {
+        "ba": 1,
+        "jp": 5
+      },
+      "2": {
+        "ba": 2,
+        "jp": 5,
+        "xp": 2500
+      },
+      "3": {
+        "ba": 3,
+        "jp": 6,
+        "xp": 5000
+      },
+      "4": {
+        "ba": 4,
+        "jp": 6,
+        "xp": 8500
+      },
+      "5": {
+        "ba": 5,
+        "jp": 8,
+        "xp": 11500
+      },
+      "6": {
+        "ba": 6,
+        "jp": 8,
+        "xp": 23000
+      },
+      "7": {
+        "ba": 7,
+        "jp": 10,
+        "xp": 33000
+      },
+      "8": {
+        "ba": 8,
+        "jp": 10,
+        "xp": 43000
+      },
+      "9": {
+        "ba": 9,
+        "jp": 11,
+        "xp": 53000
+      },
+      "10": {
+        "ba": 10,
+        "jp": 11,
+        "xp": 106000
+      },
+      "11": {
+        "ba": 11,
+        "jp": 13,
+        "xp": 210000
+      },
+      "12": {
+        "ba": 12,
+        "jp": 13,
+        "xp": 320000
+      },
+      "13": {
+        "ba": 13,
+        "jp": 14,
+        "xp": 430000
+      },
+      "14": {
+        "ba": 14,
+        "jp": 14,
+        "xp": 540000
+      },
+      "15": {
+        "ba": 15,
+        "jp": 16,
+        "xp": 650000
+      }
+    },
+    "class_abilities": [
+      "Compendium.olddragon2e.classes.Item.zyvDtK4EWzPtAOWH",
+      "Compendium.olddragon2e.classes.Item.hVPM7fxyy5Yy2upI",
+      "Compendium.olddragon2e.classes.Item.7z56CBdcdcvrV62d",
+      "Compendium.olddragon2e.classes.Item.Yuh6yC45G1a3pID5",
+      "Compendium.olddragon2e.classes.Item.nRJE7evRDnUi3hum",
+      "Compendium.olddragon2e.classes.Item.6GtKpBj3GFJYrd0b",
+      "Compendium.olddragon2e.classes.Item.mc9uPfkCdnHZpnmn"
+    ],
+    "flavor": "<p>O Paladino &eacute; um her&oacute;i cavalheiresco, errante, destemido e de car&aacute;ter inquestion&aacute;vel que segue o caminho da ordem da verdade e da lei, estando sempre disposto a proteger os fracos e a lutar pela erradica&ccedil;&atilde;o do caos.</p>",
+    "description": "<h1>Restri&ccedil;&otilde;es</h1>\n<p>Al&eacute;m de seguir a evolu&ccedil;&atilde;o de experi&ecirc;ncia de um Guerreiro especialista, o Paladino deve ter alinhamento com a ordem al&eacute;m de possuir um c&oacute;digo de honra restritivo, criado em conjunto com o Mestre, com ao menos 3 votos.</p>\n<p>A quebra deste c&oacute;digo ou mudan&ccedil;a de alinhamento o faz perder acesso &agrave;s suas habilidades de Paladino.</p>\n<p>O Paladino mant&eacute;m suas habilidades de Guerreiro <em>Aparar</em> e <em>Maestria em Arma</em>, mas deixa de receber qualquer evolu&ccedil;&atilde;o ao se tornar um especialista.</p>",
+    "equipment_restrictions": {
+      "weapons": "Pode usar todas as armas.",
+      "armors": "Pode usar todas as armaduras.",
+      "magic_items": "Não pode usar cajados, varinhas e pergaminhos mágicos com exceção dos pergaminhos de proteção."
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726713548513,
+    "lastModifiedBy": "qL3iBUN7HcwSiU0i",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!UwfTTsIz4YlhQViE"
+}

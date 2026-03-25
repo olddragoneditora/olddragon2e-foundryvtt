@@ -1,0 +1,47 @@
+{
+  "folder": "IBegY1eJ9aTL51eA",
+  "name": "Assassinato",
+  "type": "class_ability",
+  "_id": "VVg96uuKLwyBq7X6",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 6,
+    "description": "<p>Ao desferir um Ataque Assassino, abre m&atilde;o do ataque normal para tentar um golpe fatal, matando imediatamente o alvo. A chance do golpe ser bem-sucedido &eacute; de 1-2 em 1d6. No 10&ordm; n&iacute;vel, a chance evolui para 1-3 em 1d6. Cada DV do alvo, igual ou acima do DV do Assassino, reduz a chance b&aacute;sica em 1 em 1d6. Caso o Assassinato falhe, o alvo n&atilde;o recebe dano e fica imune a um novo Assassinato at&eacute; o Assassino evoluir para o pr&oacute;ximo n&iacute;vel.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707316275,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!VVg96uuKLwyBq7X6"
+}
