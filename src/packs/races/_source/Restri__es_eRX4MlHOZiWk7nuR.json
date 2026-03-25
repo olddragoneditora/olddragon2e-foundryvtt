@@ -1,0 +1,37 @@
+{
+  "folder": "6gcf42NI5cH77vcH",
+  "name": "Restrições",
+  "type": "race_ability",
+  "_id": "eRX4MlHOZiWk7nuR",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "xp": null,
+    "jp": {
+      "jpc": false,
+      "jpd": false,
+      "jps": false
+    },
+    "bonus_damage_archery": false,
+    "rogue_talent": "none",
+    "description": "<p>Por serem pequenos, mas mineradores e forjadores, gnomos n&atilde;o possuem restri&ccedil;&otilde;es em rela&ccedil;&atilde;o a armaduras, mas precisam adquiri-las junto a comunidades de sua ra&ccedil;a.</p>\n<p>Entretanto, um gnomo n&atilde;o pode usar armas grandes, sendo restrito apenas a armas pequenas ou m&eacute;dias. Um gnomo s&oacute; consegue usar uma arma m&eacute;dia como se fosse uma arma de duas m&atilde;os.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726706632011,
+    "modifiedTime": 1726706671439,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 300000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!eRX4MlHOZiWk7nuR"
+}

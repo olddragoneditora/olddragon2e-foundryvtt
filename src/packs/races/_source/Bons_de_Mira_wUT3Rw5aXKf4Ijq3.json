@@ -1,0 +1,37 @@
+{
+  "folder": "nZTV9fep6rIexzLF",
+  "name": "Bons de Mira",
+  "type": "race_ability",
+  "_id": "wUT3Rw5aXKf4Ijq3",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "xp": null,
+    "jp": {
+      "jpc": false,
+      "jpd": false,
+      "jps": false
+    },
+    "bonus_damage_archery": false,
+    "rogue_talent": "none",
+    "description": "<p>Pela tradi&ccedil;&atilde;o racial de jogos de arremesso, para os halflings qualquer ataque &agrave; dist&acirc;ncia com uma arma de arremesso &eacute; considerado um ataque f&aacute;cil.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726706632011,
+    "modifiedTime": 1726706681435,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!wUT3Rw5aXKf4Ijq3"
+}

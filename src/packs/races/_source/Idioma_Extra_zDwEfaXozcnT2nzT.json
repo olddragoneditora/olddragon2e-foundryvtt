@@ -1,0 +1,37 @@
+{
+  "folder": "FOtzFE2uYTakt4z6",
+  "name": "Idioma Extra",
+  "type": "race_ability",
+  "_id": "zDwEfaXozcnT2nzT",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "xp": null,
+    "jp": {
+      "jpc": false,
+      "jpd": false,
+      "jps": false
+    },
+    "bonus_damage_archery": false,
+    "rogue_talent": "none",
+    "description": "<p>Os meio-elfos recebem um idioma extra (escolhido entre o &eacute;lfico e o idioma falado pela sua contraparte humana).</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726706632011,
+    "modifiedTime": 1726706632011,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!zDwEfaXozcnT2nzT"
+}

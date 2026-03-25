@@ -1,0 +1,40 @@
+{
+  "folder": "y3I9Ax4MSmqjQWqP",
+  "name": "Halfling",
+  "type": "race",
+  "_id": "3VqpR0B3GFRHm9i7",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "movement": 6,
+    "infravision": null,
+    "alignment_tendency": "neutro",
+    "race_abilities": [
+      "Compendium.olddragon2e.races.Item.4POPuC9jLG7wQgO4",
+      "Compendium.olddragon2e.races.Item.XUXBrUsiUVfPELAI",
+      "Compendium.olddragon2e.races.Item.wUT3Rw5aXKf4Ijq3",
+      "Compendium.olddragon2e.races.Item.maknb5fmH6XjUzWw",
+      "Compendium.olddragon2e.races.Item.T0YYYR4LgllcfBA7"
+    ],
+    "flavor": "<p>Os mais Perspicazes e Curiosos Aventureiros.</p>",
+    "description": "<p>Pequenos, roli&ccedil;os, met&oacute;dicos e corajosos, os halflings s&atilde;o um povo pac&iacute;fico e rural habitando as colinas verdejantes, vivendo do que plantam e criam, formando comunidades buc&oacute;licas e pequenas, quase sempre pr&oacute;ximas &agrave;s fronteiras das terras dos humanos.</p>\n<p>Possuem uma apar&ecirc;ncia muito similar a dos humanos, como se fossem mini-homens. Suas orelhas levemente pontiagudas, mas n&atilde;o o suficiente para se parecerem com as dos elfos, se destacam juntamente de seus p&eacute;s, os quais s&atilde;o grandes, robustos e cobertos com uma espessa cobertura de pelos desgrenhados. Halflings est&atilde;o, quase sempre, descal&ccedil;os.</p>\n<p>Suas fei&ccedil;&otilde;es s&atilde;o bonachonas, com bochechas grandes brilhosas e rosadas, seus cabelos s&atilde;o encaracolados, grossos e volumosos, como se tivessem sido penteados despretensiosamente com as m&atilde;os.</p>\n<p>S&atilde;o trabalhadores eficientes e met&oacute;dicos. Buscam realizar suas tarefas com disciplina e corre&ccedil;&atilde;o para poderem desfrutar daquilo que mais gostam: o &oacute;cio regado a doses cavalares de conforto.</p>\n<p>Gostam de viver bem, de comer com fartura, contar hist&oacute;rias exageradamente longas e de humor duvidoso. Apesar disso, s&atilde;o bons companheiros, sempre amig&aacute;veis, se voc&ecirc; n&atilde;o se importar com hist&oacute;rias intermin&aacute;veis e piadas com pouco sentido.</p>\n<p>O ideal de vida dos Halflings &eacute; viver em paz e sob o signo da calma, trabalhar diariamente, descansar &agrave; beira do rio, ler, comer (de prefer&ecirc;ncia 6 refei&ccedil;&otilde;es por dia) e ver o tempo passar, em paz, na tranquilidade e longe da correria e das preocupa&ccedil;&otilde;es.</p>\n<p>Se o conforto &eacute; o objeto de desejo de um halfling, outra caracter&iacute;stica &eacute; importante para defini-los: a curiosidade.</p>\n<p>Halflings sentem um magnetismo com coisas que n&atilde;o conhecem e com assuntos que n&atilde;o dominam. Um halfling explora, investiga, toca. As lendas e hist&oacute;rias de locais distantes e de terras desconhecidas aliadas ao seu conhecido destemor, s&atilde;o uma das poucas coisas capazes de faz&ecirc;-los abandonar suas tocas e um bom livro &agrave; beira da lareira.</p>\n<p>Tolerantes, est&aacute;veis e soci&aacute;veis, os halflings s&atilde;o sem d&uacute;vida os amigos mais f&aacute;ceis de se fazer, fora de um indiv&iacute;duo de sua pr&oacute;pria ra&ccedil;a.</p>\n<h1>Personalidade</h1>\n<p>Se estabilidade &eacute; o adjetivo do halfling, a curiosidade &eacute; a contradi&ccedil;&atilde;o que os define. Vivendo em constante conflito entre comodidade e curiosidade, halflings t&ecirc;m &ldquo;contradi&ccedil;&atilde;o&rdquo; como nome do meio.</p>\n<p>Contradi&ccedil;&atilde;o a qual se une a outra igualmente intrigante: a quest&atilde;o ambi&ccedil;&atilde;o-riqueza. N&atilde;o que eles n&atilde;o se importem com dinheiro, sim, eles se importam, mas, se para outras ra&ccedil;as dinheiro &eacute; poder, para os halflings dinheiro &eacute; conforto e tranquilidade.</p>\n<p>Uma cadeira estofada com tecido confort&aacute;vel, ideal para uma sesta ap&oacute;s uma das muitas refei&ccedil;&otilde;es di&aacute;rias, faz mais a cabe&ccedil;a de um halfling do que um trono cravejado de gemas preciosas.</p>\n<p>Ao mesmo tempo, halflings n&atilde;o possuem um forte desejo de ac&uacute;mulo e ambi&ccedil;&otilde;es por poder. Voc&ecirc; dificilmente ver&aacute; um halfling ostentando riqueza ou divagando sobre conquistas pol&iacute;ticas. Eles s&atilde;o muito mais pr&aacute;ticos nos seus desejos: a sensa&ccedil;&atilde;o de pertencimento, a vida em comunidade, as amizades, o conforto, as viagens ao desconhecido, tudo isso temperado com uma boa dose de destemor.</p>\n<h1>O Halfling nas Aventuras</h1>\n<p>Halflings precisam de poucos motivos para se tornarem aventureiros, como sua curiosidade e seu destemor.</p>\n<p>J&aacute; suas buscas podem ser bem mais variadas. Podem estar indo atr&aacute;s de um rem&eacute;dio para o t&eacute;dio, de divers&atilde;o ou de uma boa hist&oacute;ria para contar. Os cl&aacute;ssicos liter&aacute;rios dos halflings quase sempre descrevem aventuras, her&oacute;is e seus feitos e, em menor n&uacute;mero, biografias de halflings aventureiros com uma boa dose de exagero (ou n&atilde;o).</p>\n<p>Halflings se aventuram porque querem expandir seus horizontes, e n&atilde;o t&ecirc;m nenhum medo do desconhecido.</p>\n<p>Eles querem conhecer, ocupar-se, entender e participar.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726706632011,
+    "modifiedTime": 1726713213603,
+    "lastModifiedBy": "qL3iBUN7HcwSiU0i",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!3VqpR0B3GFRHm9i7"
+}

@@ -1,0 +1,49 @@
+{
+  "folder": "ufgmdrL462rx4CSR",
+  "name": "Afastar Mortos-Vivos",
+  "type": "class_ability",
+  "_id": "l15jhNum8mkGy0zS",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 1,
+    "description": "<p>O Cl&eacute;rigo &eacute; capaz de invocar o nome e o poder de sua divindade brandindo seu s&iacute;mbolo sagrado, fazendo os mortos-vivos a at&eacute; 18 metros e que n&atilde;o passem em um teste de moral no final da rodada, se contorcerem e tentarem a todo custo fugir do Cl&eacute;rigo.</p>\n<p><strong>Reduzir a P&oacute;</strong>: Se o morto-vivo n&atilde;o passar no Teste de Moral e o resultado dos dados for igual (tirando dois 4 nos dados, ou dois 5, ou ainda dois 6) o morto-vivo n&atilde;o &eacute; apenas afastado, mas tamb&eacute;m destru&iacute;do e reduzido a p&oacute;.</p>\n<p><strong>Alvo</strong>: Todos os mortos-vivos num raio de at&eacute; 18 metros do Cl&eacute;rigo s&atilde;o afetados pelo Afastar Mortos-vivos. Mortos-vivos bem-sucedidos no teste de moral no final da rodada ficam imunes a um novo Afastar Mortos-vivos proferidos por este Cl&eacute;rigo, at&eacute; este adquirir um novo n&iacute;vel.</p>",
+    "level3": "<p>O Cl&eacute;rigo recebe um b&ocirc;nus de +1 nos seus testes de Afastar Mortos-Vivos e pode tentar Afastar Mortos-Vivos duas vezes ao dia.</p>",
+    "level10": "<p>O Cl&eacute;rigo recebe um b&ocirc;nus de +2 nos seus testes de Afastar Mortos-Vivos e pode tentar Afastar Mortos-Vivos tr&ecirc;s vezes ao dia.</p>",
+    "daily_uses": {
+      "1": 1,
+      "2": 1,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 2,
+      "7": 2,
+      "8": 2,
+      "9": 2,
+      "10": 3,
+      "11": 3,
+      "12": 3,
+      "13": 3,
+      "14": 3,
+      "15": 3
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707414417,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!l15jhNum8mkGy0zS"
+}

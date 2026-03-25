@@ -1,0 +1,47 @@
+{
+  "folder": "X4He3u7tp351qKDU",
+  "name": "Ler Magias",
+  "type": "class_ability",
+  "_id": "3W7wOPXa6E4G0dcX",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 1,
+    "description": "<p>Um Necromante &eacute; capaz de uma vez ao dia por n&iacute;vel decifrar e ler inscri&ccedil;&otilde;es m&aacute;gicas em qualquer lugar, mesmo que n&atilde;o entenda a mensagem a qual elas querem passar.</p>\n<p>Esta habilidade n&atilde;o permite identificar as propriedades m&aacute;gicas de um item m&aacute;gico, nem &eacute; necess&aacute;ria para lan&ccedil;ar magias escritas, mas permitir&aacute; identificar qual magia est&aacute; escrita ali.</p>",
+    "daily_uses": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707541676,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 50000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!3W7wOPXa6E4G0dcX"
+}

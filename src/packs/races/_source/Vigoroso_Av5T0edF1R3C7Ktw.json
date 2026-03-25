@@ -1,0 +1,37 @@
+{
+  "folder": "Iv107ixXe5rYPZ5w",
+  "name": "Vigoroso",
+  "type": "race_ability",
+  "_id": "Av5T0edF1R3C7Ktw",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "xp": null,
+    "jp": {
+      "jpc": true,
+      "jpd": false,
+      "jps": false
+    },
+    "bonus_damage_archery": false,
+    "rogue_talent": "none",
+    "description": "<p>Os an&otilde;es s&atilde;o muito resistentes aos efeitos que afetem seu corpo, recebendo um b&ocirc;nus de +1 em qualquer teste de JPC.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726706632011,
+    "modifiedTime": 1726706644351,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 50000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!Av5T0edF1R3C7Ktw"
+}

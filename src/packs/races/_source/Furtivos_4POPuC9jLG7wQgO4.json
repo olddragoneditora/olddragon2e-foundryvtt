@@ -1,0 +1,37 @@
+{
+  "folder": "nZTV9fep6rIexzLF",
+  "name": "Furtivos",
+  "type": "race_ability",
+  "_id": "4POPuC9jLG7wQgO4",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "xp": null,
+    "jp": {
+      "jpc": false,
+      "jpd": false,
+      "jps": false
+    },
+    "bonus_damage_archery": false,
+    "rogue_talent": "furtividade",
+    "description": "<p>S&atilde;o especialistas em se esconder e em passar despercebidos, conseguindo se esconder com uma chance de 1-2 em 1d6. Se o Halfling adotar a classe Ladr&atilde;o, ele acrescenta ainda um b&ocirc;nus de 1 no seu talento Furtividade.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726706632011,
+    "modifiedTime": 1774456613566,
+    "lastModifiedBy": "tNGootJ5km48F9TR",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!4POPuC9jLG7wQgO4"
+}

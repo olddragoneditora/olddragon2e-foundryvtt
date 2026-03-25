@@ -1,0 +1,123 @@
+{
+  "folder": "pTnLkX9il2MwVfxU",
+  "name": "Ladrão",
+  "type": "class",
+  "_id": "o8cAybQI9lQp2MTd",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "equipment_restrictions": {
+      "weapons": "Apenas pequenas ou médias. Armas grandes geram ataques difíceis para Ladrões.",
+      "armors": "Apenas as leves. Escudos, Armaduras Média ou Pesadas, impedem o uso das suas habilidades e protegem apenas a metade da CA normal.",
+      "magic_items": "Não podem usar cajados, varinhas e pergaminhos mágicos com exceção dos pergaminhos de proteção."
+    },
+    "hp": null,
+    "high_level_hp_bonus": null,
+    "restrictions": {
+      "alignments": [],
+      "races": []
+    },
+    "levels": {
+      "1": {
+        "ba": 1,
+        "jp": 5
+      },
+      "2": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 1000
+      },
+      "3": {
+        "ba": 2,
+        "jp": 5,
+        "xp": 2000
+      },
+      "4": {
+        "ba": 2,
+        "jp": 5,
+        "xp": 4000
+      },
+      "5": {
+        "ba": 3,
+        "jp": 8,
+        "xp": 7000
+      },
+      "6": {
+        "ba": 3,
+        "jp": 8,
+        "xp": 14000
+      },
+      "7": {
+        "ba": 4,
+        "jp": 8,
+        "xp": 24000
+      },
+      "8": {
+        "ba": 4,
+        "jp": 8,
+        "xp": 34000
+      },
+      "9": {
+        "ba": 5,
+        "jp": 11,
+        "xp": 44000
+      },
+      "10": {
+        "ba": 5,
+        "jp": 11,
+        "xp": 88000
+      },
+      "11": {
+        "ba": 6,
+        "jp": 11,
+        "xp": 180000
+      },
+      "12": {
+        "ba": 6,
+        "jp": 11,
+        "xp": 260000
+      },
+      "13": {
+        "ba": 7,
+        "jp": 14,
+        "xp": 34000
+      },
+      "14": {
+        "ba": 7,
+        "jp": 14,
+        "xp": 420000
+      },
+      "15": {
+        "ba": 8,
+        "jp": 14,
+        "xp": 500000
+      }
+    },
+    "class_abilities": [
+      "Compendium.olddragon2e.classes.Item.4GGLAwptWJ8VhYuV",
+      "Compendium.olddragon2e.classes.Item.oqZspgbKsZDmUnAu",
+      "Compendium.olddragon2e.classes.Item.qKSkyfweojoOHRv8",
+      "Compendium.olddragon2e.classes.Item.jqNG7o6oSqwCdS3w"
+    ],
+    "flavor": "<p>Aventureiro t&aacute;ctico, perito em sobreviver em masmorras. Furtivo, trai&ccedil;oeiro e fatal quando ataca suas v&iacute;timas sorrateiramente.</p>",
+    "description": "<h1 id=\"a-carreira-do-ladrao\">A Carreira do Ladr&atilde;o</h1>\n<p>O Ladr&atilde;o de n&iacute;veis baixos &eacute;, antes de tudo, um sobrevivente. Algu&eacute;m que, a custo da sua perspic&aacute;cia e destreza, superou tudo para chegar aonde j&aacute; chegou, o que claro, ainda &eacute; pouco.</p>\n<p>Suas especialidades o far&atilde;o evoluir de batedor de carteira descal&ccedil;o a um grande ladino, reconhecido e temido. Voc&ecirc; s&oacute; precisa praticar e praticar, ficar melhor, mais eficiente, mais r&aacute;pido, mais trai&ccedil;oeiro e, claro, &eacute; importante ser tamb&eacute;m mais&hellip; mortal.</p>\n<p>Assim, voc&ecirc; galga os passos da perigosa e dissimulada hierarquia do submundo, na qual os premiados nem sempre s&atilde;o os melhores, e sim os mais influentes e poderosos.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726713486719,
+    "lastModifiedBy": "qL3iBUN7HcwSiU0i",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!o8cAybQI9lQp2MTd"
+}

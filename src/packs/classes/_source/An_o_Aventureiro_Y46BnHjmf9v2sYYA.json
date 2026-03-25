@@ -1,0 +1,123 @@
+{
+  "name": "Anão Aventureiro",
+  "type": "class",
+  "_id": "Y46BnHjmf9v2sYYA",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "equipment_restrictions": {
+      "weapons": "Pode usar todas as armas.",
+      "armors": "Pode usar todas as armaduras.",
+      "magic_items": "Não pode usar cajados, varinhas e pergaminhos mágicos com exceção dos pergaminhos de proteção."
+    },
+    "hp": null,
+    "high_level_hp_bonus": null,
+    "restrictions": {
+      "alignments": [],
+      "races": ["Anão"]
+    },
+    "levels": {
+      "1": {
+        "ba": 1,
+        "jp": 5
+      },
+      "2": {
+        "ba": 2,
+        "jp": 5,
+        "xp": 2500
+      },
+      "3": {
+        "ba": 3,
+        "jp": 6,
+        "xp": 5000
+      },
+      "4": {
+        "ba": 4,
+        "jp": 6,
+        "xp": 8500
+      },
+      "5": {
+        "ba": 5,
+        "jp": 8,
+        "xp": 11500
+      },
+      "6": {
+        "ba": 6,
+        "jp": 8,
+        "xp": 23000
+      },
+      "7": {
+        "ba": 7,
+        "jp": 10,
+        "xp": 33000
+      },
+      "8": {
+        "ba": 8,
+        "jp": 10,
+        "xp": 43000
+      },
+      "9": {
+        "ba": 9,
+        "jp": 11,
+        "xp": 53000
+      },
+      "10": {
+        "ba": 10,
+        "jp": 11,
+        "xp": 106000
+      },
+      "11": {
+        "ba": 11,
+        "jp": 13,
+        "xp": 210000
+      },
+      "12": {
+        "ba": 12,
+        "jp": 13,
+        "xp": 320000
+      },
+      "13": {
+        "ba": 13,
+        "jp": 14,
+        "xp": 430000
+      },
+      "14": {
+        "ba": 14,
+        "jp": 14,
+        "xp": 540000
+      },
+      "15": {
+        "ba": 15,
+        "jp": 16,
+        "xp": 650000
+      }
+    },
+    "class_abilities": [
+      "Compendium.olddragon2e.classes.Item.n2RLTdF0i5rxBxwF",
+      "Compendium.olddragon2e.classes.Item.0W0ci0s68BeioPfs",
+      "Compendium.olddragon2e.classes.Item.rEd1rFMetALcOipu",
+      "Compendium.olddragon2e.classes.Item.L4586st3QPeMSwko",
+      "Compendium.olddragon2e.classes.Item.hkVxJIP5tdqF6MrV"
+    ],
+    "description": "<p>Estes Guerreiros an&otilde;es especialistas s&atilde;o uma esp&eacute;cie de combatente t&iacute;pico das linhas de combate an&atilde;. Soldados treinados para enfrentar os principais perigos.</p>\n<p>O An&atilde;o Aventureiro &eacute; o her&oacute;i m&aacute;ximo da sua ra&ccedil;a. &Eacute; o campe&atilde;o treinado para representar a excel&ecirc;ncia dos an&otilde;es na arte da batalha e da prote&ccedil;&atilde;o de seu povo. S&atilde;o preparados para serem uma esp&eacute;cie de guarda de elite na defesa dos seus port&otilde;es, corredores e sal&otilde;es sob a montanha.</p>\n<h1>Restri&ccedil;&otilde;es</h1>\n<p>Al&eacute;m de seguir a evolu&ccedil;&atilde;o de experi&ecirc;ncia de um Guerreiro especialista, o An&atilde;o Aventureiro est&aacute; limitado apenas a personagens an&otilde;es.</p>\n<p>O An&atilde;o Aventureiro perde as habilidades de Guerreiro <em>Aparar</em> e <em>Maestria em Arma</em> e deixa de receber qualquer evolu&ccedil;&atilde;o nestas habilidades quando se torna um especialista.</p>"
+  },
+  "effects": [],
+  "folder": "T7aqfn9zGaGnq0rd",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726774346248,
+    "lastModifiedBy": "Up6xAmRvZ0ZirlvK",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!Y46BnHjmf9v2sYYA"
+}

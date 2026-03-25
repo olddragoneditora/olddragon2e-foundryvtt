@@ -1,0 +1,47 @@
+{
+  "folder": "9urJqCJiEUPcoGCw",
+  "name": "Decifrar Linguagens",
+  "type": "class_ability",
+  "_id": "eOLJgTlDWuN195XM",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 3,
+    "description": "<p>Com seu conhecimento acad&ecirc;mico, &eacute; capaz tamb&eacute;m de decifrar linguagens, identificando idiomas, alfabetos e pictogramas, decodificar documentos e inscri&ccedil;&otilde;es conhecendo ao menos a ideia geral do texto. A chance de conseguir usar a habilidade Conhecimento Acad&ecirc;mico evolui para 1-3 chances em 1d6.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707270239,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 300000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!eOLJgTlDWuN195XM"
+}

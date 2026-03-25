@@ -1,0 +1,47 @@
+{
+  "folder": "95Q26FIk0Kn8LItO",
+  "name": "Afetar Mortos-Vivos",
+  "type": "class_ability",
+  "_id": "HRYX46ncA1d7XWjF",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 6,
+    "description": "<p>Mesmo sem o poder da sua f&eacute; para afastar ou destruir mortos-vivos, o Proscrito &eacute; capaz de, uma vez por dia, afetar negativamente os mortos-vivos, for&ccedil;ando um teste de moral aos mortos-vivos presentes. O Proscrito n&atilde;o faz isso para afast&aacute;-los, e sim para transformar todos os seus ataques em ataques dif&iacute;ceis. Mortos-vivos que passarem no teste de moral n&atilde;o ser&atilde;o afetados.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707585242,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!HRYX46ncA1d7XWjF"
+}

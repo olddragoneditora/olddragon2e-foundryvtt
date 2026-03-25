@@ -1,0 +1,22 @@
+{
+  "name": "Habilidades de Raça",
+  "sorting": "m",
+  "folder": "3VjeeVVEF5EVwQ0E",
+  "type": "Item",
+  "_id": "6gcf42NI5cH77vcH",
+  "description": "",
+  "sort": 0,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726706631993,
+    "modifiedTime": 1726706631993,
+    "lastModifiedBy": "23TLgqGgbkAhWsum"
+  },
+  "_key": "!folders!6gcf42NI5cH77vcH"
+}

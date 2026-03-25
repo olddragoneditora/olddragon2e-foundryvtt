@@ -1,0 +1,37 @@
+{
+  "folder": "3MFJEb265IFyALkx",
+  "name": "Graciosos",
+  "type": "race_ability",
+  "_id": "1JK73DDEmWlYpWPN",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "xp": null,
+    "jp": {
+      "jpc": false,
+      "jpd": true,
+      "jps": false
+    },
+    "bonus_damage_archery": false,
+    "rogue_talent": "none",
+    "description": "<p>Os elfos controlam com precis&atilde;o seus movimentos no espa&ccedil;o ao redor do seu corpo, recebendo um b&ocirc;nus de +1 em qualquer teste de JPD.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726706632011,
+    "modifiedTime": 1726706659269,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 50000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!1JK73DDEmWlYpWPN"
+}

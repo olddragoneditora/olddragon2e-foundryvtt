@@ -1,0 +1,126 @@
+{
+  "folder": "AVZRSl7zfi0pcQvO",
+  "name": "Ranger",
+  "type": "class",
+  "_id": "fjNBciFT3punx7Ks",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "equipment_restrictions": {
+      "weapons": "Apenas pequenas ou médias. Armas grandes geram ataques difíceis para o Ranger.",
+      "armors": "Apenas as leves. Escudos, Armaduras Média ou Pesadas, impedem o uso das suas habilidades e protegem apenas a metade da CA normal.",
+      "magic_items": "Não podem usar cajados, varinhas e pergaminhos mágicos com exceção dos pergaminhos de proteção."
+    },
+    "hp": null,
+    "high_level_hp_bonus": null,
+    "restrictions": {
+      "alignments": [],
+      "races": [""]
+    },
+    "levels": {
+      "1": {
+        "ba": 1,
+        "jp": 5
+      },
+      "2": {
+        "ba": 1,
+        "jp": 5,
+        "xp": 1500
+      },
+      "3": {
+        "ba": 2,
+        "jp": 5,
+        "xp": 3000
+      },
+      "4": {
+        "ba": 2,
+        "jp": 5,
+        "xp": 5500
+      },
+      "5": {
+        "ba": 3,
+        "jp": 8,
+        "xp": 8500
+      },
+      "6": {
+        "ba": 3,
+        "jp": 8,
+        "xp": 17000
+      },
+      "7": {
+        "ba": 4,
+        "jp": 8,
+        "xp": 27000
+      },
+      "8": {
+        "ba": 4,
+        "jp": 8,
+        "xp": 37000
+      },
+      "9": {
+        "ba": 5,
+        "jp": 11,
+        "xp": 47000
+      },
+      "10": {
+        "ba": 5,
+        "jp": 11,
+        "xp": 94000
+      },
+      "11": {
+        "ba": 6,
+        "jp": 11,
+        "xp": 190000
+      },
+      "12": {
+        "ba": 6,
+        "jp": 11,
+        "xp": 280000
+      },
+      "13": {
+        "ba": 7,
+        "jp": 14,
+        "xp": 370000
+      },
+      "14": {
+        "ba": 7,
+        "jp": 14,
+        "xp": 460000
+      },
+      "15": {
+        "ba": 8,
+        "jp": 14,
+        "xp": 550000
+      }
+    },
+    "class_abilities": [
+      "Compendium.olddragon2e.classes.Item.IXdUeK1tPCFkcPra",
+      "Compendium.olddragon2e.classes.Item.omvzKmuT6wguPohi",
+      "Compendium.olddragon2e.classes.Item.o8345bRQyKg1aSkP",
+      "Compendium.olddragon2e.classes.Item.jg3YlZvxvw2X0Px9",
+      "Compendium.olddragon2e.classes.Item.b2rT5IGrFbdEwhgx",
+      "Compendium.olddragon2e.classes.Item.izZkyod3j2TDUuSQ",
+      "Compendium.olddragon2e.classes.Item.QtOFz7FGLOknPcVY"
+    ],
+    "flavor": "<p>O Ranger &eacute; um personagem oriundo dos ermos dedicado a patrulhar uma &aacute;rea silvestre, natural ou selvagem protegendo-a de bestas e monstros.</p>",
+    "description": "<p>Costuma ter uma liga&ccedil;&atilde;o pr&oacute;xima com animais e Talentos de Ranger t&iacute;picos da sobreviv&ecirc;ncia nos ermos que o tornam um ex&iacute;mio ca&ccedil;ador e rastreador e at&eacute; em um espi&atilde;o muito competente.</p>\n<h1>Restri&ccedil;&otilde;es</h1>\n<p>Al&eacute;m de seguir a evolu&ccedil;&atilde;o de experi&ecirc;ncia de um Ladr&atilde;o especialista, o Ranger n&atilde;o pode acumular mais tesouros do que &eacute; capaz de carregar. Em contrapartida, os Rangers jamais se perdem enquanto estiverem nos ermos.</p>\n<p>O Ranger perde as habilidades de <em>Ouvir Ru&iacute;dos</em> e <em>Ataque Furtivo</em>, mas mant&eacute;m e evolui seus <em>Talentos de Ranger</em>, possuindo uma vers&atilde;o modificada de alguns Talentos Ladinos adaptados aos ermos:</p>\n<p><em>Percep&ccedil;&atilde;o</em> substitui o talento <em>Arrombar</em>. Uma vez a cada hora enquanto estiver nos ermos, o Ranger &eacute; capaz de sentir presen&ccedil;as, de perceber altera&ccedil;&otilde;es no ambiente e de sentir que h&aacute; alguma coisa errada ou se ocultando.</p>\n<p><em>Rastrear</em> substitui o talento <em>Punga</em>. Nos Ermos, o Ranger pode tentar seguir rastros, a trilha de um inimigo, um animal perdido ou uma erva, al&eacute;m de conseguir procurar comida e &aacute;gua para si e seu grupo</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1727446637829,
+    "lastModifiedBy": "BcsjfvT1lAbgjumm",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!fjNBciFT3punx7Ks"
+}

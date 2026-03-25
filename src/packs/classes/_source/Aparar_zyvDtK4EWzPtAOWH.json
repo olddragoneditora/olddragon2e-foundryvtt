@@ -1,0 +1,47 @@
+{
+  "folder": "IZiC2QJHLeqcdN4n",
+  "name": "Aparar",
+  "type": "class_ability",
+  "_id": "zyvDtK4EWzPtAOWH",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Um Paladino pode, ap&oacute;s receber um ataque f&iacute;sico que o atinja e antes da jogada de dano desse ataque, escolher sacrificar seu escudo ou uma arma que esteja portando para absorver todo o dano do ataque recebido.</p>\n<p>Armas e Escudos usados em um aparar ficar&atilde;o inutilizados e danificados. Armas e Escudos m&aacute;gicos possuem uma chance de 1-2 em 1d6 de se danificarem, reduzindo seus b&ocirc;nus (de ataque/defesa) em 1 de modo que um escudo +3 ao ser usado em um aparar, e se danificado, passa ter como b&ocirc;nus de defesa +2 e assim sucessivamente.</p>\n<p>Um item m&aacute;gico que perder todos os b&ocirc;nus estar&aacute; permanentemente destru&iacute;do. Apenas ataques provenientes de inimigos grandes ou menores poder&atilde;o ser aparados.</p>",
+    "level": 1,
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707563024,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!zyvDtK4EWzPtAOWH"
+}

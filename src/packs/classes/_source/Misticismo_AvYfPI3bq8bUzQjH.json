@@ -1,0 +1,47 @@
+{
+  "folder": "95Q26FIk0Kn8LItO",
+  "name": "Misticismo",
+  "type": "class_ability",
+  "_id": "AvYfPI3bq8bUzQjH",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 10,
+    "description": "<p>Sua antiga divindade, por pena ou premiando a persist&ecirc;ncia, concede ao Proscrito a habilidade de conjurar magias divinas de 1&ordm; c&iacute;rculo de acordo com a tabela padr&atilde;o de Cl&eacute;rigo (3.2) correspondente ao seu n&iacute;vel. Esta conjura&ccedil;&atilde;o segue todas as regras normais para conjura&ccedil;&atilde;o de magias divinas.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707585242,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 300000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!AvYfPI3bq8bUzQjH"
+}

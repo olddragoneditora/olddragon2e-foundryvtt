@@ -1,0 +1,1080 @@
+{
+  "folder": "7bWy8xmda2WLdRQV",
+  "name": "Veltan (2º nível)",
+  "type": "character",
+  "img": "systems/olddragon2e/assets/basic-characters/veltan.webp",
+  "system": {
+    "odo_id": "",
+    "level": 2,
+    "hp": {
+      "value": 15,
+      "max": 15
+    },
+    "forca": 14,
+    "destreza": 15,
+    "constituicao": 12,
+    "inteligencia": 10,
+    "sabedoria": 9,
+    "carisma": 9,
+    "jpd": {
+      "class": 5,
+      "race": 1
+    },
+    "jpc": {
+      "class": 5,
+      "race": 0
+    },
+    "jps": {
+      "class": 5,
+      "race": 0
+    },
+    "economy": {
+      "cp": 0,
+      "sp": 0,
+      "gp": 10,
+      "count": 0,
+      "load": 0
+    },
+    "details": {
+      "alignment": "ordeiro",
+      "languages": "Comum, Élfico",
+      "reputation": 0,
+      "appearance": "<p>Alto (Corpo); Cabelos longos (Cabelos); Jovem (Geral)</p>",
+      "personality": "<p>Exc&ecirc;ntrico (Sobre todo o resto); Calmo (Sobre si mesmo); Desconfiado (Sobre outras pessoas)</p>",
+      "background": "<p>Veltan era apenas um aprendiz de arqueiro em uma comunidade imersa em conflitos com orcs. Em uma emboscada, seu mestre foi atingido pedindo que Veltan cuidasse de sua filha. Hoje, Veltan cumpre com sua promessa aventurando-se junto de Eledriel, sua protegida.</p>",
+      "notes": ""
+    },
+    "campanha_url": "",
+    "url": "",
+    "ac_extra": 0,
+    "class_jpd": 0,
+    "class_jpc": 0,
+    "class_jps": 0,
+    "current_xp": 2275,
+    "jp_race_bonus": "jpd"
+  },
+  "prototypeToken": {
+    "name": "Veltan",
+    "displayName": 30,
+    "actorLink": true,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "systems/olddragon2e/assets/basic-characters/veltan-token.webp",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "color": null,
+      "negative": false,
+      "priority": 0
+    },
+    "sight": {
+      "enabled": true,
+      "range": 18,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0,
+      "color": null
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null
+  },
+  "items": [
+    {
+      "folder": "bkBRbMCUMv15wltn",
+      "name": "Arco Longo",
+      "type": "weapon",
+      "_id": "eX13bi2TGmCn6n73",
+      "img": "systems/olddragon2e/assets/equipment-concepts/weapon.svg",
+      "system": {
+        "odo_id": "arco-longo",
+        "quantity": 1,
+        "cost": "60 PO",
+        "description": "Grande, Disparo (45), Duas Mãos",
+        "weight_in_load": 3,
+        "weight_in_grams": null,
+        "magic_item": false,
+        "bonus_ca": null,
+        "type": "ranged",
+        "damage_type": "none",
+        "bonus_damage": 1,
+        "bonus_ba": null,
+        "shoot_range": 45,
+        "throw_range": null,
+        "arrow": false,
+        "bolt": false,
+        "bolt_small": false,
+        "polearm": false,
+        "two_handed": true,
+        "versatile": false,
+        "is_equipped": true,
+        "damage": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.A6L4WDseItZAi6Cf",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "_key": "!actors.items!PkLPGfQmbdH6spo8.eX13bi2TGmCn6n73"
+    },
+    {
+      "folder": "bkBRbMCUMv15wltn",
+      "name": "Flecha de Caça",
+      "type": "weapon",
+      "_id": "J5Gt4KBFWwRr45e5",
+      "img": "systems/olddragon2e/assets/equipment-concepts/weapon.svg",
+      "system": {
+        "odo_id": "flecha-de-caca",
+        "quantity": 24,
+        "cost": "1 PP",
+        "description": "Perfurante, Madeira. Peso e preço pelo conjunto de 20 unidades.",
+        "weight_in_load": null,
+        "weight_in_grams": null,
+        "magic_item": false,
+        "bonus_ca": null,
+        "type": "ammunition",
+        "damage_type": "piercing",
+        "damage": "1d6",
+        "bonus_damage": 1,
+        "bonus_ba": null,
+        "shoot_range": null,
+        "throw_range": null,
+        "arrow": true,
+        "bolt": false,
+        "bolt_small": false,
+        "polearm": false,
+        "two_handed": false,
+        "versatile": false,
+        "is_equipped": true
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.BPz09ztaAV9aGUKf",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "_key": "!actors.items!PkLPGfQmbdH6spo8.J5Gt4KBFWwRr45e5"
+    },
+    {
+      "folder": "bkBRbMCUMv15wltn",
+      "name": "Espada Curta",
+      "type": "weapon",
+      "_id": "MzB4Sy8CubKgByVj",
+      "img": "systems/olddragon2e/assets/equipment-concepts/weapon.svg",
+      "system": {
+        "odo_id": "espada-curta",
+        "quantity": 1,
+        "cost": "6 PO",
+        "description": "Pequena, Cortante.",
+        "weight_in_load": 1,
+        "weight_in_grams": null,
+        "magic_item": false,
+        "bonus_ca": null,
+        "type": "melee",
+        "damage_type": "slashing",
+        "damage": "1d6",
+        "bonus_damage": null,
+        "bonus_ba": null,
+        "shoot_range": null,
+        "throw_range": null,
+        "arrow": false,
+        "bolt": false,
+        "bolt_small": false,
+        "polearm": false,
+        "two_handed": false,
+        "versatile": false,
+        "is_equipped": true
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.w55Rv0qrnQ9DqvTF",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "_key": "!actors.items!PkLPGfQmbdH6spo8.MzB4Sy8CubKgByVj"
+    },
+    {
+      "folder": "jMvjD9l8URkPiaXR",
+      "name": "Armadura de Couro",
+      "type": "armor",
+      "_id": "jm3406qkCekfgYtG",
+      "img": "systems/olddragon2e/assets/equipment-concepts/armor.svg",
+      "system": {
+        "odo_id": "armadura-de-couro",
+        "quantity": 1,
+        "cost": "20 PO",
+        "description": "Leve, Couro.",
+        "weight_in_load": 1,
+        "weight_in_grams": null,
+        "magic_item": false,
+        "bonus_ca": 2,
+        "is_equipped": true
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.ivznftWqpmoHlthd",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "_key": "!actors.items!PkLPGfQmbdH6spo8.jm3406qkCekfgYtG"
+    },
+    {
+      "folder": "PAnTXGXA0MQpkYub",
+      "name": "Manto",
+      "type": "misc",
+      "_id": "vuKY5OR3xdxfkhTB",
+      "img": "systems/olddragon2e/assets/equipment-concepts/misc.svg",
+      "system": {
+        "odo_id": "manto",
+        "quantity": 1,
+        "cost": "5 PP",
+        "description": "De tecido de lã grossa e resistente para viagens.",
+        "weight_in_load": null,
+        "weight_in_grams": 500,
+        "magic_item": false,
+        "is_equipped": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.n8Gav7Km3KWDCwwE",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "_key": "!actors.items!PkLPGfQmbdH6spo8.vuKY5OR3xdxfkhTB"
+    },
+    {
+      "folder": "PAnTXGXA0MQpkYub",
+      "name": "Ração de viagem",
+      "type": "misc",
+      "_id": "Fs86orkMtsNLQOpw",
+      "img": "systems/olddragon2e/assets/equipment-concepts/misc.svg",
+      "system": {
+        "odo_id": "racao-de-viagem",
+        "quantity": 3,
+        "cost": "1 PO",
+        "description": "Ração diária de comida para viagem para uma pessoa.",
+        "weight_in_load": null,
+        "weight_in_grams": 500,
+        "magic_item": false,
+        "is_equipped": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.aHD8O1QCMitXy3I9",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "_key": "!actors.items!PkLPGfQmbdH6spo8.Fs86orkMtsNLQOpw"
+    },
+    {
+      "folder": "PAnTXGXA0MQpkYub",
+      "name": "Saco de Dormir",
+      "type": "misc",
+      "_id": "k2WLsac2sWTSLAXW",
+      "img": "systems/olddragon2e/assets/equipment-concepts/misc.svg",
+      "system": {
+        "odo_id": "saco-de-dormir",
+        "quantity": 1,
+        "cost": "5 PP",
+        "description": "Para uma pessoa de tamanho P ou M.",
+        "weight_in_load": null,
+        "weight_in_grams": 500,
+        "magic_item": false,
+        "is_equipped": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.XZjPqe4gjzNy4tRR",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "_key": "!actors.items!PkLPGfQmbdH6spo8.k2WLsac2sWTSLAXW"
+    },
+    {
+      "folder": "vUaRYqh0qGZgJ326",
+      "name": "Aljava",
+      "type": "container",
+      "_id": "lXcV8zvbUfCvkkoP",
+      "img": "systems/olddragon2e/assets/equipment-concepts/container.svg",
+      "system": {
+        "odo_id": "aljava",
+        "quantity": 1,
+        "cost": "1 PO",
+        "description": "De couro, rígida para até 40 flechas ou 80 virotes. Comporta até 150 moedas.",
+        "weight_in_load": null,
+        "weight_in_grams": 500,
+        "magic_item": false,
+        "increases_load_by": null,
+        "is_equipped": true
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.FJXb8rSDzI45VrfZ",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "_key": "!actors.items!PkLPGfQmbdH6spo8.lXcV8zvbUfCvkkoP"
+    },
+    {
+      "folder": "vUaRYqh0qGZgJ326",
+      "name": "Mochila",
+      "type": "container",
+      "_id": "DFwI3KP4cBiMN7dR",
+      "img": "systems/olddragon2e/assets/equipment-concepts/container.svg",
+      "system": {
+        "odo_id": "mochila",
+        "quantity": 1,
+        "cost": "2 PO",
+        "description": "De couro, com compartimentos para exploradores e reforço para peso. Adiciona 5 ao valor de carga do personagem. Comporta até 400 moedas.",
+        "weight_in_load": null,
+        "weight_in_grams": null,
+        "magic_item": false,
+        "increases_load_by": 5,
+        "is_equipped": true
+      },
+      "effects": [],
+      "flags": {
+        "core": {}
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.equipment.Item.K5bh3HGT8fC4Fuzb",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "enzpVKIAX52oTyPe": 3,
+        "oGkrtBesQA1SiZZ3": 3
+      },
+      "_key": "!actors.items!PkLPGfQmbdH6spo8.DFwI3KP4cBiMN7dR"
+    },
+    {
+      "folder": "kmiIksN2a1Lt6IPN",
+      "name": "Elfo",
+      "type": "race",
+      "_id": "TDzxadSJeEW9xkDe",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "movement": 9,
+        "infravision": 18,
+        "alignment_tendency": "neutro",
+        "race_abilities": [
+          "Compendium.olddragon2e.races.Item.dWB72uTg15J9GUQN",
+          "Compendium.olddragon2e.races.Item.1JK73DDEmWlYpWPN",
+          "Compendium.olddragon2e.races.Item.HhAlOQoDwqclrZkv",
+          "Compendium.olddragon2e.races.Item.FnK8iEyKG0kMsb54"
+        ],
+        "flavor": "<p>Misteriosos, Longevos e Graciosos habitantes das Florestas.</p>",
+        "description": "<p>Os elfos s&atilde;o das mais longevas ra&ccedil;as encontradas nos mundos de fantasia e a sua rela&ccedil;&atilde;o com o tempo doutrina boa parte das suas caracter&iacute;sticas, personalidade e a forma como as outras ra&ccedil;as os enxergam e se relacionam com eles.</p>\n<p>Fisicamente s&atilde;o esguios e at&eacute; um pouco franzinos se comparados a um humano, al&eacute;m de ligeiramente mais baixos. Seus cabelos, compridos para machos e f&ecirc;meas, est&atilde;o sempre penteados, adornados com acess&oacute;rios e podem ser encontrados em praticamente todas as cores.</p>\n<p>A caracter&iacute;stica f&iacute;sica mais marcante de um elfo est&aacute; nas suas orelhas &ndash; pontudas e longas &ndash;, muito embora o tra&ccedil;o dos seus olhos &ndash; amendoados, delicados e levemente alongados &ndash; seja uma caracter&iacute;stica igualmente marcante.</p>\n<p>A rela&ccedil;&atilde;o do elfo com o tempo dita sua forma de pensar e agir. Como frequentemente atingem 1.000 anos de vida, elfos se sentem compelidos a ocuparem suas vidas com o que mais valorizam como a dan&ccedil;a, a m&uacute;sica, a esgrima, o arqueirismo e a magia arcana.</p>\n<p>Isso pode fazer as pessoas acreditarem que Elfos s&atilde;o distantes ou, de certa forma, um pouco f&uacute;teis. Um erro comum cometido pelos observadores menos atentos.</p>\n<p>Outra caracter&iacute;stica dos elfos, sobretudo os que est&atilde;o fora da sua terra, &eacute; a dist&acirc;ncia, dando-lhes uma certa caracter&iacute;stica de frieza e at&eacute; prepot&ecirc;ncia. Por se considerarem estranhos fora de suas fronteiras, possuem dificuldade de se envolver nos problemas das outras ra&ccedil;as, refletindo na dificuldade de criar la&ccedil;os de amizade.</p>\n<p>No entanto, quando um elfo &eacute; conquistado como amigo, a amizade se mostrar&aacute; duradoura. A amizade de um elfo dura mais do que muitas vidas, costumam dizer os humanos os quais puderam provar desse relacionamento. Vivendo tantos s&eacute;culos, esta &eacute; uma verdade incontest&aacute;vel.</p>\n<h1>Personalidade</h1>\n<p>Viver tanto tempo molda a personalidade de um elfo. O ritmo do tempo &eacute; excepcional para um elfo. As mudan&ccedil;as ocorrem t&atilde;o depressa que se tornam complicadas de seguir, ent&atilde;o, para que se importar? Melhor &eacute; focar na qualidade e n&atilde;o na quantidade. Se 100 espadas medianas podem ser confeccionadas, um elfo prefere gastar o mesmo tempo numa &uacute;nica pe&ccedil;a exemplar em qualidade e perfei&ccedil;&atilde;o.</p>\n<p>Com tanto tempo dispon&iacute;vel para aprender tantas coisas, desperdi&ccedil;ar tempo seria uma op&ccedil;&atilde;o bem &oacute;bvia, mas a&iacute; se esconde uma grandeza da sua ra&ccedil;a. Ao contr&aacute;rio do que possa parecer, elfos gostam de coisas bem-feitas e duradouras, assim como eles. Servi&ccedil;o bem-feito &eacute; sempre aquele com a maior dura&ccedil;&atilde;o.</p>\n<p>Essa rela&ccedil;&atilde;o entre qualidade, tempo e perfei&ccedil;&atilde;o molda todo o pensamento &eacute;lfico e a constru&ccedil;&atilde;o da sua personalidade.</p>\n<h1>O Elfo nas Aventuras</h1>\n<p>Apesar de bem mais raros que os humanos, elfos n&atilde;o s&atilde;o aventureiros improv&aacute;veis. A fome por conhecimento, desejo por viajar, a vontade de provar-se para os seus como um elfo exemplar e, principalmente, o tempo dispon&iacute;vel, s&atilde;o as principais for&ccedil;as a empurrar um elfo para a vida aventureira.</p>\n<p>As coisas mudam t&atilde;o rapidamente que acompanhar as mudan&ccedil;as, ou mesmo fazer parte destas mudan&ccedil;as, pode ser uma interessante for&ccedil;a motriz para eles.</p>\n<p>Eles querem acompanhar o que acontece, se aperfei&ccedil;oarem e se provarem como capazes.</p>\n<p>Elfos s&atilde;o aventureiros observadores que querem entender o mundo onde vivem.</p>"
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.races.Item.qZ5T7ZHQpGlmdfOq",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "OuolyBMu1taVMYDC": 3
+      },
+      "_key": "!actors.items!PkLPGfQmbdH6spo8.TDzxadSJeEW9xkDe"
+    },
+    {
+      "folder": "3MFJEb265IFyALkx",
+      "name": "Percepção Natural",
+      "type": "race_ability",
+      "_id": "bxDPsX6L4v2hvrL6",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "xp": null,
+        "jp": {
+          "jpc": false,
+          "jpd": false,
+          "jps": false
+        },
+        "bonus_damage_archery": false,
+        "rogue_talent": "none",
+        "description": "<p>A forma como as casas &eacute;lficas s&atilde;o constru&iacute;das, respeitando a forma natural das &aacute;rvores e abrigos, d&aacute; aos elfos uma percep&ccedil;&atilde;o especial no que diz respeito a portas e passagens n&atilde;o convencionais e at&eacute; mesmo secretas.</p>\n<p>Ao passarem a at&eacute; 6 metros de uma porta secreta, mesmo que n&atilde;o a estejam procurando, os elfos podem detect&aacute;-la com um resultado 1 em 1d6, ou com um resultado de 1-2 em 1d6 caso estejam efetivamente procurando pela porta secreta.</p>"
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "OuolyBMu1taVMYDC": 3
+      },
+      "_key": "!actors.items!PkLPGfQmbdH6spo8.bxDPsX6L4v2hvrL6"
+    },
+    {
+      "folder": "3MFJEb265IFyALkx",
+      "name": "Graciosos",
+      "type": "race_ability",
+      "_id": "sb4K5K7mU76rck3Z",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "xp": null,
+        "jp": {
+          "jpc": false,
+          "jpd": true,
+          "jps": false
+        },
+        "bonus_damage_archery": false,
+        "rogue_talent": "none",
+        "description": "<p>Os elfos controlam com precis&atilde;o seus movimentos no espa&ccedil;o ao redor do seu corpo, recebendo um b&ocirc;nus de +1 em qualquer teste de JPD.</p>"
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 50000,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "OuolyBMu1taVMYDC": 3
+      },
+      "_key": "!actors.items!PkLPGfQmbdH6spo8.sb4K5K7mU76rck3Z"
+    },
+    {
+      "folder": "3MFJEb265IFyALkx",
+      "name": "Arma Racial",
+      "type": "race_ability",
+      "_id": "JtA4hjtxqAJ4dGLx",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "xp": null,
+        "jp": {
+          "jpc": false,
+          "jpd": false,
+          "jps": false
+        },
+        "bonus_damage_archery": true,
+        "rogue_talent": "none",
+        "description": "<p>Os elfos possuem familiaridade com o arqueirismo, o qual consideram uma arte marcial, recebendo um b&ocirc;nus de +1 nos danos causados em seus ataques &agrave; dist&acirc;ncia com os arcos.</p>"
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "OuolyBMu1taVMYDC": 3
+      },
+      "_key": "!actors.items!PkLPGfQmbdH6spo8.JtA4hjtxqAJ4dGLx"
+    },
+    {
+      "folder": "3MFJEb265IFyALkx",
+      "name": "Imunidades",
+      "type": "race_ability",
+      "_id": "scKDj9XP4u07E3OF",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "xp": null,
+        "jp": {
+          "jpc": false,
+          "jpd": false,
+          "jps": false
+        },
+        "bonus_damage_archery": false,
+        "rogue_talent": "none",
+        "description": "<p>Os elfos s&atilde;o imunes a efeitos ou magias que envolvam sono e tamb&eacute;m contra a paralisa&ccedil;&atilde;o causada por um Ghoul.</p>"
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "OuolyBMu1taVMYDC": 3
+      },
+      "_key": "!actors.items!PkLPGfQmbdH6spo8.scKDj9XP4u07E3OF"
+    },
+    {
+      "folder": "BJaYANjw0NaKNxsi",
+      "name": "Guerreiro",
+      "type": "class",
+      "_id": "aVc1buAlMnaptKag",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "hp": null,
+        "high_level_hp_bonus": null,
+        "restrictions": {
+          "alignments": [],
+          "races": []
+        },
+        "levels": {
+          "1": {
+            "ba": 1,
+            "jp": 5
+          },
+          "2": {
+            "ba": 2,
+            "jp": 5,
+            "xp": 2000
+          },
+          "3": {
+            "ba": 3,
+            "jp": 6,
+            "xp": 4000
+          },
+          "4": {
+            "ba": 4,
+            "jp": 6,
+            "xp": 7000
+          },
+          "5": {
+            "ba": 5,
+            "jp": 8,
+            "xp": 10000
+          },
+          "6": {
+            "ba": 6,
+            "jp": 8,
+            "xp": 20000
+          },
+          "7": {
+            "ba": 7,
+            "jp": 10,
+            "xp": 30000
+          },
+          "8": {
+            "ba": 8,
+            "jp": 10,
+            "xp": 40000
+          },
+          "9": {
+            "ba": 9,
+            "jp": 11,
+            "xp": 50000
+          },
+          "10": {
+            "ba": 10,
+            "jp": 11,
+            "xp": 100000
+          },
+          "11": {
+            "ba": 11,
+            "jp": 13,
+            "xp": 200000
+          },
+          "12": {
+            "ba": 12,
+            "jp": 13,
+            "xp": 300000
+          },
+          "13": {
+            "ba": 13,
+            "jp": 14,
+            "xp": 400000
+          },
+          "14": {
+            "ba": 14,
+            "jp": 14,
+            "xp": 500000
+          },
+          "15": {
+            "ba": 15,
+            "jp": 16,
+            "xp": 600000
+          }
+        },
+        "class_abilities": [
+          "Compendium.olddragon2e.classes.Item.SGRYNvbZzIPqTvJI",
+          "Compendium.olddragon2e.classes.Item.1UxolQXcT9gXGUTQ",
+          "Compendium.olddragon2e.classes.Item.nnSEQlCZFymP3Jy3",
+          "Compendium.olddragon2e.classes.Item.VJpr0IcKxyhDGYaR"
+        ],
+        "flavor": "<p>Aventureiros especializados em combate, est&atilde;o sempre na linha de frente e s&atilde;o mortais quando desembainham suas armas.</p>",
+        "description": "<h1>A Carreira do Guerreiro</h1>\n<p>O Guerreiro dos n&iacute;veis baixos &eacute; o homem comum com alguma per&iacute;cia em armas que se torna um aventureiro.</p>\n<p>Pouco a pouco ele se torna o her&oacute;i da vila, acumulando experi&ecirc;ncia e riquezas, expandindo sua fama para al&eacute;m das fronteiras da sua &aacute;rea de atua&ccedil;&atilde;o, at&eacute; que seu nome seja reconhecido em terras distantes.</p>\n<p>Essa fase da sua carreira &eacute; quase que totalmente focada em acumular recursos e tornar seu nome reconhecido como grande l&iacute;der militar.</p>\n<p>Ele sabe que se fizer seu trabalho corretamente, seu poder o credenciar&aacute; a coisas grandes</p>\n<p>Al&eacute;m de manter-se vivo, faz o poss&iacute;vel para vencer seus desafios, sobreviver a miss&otilde;es cada vez mais perigosas e, claro, criar la&ccedil;os profissionais, e talvez pessoais, com nobres poderosos.</p>\n<p>Vender-se como algu&eacute;m militarmente combativo e destemido &eacute; importante para suas pretens&otilde;es, ent&atilde;o o Guerreiro procura usar o tempo dispon&iacute;vel para isso, pois sabe que se o trabalho for bem realizado agora, coisas grandes o aguardar&atilde;o.</p>\n<p>A nobreza o espera, e tudo o que ela significa (riqueza, poder e conforto) dependem apenas do Guerreiro e de sua habilidade em combater.</p>",
+        "equipment_restrictions": {
+          "weapons": "Pode usar todas as armas.",
+          "armors": "Pode usar todas as armaduras.",
+          "magic_items": "Não pode usar cajados, varinhas e pergaminhos mágicos com exceção dos pergaminhos de proteção."
+        }
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": "Compendium.olddragon2e.classes.Item.bkzh1k7B0ncxQfHR",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "OuolyBMu1taVMYDC": 3
+      },
+      "_key": "!actors.items!PkLPGfQmbdH6spo8.aVc1buAlMnaptKag"
+    },
+    {
+      "folder": "96RMq2HZS5SVLUTT",
+      "name": "Aparar",
+      "type": "class_ability",
+      "_id": "yneaLK4gfIickIaI",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Um Guerreiro pode, ap&oacute;s receber um ataque f&iacute;sico que o atinja e antes da jogada de dano desse ataque, escolher sacrificar seu escudo ou uma arma que esteja portando para absorver todo o dano do ataque recebido.</p>\n<p>Armas e Escudos usados em um aparar ficar&atilde;o inutilizados e danificados. Armas e Escudos m&aacute;gicos possuem uma chance de 1-2 em 1d6 de se danificarem, reduzindo seus b&ocirc;nus (de ataque/defesa) em 1 de modo que um escudo +3 ao ser usado em um aparar, e se danificado, passa ter como b&ocirc;nus de defesa +2 e assim sucessivamente.</p>\n<p>Um item m&aacute;gico que perder todos os b&ocirc;nus estar&aacute; permanentemente destru&iacute;do. Apenas ataques provenientes de inimigos grandes ou menores poder&atilde;o ser aparados.</p>",
+        "level": 1,
+        "daily_uses": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0,
+          "13": 0,
+          "14": 0,
+          "15": 0
+        }
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "OuolyBMu1taVMYDC": 3
+      },
+      "_key": "!actors.items!PkLPGfQmbdH6spo8.yneaLK4gfIickIaI"
+    },
+    {
+      "folder": "96RMq2HZS5SVLUTT",
+      "name": "Maestria em Arma",
+      "type": "class_ability",
+      "_id": "uNy3iHLQCjIFcPAf",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>O Guerreiro se torna Mestre em uma arma &agrave; sua escolha, recebendo um b&ocirc;nus de +1 no dano daquela arma.</p>",
+        "level3": "<p>O Guerreiro evolui sua maestria para uma segunda arma &agrave; sua escolha e melhora o b&ocirc;nus no dano de ambas as armas para +2.</p>",
+        "level10": "<p>O Guerreiro evolui sua maestria para todas as armas semelhantes &agrave;quelas que ele j&aacute; possui maestria, recebendo b&ocirc;nus em todas as armas pertencentes a estes grupos.</p>\n<p>Os grupos de armas dispon&iacute;veis s&atilde;o: cortantes, perfurante, impactantes, disparos, hastes ou arremesso. Todas as armas desses grupos melhoram seus b&ocirc;nus de dano para +3.</p>",
+        "level": 1,
+        "daily_uses": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0,
+          "13": 0,
+          "14": 0,
+          "15": 0
+        }
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 150000,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "OuolyBMu1taVMYDC": 3
+      },
+      "_key": "!actors.items!PkLPGfQmbdH6spo8.uNy3iHLQCjIFcPAf"
+    },
+    {
+      "folder": "96RMq2HZS5SVLUTT",
+      "name": "Ataque Extra",
+      "type": "class_ability",
+      "_id": "PxyxNmED7Z7nB2VT",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Um Guerreiro no 6&ordm; n&iacute;vel adquire um segundo ataque, corpo a corpo ou &agrave; dist&acirc;ncia, com uma mesma arma na qual possua maestria.</p>\n<p>Este segundo ataque &eacute; realizado ap&oacute;s o primeiro ataque, logo em sequ&ecirc;ncia, antes da a&ccedil;&atilde;o do pr&oacute;ximo jogador na ordem da iniciativa com a mesma BA usada no primeiro ataque.</p>",
+        "level": 6,
+        "daily_uses": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0,
+          "13": 0,
+          "14": 0,
+          "15": 0
+        }
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "OuolyBMu1taVMYDC": 3
+      },
+      "_key": "!actors.items!PkLPGfQmbdH6spo8.PxyxNmED7Z7nB2VT"
+    },
+    {
+      "folder": "96RMq2HZS5SVLUTT",
+      "name": "Reputação",
+      "type": "class_ability",
+      "_id": "13bw2j7w7hjJEQ1P",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>O Guerreiro de alto n&iacute;vel atinge um grau superior de reconhecimento pelos seus feitos, obtendo Reputa&ccedil;&atilde;o 1 em 1d6. O valor de Reputa&ccedil;&atilde;o evolui em 1 at&eacute; o m&aacute;ximo de 1-5 em 1d6 no 15&ordm; n&iacute;vel.</p>",
+        "level": 11,
+        "daily_uses": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0,
+          "13": 0,
+          "14": 0,
+          "15": 0
+        }
+      },
+      "effects": [],
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "olddragon2e",
+        "systemVersion": "This is auto replaced",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": 0,
+        "23TLgqGgbkAhWsum": 3,
+        "OuolyBMu1taVMYDC": 3
+      },
+      "_key": "!actors.items!PkLPGfQmbdH6spo8.13bw2j7w7hjJEQ1P"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726729526743,
+    "modifiedTime": 1726729532392,
+    "lastModifiedBy": "OuolyBMu1taVMYDC",
+    "exportSource": null
+  },
+  "_id": "PkLPGfQmbdH6spo8",
+  "sort": 400000,
+  "ownership": {
+    "default": 0,
+    "OuolyBMu1taVMYDC": 3
+  },
+  "_key": "!actors!PkLPGfQmbdH6spo8"
+}

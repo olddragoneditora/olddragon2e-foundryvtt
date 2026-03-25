@@ -1,0 +1,125 @@
+{
+  "folder": "oGEALDaGf81mKohg",
+  "name": "Arqueiro",
+  "type": "class",
+  "_id": "zVsnFVV3I7aOGLzK",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "equipment_restrictions": {
+      "weapons": "Apenas armas pequenas, porém pode utilizar qualquer tipo de arco.",
+      "armors": "Apenas armaduras de couro ou, caso contrário, não conseguirá usar suas habilidades de arqueiro.",
+      "magic_items": "Não pode usar cajados, varinhas e pergaminhos mágicos com exceção dos pergaminhos de proteção."
+    },
+    "hp": null,
+    "high_level_hp_bonus": null,
+    "restrictions": {
+      "alignments": [],
+      "races": []
+    },
+    "levels": {
+      "1": {
+        "ba": 1,
+        "jp": 5
+      },
+      "2": {
+        "ba": 2,
+        "jp": 5,
+        "xp": 2500
+      },
+      "3": {
+        "ba": 3,
+        "jp": 6,
+        "xp": 5000
+      },
+      "4": {
+        "ba": 4,
+        "jp": 6,
+        "xp": 8500
+      },
+      "5": {
+        "ba": 5,
+        "jp": 8,
+        "xp": 11500
+      },
+      "6": {
+        "ba": 6,
+        "jp": 8,
+        "xp": 23000
+      },
+      "7": {
+        "ba": 7,
+        "jp": 10,
+        "xp": 33000
+      },
+      "8": {
+        "ba": 8,
+        "jp": 10,
+        "xp": 43000
+      },
+      "9": {
+        "ba": 9,
+        "jp": 11,
+        "xp": 53000
+      },
+      "10": {
+        "ba": 10,
+        "jp": 11,
+        "xp": 106000
+      },
+      "11": {
+        "ba": 11,
+        "jp": 13,
+        "xp": 210000
+      },
+      "12": {
+        "ba": 12,
+        "jp": 13,
+        "xp": 320000
+      },
+      "13": {
+        "ba": 13,
+        "jp": 14,
+        "xp": 430000
+      },
+      "14": {
+        "ba": 14,
+        "jp": 14,
+        "xp": 540000
+      },
+      "15": {
+        "ba": 15,
+        "jp": 16,
+        "xp": 650000
+      }
+    },
+    "class_abilities": [
+      "Compendium.olddragon2e.classes.Item.o0R6bvTUKUkNkzSu",
+      "Compendium.olddragon2e.classes.Item.J0qNNXc3sxGncAOc",
+      "Compendium.olddragon2e.classes.Item.91qzN1KcNehWggO7",
+      "Compendium.olddragon2e.classes.Item.SG7Dsrh3TmYDpeDO",
+      "Compendium.olddragon2e.classes.Item.xffc4uj1QR7iRvlx",
+      "Compendium.olddragon2e.classes.Item.zlFWfsLbIpaXetgp",
+      "Compendium.olddragon2e.classes.Item.v3XTFAFyl5sv9mxl"
+    ],
+    "description": "<p>Estes Guerreiros especialistas s&atilde;o combatentes que devotam todo o seu treinamento e tempo para tornar-se extremamente eficientes com um arco, longo ou curto em combate.</p>\n<p>Tornam-se militares especializados em comandar pelot&otilde;es de arqueiros e dominam, como poucos, as t&eacute;cnicas dos disparos. Conseguem realizar proezas inimagin&aacute;veis para um Guerreiro padr&atilde;o.</p>\n<h1>Restri&ccedil;&otilde;es</h1>\n<p>Al&eacute;m de seguir a evolu&ccedil;&atilde;o de experi&ecirc;ncia de um Guerreiro especialista, o Arqueiro est&aacute; limitado a usar apenas armas pequenas, por&eacute;m pode utilizar qualquer tipo de arco. Al&eacute;m disso, s&oacute; pode usar armaduras feitas de couro ou, caso contr&aacute;rio, n&atilde;o conseguir&aacute; usar suas habilidades de arqueiro.</p>\n<p>O Arqueiro mant&eacute;m as habilidades de Guerreiro <em>Aparar</em> e <em>Maestria em Arma</em>, mas deixa de receber qualquer evolu&ccedil;&atilde;o quando se torna um especialista.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726713302614,
+    "lastModifiedBy": "qL3iBUN7HcwSiU0i",
+    "exportSource": null
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!zVsnFVV3I7aOGLzK"
+}

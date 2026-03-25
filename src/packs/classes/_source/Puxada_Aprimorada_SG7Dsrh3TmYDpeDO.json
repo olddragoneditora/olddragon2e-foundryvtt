@@ -1,0 +1,47 @@
+{
+  "folder": "pFqy2TCCY4BBxYvN",
+  "name": "Puxada Aprimorada",
+  "type": "class_ability",
+  "_id": "SG7Dsrh3TmYDpeDO",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "level": 3,
+    "description": "<p>O Arqueiro consegue puxar seu arco acima das capacidades consideradas normais, extraindo o melhor de sua arma. O Arqueiro pode acrescentar seu modificador de For&ccedil;a nos danos do seu ataque com arcos.</p>",
+    "daily_uses": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.342",
+    "systemId": "olddragon2e",
+    "systemVersion": "This is auto replaced",
+    "createdTime": 1726707259315,
+    "modifiedTime": 1726707300873,
+    "lastModifiedBy": "23TLgqGgbkAhWsum",
+    "exportSource": null
+  },
+  "sort": 300000,
+  "ownership": {
+    "default": 0,
+    "23TLgqGgbkAhWsum": 3
+  },
+  "_key": "!items!SG7Dsrh3TmYDpeDO"
+}
