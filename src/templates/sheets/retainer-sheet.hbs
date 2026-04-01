@@ -1,0 +1,326 @@
+<form class="{{cssClass}}" autocomplete="off">
+
+    <div class="sheet-container">
+        {{!-- Sidebar --}}
+        <div class="sidebar">
+            {{!-- Retrato --}}
+            <div class="portrait">
+                <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}">
+            </div>
+            {{!-- Atributos --}}
+            <div class="stats">
+                {{!-- Força --}}
+                <div class="stat">
+                    <div class="stat-value">
+                        <a class="font-bold stat-roll" data-stat="forca" data-stat-label="{{localize 'olddragon2e.forca'}}" title="Rolar teste de força"><i class="fa-thin fa-dice-d20"></i>{{localize "olddragon2e.forca_short"}}</a>
+                        <input class="system-stat" name="system.forca" type="text" value="{{system.forca}}" data-dtype="Number">
+                    </div>
+                    <div class="stat-mod">
+                        <label class="text-2xs">{{localize "olddragon2e.mod_forca"}}</label>
+                        <input name="system.mod_forca" type="text" value="{{signed_number system.mod_forca}}" data-dtype="Number" disabled>
+                    </div>
+                </div>
+                {{!-- Destreza --}}
+                <div class="stat">
+                    <div class="stat-value">
+                        <a class="font-bold stat-roll" data-stat="destreza" data-stat-label="{{localize 'olddragon2e.destreza'}}" title="Rolar teste de destreza"><i class="fa-thin fa-dice-d20"></i>{{localize "olddragon2e.destreza_short"}}</a>
+                        <input class="system-stat" name="system.destreza" type="text" value="{{system.destreza}}" data-dtype="Number">
+                    </div>
+                    <div class="stat-mod">
+                        <label class="text-2xs">{{localize "olddragon2e.mod_destreza"}}</label>
+                        <input class="system-mod-destreza" name="system.mod_destreza" type="text" value="{{signed_number system.mod_destreza}}" data-dtype="Number" disabled>
+                    </div>
+                </div>
+                {{!-- Constituição --}}
+                <div class="stat">
+                    <div class="stat-value">
+                        <a class="font-bold stat-roll" data-stat="constituicao" data-stat-label="{{localize 'olddragon2e.constituicao'}}" title="Rolar teste de constituição"><i class="fa-thin fa-dice-d20"></i>{{localize "olddragon2e.constituicao_short"}}</a>
+                        <input class="system-stat" name="system.constituicao" type="text" value="{{system.constituicao}}" data-dtype="Number">
+                    </div>
+                    <div class="stat-mod">
+                        <label class="text-2xs">{{localize "olddragon2e.mod_constituicao"}}</label>
+                        <input name="system.mod_constituicao" type="text" value="{{signed_number system.mod_constituicao}}" data-dtype="Number" disabled>
+                    </div>
+                </div>
+                {{!-- Inteligência --}}
+                <div class="stat">
+                    <div class="stat-value">
+                        <a class="font-bold stat-roll" data-stat="inteligencia" data-stat-label="{{localize 'olddragon2e.inteligencia'}}" title="Rolar teste de inteligência"><i class="fa-thin fa-dice-d20"></i>{{localize "olddragon2e.inteligencia_short"}}</a>
+                        <input class="system-stat" name="system.inteligencia" type="text" value="{{system.inteligencia}}" data-dtype="Number">
+                    </div>
+                    <div class="stat-mod">
+                        <label class="text-2xs">{{localize "olddragon2e.mod_inteligencia"}}</label>
+                        <input name="system.mod_inteligencia" type="text" value="{{signed_number system.mod_inteligencia}}" data-dtype="Number" disabled>
+                    </div>
+                </div>
+                {{!-- Sabedoria --}}
+                <div class="stat">
+                    <div class="stat-value">
+                        <a class="font-bold stat-roll" data-stat="sabedoria" data-stat-label="{{localize 'olddragon2e.sabedoria'}}" title="Rolar teste de sabedoria"><i class="fa-thin fa-dice-d20"></i>{{localize "olddragon2e.sabedoria_short"}}</a>
+                        <input class="system-stat" name="system.sabedoria" type="text" value="{{system.sabedoria}}" data-dtype="Number">
+                    </div>
+                    <div class="stat-mod">
+                        <label class="text-2xs">{{localize "olddragon2e.mod_sabedoria"}}</label>
+                        <input name="system.mod_sabedoria" type="text" value="{{signed_number system.mod_sabedoria}}" data-dtype="Number" disabled>
+                    </div>
+                </div>
+                {{!-- Carisma --}}
+                <div class="stat">
+                    <div class="stat-value">
+                        <a class="font-bold stat-roll" data-stat="carisma" data-stat-label="{{localize 'olddragon2e.carisma'}}" title="Rolar teste de carisma"><i class="fa-thin fa-dice-d20"></i>{{localize "olddragon2e.carisma_short"}}</a>
+                        <input class="system-stat" name="system.carisma" type="text" value="{{system.carisma}}" data-dtype="Number">
+                    </div>
+                    <div class="stat-mod">
+                        <label class="text-2xs">{{localize "olddragon2e.mod_carisma"}}</label>
+                        <input name="system.mod_carisma" type="text" value="{{signed_number system.mod_carisma}}" data-dtype="Number" disabled>
+                    </div>
+                </div>
+            </div>
+
+            {{!-- JP | Jogada de Proteção --}}
+            <div class="jp">
+                <label class="font-bold">{{localize "olddragon2e.jp_long"}}</label>
+                {{!-- JPD (Jogada de Proteção de Destreza) --}}
+                <div class="jp-group">
+                    <div class="jpd">
+                        <input name="system.jpd_total" type="text" value="{{system.jpd_total}}" data-dtype="Number" disabled>
+                        <a class="font-bold jp-roll" data-jp="jpd" data-jp-label="{{localize "olddragon2e.jpd_short"}}" title="Rolar jogada de proteção de destreza"><i class="fa-light fa-dice-d20 fa-sm"></i>{{localize "olddragon2e.jpd_short"}}</a>
+                    </div>
+                </div>
+                {{!-- JPC (Jogada de Proteção de Constituição) --}}
+                <div class="jp-group">
+                    <div class="jpc">
+                        <input name="system.jpc_total" type="text" value="{{system.jpc_total}}" data-dtype="Number" disabled>
+                        <a class="font-bold jp-roll" data-jp="jpc" data-jp-label="{{localize "olddragon2e.jpc_short"}}" title="Rolar jogada de proteção de constituição"><i class="fa-light fa-dice-d20 fa-sm"></i>{{localize "olddragon2e.jpc_short"}}</a>
+                    </div>
+                </div>
+                {{!-- JPS (Jogada de Proteção de Sabedoria) --}}
+                <div class="jp-group">
+                    <div class="jps">
+                        <input name="system.jps_total" type="text" value="{{system.jps_total}}" data-dtype="Number" disabled>
+                        <a class="font-bold jp-roll" data-jp="jps" data-jp-label="{{localize "olddragon2e.jps_short"}}" title="Rolar jogada de proteção de sabedoria"><i class="fa-light fa-dice-d20 fa-sm"></i>{{localize "olddragon2e.jps_short"}}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{!-- Body --}}
+        <div class="body">
+            {{!-- Header --}}
+            <div class="header">
+                {{!-- Nome; Raça; Profissão; Nível --}}
+                <div class="basic-info">
+                    {{!-- Nome --}}
+                    <div>
+                        <div class="name-row">
+                            <input name="name" type="text" value="{{actor.name}}">
+                        </div>
+                        <label class="font-bold">{{localize "olddragon2e.name"}}</label>
+                    </div>
+                    {{!-- Raça --}}
+                    <div class="race item" data-item-id="{{actor.system.race.id}}">
+                        {{#if actor.system.race}}
+                        <div class="character-race">
+                            <a class="item-edit" title="{{localize 'olddragon2e.open'}}">{{truncate actor.system.race.name 12}}</a>
+                            <a class="item-delete" title="{{localize 'olddragon2e.delete'}}"><i class="fa-solid fa-trash"></i></a>
+                        </div>
+                        {{else}}
+                        <div class="instruction-text">Arraste uma Raça</div>
+                        {{/if}}
+                        <label class="font-bold">{{localize "olddragon2e.race"}}</label>
+                    </div>
+                    {{!-- Profissão --}}
+                    <div class="profession">
+                        <input name="system.profession" type="text" value="{{system.profession}}">
+                        <label class="font-bold">{{localize "olddragon2e.profession"}}</label>
+                    </div>
+                </div>
+
+                <hr>
+
+                {{!-- Movimento; PV --}}
+                <div class="additional-info">
+                    {{!-- Movimento --}}
+                    <div class="mv">
+                        <label class="font-bold">{{localize "olddragon2e.mv"}}</label>
+                        <div class="mv-values">
+                            {{!-- Atual --}}
+                            <div class="mv-value">
+                                <input class="system-current-movement" name="system.current_movement" type="text" value="{{system.current_movement}}" data-dtype="Number" disabled>
+                                <label class="text-xs">{{localize "olddragon2e.current_mv"}}</label>
+                            </div>
+                            {{!-- Correr --}}
+                            <div class="mv-value">
+                                <input name="system.movement_run" type="text" value="{{system.movement_run}}" data-dtype="Number" disabled>
+                                <label class="text-xs">{{localize "olddragon2e.mv_run"}}</label>
+                            </div>
+                            {{!-- Escalar --}}
+                            <div class="mv-value">
+                                <input name="system.movement_climb" type="text" value="{{system.movement_climb}}" data-dtype="Number" disabled>
+                                <label class="text-xs">{{localize "olddragon2e.mv_climb"}}</label>
+                            </div>
+                            {{!-- Nadar --}}
+                            <div class="mv-value">
+                                <input name="system.movement_swim" type="text" value="{{system.movement_swim}}" data-dtype="Number" disabled>
+                                <label class="text-xs">{{localize "olddragon2e.mv_swim"}}</label>
+                            </div>
+                        </div>
+                    </div>
+                    {{!-- PV | Pontos de Vida --}}
+                    <div class="hp">
+                        <label class="font-bold">{{localize "olddragon2e.hp_long"}}</label>
+                        <div class="hp-values">
+                            {{!-- PV Atual --}}
+                            <div class="hp-value">
+                                <input name="system.hp.value" type="text" value="{{system.hp.value}}" data-dtype="Number">
+                                <label class="text-xs font-bold">{{localize "olddragon2e.hp_value"}}</label>
+                            </div>
+                            {{!-- PV Total --}}
+                            <div class="hp-value">
+                                <input name="system.hp.max" type="text" value="{{system.hp.max}}" data-dtype="Number">
+                                <label class="text-xs font-bold">{{localize "olddragon2e.hp_max"}}</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                {{!-- CA; BA; Economia --}}
+                <div class="overview">
+                    {{!-- CA | Classe de Armadura --}}
+                    <div class="ca border">
+                        <label class="font-bold">{{localize "olddragon2e.ac_long"}}</label>
+                        <div class="ca-values">
+                            {{!-- CA --}}
+                            <div class="ca-total">
+                                <input name="system.ac_total" type="text" value="{{system.ac_total}}" data-dtype="Number" disabled>
+                                <label class="font-bold">{{localize "olddragon2e.ac_short"}}</label>
+                            </div>
+                            {{!-- Base --}}
+                            <div class="ca-value">
+                                <input class="system-ac" name="system.ac_base" type="text" value="{{system.ac_base}}" data-dtype="Number" disabled>
+                                <label class="text-2xs">{{localize "olddragon2e.base"}}</label>
+                            </div>
+                            {{!-- M. DES --}}
+                            <div class="ca-value">
+                                <input class="system-mod-destreza" type="text" value="{{signed_number system.mod_destreza}}" data-dtype="Number" disabled>
+                                <label class="text-2xs">{{localize "olddragon2e.mod_destreza"}}</label>
+                            </div>
+                            {{!-- Armadura --}}
+                            <div class="ca-value">
+                                <input class="system-ac" name="system.ac_armor" type="text" value="{{system.ac_armor}}" data-dtype="Number" disabled>
+                                <label class="text-2xs">{{localize "olddragon2e.armor"}}</label>
+                            </div>
+                            {{!-- Escudo --}}
+                            <div class="ca-value">
+                                <input class="system-ac" name="system.ac_shield" type="text" value="{{system.ac_shield}}" data-dtype="Number" disabled>
+                                <label class="text-2xs">{{localize "olddragon2e.shield"}}</label>
+                            </div>
+                            {{!-- Extra --}}
+                            <div class="ca-value">
+                                <input class="system-ac" name="system.ac_extra" type="text" value="{{system.ac_extra}}" data-dtype="Number">
+                                <label class="text-2xs">{{localize "olddragon2e.extra"}}</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    {{!-- BA | Base de Ataque --}}
+                    <div class="ba border">
+                        <label class="font-bold">{{localize "olddragon2e.ba_long"}}</label>
+                        <div class="ba-values">
+                            {{!-- BAC --}}
+                            <div class="bac">
+                                <input name="system.bac" type="text" value="{{signed_number system.bac}}" data-dtype="Number" disabled>
+                                <a class="font-bold ba-roll" data-ba="bac" data-ba-label="{{localize "olddragon2e.bac_short"}}" title="Rolar base de ataque corpo a corpo"><i class="fa-light fa-dice-d20 fa-xs"></i>{{localize "olddragon2e.bac_short"}}</a>
+                            </div>
+                            {{!-- M. FOR --}}
+                            <div class="ba-value">
+                                <input class="system-mod-forca" type="text" value="{{signed_number system.mod_forca}}" data-dtype="Number" disabled>
+                                <label class="text-2xs">{{localize "olddragon2e.mod_forca"}}</label>
+                            </div>
+                            {{!-- Base --}}
+                            <div class="ba-value">
+                                <input class="system-ba" name="system.ba" type="text" value="{{system.ba}}" data-dtype="Number" disabled>
+                                <label class="text-2xs">{{localize "olddragon2e.base"}}</label>
+                            </div>
+                            {{!-- M. DES --}}
+                            <div class="ba-value">
+                                <input class="system-mod-destreza" type="text" value="{{signed_number system.mod_destreza}}" data-dtype="Number" disabled>
+                                <label class="text-2xs">{{localize "olddragon2e.mod_destreza"}}</label>
+                            </div>
+                            {{!-- BAD --}}
+                            <div class="bad">
+                                <input name="system.bad" type="text" value="{{signed_number system.bad}}" data-dtype="Number" disabled>
+                                <a class="font-bold ba-roll" data-ba="bad" data-ba-label="{{localize "olddragon2e.bad_short"}}" title="Rolar base de ataque à distância"><i class="fa-light fa-dice-d20 fa-xs"></i>{{localize "olddragon2e.bad_short"}}</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    {{!-- Economia --}}
+                    <div class="economy border">
+                        <label class="font-bold">{{localize "olddragon2e.economy"}}</label>
+                        <div class="currency">
+                            {{!-- PO | Peças de Ouro --}}
+                            <div class="gp">
+                                <input name="system.economy.gp" type="text" value="{{system.economy.gp}}" data-dtype="Number">
+                                <div class="label" title="{{localize 'olddragon2e.gp_long'}}">
+                                    <i class="fa-solid fa-coins fa-xs gp-icon"></i>
+                                    <label class="text-xs font-bold gp-label">{{localize "olddragon2e.gp_short"}}</label>
+                                </div>
+                            </div>
+                            {{!-- PP | Peças de Prata --}}
+                            <div class="sp">
+                                <input name="system.economy.sp" type="text" value="{{system.economy.sp}}" data-dtype="Number">
+                                <div class="label" title="{{localize 'olddragon2e.sp_long'}}">
+                                    <i class="fa-solid fa-coins fa-xs sp-icon"></i>
+                                    <label class="text-xs font-bold sp-label">{{localize "olddragon2e.sp_short"}}</label>
+                                </div>
+                            </div>
+                            {{!-- PC | Peças de Cobre --}}
+                            <div class="cp">
+                                <input name="system.economy.cp" type="text" value="{{system.economy.cp}}" data-dtype="Number">
+                                <div class="label" title="{{localize 'olddragon2e.cp_long'}}">
+                                    <i class="fa-solid fa-coins fa-xs cp-icon"></i>
+                                    <label class="text-xs font-bold cp-label">{{localize "olddragon2e.cp_short"}}</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {{!-- Main --}}
+            <div class="main">
+                {{!-- Navigation tabs --}}
+                <nav class="tabs font-bold" data-group="primary-tabs">
+                    <a class="item" data-tab="attacks">{{localize "olddragon2e.navigation.retainer.attacks_tab"}}</a>
+                    <a class="item" data-tab="heroic_action">{{localize "olddragon2e.navigation.retainer.heroic_action_tab"}}</a>
+                    <a class="item" data-tab="equipment">{{localize "olddragon2e.navigation.retainer.equipment_tab"}}</a>
+                    <a class="item" data-tab="details">{{localize "olddragon2e.navigation.retainer.details_tab"}}</a>
+                </nav>
+
+                {{!-- Navigation section --}}
+                <section class="section">
+                    {{!-- Ataques --}}
+                    <div class="tab" data-group="primary-tabs" data-tab="attacks">
+                        {{> systems/olddragon2e/templates/partials/tabs/retainer-tab-attacks.hbs}}
+                    </div>
+                    {{!-- Ação Heroica --}}
+                    <div class="tab" data-group="primary-tabs" data-tab="heroic_action">
+                        {{> systems/olddragon2e/templates/partials/tabs/retainer-tab-heroic-action.hbs}}
+                    </div>
+                    {{!-- Equipamentos --}}
+                    <div class="tab" data-group="primary-tabs" data-tab="equipment">
+                        {{> systems/olddragon2e/templates/partials/tabs/retainer-tab-equipment.hbs}}
+                    </div>
+                    {{!-- Detalhes --}}
+                    <div class="tab" data-group="primary-tabs" data-tab="details">
+                        {{> systems/olddragon2e/templates/partials/tabs/retainer-tab-details.hbs}}
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </div>
+</form>

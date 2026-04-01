@@ -1,0 +1,42 @@
+.olddragon2e.sheet.retainer {
+  .retainer-tab-heroic-action {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .heroic-action {
+      display: flex;
+      flex-direction: column;
+
+      .tab-title {
+        width: 100%;
+        padding: 5px;
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+        background-color: @carmesim-600;
+        color: white;
+        text-align: center;
+        font-size: larger;
+        font-weight: bold;
+      }
+
+      .heroic-action-toggle {
+        display: flex;
+        align-items: start;
+        gap: 0.5rem;
+        padding: 10px;
+        background-color: white;
+        border-bottom-left-radius: 0.25rem;
+        border-bottom-right-radius: 0.25rem;
+
+        input[type='checkbox'] {
+          margin: 0px;
+        }
+
+        input[type='checkbox']:checked {
+          accent-color: @carmesim-600;
+        }
+      }
+    }
+  }
+}
