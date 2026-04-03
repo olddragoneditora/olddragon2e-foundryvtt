@@ -39,6 +39,20 @@ const CLASS_UUIDS = {
   legionario: 'Compendium.olddragon2e-legiao.classes.Item.AXvfz6DD6IM3JfjG',
 };
 
+export const importRetainerActor = async (json) => {
+  const data = await _jsonToRetainerActorData(json);
+  const actor = await Actor.create(data);
+
+  if (data.system.race) {
+    await actor.createEmbeddedDocuments('Item', [data.system.race]);
+  }
+
+  await _addRaceAndClassAbilities(actor, data.system.race, null);
+  await _addInventoryItems(actor, json.inventory_items);
+
+  return actor;
+};
+
 export const importActor = async (json) => {
   const data = await _jsonToActorData(json);
   const actor = await Actor.create(data);
@@ -126,6 +140,52 @@ const _jsonToActorData = async (json) => {
       },
       race: raceItem ? raceItem.toObject() : null,
       class: classItem ? classItem.toObject() : null,
+    },
+  };
+
+  if (json.picture) {
+    actorData.img = await _downloadAndSaveImage(json.picture);
+  }
+
+  return actorData;
+};
+
+const _jsonToRetainerActorData = async (json) => {
+  const raceUUID = RACE_UUIDS[json.character_race?.id];
+  const isLegiaoModuleAvailable = game.modules.get('olddragon2e-legiao')?.active;
+  let raceItem = null;
+  const raceName = json.character_race?.name;
+
+  if (raceUUID) {
+    raceItem = await fromUuid(raceUUID).catch(() => null);
+    if (!raceItem && raceUUID.startsWith('Compendium.olddragon2e-legiao') && !isLegiaoModuleAvailable) {
+      ui.notifications.warn(`A Raça "${raceName}" é exclusiva do módulo premium "Legião - A Era da Desolação".`);
+    } else if (!raceItem) {
+      ui.notifications.warn(`A Raça "${raceName}" não foi encontrada.`);
+    }
+  } else {
+    ui.notifications.warn(`Raça "${raceName}" não encontrada.`);
+  }
+
+  const actorData = {
+    name: json.name,
+    type: 'retainer',
+    system: {
+      odo_id: json.id,
+      level: json.level,
+      hp: { value: json.health_points, max: json.max_hp },
+      forca: json.forca,
+      destreza: json.destreza,
+      constituicao: json.constituicao,
+      inteligencia: json.inteligencia,
+      sabedoria: json.sabedoria,
+      carisma: json.carisma,
+      economy: { cp: json.money_cp, sp: json.money_sp, gp: json.money_gp },
+      details: { notes: json.notes },
+      profession: json.profession,
+      heroic_action_used: json.heroic_action_used,
+      url: json.url,
+      race: raceItem ? raceItem.toObject() : null,
     },
   };
 
