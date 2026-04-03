@@ -366,6 +366,67 @@ const _removeInventoryItems = async (actor) => {
 };
 
 /**
+ * Fetches retainer data from Old Dragon Online API and updates an existing retainer actor.
+ * @param {Actor} actor - The Foundry retainer actor to update
+ * @returns {Promise<Actor>} The updated actor
+ */
+export const updateRetainerActor = async (actor) => {
+  const odoId = actor.system.odo_id;
+  if (!odoId) {
+    ui.notifications.error('Este ajudante não possui um ID do Old Dragon Online.');
+    return actor;
+  }
+
+  const apiUrl = `https://olddragon.com.br/ajudantes/${odoId}.json`;
+
+  try {
+    const response = await fetch(apiUrl);
+    if (!response.ok) {
+      throw new Error(`Erro ao buscar dados: ${response.status}`);
+    }
+
+    const json = await response.json();
+
+    const updateData = {
+      name: json.name,
+      'system.level': json.level,
+      'system.hp.value': json.health_points,
+      'system.hp.max': json.max_hp,
+      'system.forca': json.forca,
+      'system.destreza': json.destreza,
+      'system.constituicao': json.constituicao,
+      'system.inteligencia': json.inteligencia,
+      'system.sabedoria': json.sabedoria,
+      'system.carisma': json.carisma,
+      'system.economy.cp': json.money_cp,
+      'system.economy.sp': json.money_sp,
+      'system.economy.gp': json.money_gp,
+      'system.profession': json.profession,
+      'system.heroic_action_used': json.heroic_action_used,
+      'system.url': json.url,
+      'system.details.notes': json.notes,
+    };
+
+    if (json.picture) {
+      const newImg = await _downloadAndSaveImage(json.picture);
+      updateData.img = newImg;
+    }
+
+    await actor.update(updateData);
+
+    await _removeInventoryItems(actor);
+    await _addInventoryItems(actor, json.inventory_items);
+
+    ui.notifications.info(`Ajudante "${json.name}" atualizado com sucesso!`);
+    return actor;
+  } catch (error) {
+    ui.notifications.error(`Erro ao atualizar ajudante: ${error.message}`);
+    console.error('Error updating retainer actor from ODO:', error);
+    return actor;
+  }
+};
+
+/**
  * Fetches character data from Old Dragon Online API and updates an existing actor.
  * @param {Actor} actor - The Foundry actor to update
  * @returns {Promise<Actor>} The updated actor
