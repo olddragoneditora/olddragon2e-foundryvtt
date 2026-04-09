@@ -84,15 +84,34 @@ export function registerHandlebarsHelper() {
     return options.inverse(this);
   });
 
-  Handlebars.registerHelper('generateCheckboxes', function (dailyUses, currentLevel, dailyUsesState, abilityId) {
+  Handlebars.registerHelper(
+    'generateClassAbilityDailyUses',
+    function (dailyUses, currentLevel, dailyUsesState, abilityId) {
+      let result = '';
+      const maxUses = dailyUses[currentLevel] || 0;
+      for (let i = 0; i < maxUses; i++) {
+        const checked = dailyUsesState && dailyUsesState[i + 1] ? 'checked' : '';
+        const title = checked ? 'Recuperar' : 'Usar';
+        result += `<input type="checkbox"
+        class="class-ability-use-checkbox"
+        name="daily_use_${currentLevel}_${i + 1}"
+        data-ability-id="${abilityId}"
+        data-use-index="${i + 1}"
+        title="${title}"
+        ${checked} />`;
+      }
+      return new Handlebars.SafeString(result);
+    },
+  );
+
+  Handlebars.registerHelper('generateRaceAbilityDailyUses', function (dailyUses, dailyUsesState, abilityId) {
     let result = '';
-    const maxUses = dailyUses[currentLevel] || 0;
-    for (let i = 0; i < maxUses; i++) {
+    for (let i = 0; i < dailyUses; i++) {
       const checked = dailyUsesState && dailyUsesState[i + 1] ? 'checked' : '';
       const title = checked ? 'Recuperar' : 'Usar';
-      result += `<input type="checkbox" 
-      class="class-ability-use-checkbox"
-      name="daily_use_${currentLevel}_${i + 1}" 
+      result += `<input type="checkbox"
+      class="race-ability-use-checkbox"
+      name="race_daily_use_${i + 1}"
       data-ability-id="${abilityId}"
       data-use-index="${i + 1}"
       title="${title}"

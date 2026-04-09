@@ -26,6 +26,7 @@ export class OD2RaceAbilityDataModel extends foundry.abstract.TypeDataModel {
       rogue_talent_2: new fields.StringField({
         default: 'none',
       }),
+      daily_uses: new fields.NumberField({ integer: true, initial: 0 }),
     };
   }
 }

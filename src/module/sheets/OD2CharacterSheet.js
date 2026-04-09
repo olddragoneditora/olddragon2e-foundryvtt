@@ -217,6 +217,7 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
       html.find('.slots-select').change(this._onSpellSlotsChange.bind(this));
       html.find('.spell-use-checkbox').change(this._onSpellUseCheckboxChange.bind(this));
       html.find('.class-ability-use-checkbox').change(this._onClassAbilityUseCheckboxChange.bind(this));
+      html.find('.race-ability-use-checkbox').change(this._onRaceAbilityUseCheckboxChange.bind(this));
       html.find('.stat-roll').click(this._onStatRoll.bind(this));
       html.find('.jp-roll').click(this._onJPRoll.bind(this));
       html.find('.ba-roll').click(this._onBARoll.bind(this));
@@ -570,6 +571,28 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
     await ability.update({ 'flags.olddragon2e.daily-uses': dailyUses });
 
     // Notifica o uso da habilidade se o checkbox foi marcado
+    if (checkbox.checked) {
+      ChatMessage.create({
+        user: game.user.id,
+        speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+        content: `<div class="title">Usou a habilidade:<br><strong>${ability.name}</strong></div>`,
+      });
+    }
+  }
+
+  // Usos diários de habilidade de raça
+  async _onRaceAbilityUseCheckboxChange(event) {
+    const checkbox = event.currentTarget;
+    const abilityId = checkbox.dataset.abilityId;
+    const useIndex = checkbox.dataset.useIndex;
+    const ability = this.actor.items.get(abilityId);
+
+    const abilityFlags = ability.getFlag('olddragon2e', 'daily-uses') || {};
+    let dailyUses = foundry.utils.duplicate(abilityFlags);
+    dailyUses[useIndex] = checkbox.checked;
+
+    await ability.update({ 'flags.olddragon2e.daily-uses': dailyUses });
+
     if (checkbox.checked) {
       ChatMessage.create({
         user: game.user.id,
