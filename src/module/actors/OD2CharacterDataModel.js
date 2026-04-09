@@ -555,9 +555,11 @@ export class OD2CharacterDataModel extends foundry.abstract.TypeDataModel {
   get rogue_talent_race_bonus() {
     const bonuses = {};
     for (const ability of this.race_abilities) {
-      const talent = ability.system.rogue_talent;
-      if (talent && talent !== 'none') {
-        bonuses[talent] = (bonuses[talent] || 0) + 1;
+      for (const field of ['rogue_talent', 'rogue_talent_2']) {
+        const talent = ability.system[field];
+        if (talent && talent !== 'none') {
+          bonuses[talent] = (bonuses[talent] || 0) + 1;
+        }
       }
     }
     return bonuses;

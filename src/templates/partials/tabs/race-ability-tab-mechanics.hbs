@@ -24,12 +24,23 @@
                 </div>
             </div>
         </div>
-        {{!-- Bônus no Talento de Ladrão --}}
+        {{!-- Bônus em Talentos de Ladrão --}}
         <div class="rogue-talent">
             <label class="font-bold">{{localize "olddragon2e.race_ability_rogue_talent"}}</label>
-            <select name="system.rogue_talent">
-                {{selectOptions config.rogue_talents selected=system.rogue_talent localize=true}}
-            </select>
+            <div class="rogue-talent-selectors">
+                <div>
+                    <label class="font-bold">1&#41;</label>
+                    <select name="system.rogue_talent">
+                        {{selectOptions config.rogue_talents selected=system.rogue_talent localize=true}}
+                    </select>
+                </div>
+                <div>
+                    <label class="font-bold">2&#41;</label>
+                    <select name="system.rogue_talent_2">
+                        {{selectOptions config.rogue_talents selected=system.rogue_talent_2 localize=true}}
+                    </select>
+                </div>
+            </div>
         </div>
         {{!-- Bônus no Dano com Arco --}}
         <div class="checkbox">
