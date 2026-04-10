@@ -357,6 +357,11 @@ export class OD2CharacterDataModel extends foundry.abstract.TypeDataModel {
   }
 
   get load_max() {
+    for (const ability of this.race_abilities) {
+      const maxLoadOverride = ability.system.max_load_override;
+      if (maxLoadOverride && maxLoadOverride !== 0) return maxLoadOverride;
+    }
+
     let maxLoadValue = this._findHighestValue(this.forca, this.constituicao);
 
     const equipped_containers = getItemsOfActorOfType(this.parent, 'container', ({ system }) => system.is_equipped);
