@@ -109,6 +109,7 @@
     "race_ability": {
       "daily_uses": "Usos Diários",
       "natural_armor": "Armadura Natural",
+      "load_modifier": "Modificador de Carga",
       "bonus_jp": "Disponibilidade de Bônus na Jogada de Proteção",
       "rogue_talent_bonus": "Bônus em Talentos de Ladrão",
       "bonus_damage": "Bônus no Dano",

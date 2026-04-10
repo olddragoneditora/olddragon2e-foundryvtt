@@ -365,6 +365,13 @@ export class OD2CharacterDataModel extends foundry.abstract.TypeDataModel {
       maxLoadValue += item.system.increases_load_by || 0;
     }
 
+    for (const ability of this.race_abilities) {
+      const loadModifier = ability.system.load_modifier;
+      if (loadModifier && loadModifier !== 0) {
+        maxLoadValue += loadModifier;
+      }
+    }
+
     return maxLoadValue;
   }
 

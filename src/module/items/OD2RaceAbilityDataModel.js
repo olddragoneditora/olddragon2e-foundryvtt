@@ -28,6 +28,7 @@ export class OD2RaceAbilityDataModel extends foundry.abstract.TypeDataModel {
       }),
       daily_uses: new fields.NumberField({ integer: true, initial: 0 }),
       natural_armor: new fields.NumberField({ integer: true, initial: 0 }),
+      load_modifier: new fields.NumberField({ integer: true, initial: 0 }),
     };
   }
 }
