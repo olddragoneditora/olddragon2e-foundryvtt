@@ -164,6 +164,10 @@ export class OD2CharacterDataModel extends foundry.abstract.TypeDataModel {
   }
 
   get ac_base() {
+    for (const ability of this.race_abilities) {
+      const naturalArmor = ability.system.natural_armor;
+      if (naturalArmor && naturalArmor !== 0) return naturalArmor;
+    }
     return 10;
   }
 
