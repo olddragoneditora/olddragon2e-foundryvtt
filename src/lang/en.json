@@ -111,6 +111,7 @@
       "natural_armor": "Natural Armor",
       "load_modifier": "Load Modifier",
       "max_load_override": "Override Max Load",
+      "armor_weight_modifier": "Armor Weight Modifier",
       "bonus_jp": "Protection Roll Bonus Availablity",
       "rogue_talent_bonus": "Thief Talent Bonus",
       "bonus_damage": "Damage Bonus",

@@ -30,6 +30,7 @@ export class OD2RaceAbilityDataModel extends foundry.abstract.TypeDataModel {
       natural_armor: new fields.NumberField({ integer: true, initial: 0 }),
       load_modifier: new fields.NumberField({ integer: true, initial: 0 }),
       max_load_override: new fields.NumberField({ integer: true, initial: 0 }),
+      armor_weight_modifier: new fields.NumberField({ integer: true, initial: 0 }),
     };
   }
 }

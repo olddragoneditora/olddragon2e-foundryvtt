@@ -388,11 +388,23 @@ export class OD2CharacterDataModel extends foundry.abstract.TypeDataModel {
     let currentLoadValue = 0;
     const itemTypes = ['weapon', 'armor', 'shield', 'misc', 'container'];
 
+    let armorWeightModifier = 0;
+    for (const ability of this.race_abilities) {
+      const modifier = ability.system.armor_weight_modifier;
+      if (modifier && modifier !== 0) {
+        armorWeightModifier = modifier;
+        break;
+      }
+    }
+
     for (const type of itemTypes) {
       const items = getItemsOfActorOfType(this.parent, type);
 
       for (const item of items) {
         currentLoadValue += item.system.total_weight;
+        if (type === 'armor' && armorWeightModifier !== 0 && item.system.is_equipped) {
+          currentLoadValue += armorWeightModifier;
+        }
       }
     }
 
