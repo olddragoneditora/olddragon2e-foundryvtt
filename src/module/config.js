@@ -154,6 +154,12 @@ olddragon2e.alignment_tendency = {
   caotico: 'olddragon2e.alignment_tendencies.caotico',
 };
 
+olddragon2e.bonus_damage_conditions = {
+  none: 'olddragon2e.none',
+  arrow: 'olddragon2e.arrow',
+  weight_3: 'olddragon2e.race_ability.bonus_damage_condition_weight_3',
+};
+
 olddragon2e.rogue_talents = {
   none: 'olddragon2e.none',
   armadilha: 'olddragon2e.armadilha',

@@ -162,3 +162,8 @@ Handlebars.registerHelper('lte', function (a, b) {
 Handlebars.registerHelper('ne', function (a, b) {
   return a !== b;
 });
+
+Handlebars.registerHelper('raceBonusDamage', function (actor, weapon) {
+  if (!actor?.raceBonusDamage) return 0;
+  return actor.raceBonusDamage(weapon);
+});

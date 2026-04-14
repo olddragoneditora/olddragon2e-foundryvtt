@@ -26,6 +26,16 @@
             <label class="font-bold" title="Modifica a carga de armaduras equipadas">{{localize "olddragon2e.race_ability.armor_weight_modifier"}}&nbsp;<i class="fa-solid fa-circle-info"></i></label>
             <input name="system.armor_weight_modifier" type="number" value="{{system.armor_weight_modifier}}" data-dtype="Number">
         </div>
+        {{!-- Bônus no Dano --}}
+        <div class="bonus-damage">
+            <label class="font-bold" title="Bônus na rolagem de dano em armas equipadas com a propriedade selecionada">{{localize "olddragon2e.race_ability.bonus_damage"}}&nbsp;<i class="fa-solid fa-circle-info"></i></label>
+            <div class="bonus-damage-fields">
+                <select name="system.bonus_damage_condition">
+                    {{selectOptions config.bonus_damage_conditions selected=system.bonus_damage_condition localize=true}}
+                </select>
+                <input name="system.bonus_damage" type="number" value="{{system.bonus_damage}}" data-dtype="Number">
+            </div>
+        </div>
         {{!-- Bônus de Jogada de Proteção --}}
         <div class="jp">
             <div><strong>{{localize "olddragon2e.race_ability.bonus_jp"}}</strong></div>
@@ -61,11 +71,6 @@
                     </select>
                 </div>
             </div>
-        </div>
-        {{!-- Bônus no Dano com Arco --}}
-        <div class="checkbox">
-            <label class="font-bold">{{localize "olddragon2e.race_ability.bonus_damage"}}</label>
-            <input name="system.bonus_damage_archery" type="checkbox" {{checked system.bonus_damage_archery}}>
         </div>
         {{!-- % de Bônus na XP --}}
         <div class="xp">

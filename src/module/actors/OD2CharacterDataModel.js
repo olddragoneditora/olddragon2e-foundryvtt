@@ -593,6 +593,20 @@ export class OD2CharacterDataModel extends foundry.abstract.TypeDataModel {
     return bonuses;
   }
 
+  raceBonusDamage(weapon) {
+    let bonus = 0;
+    for (const ability of this.race_abilities) {
+      const { bonus_damage, bonus_damage_condition } = ability.system;
+      if (!bonus_damage || bonus_damage_condition === 'none') continue;
+      if (bonus_damage_condition === 'arrow' && weapon.system.arrow) {
+        bonus += bonus_damage;
+      } else if (bonus_damage_condition === 'weight_3' && weapon.system.weight_in_load >= 3) {
+        bonus += bonus_damage;
+      }
+    }
+    return bonus;
+  }
+
   get rogue_talent_scores() {
     const scores = {};
     const raceBonuses = this.rogue_talent_race_bonus;

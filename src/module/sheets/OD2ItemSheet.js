@@ -78,7 +78,7 @@ export default class OD2ItemSheet extends foundry.appv1.sheets.ItemSheet {
       // Adiciona o UUID do Item
       raceAbilities.push(item.uuid);
       await receivingItem.update({ 'system.race_abilities': raceAbilities });
-      await receivingItem.parent.system.updateRaceAbilities(raceAbilities);
+      receivingItem.parent && (await receivingItem.parent.system.updateRaceAbilities(raceAbilities));
     } else if (receivingItem.type === 'class') {
       if (item.type !== 'class_ability') {
         ui.notifications.error('Apenas habilidades de classe podem ser adicionadas.');
@@ -87,7 +87,7 @@ export default class OD2ItemSheet extends foundry.appv1.sheets.ItemSheet {
       // Adiciona o UUID do Item
       classAbilities.push(item.uuid);
       await receivingItem.update({ 'system.class_abilities': classAbilities });
-      await receivingItem.parent.system.updateClassAbilities(classAbilities);
+      receivingItem.parent && (await receivingItem.parent.system.updateClassAbilities(classAbilities));
     } else {
       ui.notifications.error('Apenas raças e classes podem receber habilidades.');
       return;
