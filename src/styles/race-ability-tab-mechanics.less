@@ -38,6 +38,33 @@
       }
     }
 
+    .natural-weapon {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+
+      .natural-weapon-fields {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        padding: 0.25rem;
+        border: 1px solid #666;
+        border-radius: 3px;
+
+        .natural-weapon-field {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+
+          input {
+            width: 60px;
+            text-align: center;
+          }
+        }
+      }
+    }
+
     .jp {
       display: flex;
       flex-direction: row;

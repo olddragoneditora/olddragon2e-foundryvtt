@@ -117,7 +117,8 @@
       "bonus_damage": "Bônus no Dano",
       "bonus_damage_condition": "Condição do Bônus no Dano",
       "bonus_damage_condition_weight_3": "Grande",
-      "bonus_xp": "% de Bônus na Experiência Ganha"
+      "bonus_xp": "% de Bônus na Experiência Ganha",
+      "natural_weapon": "Arma Natural"
     },
     "race_abilities": "Habilidades de Raça",
     "infravision": "Infravisão",
@@ -306,7 +307,15 @@
       "throwing": "Arremesso",
       "ranged": "Disparo",
       "ammunition": "Munição",
-      "unarmed": "Desarmado"
+      "unarmed": "Desarmado",
+      "natural_weapon": "Arma Natural"
+    },
+    "weapon_sizes": {
+      "label": "Tamanho",
+      "none": "Nenhum",
+      "small": "Pequena",
+      "medium": "Média",
+      "large": "Grande"
     },
     "damage_type": "Tipo de dano",
     "damage_types": {

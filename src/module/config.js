@@ -90,6 +90,13 @@ olddragon2e.damage_types = {
   slashing: 'olddragon2e.damage_types.slashing',
 };
 
+olddragon2e.weapon_sizes = {
+  none: 'olddragon2e.weapon_sizes.none',
+  small: 'olddragon2e.weapon_sizes.small',
+  medium: 'olddragon2e.weapon_sizes.medium',
+  large: 'olddragon2e.weapon_sizes.large',
+};
+
 olddragon2e.spell_school = {
   arcane: 'olddragon2e.arcane_spell',
   divine: 'olddragon2e.divine_spell',

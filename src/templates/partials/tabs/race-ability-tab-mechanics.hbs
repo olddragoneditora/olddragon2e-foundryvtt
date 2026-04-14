@@ -36,6 +36,34 @@
                 <input name="system.bonus_damage" type="number" value="{{system.bonus_damage}}" data-dtype="Number">
             </div>
         </div>
+        {{!-- Arma Natural --}}
+        <div class="natural-weapon">
+            <label class="font-bold">{{localize "olddragon2e.race_ability.natural_weapon"}}</label>
+            <div class="natural-weapon-fields">
+                <div class="natural-weapon-field">
+                    <label>{{localize "olddragon2e.damage"}} <i class="fa-solid fa-circle-info" title='Ex.: "1d4", "2d6" ou "1d8+1"'></i></label>
+                    <input name="system.natural_weapon.damage" type="text" value="{{system.natural_weapon.damage}}" placeholder="Ex: 1d4">
+                </div>
+                <div class="natural-weapon-field">
+                    <label>{{localize "olddragon2e.damage_type"}}</label>
+                    <select name="system.natural_weapon.damage_type">
+                        <option value="none" {{#ifCond system.natural_weapon.damage_type '==' 'none'}}selected{{/ifCond}}>{{localize "olddragon2e.damage_types.none"}}</option>
+                        <option value="bludgeoning" {{#ifCond system.natural_weapon.damage_type '==' 'bludgeoning'}}selected{{/ifCond}}>{{localize "olddragon2e.damage_types.bludgeoning"}}</option>
+                        <option value="piercing" {{#ifCond system.natural_weapon.damage_type '==' 'piercing'}}selected{{/ifCond}}>{{localize "olddragon2e.damage_types.piercing"}}</option>
+                        <option value="slashing" {{#ifCond system.natural_weapon.damage_type '==' 'slashing'}}selected{{/ifCond}}>{{localize "olddragon2e.damage_types.slashing"}}</option>
+                    </select>
+                </div>
+                <div class="natural-weapon-field">
+                    <label>{{localize "olddragon2e.weapon_sizes.label"}}</label>
+                    <select name="system.natural_weapon.weapon_size">
+                        <option value="none" {{#ifCond system.natural_weapon.weapon_size '==' 'none'}}selected{{/ifCond}}>{{localize "olddragon2e.weapon_sizes.none"}}</option>
+                        <option value="small" {{#ifCond system.natural_weapon.weapon_size '==' 'small'}}selected{{/ifCond}}>{{localize "olddragon2e.weapon_sizes.small"}}</option>
+                        <option value="medium" {{#ifCond system.natural_weapon.weapon_size '==' 'medium'}}selected{{/ifCond}}>{{localize "olddragon2e.weapon_sizes.medium"}}</option>
+                        <option value="large" {{#ifCond system.natural_weapon.weapon_size '==' 'large'}}selected{{/ifCond}}>{{localize "olddragon2e.weapon_sizes.large"}}</option>
+                    </select>
+                </div>
+            </div>
+        </div>
         {{!-- Bônus de Jogada de Proteção --}}
         <div class="jp">
             <div><strong>{{localize "olddragon2e.race_ability.bonus_jp"}}</strong></div>

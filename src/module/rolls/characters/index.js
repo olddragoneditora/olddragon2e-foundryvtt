@@ -6,3 +6,5 @@ export { JPRoll } from './jp-roll';
 export { BARoll } from './ba-roll';
 export { StatRoll } from './stat-roll';
 export { TalentRoll } from './talent-roll';
+export { NaturalWeaponAttackRoll } from './natural-weapon-attack-roll';
+export { NaturalWeaponDamageRoll } from './natural-weapon-damage-roll';

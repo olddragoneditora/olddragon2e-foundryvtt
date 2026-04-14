@@ -532,6 +532,24 @@ export class OD2CharacterDataModel extends foundry.abstract.TypeDataModel {
     return getItemsOfActorOfType(this.parent, 'race_ability');
   }
 
+  get natural_weapon_attacks() {
+    const attacks = [];
+    for (const ability of this.race_abilities) {
+      const nw = ability.system.natural_weapon;
+      if (nw?.damage) {
+        attacks.push({
+          name: ability.name,
+          damage: nw.damage,
+          damage_type: nw.damage_type,
+          weapon_size: nw.weapon_size,
+          damage_type_key: `olddragon2e.damage_types.${nw.damage_type}`,
+          weapon_size_key: `olddragon2e.weapon_sizes.${nw.weapon_size}`,
+        });
+      }
+    }
+    return attacks;
+  }
+
   // Habilidades de Classe
   async updateClassAbilities(uuids) {
     const classAbilities = await this.getItemsFromUUIDs(uuids);

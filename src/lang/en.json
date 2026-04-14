@@ -117,7 +117,8 @@
       "bonus_damage": "Damage Bonus",
       "bonus_damage_condition": "Damage Bonus Condition",
       "bonus_damage_condition_weight_3": "Large",
-      "bonus_xp": "% Bonus Experience Gained"
+      "bonus_xp": "% Bonus Experience Gained",
+      "natural_weapon": "Natural Weapon"
     },
     "race_abilities": "Race Abilities",
     "infravision": "Infravision",
@@ -306,7 +307,15 @@
       "throwing": "Throwing",
       "ranged": "Ranged",
       "ammunition": "Ammunition",
-      "unarmed": "Unarmed"
+      "unarmed": "Unarmed",
+      "natural_weapon": "Natural Weapon"
+    },
+    "weapon_sizes": {
+      "label": "Size",
+      "none": "None",
+      "small": "Small",
+      "medium": "Medium",
+      "large": "Large"
     },
     "damage_type": "Damage Type",
     "damage_types": {

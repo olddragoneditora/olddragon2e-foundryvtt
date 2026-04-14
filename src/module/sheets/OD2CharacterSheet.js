@@ -8,6 +8,8 @@ import {
   JPRoll,
   BARoll,
   TalentRoll,
+  NaturalWeaponAttackRoll,
+  NaturalWeaponDamageRoll,
 } from '../rolls';
 import { updateActor } from '../api/characterImporter.js';
 
@@ -99,6 +101,7 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
       class_abilities: baseData.actor.system.class_abilities,
       equipped_items: baseData.actor.system.equipped_items,
       attack: baseData.actor.system.attack_items,
+      natural_weapon_attacks: baseData.actor.system.natural_weapon_attacks,
       weapon: baseData.actor.system.weapon_items,
       armor: baseData.actor.system.armor_items,
       shield: baseData.actor.system.shield_items,
@@ -210,6 +213,8 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
     if (this.actor.isOwner) {
       html.find('.attack-roll').click(this._onAttackRoll.bind(this));
       html.find('.unarmed-attack-roll').click(this._onUnarmedAttackRoll.bind(this));
+      html.find('.natural-weapon-attack-roll').click(this._onNaturalWeaponAttackRoll.bind(this));
+      html.find('.natural-weapon-damage-roll').click(this._onNaturalWeaponDamageRoll.bind(this));
       html.find('.damage-roll').click(this._onDamageRoll.bind(this));
       html.find('.knockout-roll').click(this._onKnockoutRoll.bind(this));
       html.find('.spell-cast').click(this._onSpellCast.bind(this));
@@ -342,6 +347,64 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
             unarmedAttackRoll.sendMessage(mode, adjustment);
           },
         },
+      },
+    });
+  }
+
+  // Rolagem de ataque com arma natural
+  async _onNaturalWeaponAttackRoll(event) {
+    event.preventDefault();
+    const target = event.currentTarget;
+    const weaponName = target.dataset.nwName;
+    const attackRoll = new NaturalWeaponAttackRoll(this.actor, weaponName);
+
+    await showDialog({
+      title: `Rolar Ataque`,
+      content: 'systems/olddragon2e/templates/dialog/characters/attack-roll-dialog.hbs',
+      data: { formula: attackRoll.printFormula },
+      buttons: {
+        roll: {
+          icon: "<i class='fa-solid fa-dice-d20'></i>",
+          label: 'Rolar',
+          callback: async (html) => {
+            const adjustment = html.find('#adjustment').val();
+            const bonus = html.find('#bonus').val();
+            const mode = html.find('#rollMode').val();
+            await attackRoll.roll(bonus, adjustment);
+            attackRoll.sendMessage(mode, adjustment);
+          },
+        },
+      },
+    });
+  }
+
+  // Rolagem de dano com arma natural
+  async _onNaturalWeaponDamageRoll(event) {
+    event.preventDefault();
+    const target = event.currentTarget;
+    const weaponName = target.dataset.nwName;
+    const damage = target.dataset.nwDamage;
+    const damageRoll = new NaturalWeaponDamageRoll(this.actor, weaponName, damage);
+
+    await showDialog({
+      title: `Rolar Dano`,
+      content: 'systems/olddragon2e/templates/dialog/characters/damage-roll-dialog.hbs',
+      buttons: {
+        roll: {
+          icon: "<i class='fa-solid fa-dice-d20'></i>",
+          label: 'Rolar',
+          callback: async (html) => {
+            const bonus = html.find('#bonus').val();
+            const mode = html.find('#rollMode').val();
+            const critical = html.find('#critical').is(':checked');
+            await damageRoll.roll(bonus, critical);
+            damageRoll.sendMessage(mode);
+          },
+        },
+      },
+      render: (html) => {
+        html.find('#formula').val(damageRoll.printFormula());
+        html.find('[name="attack-mode"]').closest('.form-group').hide();
       },
     });
   }
