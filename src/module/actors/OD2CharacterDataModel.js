@@ -334,6 +334,13 @@ export class OD2CharacterDataModel extends foundry.abstract.TypeDataModel {
     return Math.floor(this.current_movement / 2);
   }
 
+  get current_movement_fly() {
+    if (this.race == null) {
+      return 0;
+    }
+    return this.race.system.movement_fly ?? 0;
+  }
+
   get next_level_xp() {
     const characterClass = this.class;
     if (!characterClass) return 0;

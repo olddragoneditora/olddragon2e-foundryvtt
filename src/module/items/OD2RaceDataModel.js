@@ -9,6 +9,11 @@ export class OD2RaceDataModel extends foundry.abstract.TypeDataModel {
         integer: true,
         initial: 0,
       }),
+      movement_fly: new fields.NumberField({
+        integer: true,
+        initial: 0,
+        min: 0,
+      }),
       infravision: new fields.NumberField({
         integer: true,
       }),
