@@ -100,6 +100,41 @@
                 </div>
             </div>
         </div>
+        {{!-- Construção Variável --}}
+        <div class="variable-construction">
+            <div class="choices-count-row">
+                <label class="font-bold" title="Quantidade de características extras que o jogador pode escolher. O valor 0 desativa a mecânica.">{{localize "olddragon2e.race_ability.variable_construction"}}&nbsp;<i class="fa-solid fa-circle-info"></i></label>
+                <input name="system.variable_construction.choices_count" type="number" value="{{system.variable_construction.choices_count}}" data-dtype="Number" min="0">
+            </div>
+            {{#if system.variable_construction.choices_count}}
+            <div class="available-options">
+                <div class="available-options-header">
+                    <label class="font-bold">{{localize "olddragon2e.race_ability.available_options"}}</label>
+                    <a class="variable-construction-option-add"><i class="fa-solid fa-plus"></i> {{localize "olddragon2e.create"}}</a>
+                </div>
+                {{#if (gt system.variable_construction.available_options.length 0)}}
+                <ol>
+                    {{#each system.variable_construction.available_options as |option|}}
+                    <li class="available-option" data-index="{{@index}}">
+                        <div class="option-fields">
+                            <div class="option-field">
+                                <input name="system.variable_construction.available_options.{{@index}}.key" type="text" value="{{option.key}}" placeholder="{{localize "olddragon2e.key"}}">
+                                <a class="variable-construction-option-delete" data-index="{{@index}}" title="{{localize 'olddragon2e.delete'}}"><i class="fa-solid fa-trash"></i></a>
+                            </div>
+                            <div class="option-field">
+                                <input name="system.variable_construction.available_options.{{@index}}.name" type="text" value="{{option.name}}" placeholder="{{localize "olddragon2e.name"}}">
+                            </div>
+                            <div class="option-field option-description">
+                                <textarea name="system.variable_construction.available_options.{{@index}}.description" placeholder="{{localize "olddragon2e.description"}}">{{option.description}}</textarea>
+                            </div>
+                        </div>
+                    </li>
+                    {{/each}}
+                </ol>
+                {{/if}}
+            </div>
+            {{/if}}
+        </div>
         {{!-- % de Bônus na XP --}}
         <div class="xp">
             <label class="font-bold">{{localize "olddragon2e.race_ability.bonus_xp"}}</label>

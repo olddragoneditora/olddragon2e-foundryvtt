@@ -150,6 +150,7 @@ export class OD2CharacterDataModel extends foundry.abstract.TypeDataModel {
       campanha_url: new fields.StringField(),
       url: new fields.StringField(),
       rogue_talent_points: new fields.ObjectField({ initial: {} }),
+      variable_construction_selections: new fields.ObjectField({ initial: {} }),
     };
   }
 

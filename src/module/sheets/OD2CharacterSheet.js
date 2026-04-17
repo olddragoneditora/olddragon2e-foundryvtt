@@ -223,6 +223,11 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
       html.find('.spell-use-checkbox').change(this._onSpellUseCheckboxChange.bind(this));
       html.find('.class-ability-use-checkbox').change(this._onClassAbilityUseCheckboxChange.bind(this));
       html.find('.race-ability-use-checkbox').change(this._onRaceAbilityUseCheckboxChange.bind(this));
+      html.find('.variable-construction-select').change(this._onVariableConstructionSelectChange.bind(this));
+      html.find('.variable-construction-custom-name').change(this._onVariableConstructionCustomNameChange.bind(this));
+      html
+        .find('.variable-construction-custom-description')
+        .change(this._onVariableConstructionCustomDescriptionChange.bind(this));
       html.find('.stat-roll').click(this._onStatRoll.bind(this));
       html.find('.jp-roll').click(this._onJPRoll.bind(this));
       html.find('.ba-roll').click(this._onBARoll.bind(this));
@@ -663,6 +668,64 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
         content: `<div class="title">Usou a habilidade:<br><strong>${ability.name}</strong></div>`,
       });
     }
+  }
+
+  // Construção Variável — seleção de opção
+  async _onVariableConstructionSelectChange(event) {
+    const select = event.currentTarget;
+    const abilityId = select.dataset.abilityId;
+    const choiceIndex = parseInt(select.dataset.choiceIndex);
+    const selectedKey = select.value;
+
+    const selections = foundry.utils.duplicate(this.actor.system.variable_construction_selections || {});
+    if (!selections[abilityId]) selections[abilityId] = [];
+    while (selections[abilityId].length <= choiceIndex) {
+      selections[abilityId].push({ key: '', custom_name: '', custom_description: '' });
+    }
+    selections[abilityId][choiceIndex].key = selectedKey;
+
+    await this.actor.update({ 'system.variable_construction_selections': selections });
+
+    // Mostra/oculta os campos customizados sem aguardar re-render
+    const choiceRow = select.closest('.choice-row');
+    if (choiceRow) {
+      const customFields = choiceRow.querySelector('.custom-fields');
+      if (customFields) {
+        customFields.style.display = selectedKey === 'custom' ? '' : 'none';
+      }
+    }
+  }
+
+  // Construção Variável — nome personalizado
+  async _onVariableConstructionCustomNameChange(event) {
+    const input = event.currentTarget;
+    const abilityId = input.dataset.abilityId;
+    const choiceIndex = parseInt(input.dataset.choiceIndex);
+
+    const selections = foundry.utils.duplicate(this.actor.system.variable_construction_selections || {});
+    if (!selections[abilityId]) selections[abilityId] = [];
+    while (selections[abilityId].length <= choiceIndex) {
+      selections[abilityId].push({ key: '', custom_name: '', custom_description: '' });
+    }
+    selections[abilityId][choiceIndex].custom_name = input.value;
+
+    await this.actor.update({ 'system.variable_construction_selections': selections });
+  }
+
+  // Construção Variável — descrição personalizada
+  async _onVariableConstructionCustomDescriptionChange(event) {
+    const textarea = event.currentTarget;
+    const abilityId = textarea.dataset.abilityId;
+    const choiceIndex = parseInt(textarea.dataset.choiceIndex);
+
+    const selections = foundry.utils.duplicate(this.actor.system.variable_construction_selections || {});
+    if (!selections[abilityId]) selections[abilityId] = [];
+    while (selections[abilityId].length <= choiceIndex) {
+      selections[abilityId].push({ key: '', custom_name: '', custom_description: '' });
+    }
+    selections[abilityId][choiceIndex].custom_description = textarea.value;
+
+    await this.actor.update({ 'system.variable_construction_selections': selections });
   }
 
   // Teste de Atributos (Força; Destreza; Constituição; Inteligência; Sabedoria; Carisma)

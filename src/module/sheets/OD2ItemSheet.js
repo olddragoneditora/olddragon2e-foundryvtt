@@ -44,6 +44,8 @@ export default class OD2ItemSheet extends foundry.appv1.sheets.ItemSheet {
       html.find('.item-delete').click(this._onItemDelete.bind(this));
       html.find('.rogue-talent-add').click(this._onRogueTalentAdd.bind(this));
       html.find('.rogue-talent-delete').click(this._onRogueTalentDelete.bind(this));
+      html.find('.variable-construction-option-add').click(this._onVariableConstructionOptionAdd.bind(this));
+      html.find('.variable-construction-option-delete').click(this._onVariableConstructionOptionDelete.bind(this));
     }
 
     html.on('drop', this._onDropItem.bind(this));
@@ -172,6 +174,20 @@ export default class OD2ItemSheet extends foundry.appv1.sheets.ItemSheet {
     const talents = foundry.utils.duplicate(this.item.system.rogue_talents || []);
     talents.splice(index, 1);
     await this.item.update({ 'system.rogue_talents': talents });
+  }
+
+  async _onVariableConstructionOptionAdd() {
+    const options = foundry.utils.duplicate(this.item.system.variable_construction?.available_options || []);
+    options.push({ key: '', name: '', description: '' });
+    await this.item.update({ 'system.variable_construction.available_options': options });
+  }
+
+  async _onVariableConstructionOptionDelete(event) {
+    event.preventDefault();
+    const index = parseInt(event.currentTarget.dataset.index);
+    const options = foundry.utils.duplicate(this.item.system.variable_construction?.available_options || []);
+    options.splice(index, 1);
+    await this.item.update({ 'system.variable_construction.available_options': options });
   }
 
   async _isWeapon(event) {

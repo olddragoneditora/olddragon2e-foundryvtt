@@ -17,6 +17,7 @@
 
   "olddragon2e": {
     "name": "Name",
+    "key": "Key",
     "id": "ID",
     "level": "Level",
     "levels": {
@@ -118,7 +119,9 @@
       "bonus_damage_condition": "Damage Bonus Condition",
       "bonus_damage_condition_weight_3": "Large",
       "bonus_xp": "% Bonus Experience Gained",
-      "natural_weapon": "Natural Weapon"
+      "natural_weapon": "Natural Weapon",
+      "variable_construction": "Variable Construction",
+      "available_options": "Available Options"
     },
     "race_abilities": "Race Abilities",
     "infravision": "Infravision",
@@ -433,6 +436,9 @@
     "cancel": "Cancel",
     "none": "None",
     "null": "–",
+    "select_option": "Select an option...",
+    "choice": "Choice",
+    "custom": "Custom",
 
     "settings": {
       "initiativeType": {

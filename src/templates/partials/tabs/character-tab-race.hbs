@@ -38,6 +38,11 @@
                         </select>
                     </div>
                     {{/if}}
+                    {{#if ability.system.variable_construction.choices_count}}
+                    <div class="variable-construction">
+                        {{generateVariableConstructionSelectors ability actor.system.variable_construction_selections}}
+                    </div>
+                    {{/if}}
                 </li>
                 {{/each}}
             </ol>

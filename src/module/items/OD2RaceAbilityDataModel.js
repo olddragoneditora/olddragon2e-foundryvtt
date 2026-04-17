@@ -35,6 +35,16 @@ export class OD2RaceAbilityDataModel extends foundry.abstract.TypeDataModel {
         damage_type: new fields.StringField({ initial: 'none' }),
         weapon_size: new fields.StringField({ initial: 'none' }),
       }),
+      variable_construction: new fields.SchemaField({
+        choices_count: new fields.NumberField({ integer: true, initial: 0 }),
+        available_options: new fields.ArrayField(
+          new fields.SchemaField({
+            key: new fields.StringField({ initial: '' }),
+            name: new fields.StringField({ initial: '' }),
+            description: new fields.StringField({ initial: '' }),
+          }),
+        ),
+      }),
     };
   }
 }

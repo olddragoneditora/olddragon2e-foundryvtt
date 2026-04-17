@@ -167,3 +167,74 @@ Handlebars.registerHelper('raceBonusDamage', function (actor, weapon) {
   if (!actor?.raceBonusDamage) return 0;
   return actor.raceBonusDamage(weapon);
 });
+
+Handlebars.registerHelper('generateVariableConstructionSelectors', function (ability, selections) {
+  const choicesCount = ability.system.variable_construction?.choices_count || 0;
+  const availableOptions = ability.system.variable_construction?.available_options || [];
+  const abilitySelections = selections?.[ability._id] || [];
+
+  if (choicesCount <= 0) return '';
+
+  const ordinals = ['1ª', '2ª', '3ª', '4ª', '5ª', '6ª', '7ª', '8ª', '9ª', '10ª'];
+  const selectOptionLabel = game.i18n.localize('olddragon2e.select_option');
+  const customLabel = game.i18n.localize('olddragon2e.custom');
+  const choiceLabel = game.i18n.localize('olddragon2e.choice');
+  const namePlaceholder = game.i18n.localize('olddragon2e.name');
+  const descriptionPlaceholder = game.i18n.localize('olddragon2e.description');
+
+  let result = '';
+
+  for (let i = 0; i < choicesCount; i++) {
+    const currentSelection = abilitySelections[i] || {};
+    const selectedKey = currentSelection.key || '';
+    const customName = currentSelection.custom_name || '';
+    const customDescription = currentSelection.custom_description || '';
+    const ordinal = ordinals[i] || `${i + 1}ª`;
+
+    let optionsHtml = `<option value="">${selectOptionLabel}</option>`;
+    for (const opt of availableOptions) {
+      const isSelected = selectedKey === opt.key ? 'selected' : '';
+      const escapedName = Handlebars.escapeExpression(opt.name);
+      const escapedKey = Handlebars.escapeExpression(opt.key);
+      optionsHtml += `<option value="${escapedKey}" ${isSelected}>${escapedName}</option>`;
+    }
+    const isCustomSelected = selectedKey === 'custom' ? 'selected' : '';
+    optionsHtml += `<option value="custom" ${isCustomSelected}>${customLabel}</option>`;
+
+    const selectedOption = availableOptions.find((o) => o.key === selectedKey);
+    const descriptionHtml =
+      selectedKey && selectedKey !== 'custom' && selectedOption?.description
+        ? `<p class="choice-description">${Handlebars.escapeExpression(selectedOption.description)}</p>`
+        : '';
+
+    const customHide = selectedKey !== 'custom' ? 'style="display:none"' : '';
+    const escapedCustomName = Handlebars.escapeExpression(customName);
+    const escapedCustomDescription = Handlebars.escapeExpression(customDescription);
+
+    result += `
+      <div class="choice-row">
+        <label class="font-bold">${ordinal} ${choiceLabel}</label>
+        <select class="variable-construction-select"
+                data-ability-id="${ability._id}"
+                data-choice-index="${i}">
+          ${optionsHtml}
+        </select>
+        ${descriptionHtml}
+        <div class="custom-fields" ${customHide}>
+          <input type="text"
+                 class="variable-construction-custom-name"
+                 data-ability-id="${ability._id}"
+                 data-choice-index="${i}"
+                 value="${escapedCustomName}"
+                 placeholder="${namePlaceholder}">
+          <textarea class="variable-construction-custom-description"
+                    data-ability-id="${ability._id}"
+                    data-choice-index="${i}"
+                    placeholder="${descriptionPlaceholder}">${escapedCustomDescription}</textarea>
+        </div>
+      </div>
+    `;
+  }
+
+  return new Handlebars.SafeString(`<div class="variable-construction-selectors">${result}</div>`);
+});

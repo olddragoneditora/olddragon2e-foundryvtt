@@ -63,6 +63,49 @@
           font-size: small;
           margin-top: -0.1rem;
         }
+
+        li .variable-construction {
+          margin-top: 0.25rem;
+
+          .variable-construction-selectors {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            .choice-row {
+              display: flex;
+              flex-direction: column;
+              gap: 0.1rem;
+
+              label {
+                font-size: small;
+              }
+
+              select {
+                width: 30%;
+              }
+
+              .custom-fields {
+                display: flex;
+                flex-direction: column;
+                gap: 0.25rem;
+                margin-top: 0.25rem;
+
+                input,
+                textarea {
+                  width: 100%;
+                }
+
+                textarea {
+                  min-height: 3rem;
+                  resize: vertical;
+                  border-color: #7a7971;
+                  font-family: inherit;
+                }
+              }
+            }
+          }
+        }
       }
     }
 

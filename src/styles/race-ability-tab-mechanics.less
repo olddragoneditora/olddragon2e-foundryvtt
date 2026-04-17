@@ -99,5 +99,106 @@
         margin: 3px 0;
       }
     }
+
+    .variable-construction {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+
+      .choices-count-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        input {
+          width: 40px;
+          text-align: center;
+        }
+      }
+
+      .available-options {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        padding: 0.25rem;
+        border: 1px solid #aaa;
+        border-radius: 3px;
+
+        .available-options-header {
+          display: flex;
+          flex-direction: row;
+          gap: 0.5rem;
+          align-items: center;
+
+          a.variable-construction-option-add {
+            padding: 0.1rem;
+            border: 1px solid #666;
+            border-radius: 3px;
+            background-color: transparent;
+
+            &:hover {
+              color: @carmesim-500;
+              border-color: @carmesim-500;
+              text-shadow: none;
+            }
+          }
+        }
+
+        ol {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+
+        .available-option {
+          display: flex;
+          flex-direction: row;
+          gap: 0.25rem;
+          align-items: flex-start;
+          padding-top: 0.25rem;
+          border-top: 1px solid #ddd;
+
+          .option-fields {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            flex: 1;
+
+            .option-field {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+              gap: 0.25rem;
+
+              input {
+                flex: 1;
+              }
+
+              a.variable-construction-option-delete:hover {
+                color: @carmesim-500;
+                text-shadow: none;
+              }
+            }
+
+            .option-description {
+              align-items: flex-start;
+
+              textarea {
+                flex: 1;
+                min-height: 3rem;
+                resize: vertical;
+                border-color: #7a7971;
+                font-family: inherit;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
