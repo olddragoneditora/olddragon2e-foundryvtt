@@ -331,10 +331,13 @@ export class OD2CharacterDataModel extends foundry.abstract.TypeDataModel {
   }
 
   get movement_swim() {
+    if (this.race?.system.movement_swim != null) {
+      return this.race.system.movement_swim;
+    }
     return Math.floor(this.current_movement / 2);
   }
 
-  get current_movement_fly() {
+  get movement_fly() {
     if (this.race == null) {
       return 0;
     }
