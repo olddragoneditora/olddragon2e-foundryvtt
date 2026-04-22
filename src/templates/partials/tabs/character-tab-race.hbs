@@ -54,6 +54,15 @@
         {{/if}}
     </div>
 
+    {{!-- Movimento - Observações --}}
+    {{#if system.race.system.movement_notes}}
+        <p class="movement-notes">
+            <img src="systems/olddragon2e/assets/icons/movement.svg" alt="Movimento">
+            <strong>{{localize "olddragon2e.mv"}}:</strong>
+            <span>{{system.race.system.movement_notes}}</span>
+        </p>
+    {{/if}}
+
     {{!-- Infravisão --}}
     {{#if system.race.system.infravision}}
         <p>

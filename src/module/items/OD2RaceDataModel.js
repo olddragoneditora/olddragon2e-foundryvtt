@@ -19,6 +19,7 @@ export class OD2RaceDataModel extends foundry.abstract.TypeDataModel {
         initial: 0,
         min: 0,
       }),
+      movement_notes: new fields.StringField(),
       infravision: new fields.NumberField({
         integer: true,
       }),
