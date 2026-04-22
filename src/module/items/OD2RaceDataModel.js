@@ -22,6 +22,7 @@ export class OD2RaceDataModel extends foundry.abstract.TypeDataModel {
       infravision: new fields.NumberField({
         integer: true,
       }),
+      infravision_notes: new fields.StringField(),
       alignment_tendency: new fields.StringField({
         initial: 'none',
       }),

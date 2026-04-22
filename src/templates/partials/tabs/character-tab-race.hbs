@@ -56,10 +56,13 @@
 
     {{!-- Infravisão --}}
     {{#if system.race.system.infravision}}
-        <div class="infravision">
+        <p>
             <i class="fa-solid fa-eye fa-sm"></i>
             <strong>{{localize "olddragon2e.infravision"}}:</strong>
-            <span>{{system.race.system.infravision}}m</span>
-        </div>
+            <span> de {{system.race.system.infravision}} metros.</span>
+            {{#if system.race.system.infravision_notes}}
+                <span> {{system.race.system.infravision_notes}}</span>
+            {{/if}}
+        </p>
     {{/if}}
 </div>
