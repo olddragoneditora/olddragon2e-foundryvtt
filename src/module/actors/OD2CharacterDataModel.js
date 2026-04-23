@@ -629,7 +629,9 @@ export class OD2CharacterDataModel extends foundry.abstract.TypeDataModel {
       if (!bonus_damage || bonus_damage_condition === 'none') continue;
       if (bonus_damage_condition === 'arrow' && weapon.system.arrow) {
         bonus += bonus_damage;
-      } else if (bonus_damage_condition === 'weight_3' && weapon.system.weight_in_load >= 3) {
+      } else if (bonus_damage_condition === 'weight_3' && weapon.system.weight_in_load === 3) {
+        bonus += bonus_damage;
+      } else if (bonus_damage_condition === 'weight_2' && weapon.system.weight_in_load === 2) {
         bonus += bonus_damage;
       }
     }

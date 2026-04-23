@@ -164,7 +164,8 @@ olddragon2e.alignment_tendency = {
 olddragon2e.bonus_damage_conditions = {
   none: 'olddragon2e.none',
   arrow: 'olddragon2e.arrow',
-  weight_3: 'olddragon2e.race_ability.bonus_damage_condition_weight_3',
+  weight_2: 'olddragon2e.weapon_sizes.medium',
+  weight_3: 'olddragon2e.weapon_sizes.large',
 };
 
 olddragon2e.rogue_talents = {
