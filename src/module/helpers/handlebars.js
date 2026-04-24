@@ -213,12 +213,14 @@ Handlebars.registerHelper('generateVariableConstructionSelectors', function (abi
 
     result += `
       <div class="choice-row">
-        <label class="font-bold">${ordinal} ${choiceLabel}</label>
-        <select class="variable-construction-select"
-                data-ability-id="${ability._id}"
-                data-choice-index="${i}">
-          ${optionsHtml}
-        </select>
+        <div class="choice-header">
+          <label class="font-bold">${ordinal} ${choiceLabel}</label>
+          <select class="variable-construction-select"
+                  data-ability-id="${ability._id}"
+                  data-choice-index="${i}">
+            ${optionsHtml}
+          </select>
+        </div>
         ${descriptionHtml}
         <div class="custom-fields" ${customHide}>
           <input type="text"

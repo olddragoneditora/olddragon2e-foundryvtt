@@ -9,7 +9,8 @@
                 {{#each actor.system.race_abilities as |ability|}}
                 <li class="item" data-item-id="{{ability._id}}">
                     <div class="ability-header">
-                        <strong>{{ability.name}}</strong>
+                        <span class="ability-level">1</span>
+                        <span><strong>{{ability.name}}</strong>:</span>
                         {{#if ability.system.daily_uses}}
                         <div class="daily-uses">
                             {{#generateRaceAbilityDailyUses
