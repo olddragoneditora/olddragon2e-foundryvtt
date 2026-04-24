@@ -412,9 +412,10 @@ export class OD2CharacterDataModel extends foundry.abstract.TypeDataModel {
       const items = getItemsOfActorOfType(this.parent, type);
 
       for (const item of items) {
-        currentLoadValue += item.system.total_weight;
         if (type === 'armor' && armorWeightModifier !== 0 && item.system.is_equipped) {
-          currentLoadValue += armorWeightModifier;
+          currentLoadValue += Math.max(1, item.system.total_weight + armorWeightModifier);
+        } else {
+          currentLoadValue += item.system.total_weight;
         }
       }
     }
