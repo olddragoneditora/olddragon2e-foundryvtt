@@ -163,9 +163,23 @@ olddragon2e.alignment_tendency = {
 
 olddragon2e.bonus_damage_conditions = {
   none: 'olddragon2e.none',
-  arrow: 'olddragon2e.arrow',
+  weight_1: 'olddragon2e.weapon_sizes.small',
   weight_2: 'olddragon2e.weapon_sizes.medium',
   weight_3: 'olddragon2e.weapon_sizes.large',
+  melee: 'olddragon2e.weapon_types.melee',
+  throwing: 'olddragon2e.weapon_types.throwing',
+  ranged: 'olddragon2e.weapon_types.ranged',
+  ammunition: 'olddragon2e.weapon_types.ammunition',
+  bludgeoning: 'olddragon2e.damage_types.bludgeoning',
+  piercing: 'olddragon2e.damage_types.piercing',
+  slashing: 'olddragon2e.damage_types.slashing',
+  arrow: 'olddragon2e.arrow',
+  bolt: 'olddragon2e.bolt',
+  bolt_small: 'olddragon2e.bolt_small',
+  polearm: 'olddragon2e.polearm',
+  two_handed: 'olddragon2e.two_handed',
+  versatile: 'olddragon2e.versatile',
+  magic_item: 'olddragon2e.magic_item',
 };
 
 olddragon2e.rogue_talents = {

@@ -28,12 +28,25 @@
         </div>
         {{!-- Bônus no Dano --}}
         <div class="bonus-damage">
-            <label class="font-bold" title="Bônus na rolagem de dano em armas equipadas com a propriedade selecionada">{{localize "olddragon2e.race_ability.bonus_damage"}}&nbsp;<i class="fa-solid fa-circle-info"></i></label>
+            <label class="font-bold" title="Bônus na rolagem de dano em armas equipadas com ao menos uma das condições selecionadas">{{localize "olddragon2e.race_ability.bonus_damage"}}&nbsp;<i class="fa-solid fa-circle-info"></i></label>
             <div class="bonus-damage-fields">
-                <select name="system.bonus_damage_condition">
-                    {{selectOptions config.bonus_damage_conditions selected=system.bonus_damage_condition localize=true}}
-                </select>
-                <input name="system.bonus_damage" type="number" value="{{system.bonus_damage}}" data-dtype="Number">
+                <div class="bonus-damage-conditions">
+                    <label title="A arma deve cumprir ao menos uma das condições para que o bônus seja aplicado">{{localize "olddragon2e.race_ability.bonus_damage_condition"}}&nbsp;<i class="fa-solid fa-circle-info"></i></label>
+                    <div class="bonus-damage-selectors">
+                        <label>1&#41;</label>
+                        <select name="system.bonus_damage_condition">
+                            {{selectOptions config.bonus_damage_conditions selected=system.bonus_damage_condition localize=true}}
+                        </select>
+                        <label>2&#41;</label>
+                        <select name="system.bonus_damage_condition_2">
+                            {{selectOptions config.bonus_damage_conditions selected=system.bonus_damage_condition_2 localize=true}}
+                        </select>
+                    </div>
+                </div>
+                <div class="bonus-damage-value">
+                    <label>{{localize "olddragon2e.bonus"}}</label>
+                    <input name="system.bonus_damage" type="number" value="{{system.bonus_damage}}" data-dtype="Number">
+                </div>
             </div>
         </div>
         {{!-- Arma Natural --}}
@@ -87,13 +100,13 @@
             <label class="font-bold">{{localize "olddragon2e.race_ability.rogue_talent_bonus"}}</label>
             <div class="rogue-talent-selectors">
                 <div>
-                    <label class="font-bold">1&#41;</label>
+                    <label>1&#41;</label>
                     <select name="system.rogue_talent">
                         {{selectOptions config.rogue_talents selected=system.rogue_talent localize=true}}
                     </select>
                 </div>
                 <div>
-                    <label class="font-bold">2&#41;</label>
+                    <label>2&#41;</label>
                     <select name="system.rogue_talent_2">
                         {{selectOptions config.rogue_talents selected=system.rogue_talent_2 localize=true}}
                     </select>

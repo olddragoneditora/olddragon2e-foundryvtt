@@ -19,6 +19,7 @@ export class OD2RaceAbilityDataModel extends foundry.abstract.TypeDataModel {
       }),
       bonus_damage: new fields.NumberField({ integer: true, initial: 0 }),
       bonus_damage_condition: new fields.StringField({ default: 'none' }),
+      bonus_damage_condition_2: new fields.StringField({ default: 'none' }),
       rogue_talent: new fields.StringField({
         default: 'none',
       }),

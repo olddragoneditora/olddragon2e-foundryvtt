@@ -624,15 +624,23 @@ export class OD2CharacterDataModel extends foundry.abstract.TypeDataModel {
   }
 
   raceBonusDamage(weapon) {
+    const meetsCondition = (condition) => {
+      if (!condition || condition === 'none') return false;
+      if (['arrow', 'bolt', 'bolt_small', 'polearm', 'two_handed', 'versatile', 'magic_item'].includes(condition))
+        return weapon.system[condition];
+      if (condition === 'weight_1') return weapon.system.weight_in_load === 1;
+      if (condition === 'weight_2') return weapon.system.weight_in_load === 2;
+      if (condition === 'weight_3') return weapon.system.weight_in_load === 3;
+      if (['melee', 'throwing', 'ranged', 'ammunition'].includes(condition)) return weapon.system.type === condition;
+      if (['bludgeoning', 'piercing', 'slashing'].includes(condition)) return weapon.system.damage_type === condition;
+      return false;
+    };
+
     let bonus = 0;
     for (const ability of this.race_abilities) {
-      const { bonus_damage, bonus_damage_condition } = ability.system;
-      if (!bonus_damage || bonus_damage_condition === 'none') continue;
-      if (bonus_damage_condition === 'arrow' && weapon.system.arrow) {
-        bonus += bonus_damage;
-      } else if (bonus_damage_condition === 'weight_3' && weapon.system.weight_in_load === 3) {
-        bonus += bonus_damage;
-      } else if (bonus_damage_condition === 'weight_2' && weapon.system.weight_in_load === 2) {
+      const { bonus_damage, bonus_damage_condition, bonus_damage_condition_2 } = ability.system;
+      if (!bonus_damage) continue;
+      if (meetsCondition(bonus_damage_condition) || meetsCondition(bonus_damage_condition_2)) {
         bonus += bonus_damage;
       }
     }

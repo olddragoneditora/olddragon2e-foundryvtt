@@ -10,7 +10,6 @@
     .load-modifier,
     .max-load-override,
     .armor-weight-modifier,
-    .bonus-damage,
     .rogue-talent,
     .xp {
       display: flex;
@@ -23,18 +22,46 @@
         text-align: center;
       }
 
-      .bonus-damage-fields {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 0.25rem;
-      }
-
       .rogue-talent-selectors {
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 0.5rem;
+      }
+    }
+
+    .bonus-damage {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+
+      .bonus-damage-fields {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        padding: 0.25rem;
+        border: 1px solid #666;
+        border-radius: 3px;
+
+        .bonus-damage-conditions,
+        .bonus-damage-value {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+
+          .bonus-damage-selectors {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 0.25rem;
+          }
+
+          input {
+            width: 40px;
+            text-align: center;
+          }
+        }
       }
     }
 
