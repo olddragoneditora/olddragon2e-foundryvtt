@@ -3,40 +3,72 @@
     <div class="features">
         {{!-- Movimento --}}
         <div class="movement">
-            <label class="font-bold">{{localize "olddragon2e.mv"}}</label>
-            <input name="system.movement" type="text" value="{{system.movement}}" data-dtype="Number">
-        </div>
-        {{!-- Movimento - Nadar --}}
-        <div class="movement-swim">
-            <label class="font-bold">{{localize "olddragon2e.mv"}} - {{localize "olddragon2e.mv_swim"}}</label>
-            <input name="system.movement_swim" type="text" value="{{system.movement_swim}}" data-dtype="Number">
-        </div>
-        {{!-- Movimento - Voar --}}
-        <div class="movement-fly">
-            <label class="font-bold">{{localize "olddragon2e.mv"}} - {{localize "olddragon2e.mv_fly"}}</label>
-            <input name="system.movement_fly" type="text" value="{{system.movement_fly}}" data-dtype="Number">
-        </div>
-        {{!-- Movimento - Observações --}}
-        <div class="movement-notes">
-            <label class="font-bold">{{localize "olddragon2e.movement_notes"}}</label>
-            <input name="system.movement_notes" type="text" value="{{system.movement_notes}}">
+            <p>
+                <img src="systems/olddragon2e/assets/icons/movement.svg" alt="Movimento">
+                <strong>{{localize "olddragon2e.mv"}}</strong>
+            </p>
+            <div class="movement-section">
+                {{!-- Base --}}
+                <div class="movement-base">
+                    <label class="font-bold">{{localize "olddragon2e.base"}}</label>
+                    <input name="system.movement" type="text" value="{{system.movement}}" data-dtype="Number">
+                </div>
+                {{!-- Nadar --}}
+                <div class="movement-swim">
+                    <label class="font-bold">{{localize "olddragon2e.mv_swim"}}</label>
+                    <input name="system.movement_swim" type="text" value="{{system.movement_swim}}" data-dtype="Number">
+                </div>
+                {{!-- Voar --}}
+                <div class="movement-fly">
+                    <label class="font-bold">{{localize "olddragon2e.mv_fly"}}</label>
+                    <input name="system.movement_fly" type="text" value="{{system.movement_fly}}" data-dtype="Number">
+                </div>
+                {{!-- Observações --}}
+                <div class="movement-notes">
+                    <label class="font-bold">{{localize "olddragon2e.observations"}}</label>
+                    <input name="system.movement_notes" type="text" value="{{system.movement_notes}}">
+                </div>
+            </div>
         </div>
         {{!-- Infravisão --}}
         <div class="infravision">
-            <label class="font-bold">{{localize "olddragon2e.infravision"}}</label>
-            <input name="system.infravision" type="text" value="{{system.infravision}}" data-dtype="Number">
+            <p>
+                <i class="fa-solid fa-eye fa-sm"></i>
+                <strong>{{localize "olddragon2e.infravision"}}</strong>
+            </p>
+            <div class="infravision-section">
+                {{!-- Infravisão --}}
+                <div class="infravision-value">
+                    <label class="font-bold">{{localize "olddragon2e.infravision"}}</label>
+                    <input name="system.infravision" type="text" value="{{system.infravision}}" data-dtype="Number">
+                </div>
+                {{!-- Observações --}}
+                <div class="infravision-notes">
+                    <label class="font-bold">{{localize "olddragon2e.observations"}}</label>
+                    <input name="system.infravision_notes" type="text" value="{{system.infravision_notes}}">
+                </div>
+            </div>
         </div>
-        {{!-- Infravisão - Observações --}}
-        <div class="infravision-notes">
-            <label class="font-bold">{{localize "olddragon2e.infravision_notes"}}</label>
-            <input name="system.infravision_notes" type="text" value="{{system.infravision_notes}}">
+        {{!-- Alinhamento --}}
+        <div class="alignment">
+            <p>
+                <img src="systems/olddragon2e/assets/icons/alignment.svg" alt="Alinhamento">
+                <strong>{{localize "olddragon2e.alignment"}}</strong>
+            </p>
+            <div class="alignment-section">
+                {{!-- Tendência --}}
+                <div class="alignment-tendency">
+                    <label class="font-bold">{{localize "olddragon2e.tendency"}}</label>
+                    <select name="system.alignment_tendency">
+                        {{selectOptions config.alignment_tendency selected=system.alignment_tendency localize=true}}
+                    </select>
+                </div>
+                {{!-- Observações --}}
+                <div class="alignment-notes">
+                    <label class="font-bold">{{localize "olddragon2e.observations"}}</label>
+                    <input name="system.alignment_notes" type="text" value="{{system.alignment_notes}}">
+                </div>
+            </div>
         </div>
-        {{!-- Tendência de Alinhamento --}}
-        <div class="alignment-tendency">
-            <label class="font-bold">{{localize "olddragon2e.alignment_tendency"}}</label>
-            <select name="system.alignment_tendency">
-                {{selectOptions config.alignment_tendency selected=system.alignment_tendency localize=true}}
-            </select>
-        </div>        
     </div>
 </div>

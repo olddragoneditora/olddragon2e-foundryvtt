@@ -27,6 +27,7 @@ export class OD2RaceDataModel extends foundry.abstract.TypeDataModel {
       alignment_tendency: new fields.StringField({
         initial: 'none',
       }),
+      alignment_notes: new fields.StringField(),
       race_abilities: new fields.ArrayField(new fields.StringField(), {
         default: [],
       }),

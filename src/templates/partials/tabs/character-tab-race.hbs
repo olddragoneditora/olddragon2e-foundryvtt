@@ -74,4 +74,21 @@
             {{/if}}
         </p>
     {{/if}}
+
+    {{!-- Alinhamento - Observações/Tendência --}}
+    {{#if system.race}}
+        <p class="alignment-notes">
+            <img src="systems/olddragon2e/assets/icons/alignment.svg" alt="Tendência de Alinhamento">
+            <strong>{{localize "olddragon2e.alignment_tendency"}}:</strong>
+            {{#if system.race.system.alignment_notes}}
+                <span>{{system.race.system.alignment_notes}}.</span>
+            {{else}}
+                {{#ifCond system.race.system.alignment_tendency '!=' "none"}}
+                <span>{{system.race.system.alignment_tendency}}.</span>
+                {{else}}
+                <span>{{localize "olddragon2e.any"}}.</span>
+                {{/ifCond}}
+            {{/if}}
+        </p>
+    {{/if}}
 </div>
