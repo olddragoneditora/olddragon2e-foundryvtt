@@ -85,7 +85,7 @@
                 <span>{{system.race.system.alignment_notes}}.</span>
             {{else}}
                 {{#ifCond system.race.system.alignment_tendency '!=' "none"}}
-                <span>{{system.race.system.alignment_tendency}}.</span>
+                <span>tendem a ser {{localize (lookup config.alignment_tendency system.race.system.alignment_tendency)}}.</span>
                 {{else}}
                 <span>{{localize "olddragon2e.any"}}.</span>
                 {{/ifCond}}
