@@ -17,6 +17,7 @@
 
   "olddragon2e": {
     "name": "Nome",
+    "key": "Chave",
     "id": "ID",
     "level": "Nível",
     "levels": {
@@ -106,10 +107,21 @@
     "race_flavor": "Apresentação",
     "race_description": "Descrição",
     "race_ability_description": "Descrição",
-    "race_ability_xp": "% de Bônus na Experiência Ganha",
-    "race_ability_jp": "Disponibilidade de Bônus na Jogada de Proteção",
-    "race_ability_bonus_damage_archery": "Bônus no Dano com Arco",
-    "race_ability_rogue_talent": "Bônus no Talento de Ladrão",
+    "race_ability": {
+      "daily_uses": "Usos Diários",
+      "natural_armor": "Armadura Natural",
+      "load_modifier": "Modificador de Carga",
+      "max_load_override": "Sobrescrever Carga",
+      "armor_weight_modifier": "Modificador de Carga de Armaduras",
+      "bonus_jp": "Disponibilidade de Bônus na Jogada de Proteção",
+      "rogue_talent_bonus": "Bônus em Talentos de Ladrão",
+      "bonus_damage": "Bônus no Dano",
+      "bonus_damage_condition": "Condições",
+      "bonus_xp": "% de Bônus na Experiência Ganha",
+      "natural_weapon": "Arma Natural",
+      "variable_construction": "Construção Variável",
+      "available_options": "Opções Disponíveis"
+    },
     "race_abilities": "Habilidades de Raça",
     "infravision": "Infravisão",
     "class": "Classe",
@@ -163,6 +175,7 @@
     "details": "Detalhes",
     "alignment": "Alinhamento",
     "alignment_tendency": "Tendência de Alinhamento",
+    "tendency": "Tendência",
     "alignment_tendencies": {
       "ordeiro": "Ordeiro",
       "neutro": "Neutro",
@@ -185,6 +198,7 @@
     "personality": "Personalidade",
     "background": "Histórico",
     "notes": "Anotações",
+    "observations": "Observações",
     "profession": "Profissão Anterior",
     "heroic_action": "Ação Heroica",
     "heroic_action_used": "Uma vez por aventura",
@@ -297,7 +311,15 @@
       "throwing": "Arremesso",
       "ranged": "Disparo",
       "ammunition": "Munição",
-      "unarmed": "Desarmado"
+      "unarmed": "Desarmado",
+      "natural_weapon": "Arma Natural"
+    },
+    "weapon_sizes": {
+      "label": "Tamanho",
+      "none": "Nenhum",
+      "small": "Pequena",
+      "medium": "Média",
+      "large": "Grande"
     },
     "damage_type": "Tipo de dano",
     "damage_types": {
@@ -312,6 +334,7 @@
     "damage_roll": "Rolar dano",
     "avarage_damage": "Dano médio",
     "bonus_damage": "Bônus no dano",
+    "bonus": "Bônus",
     "knockout": "Nocaute",
     "knockout_roll": "Rolar chance de nocaute",
     "bonus_ba": "Bônus na BA",
@@ -414,7 +437,11 @@
     "import": "Importar",
     "cancel": "Cancelar",
     "none": "Nenhum",
+    "any": "qualquer um",
     "null": "–",
+    "select_option": "Selecione uma opção...",
+    "choice": "Escolha",
+    "custom": "Personalizado",
 
     "settings": {
       "initiativeType": {

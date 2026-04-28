@@ -17,6 +17,7 @@
 
   "olddragon2e": {
     "name": "Name",
+    "key": "Key",
     "id": "ID",
     "level": "Level",
     "levels": {
@@ -106,10 +107,21 @@
     "race_flavor": "Flavor",
     "race_description": "Description",
     "race_ability_description": "Description",
-    "race_ability_xp": "% Bonus Experience Gained",
-    "race_ability_jp": "Protection Roll Bonus Availablity",
-    "race_ability_bonus_damage_archery": "Bow Damage Bonus",
-    "race_ability_rogue_talent": "Thief Talent Bonus",
+    "race_ability": {
+      "daily_uses": "Daily Uses",
+      "natural_armor": "Natural Armor",
+      "load_modifier": "Load Modifier",
+      "max_load_override": "Override Max Load",
+      "armor_weight_modifier": "Armor Weight Modifier",
+      "bonus_jp": "Protection Roll Bonus Availablity",
+      "rogue_talent_bonus": "Thief Talent Bonus",
+      "bonus_damage": "Damage Bonus",
+      "bonus_damage_condition": "Conditions",
+      "bonus_xp": "% Bonus Experience Gained",
+      "natural_weapon": "Natural Weapon",
+      "variable_construction": "Variable Construction",
+      "available_options": "Available Options"
+    },
     "race_abilities": "Race Abilities",
     "infravision": "Infravision",
     "class": "Class",
@@ -163,6 +175,7 @@
     "details": "Details",
     "alignment": "Alignment",
     "alignment_tendency": "Alignment Tendency",
+    "tendency": "Tendency",
     "alignment_tendencies": {
       "ordeiro": "Lawful",
       "neutro": "Neutral",
@@ -185,6 +198,7 @@
     "personality": "Personality",
     "background": "Background",
     "notes": "Notes",
+    "observations": "Notes",
     "profession": "Former Profession",
     "heroic_action": "Heroic Action",
     "heroic_action_used": "Once per adventure",
@@ -297,7 +311,15 @@
       "throwing": "Throwing",
       "ranged": "Ranged",
       "ammunition": "Ammunition",
-      "unarmed": "Unarmed"
+      "unarmed": "Unarmed",
+      "natural_weapon": "Natural Weapon"
+    },
+    "weapon_sizes": {
+      "label": "Size",
+      "none": "None",
+      "small": "Small",
+      "medium": "Medium",
+      "large": "Large"
     },
     "damage_type": "Damage Type",
     "damage_types": {
@@ -312,6 +334,7 @@
     "damage_roll": "Damage Roll",
     "avarage_damage": "Average Damage",
     "bonus_damage": "Bonus Damage",
+    "bonus": "Bonus",
     "knockout": "KO",
     "knockout_roll": "Roll Knock-out Chance",
     "bonus_ba": "Bonus in BA",
@@ -414,7 +437,11 @@
     "import": "Import",
     "cancel": "Cancel",
     "none": "None",
+    "any": "any",
     "null": "–",
+    "select_option": "Select an option...",
+    "choice": "Choice",
+    "custom": "Custom",
 
     "settings": {
       "initiativeType": {

@@ -8,6 +8,8 @@ import {
   JPRoll,
   BARoll,
   TalentRoll,
+  NaturalWeaponAttackRoll,
+  NaturalWeaponDamageRoll,
 } from '../rolls';
 import { updateActor } from '../api/characterImporter.js';
 
@@ -99,6 +101,7 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
       class_abilities: baseData.actor.system.class_abilities,
       equipped_items: baseData.actor.system.equipped_items,
       attack: baseData.actor.system.attack_items,
+      natural_weapon_attacks: baseData.actor.system.natural_weapon_attacks,
       weapon: baseData.actor.system.weapon_items,
       armor: baseData.actor.system.armor_items,
       shield: baseData.actor.system.shield_items,
@@ -210,6 +213,8 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
     if (this.actor.isOwner) {
       html.find('.attack-roll').click(this._onAttackRoll.bind(this));
       html.find('.unarmed-attack-roll').click(this._onUnarmedAttackRoll.bind(this));
+      html.find('.natural-weapon-attack-roll').click(this._onNaturalWeaponAttackRoll.bind(this));
+      html.find('.natural-weapon-damage-roll').click(this._onNaturalWeaponDamageRoll.bind(this));
       html.find('.damage-roll').click(this._onDamageRoll.bind(this));
       html.find('.knockout-roll').click(this._onKnockoutRoll.bind(this));
       html.find('.spell-cast').click(this._onSpellCast.bind(this));
@@ -217,6 +222,12 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
       html.find('.slots-select').change(this._onSpellSlotsChange.bind(this));
       html.find('.spell-use-checkbox').change(this._onSpellUseCheckboxChange.bind(this));
       html.find('.class-ability-use-checkbox').change(this._onClassAbilityUseCheckboxChange.bind(this));
+      html.find('.race-ability-use-checkbox').change(this._onRaceAbilityUseCheckboxChange.bind(this));
+      html.find('.variable-construction-select').change(this._onVariableConstructionSelectChange.bind(this));
+      html.find('.variable-construction-custom-name').change(this._onVariableConstructionCustomNameChange.bind(this));
+      html
+        .find('.variable-construction-custom-description')
+        .change(this._onVariableConstructionCustomDescriptionChange.bind(this));
       html.find('.stat-roll').click(this._onStatRoll.bind(this));
       html.find('.jp-roll').click(this._onJPRoll.bind(this));
       html.find('.ba-roll').click(this._onBARoll.bind(this));
@@ -341,6 +352,64 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
             unarmedAttackRoll.sendMessage(mode, adjustment);
           },
         },
+      },
+    });
+  }
+
+  // Rolagem de ataque com arma natural
+  async _onNaturalWeaponAttackRoll(event) {
+    event.preventDefault();
+    const target = event.currentTarget;
+    const weaponName = target.dataset.nwName;
+    const attackRoll = new NaturalWeaponAttackRoll(this.actor, weaponName);
+
+    await showDialog({
+      title: `Rolar Ataque`,
+      content: 'systems/olddragon2e/templates/dialog/characters/attack-roll-dialog.hbs',
+      data: { formula: attackRoll.printFormula },
+      buttons: {
+        roll: {
+          icon: "<i class='fa-solid fa-dice-d20'></i>",
+          label: 'Rolar',
+          callback: async (html) => {
+            const adjustment = html.find('#adjustment').val();
+            const bonus = html.find('#bonus').val();
+            const mode = html.find('#rollMode').val();
+            await attackRoll.roll(bonus, adjustment);
+            attackRoll.sendMessage(mode, adjustment);
+          },
+        },
+      },
+    });
+  }
+
+  // Rolagem de dano com arma natural
+  async _onNaturalWeaponDamageRoll(event) {
+    event.preventDefault();
+    const target = event.currentTarget;
+    const weaponName = target.dataset.nwName;
+    const damage = target.dataset.nwDamage;
+    const damageRoll = new NaturalWeaponDamageRoll(this.actor, weaponName, damage);
+
+    await showDialog({
+      title: `Rolar Dano`,
+      content: 'systems/olddragon2e/templates/dialog/characters/damage-roll-dialog.hbs',
+      buttons: {
+        roll: {
+          icon: "<i class='fa-solid fa-dice-d20'></i>",
+          label: 'Rolar',
+          callback: async (html) => {
+            const bonus = html.find('#bonus').val();
+            const mode = html.find('#rollMode').val();
+            const critical = html.find('#critical').is(':checked');
+            await damageRoll.roll(bonus, critical);
+            damageRoll.sendMessage(mode);
+          },
+        },
+      },
+      render: (html) => {
+        html.find('#formula').val(damageRoll.printFormula());
+        html.find('[name="attack-mode"]').closest('.form-group').hide();
       },
     });
   }
@@ -577,6 +646,86 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
         content: `<div class="title">Usou a habilidade:<br><strong>${ability.name}</strong></div>`,
       });
     }
+  }
+
+  // Usos diários de habilidade de raça
+  async _onRaceAbilityUseCheckboxChange(event) {
+    const checkbox = event.currentTarget;
+    const abilityId = checkbox.dataset.abilityId;
+    const useIndex = checkbox.dataset.useIndex;
+    const ability = this.actor.items.get(abilityId);
+
+    const abilityFlags = ability.getFlag('olddragon2e', 'daily-uses') || {};
+    let dailyUses = foundry.utils.duplicate(abilityFlags);
+    dailyUses[useIndex] = checkbox.checked;
+
+    await ability.update({ 'flags.olddragon2e.daily-uses': dailyUses });
+
+    if (checkbox.checked) {
+      ChatMessage.create({
+        user: game.user.id,
+        speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+        content: `<div class="title">Usou a habilidade:<br><strong>${ability.name}</strong></div>`,
+      });
+    }
+  }
+
+  // Construção Variável — seleção de opção
+  async _onVariableConstructionSelectChange(event) {
+    const select = event.currentTarget;
+    const abilityId = select.dataset.abilityId;
+    const choiceIndex = parseInt(select.dataset.choiceIndex);
+    const selectedKey = select.value;
+
+    const selections = foundry.utils.duplicate(this.actor.system.variable_construction_selections || {});
+    if (!selections[abilityId]) selections[abilityId] = [];
+    while (selections[abilityId].length <= choiceIndex) {
+      selections[abilityId].push({ key: '', custom_name: '', custom_description: '' });
+    }
+    selections[abilityId][choiceIndex].key = selectedKey;
+
+    await this.actor.update({ 'system.variable_construction_selections': selections });
+
+    // Mostra/oculta os campos customizados sem aguardar re-render
+    const choiceRow = select.closest('.choice-row');
+    if (choiceRow) {
+      const customFields = choiceRow.querySelector('.custom-fields');
+      if (customFields) {
+        customFields.style.display = selectedKey === 'custom' ? '' : 'none';
+      }
+    }
+  }
+
+  // Construção Variável — nome personalizado
+  async _onVariableConstructionCustomNameChange(event) {
+    const input = event.currentTarget;
+    const abilityId = input.dataset.abilityId;
+    const choiceIndex = parseInt(input.dataset.choiceIndex);
+
+    const selections = foundry.utils.duplicate(this.actor.system.variable_construction_selections || {});
+    if (!selections[abilityId]) selections[abilityId] = [];
+    while (selections[abilityId].length <= choiceIndex) {
+      selections[abilityId].push({ key: '', custom_name: '', custom_description: '' });
+    }
+    selections[abilityId][choiceIndex].custom_name = input.value;
+
+    await this.actor.update({ 'system.variable_construction_selections': selections });
+  }
+
+  // Construção Variável — descrição personalizada
+  async _onVariableConstructionCustomDescriptionChange(event) {
+    const textarea = event.currentTarget;
+    const abilityId = textarea.dataset.abilityId;
+    const choiceIndex = parseInt(textarea.dataset.choiceIndex);
+
+    const selections = foundry.utils.duplicate(this.actor.system.variable_construction_selections || {});
+    if (!selections[abilityId]) selections[abilityId] = [];
+    while (selections[abilityId].length <= choiceIndex) {
+      selections[abilityId].push({ key: '', custom_name: '', custom_description: '' });
+    }
+    selections[abilityId][choiceIndex].custom_description = textarea.value;
+
+    await this.actor.update({ 'system.variable_construction_selections': selections });
   }
 
   // Teste de Atributos (Força; Destreza; Constituição; Inteligência; Sabedoria; Carisma)

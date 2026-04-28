@@ -33,6 +33,12 @@
           border: 1px solid #666;
           border-radius: 3px;
           background-color: transparent;
+
+          &:hover {
+            color: @carmesim-500;
+            border-color: @carmesim-500;
+            text-shadow: none;
+          }
         }
       }
 
@@ -55,10 +61,16 @@
             flex-direction: row;
             gap: 0.5rem;
             align-items: center;
+
+            a.rogue-talent-delete:hover {
+              color: @carmesim-500;
+              text-shadow: none;
+            }
           }
 
           textarea {
             border-color: #7a7971;
+            font-family: inherit;
           }
         }
       }

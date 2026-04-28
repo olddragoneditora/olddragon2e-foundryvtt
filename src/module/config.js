@@ -90,6 +90,13 @@ olddragon2e.damage_types = {
   slashing: 'olddragon2e.damage_types.slashing',
 };
 
+olddragon2e.weapon_sizes = {
+  none: 'olddragon2e.weapon_sizes.none',
+  small: 'olddragon2e.weapon_sizes.small',
+  medium: 'olddragon2e.weapon_sizes.medium',
+  large: 'olddragon2e.weapon_sizes.large',
+};
+
 olddragon2e.spell_school = {
   arcane: 'olddragon2e.arcane_spell',
   divine: 'olddragon2e.divine_spell',
@@ -152,6 +159,27 @@ olddragon2e.alignment_tendency = {
   ordeiro: 'olddragon2e.alignment_tendencies.ordeiro',
   neutro: 'olddragon2e.alignment_tendencies.neutro',
   caotico: 'olddragon2e.alignment_tendencies.caotico',
+};
+
+olddragon2e.bonus_damage_conditions = {
+  none: 'olddragon2e.none',
+  weight_1: 'olddragon2e.weapon_sizes.small',
+  weight_2: 'olddragon2e.weapon_sizes.medium',
+  weight_3: 'olddragon2e.weapon_sizes.large',
+  melee: 'olddragon2e.weapon_types.melee',
+  throwing: 'olddragon2e.weapon_types.throwing',
+  ranged: 'olddragon2e.weapon_types.ranged',
+  ammunition: 'olddragon2e.weapon_types.ammunition',
+  bludgeoning: 'olddragon2e.damage_types.bludgeoning',
+  piercing: 'olddragon2e.damage_types.piercing',
+  slashing: 'olddragon2e.damage_types.slashing',
+  arrow: 'olddragon2e.arrow',
+  bolt: 'olddragon2e.bolt',
+  bolt_small: 'olddragon2e.bolt_small',
+  polearm: 'olddragon2e.polearm',
+  two_handed: 'olddragon2e.two_handed',
+  versatile: 'olddragon2e.versatile',
+  magic_item: 'olddragon2e.magic_item',
 };
 
 olddragon2e.rogue_talents = {
