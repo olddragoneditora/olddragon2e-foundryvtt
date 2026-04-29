@@ -9,6 +9,53 @@ const RACE_UUIDS = {
   grizzi: 'Compendium.olddragon2e-legiao.races.Item.1f25F4v2vMOSoZCp',
   'meio-elfo-kaduriano': 'Compendium.olddragon2e-legiao.races.Item.bchRiwagDwkAToHU',
   tenebrum: 'Compendium.olddragon2e-legiao.races.Item.Afas2pzK75wylg4r',
+  // Raças do Guia de Raças
+  atlante: 'Compendium.olddragon2e-racas.races.Item.2ZgnqWBxFihzPpZo',
+  autokthon: 'Compendium.olddragon2e-racas.races.Item.dpT6s5hAIMTFTwKQ',
+  bugbear: 'Compendium.olddragon2e-racas.races.Item.w4uEgGMY3OdlHxgk',
+  cambion: 'Compendium.olddragon2e-racas.races.Item.PMECuRBiJabRab4O',
+  centauro: 'Compendium.olddragon2e-racas.races.Item.6UlAnVK7ysIhKCvd',
+  ceratopos: 'Compendium.olddragon2e-racas.races.Item.BZCqEkxVKFAmqe2y',
+  ciclope: 'Compendium.olddragon2e-racas.races.Item.JGuLoU3pNWQlECNG',
+  derro: 'Compendium.olddragon2e-racas.races.Item.g3Iw4z9ZlhZePn1N',
+  drakold: 'Compendium.olddragon2e-racas.races.Item.cN0jWa7Bu6tFIxkH',
+  duende: 'Compendium.olddragon2e-racas.races.Item.DVdGESO6gNuaL6MZ',
+  duergar: 'Compendium.olddragon2e-racas.races.Item.0e2w3eNbq5X9Nzzy',
+  'elfo-drow': 'Compendium.olddragon2e-racas.races.Item.gWdgiuRPp8T117wg',
+  'fera-do-pantano': 'Compendium.olddragon2e-racas.races.Item.9HRRY0k6dQICU7i0',
+  'fungo-pigmeu': 'Compendium.olddragon2e-racas.races.Item.xmulnel0RvqWwwsK',
+  gnoll: 'Compendium.olddragon2e-racas.races.Item.2vwS5hIQ6GCFCXg2',
+  goblin: 'Compendium.olddragon2e-racas.races.Item.EFefWgmQWX7p4qWD',
+  hobgoblin: 'Compendium.olddragon2e-racas.races.Item.45XDu2sP4ZOCRLH2',
+  'homem-lagarto': 'Compendium.olddragon2e-racas.races.Item.xBa68EbdDBXrg0Jm',
+  'homem-lagarto-povo-camaleao': 'Compendium.olddragon2e-racas.races.Item.PhHv2tHfft3EImfb',
+  'homem-lagarto-povo-gila': 'Compendium.olddragon2e-racas.races.Item.yU2ji6yP0j6FDl7C',
+  'homem-lagarto-povo-lagartixa': 'Compendium.olddragon2e-racas.races.Item.Mc9yoinN1Xk9XfgE',
+  'homem-lagarto-povo-lagarto-subterraneo': 'Compendium.olddragon2e-racas.races.Item.inq2kMiMUSmCz9Nr',
+  'homem-lagarto-povo-lagarto-voador': 'Compendium.olddragon2e-racas.races.Item.KMzh57CBIoRwypBB',
+  'homem-lagarto-povo-moloch': 'Compendium.olddragon2e-racas.races.Item.Q8vPH3vOksewuicw',
+  howkar: 'Compendium.olddragon2e-racas.races.Item.LAULwpLKcWMH4mJK',
+  kobold: 'Compendium.olddragon2e-racas.races.Item.ysSpjUHQqBX6wCA0',
+  mantis: 'Compendium.olddragon2e-racas.races.Item.EHjWlXRakNdn1OXc',
+  'meio-anao': 'Compendium.olddragon2e-racas.races.Item.7Iy6OoVcwGZRrEET',
+  'meio-dragao': 'Compendium.olddragon2e-racas.races.Item.jv0RJOg0c0rljz9A',
+  'meio-gigante': 'Compendium.olddragon2e-racas.races.Item.Elg4U55xBOKuGVIX',
+  'meio-orc': 'Compendium.olddragon2e-racas.races.Item.e23XaoQHgSDqnJqr',
+  minotauro: 'Compendium.olddragon2e-racas.races.Item.FLBgz4EG1CtLvtMQ',
+  muskin: 'Compendium.olddragon2e-racas.races.Item.pZE0MyykzBX0uB4F',
+  nefilim: 'Compendium.olddragon2e-racas.races.Item.jrEnAACLCvdufx8h',
+  ogro: 'Compendium.olddragon2e-racas.races.Item.7kmnP2OIE8kNizA7',
+  orc: 'Compendium.olddragon2e-racas.races.Item.zhNSMiBSsw9bHjgl',
+  pixie: 'Compendium.olddragon2e-racas.races.Item.34p0PIsHqjE6D3DI',
+  pteros: 'Compendium.olddragon2e-racas.races.Item.LED2AY0WIUKuqHH6',
+  sahuagin: 'Compendium.olddragon2e-racas.races.Item.KHdHyP6SIZRcyjKa',
+  satiro: 'Compendium.olddragon2e-racas.races.Item.taxNz4ZkJlwUKHKb',
+  sibilante: 'Compendium.olddragon2e-racas.races.Item.XzdZlAbHku4mwDPS',
+  teropodes: 'Compendium.olddragon2e-racas.races.Item.il6jvAPVLwv1DtxP',
+  thoul: 'Compendium.olddragon2e-racas.races.Item.J4lAuTigET7tzIdl',
+  treant: 'Compendium.olddragon2e-racas.races.Item.9x9wnU1I2AUoQE5r',
+  troglodita: 'Compendium.olddragon2e-racas.races.Item.wrKtBeIgR1OoDLu4',
+  varkos: 'Compendium.olddragon2e-racas.races.Item.4fwAIsiiTJEsdvcD',
 };
 
 const CLASS_UUIDS = {
@@ -69,6 +116,12 @@ export const importActor = async (json) => {
   }
 
   await _addRaceAndClassAbilities(actor, data.system.race, data.system.class);
+
+  const vcSelections = _extractVariableConstructionSelections(json, actor);
+  if (vcSelections) {
+    await actor.update({ 'system.variable_construction_selections': vcSelections });
+  }
+
   await _addInventoryItems(actor, json.inventory_items);
 
   return actor;
@@ -79,6 +132,7 @@ const _jsonToActorData = async (json) => {
   const classUUID = CLASS_UUIDS[json.character_class?.id];
 
   const isLegiaoModuleAvailable = game.modules.get('olddragon2e-legiao')?.active;
+  const isRacasModuleAvailable = game.modules.get('olddragon2e-racas')?.active;
 
   let raceItem = null;
   let classItem = null;
@@ -90,6 +144,8 @@ const _jsonToActorData = async (json) => {
     raceItem = await fromUuid(raceUUID).catch(() => null);
     if (!raceItem && raceUUID.startsWith('Compendium.olddragon2e-legiao') && !isLegiaoModuleAvailable) {
       ui.notifications.warn(`A Raça "${raceName}" é exclusiva do módulo premium "Legião - A Era da Desolação".`);
+    } else if (!raceItem && raceUUID.startsWith('Compendium.olddragon2e-racas') && !isRacasModuleAvailable) {
+      ui.notifications.warn(`A Raça "${raceName}" é exclusiva do módulo premium "Guia de Campanha: Raças".`);
     } else if (!raceItem) {
       ui.notifications.warn(`A Raça "${raceName}" não foi encontrada.`);
     }
@@ -153,6 +209,7 @@ const _jsonToActorData = async (json) => {
 const _jsonToRetainerActorData = async (json) => {
   const raceUUID = RACE_UUIDS[json.character_race?.id];
   const isLegiaoModuleAvailable = game.modules.get('olddragon2e-legiao')?.active;
+  const isRacasModuleAvailable = game.modules.get('olddragon2e-racas')?.active;
   let raceItem = null;
   const raceName = json.character_race?.name;
 
@@ -160,6 +217,8 @@ const _jsonToRetainerActorData = async (json) => {
     raceItem = await fromUuid(raceUUID).catch(() => null);
     if (!raceItem && raceUUID.startsWith('Compendium.olddragon2e-legiao') && !isLegiaoModuleAvailable) {
       ui.notifications.warn(`A Raça "${raceName}" é exclusiva do módulo premium "Legião - A Era da Desolação".`);
+    } else if (!raceItem && raceUUID.startsWith('Compendium.olddragon2e-racas') && !isRacasModuleAvailable) {
+      ui.notifications.warn(`A Raça "${raceName}" é exclusiva do módulo premium "Guia de Campanha: Raças".`);
     } else if (!raceItem) {
       ui.notifications.warn(`A Raça "${raceName}" não foi encontrada.`);
     }
@@ -263,24 +322,54 @@ const _getItemsFromUUIDs = async (uuids) => {
   return items;
 };
 
+const JP_KEYS = ['jpd', 'jpc', 'jps'];
+
 /**
  * Extracts the JP race bonus from the new race_mechanic_selections structure.
  * @param {Object} json - Character JSON from Old Dragon Online
  * @returns {string} The selection_key value ('jpd', 'jpc', 'jps') or empty string
  */
 const _extractJpRaceBonus = (json) => {
-  // Return empty string if array doesn't exist or is empty
-  if (!json.race_mechanic_selections || json.race_mechanic_selections.length === 0) {
-    return '';
-  }
+  if (!json.race_mechanic_selections || json.race_mechanic_selections.length === 0) return '';
 
-  // Find the first selection with a JP-related selection_key
-  // Only jpd, jpc, and jps are valid for race JP bonuses
-  const jpSelection = json.race_mechanic_selections.find((selection) =>
-    ['jpd', 'jpc', 'jps'].includes(selection.selection_key),
-  );
+  const jpSelection = json.race_mechanic_selections.find((s) => JP_KEYS.includes(s.selection_key));
 
   return jpSelection ? jpSelection.selection_key : '';
+};
+
+/**
+ * Extracts variable-construction selections from race_mechanic_selections and maps them to Foundry item IDs.
+ * @param {Object} json - Character JSON from Old Dragon Online
+ * @param {Actor} actor - The Foundry actor (must already have race_ability items embedded)
+ * @returns {Object|null} The variable_construction_selections object, or null if none found
+ */
+const _extractVariableConstructionSelections = (json, actor) => {
+  if (!json.race_mechanic_selections || json.race_mechanic_selections.length === 0) return null;
+
+  const vcSelections = json.race_mechanic_selections.filter((s) => !JP_KEYS.includes(s.selection_key));
+  if (vcSelections.length === 0) return null;
+
+  // Group by character_race_ability_id, preserving order (order = choice-index)
+  const grouped = {};
+  for (const sel of vcSelections) {
+    const id = sel.character_race_ability_id;
+    if (!grouped[id]) grouped[id] = { ability_name: sel.ability_name, selections: [] };
+    grouped[id].selections.push(sel);
+  }
+
+  // Match each group to its Foundry item by name and build the selections object
+  const result = {};
+  for (const { ability_name, selections } of Object.values(grouped)) {
+    const item = actor.items.find((i) => i.type === 'race_ability' && i.name === ability_name);
+    if (!item) continue;
+    result[item.id] = selections.map((sel) => ({
+      key: sel.selection_key,
+      custom_name: sel.custom_name ?? '',
+      custom_description: sel.custom_description ?? '',
+    }));
+  }
+
+  return Object.keys(result).length > 0 ? result : null;
 };
 
 const _convertCost = (costInPC) => {
@@ -476,6 +565,11 @@ export const updateActor = async (actor) => {
     if (json.picture) {
       const newImg = await _downloadAndSaveImage(json.picture);
       updateData.img = newImg;
+    }
+
+    const vcSelections = _extractVariableConstructionSelections(json, actor);
+    if (vcSelections) {
+      updateData['system.variable_construction_selections'] = vcSelections;
     }
 
     await actor.update(updateData);
