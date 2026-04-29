@@ -34,7 +34,7 @@
         }
 
         .damage {
-          flex-basis: 11%;
+          flex-basis: 15%;
         }
 
         .bac {
@@ -46,7 +46,7 @@
         }
 
         .description {
-          flex-basis: 30%;
+          flex-basis: 26%;
         }
       }
 
@@ -61,7 +61,7 @@
           flex-direction: row;
           align-items: center;
           width: 100%;
-          height: 30px;
+          min-height: 30px;
           margin-bottom: 0.1rem;
           padding: 2.5px 5px;
           background-color: rgba(128, 128, 128, 0.25);
@@ -93,15 +93,11 @@
           }
         }
 
-        .weapon-name,
-        .weapon-description {
-          padding-right: 0.1rem;
-          word-break: break-all;
-        }
-
         .weapon-name {
           flex-basis: 22%;
+          padding-right: 0.1rem;
           font-weight: bold;
+          word-break: break-all;
         }
 
         .weapon-range {
@@ -110,8 +106,9 @@
         }
 
         .weapon-damage {
-          flex-basis: 11%;
-          word-break: break-all;
+          flex-basis: 15%;
+          padding-right: 3px;
+          white-space: nowrap;
         }
 
         .weapon-bac {
@@ -125,7 +122,8 @@
         }
 
         .weapon-description {
-          flex-basis: 30%;
+          flex-basis: 26%;
+          padding-right: 0.1rem;
         }
       }
     }
