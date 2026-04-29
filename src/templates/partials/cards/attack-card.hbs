@@ -24,7 +24,7 @@
 	–
 	{{/if}}
 </div>
-<div class="weapon-ba">
+<div class="weapon-bac">
 	{{#ifCond system.type '==' "melee"}}
 		{{#ifCond system.bonus_ba '!==' null}}
 		<a data-ba="bac" data-ba-bonus class="attack-roll border-button" title="{{localize 'olddragon2e.bac_roll'}}"><i class="fa-light fa-dice-d20"></i> {{signed_number actor.bac}}+{{system.bonus_ba}}</a>
@@ -34,21 +34,31 @@
 	{{/ifCond}}
 	{{#ifCond system.type '==' "throwing"}}
 		{{#ifCond system.bonus_ba '!==' null}}
-		<a data-ba="bac" data-ba-bonus class="attack-roll border-button" title="{{localize 'olddragon2e.bac_roll'}}"><i class="fa-light fa-dice-d20"></i> {{signed_number actor.bac}}+{{system.bonus_ba}}</a> ou <a data-ba="bad" data-ba-bonus class="attack-roll border-button" title="{{localize 'olddragon2e.bad_roll'}}"><i class="fa-light fa-dice-d20"></i> ({{signed_number actor.bad}}+{{system.bonus_ba}})</a>
+		<a data-ba="bac" data-ba-bonus class="attack-roll border-button" title="{{localize 'olddragon2e.bac_roll'}}"><i class="fa-light fa-dice-d20"></i> {{signed_number actor.bac}}+{{system.bonus_ba}}</a>
 		{{else}}
-		<a data-ba="bac" class="attack-roll border-button" title="{{localize 'olddragon2e.bac_roll'}}"><i class="fa-light fa-dice-d20"></i> {{signed_number actor.bac}}</a> ou <a data-ba="bad" class="attack-roll border-button" title="{{localize 'olddragon2e.bad_roll'}}"><i class="fa-light fa-dice-d20"></i> {{signed_number actor.bad}}</a>
+		<a data-ba="bac" class="attack-roll border-button" title="{{localize 'olddragon2e.bac_roll'}}"><i class="fa-light fa-dice-d20"></i> {{signed_number actor.bac}}</a>
 		{{/ifCond}}
 	{{/ifCond}}
-	{{#ifCond system.type '==' "ranged"}}
+	{{#ifCond system.type '==' "ranged"}}–{{/ifCond}}
+	{{#ifCond system.type '==' "ammunition"}}–{{/ifCond}}
+</div>
+<div class="weapon-bad">
+	{{#ifCond system.type '==' "melee"}}–{{/ifCond}}
+	{{#ifCond system.type '==' "throwing"}}
 		{{#ifCond system.bonus_ba '!==' null}}
-		<a data-ba="bad" data-ba-bonus class="attack-roll border-button" title="{{localize 'olddragon2e.bad_roll'}}"><i class="fa-light fa-dice-d20"></i>{{signed_number actor.bad}}+{{system.bonus_ba}}</a>
+		<a data-ba="bad" data-ba-bonus class="attack-roll border-button" title="{{localize 'olddragon2e.bad_roll'}}"><i class="fa-light fa-dice-d20"></i> {{signed_number actor.bad}}+{{system.bonus_ba}}</a>
 		{{else}}
 		<a data-ba="bad" class="attack-roll border-button" title="{{localize 'olddragon2e.bad_roll'}}"><i class="fa-light fa-dice-d20"></i> {{signed_number actor.bad}}</a>
 		{{/ifCond}}
 	{{/ifCond}}
-	{{#ifCond system.type '==' "ammunition"}}
-	–
+	{{#ifCond system.type '==' "ranged"}}
+		{{#ifCond system.bonus_ba '!==' null}}
+		<a data-ba="bad" data-ba-bonus class="attack-roll border-button" title="{{localize 'olddragon2e.bad_roll'}}"><i class="fa-light fa-dice-d20"></i> {{signed_number actor.bad}}+{{system.bonus_ba}}</a>
+		{{else}}
+		<a data-ba="bad" class="attack-roll border-button" title="{{localize 'olddragon2e.bad_roll'}}"><i class="fa-light fa-dice-d20"></i> {{signed_number actor.bad}}</a>
+		{{/ifCond}}
 	{{/ifCond}}
+	{{#ifCond system.type '==' "ammunition"}}–{{/ifCond}}
 </div>
 <div class="weapon-damage">
 	{{#if system.damage}}
