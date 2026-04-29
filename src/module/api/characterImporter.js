@@ -116,6 +116,12 @@ export const importActor = async (json) => {
   }
 
   await _addRaceAndClassAbilities(actor, data.system.race, data.system.class);
+
+  const vcSelections = _extractVariableConstructionSelections(json, actor);
+  if (vcSelections) {
+    await actor.update({ 'system.variable_construction_selections': vcSelections });
+  }
+
   await _addInventoryItems(actor, json.inventory_items);
 
   return actor;
@@ -316,24 +322,54 @@ const _getItemsFromUUIDs = async (uuids) => {
   return items;
 };
 
+const JP_KEYS = ['jpd', 'jpc', 'jps'];
+
 /**
  * Extracts the JP race bonus from the new race_mechanic_selections structure.
  * @param {Object} json - Character JSON from Old Dragon Online
  * @returns {string} The selection_key value ('jpd', 'jpc', 'jps') or empty string
  */
 const _extractJpRaceBonus = (json) => {
-  // Return empty string if array doesn't exist or is empty
-  if (!json.race_mechanic_selections || json.race_mechanic_selections.length === 0) {
-    return '';
-  }
+  if (!json.race_mechanic_selections || json.race_mechanic_selections.length === 0) return '';
 
-  // Find the first selection with a JP-related selection_key
-  // Only jpd, jpc, and jps are valid for race JP bonuses
-  const jpSelection = json.race_mechanic_selections.find((selection) =>
-    ['jpd', 'jpc', 'jps'].includes(selection.selection_key),
-  );
+  const jpSelection = json.race_mechanic_selections.find((s) => JP_KEYS.includes(s.selection_key));
 
   return jpSelection ? jpSelection.selection_key : '';
+};
+
+/**
+ * Extracts variable-construction selections from race_mechanic_selections and maps them to Foundry item IDs.
+ * @param {Object} json - Character JSON from Old Dragon Online
+ * @param {Actor} actor - The Foundry actor (must already have race_ability items embedded)
+ * @returns {Object|null} The variable_construction_selections object, or null if none found
+ */
+const _extractVariableConstructionSelections = (json, actor) => {
+  if (!json.race_mechanic_selections || json.race_mechanic_selections.length === 0) return null;
+
+  const vcSelections = json.race_mechanic_selections.filter((s) => !JP_KEYS.includes(s.selection_key));
+  if (vcSelections.length === 0) return null;
+
+  // Group by character_race_ability_id, preserving order (order = choice-index)
+  const grouped = {};
+  for (const sel of vcSelections) {
+    const id = sel.character_race_ability_id;
+    if (!grouped[id]) grouped[id] = { ability_name: sel.ability_name, selections: [] };
+    grouped[id].selections.push(sel);
+  }
+
+  // Match each group to its Foundry item by name and build the selections object
+  const result = {};
+  for (const { ability_name, selections } of Object.values(grouped)) {
+    const item = actor.items.find((i) => i.type === 'race_ability' && i.name === ability_name);
+    if (!item) continue;
+    result[item.id] = selections.map((sel) => ({
+      key: sel.selection_key,
+      custom_name: sel.custom_name ?? '',
+      custom_description: sel.custom_description ?? '',
+    }));
+  }
+
+  return Object.keys(result).length > 0 ? result : null;
 };
 
 const _convertCost = (costInPC) => {
@@ -529,6 +565,11 @@ export const updateActor = async (actor) => {
     if (json.picture) {
       const newImg = await _downloadAndSaveImage(json.picture);
       updateData.img = newImg;
+    }
+
+    const vcSelections = _extractVariableConstructionSelections(json, actor);
+    if (vcSelections) {
+      updateData['system.variable_construction_selections'] = vcSelections;
     }
 
     await actor.update(updateData);
