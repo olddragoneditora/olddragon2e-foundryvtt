@@ -193,6 +193,7 @@ const _jsonToActorData = async (json) => {
         appearance: json.appearance,
         personality: json.personality,
         background: json.background,
+        notes: json.notes,
       },
       race: raceItem ? raceItem.toObject() : null,
       class: classItem ? classItem.toObject() : null,
@@ -559,6 +560,7 @@ export const updateActor = async (actor) => {
       'system.details.appearance': json.appearance,
       'system.details.personality': json.personality,
       'system.details.background': json.background,
+      'system.details.notes': json.notes,
     };
 
     // Update picture if changed

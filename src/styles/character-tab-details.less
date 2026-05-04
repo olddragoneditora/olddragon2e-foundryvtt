@@ -8,7 +8,8 @@
     .reputation,
     .appearance,
     .personality,
-    .background {
+    .background,
+    .notes {
       display: flex;
       flex-direction: column;
 
@@ -65,8 +66,11 @@
       }
     }
 
-    .background {
+    .background,
+    .notes {
       grid-column: span 2 / span 2;
+      font-size: inherit;
+      line-height: inherit;
 
       .editor {
         min-height: 145.5px;
