@@ -1,6 +1,6 @@
 import { BaseRoll } from '../baseRoll';
 import { calculateRollResult } from '../utils';
-import { truncateString } from '../../helpers';
+import { truncateString, signed_number } from '../../helpers';
 
 /**
  * Represents a damage roll in the game.
@@ -46,15 +46,15 @@ export class DamageRoll extends BaseRoll {
     let formula = this.item.system.damage;
 
     if (_attackMode === 'melee' || _attackMode === 'throwing') {
-      formula += ` + ${this.actor.system.mod_forca} (M. FOR)`;
+      formula += ` ${signed_number(this.actor.system.mod_forca)} (M. FOR)`;
     }
 
     if (this.item.system.bonus_damage) {
-      formula += ` + ${this.item.system.bonus_damage} (bônus)`;
+      formula += ` ${signed_number(this.item.system.bonus_damage)} (arma)`;
     }
 
     if (this.raceBonusDamage !== 0) {
-      formula += ` + ${this.raceBonusDamage} (bônus racial)`;
+      formula += ` ${signed_number(this.raceBonusDamage)} (raça)`;
     }
 
     return formula;
