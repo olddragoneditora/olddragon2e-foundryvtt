@@ -1,6 +1,6 @@
 import { BaseRoll } from '../baseRoll';
 import { calculateRollResult } from '../utils';
-import { truncateString } from '../../helpers';
+import { truncateString, signed_number } from '../../helpers';
 
 /**
  * Represents an attack roll in the game.
@@ -102,10 +102,10 @@ export class BARoll extends BaseRoll {
     let formula = this.dice;
 
     if (this.ba_roll === 'bac') {
-      formula += ` + ${this.characterBac} (BAC)`;
+      formula += ` ${signed_number(this.characterBac)} (BAC)`;
     }
     if (this.ba_roll === 'bad') {
-      formula += ` + ${this.characterBad} (BAD)`;
+      formula += ` ${signed_number(this.characterBad)} (BAD)`;
     }
 
     return formula;

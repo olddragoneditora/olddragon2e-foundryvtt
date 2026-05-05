@@ -9,12 +9,12 @@
             <label class="tab-title">{{localize "olddragon2e.atq"}}</label>
             {{!-- Vezes --}}
             <div class="times">
-                <label class="font-bold">{{localize "olddragon2e.times"}}</label>
+                <label class="font-bold" title="Quantos ataques em uma mesma rodada podem ser desferidos. Aceita apenas números inteiros positivos.">{{localize "olddragon2e.times"}}&nbsp;<i class="fa-solid fa-circle-info"></i></label>
                 <input name="system.times" type="text" value="{{system.times}}" data-dtype="Number">
             </div>
             {{!-- Descrição --}}
             <div class="description">
-                <label class="font-bold">{{localize "olddragon2e.description"}}</label>
+                <label class="font-bold" title='Descrição do ataque. Por exemplo: "Garra", "Mordida", "Caudas", "Chifres"'>{{localize "olddragon2e.monster_attack_type"}}&nbsp;<i class="fa-solid fa-circle-info"></i></label>
                 <input name="system.description" type="text" value="{{system.description}}" data-dtype="String">
             </div>
             {{!-- BA --}}
@@ -35,17 +35,17 @@
             <label class="tab-title">{{localize "olddragon2e.damage"}}</label>
             {{!-- Dano --}}
             <div class="damage">
-                <label class="font-bold">{{localize "olddragon2e.damage"}}</label>
+                <label class="font-bold" title="Apenas dados. Por exemplo: 1d6, 2d4">{{localize "olddragon2e.damage"}}&nbsp;<i class="fa-solid fa-circle-info"></i></label>
                 <input name="system.damage" type="text" value="{{system.damage}}" data-dtype="String">
             </div>
             {{!-- Bônus no dano --}}
             <div class="damage-bonus">
-                <label class="font-bold">{{localize "olddragon2e.bonus_damage"}}</label>
+                <label class="font-bold" title="Apenas valores inteiros, positivos ou negativos. Por exemplo: 2, -1">{{localize "olddragon2e.bonus_damage"}}&nbsp;<i class="fa-solid fa-circle-info"></i></label>
                 <input name="system.damage_bonus" type="text" value="{{system.damage_bonus}}" data-dtype="Number">
             </div>
             {{!-- Descrição do Dano --}}
             <div class="damage-description">
-                <label class="font-bold">{{localize "olddragon2e.damage_description"}} <i class="fa-solid fa-circle-info" title='Texto exibido entre parêntesis para representar o dano. Ex.: "1d4 +2", "arma +1" ou "1d3 + veneno"'></i></label>
+                <label class="font-bold" title='Texto exibido entre parêntesis para representar o dano. Por exemplo: "1d4+2", "arma+1" ou "1d3 + veneno"'>{{localize "olddragon2e.damage_description"}}&nbsp;<i class="fa-solid fa-circle-info"></i></label>
                 <input name="system.damage_description" type="text" value="{{system.damage_description}}" data-dtype="String">
             </div>
         </div>

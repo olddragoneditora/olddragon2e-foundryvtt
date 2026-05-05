@@ -1,3 +1,33 @@
+.dialog {
+  .window-content {
+    .dialog-content {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      margin-bottom: 1rem;
+
+      .form-group {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: center;
+        gap: 0.35rem;
+
+        input[type='checkbox'] {
+          margin: 0px;
+        }
+
+        input[type='checkbox']:checked {
+          accent-color: @carmesim-600;
+        }
+
+        input[name='formula'] {
+          font-size: small;
+        }
+      }
+    }
+  }
+}
+
 .button-row {
   display: flex;
   flex-direction: row;

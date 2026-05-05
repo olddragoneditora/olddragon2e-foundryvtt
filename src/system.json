@@ -124,7 +124,7 @@
     "requires": [],
     "conflicts": []
   },
-  "socket": false,
+  "socket": true,
   "manifest": "This is auto replaced",
   "download": "This is auto replaced",
   "initiative": "1d20",

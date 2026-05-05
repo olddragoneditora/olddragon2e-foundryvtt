@@ -13,6 +13,7 @@ import OD2CharacterSheet from './sheets/OD2CharacterSheet.js';
 import OD2MonsterSheet from './sheets/OD2MonsterSheet.js';
 import OD2RetainerSheet from './sheets/OD2RetainerSheet.js';
 import { renderActorDirectory } from './system/renderActorDirectory.js';
+import { handleCharacterImporterSocket } from './api/characterImporter.js';
 import { registerSettings, getInitiativeType } from './settings.js';
 
 // Importar o módulo de iniciativa diretamente para evitar importação dinâmica
@@ -143,6 +144,8 @@ Hooks.once('setup', async () => {
 // When ready
 Hooks.once('ready', async () => {
   // Do anything once the system is ready
+
+  game.socket.on('system.olddragon2e', handleCharacterImporterSocket);
 
   // Configurar iniciativa com base nas configurações
   const initiativeType = getInitiativeType();
