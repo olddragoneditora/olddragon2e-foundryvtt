@@ -163,6 +163,23 @@ Handlebars.registerHelper('ne', function (a, b) {
   return a !== b;
 });
 
+Handlebars.registerHelper('diceIcon', function (damage) {
+  const icons = {
+    2: 'fa-hockey-puck',
+    4: 'fa-dice-d4',
+    6: 'fa-dice-d6',
+    8: 'fa-dice-d8',
+    10: 'fa-dice-d10',
+    12: 'fa-dice-d12',
+  };
+  const supported = [2, 4, 6, 8, 10, 12];
+  const matches = String(damage || '').matchAll(/d(\d+)/gi);
+  const sizes = [...matches].map((m) => parseInt(m[1], 10));
+  const largest = sizes.length ? Math.max(...sizes) : 0;
+  const icon = supported.includes(largest) ? icons[largest] : 'fa-dice-d20';
+  return new Handlebars.SafeString(`<i class="fa-thin ${icon}"></i>`);
+});
+
 Handlebars.registerHelper('raceBonusDamage', function (actor, weapon) {
   if (!actor?.raceBonusDamage) return 0;
   return actor.raceBonusDamage(weapon);
