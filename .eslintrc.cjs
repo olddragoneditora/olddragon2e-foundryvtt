@@ -30,6 +30,7 @@ module.exports = {
     Application: 'readonly',
     Handlebars: 'readonly',
     fromUuid: 'readonly',
+    $: 'readonly',
   },
 
   rules: {},

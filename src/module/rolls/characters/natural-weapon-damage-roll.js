@@ -35,7 +35,7 @@ export class NaturalWeaponDamageRoll extends BaseRoll {
         flavor: this.formatMessage(),
         speaker: { alias: truncateString(this.characterName, 30) },
       },
-      { rollMode: this.rollMode(mode) },
+      this.toMessageOptions(mode),
     );
   }
 }

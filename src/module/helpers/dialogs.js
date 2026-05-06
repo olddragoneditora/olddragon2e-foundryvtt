@@ -23,28 +23,60 @@ export async function showDialog(options) {
     _content = await foundry.applications.handlebars.renderTemplate(content, options.data);
   }
 
-  const _buttons = {};
+  const renderCallback = options.render;
 
-  for (const [key, value] of Object.entries(buttons)) {
-    _buttons[key] = {
-      icon: value.icon,
+  if (game.release.generation >= 14) {
+    const _buttons = Object.entries(buttons).map(([key, value]) => ({
+      action: key,
       label: value.label,
-      callback: value.callback,
-    };
-  }
+      icon: value.icon,
+      callback: value.callback
+        ? async (event, button) => {
+            await value.callback($(button.form));
+          }
+        : undefined,
+    }));
 
-  const renderCallback = options.render ? options.render : () => {};
+    _buttons.push({
+      action: 'cancel',
+      label: 'Cancelar',
+      icon: "<i class='fa-solid fa-xmark'></i>",
+    });
 
-  new Dialog({
-    title,
-    content: _content,
-    buttons: {
-      ..._buttons,
-      cancel: {
-        icon: "<i class='fa-solid fa-xmark'></i>",
-        label: 'Cancelar',
+    if (renderCallback) {
+      Hooks.once('renderDialogV2', (app) => {
+        renderCallback($(app.element));
+      });
+    }
+
+    await foundry.applications.api.DialogV2.wait({
+      window: { title },
+      content: _content,
+      buttons: _buttons,
+      rejectClose: false,
+    });
+  } else {
+    const _buttons = {};
+
+    for (const [key, value] of Object.entries(buttons)) {
+      _buttons[key] = {
+        icon: value.icon,
+        label: value.label,
+        callback: value.callback,
+      };
+    }
+
+    new Dialog({
+      title,
+      content: _content,
+      buttons: {
+        ..._buttons,
+        cancel: {
+          icon: "<i class='fa-solid fa-xmark'></i>",
+          label: 'Cancelar',
+        },
       },
-    },
-    render: renderCallback,
-  }).render(true);
+      render: renderCallback || (() => {}),
+    }).render(true);
+  }
 }
