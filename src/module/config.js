@@ -40,17 +40,17 @@ olddragon2e.alignment = {
 };
 
 olddragon2e.monster_concepts = {
-  humanoide: 'olddragon2e.concepts.humanoide',
-  humanoide_monstruoso: 'olddragon2e.concepts.humanoide_monstruoso',
-  gigante: 'olddragon2e.concepts.gigante',
-  animal: 'olddragon2e.concepts.animal',
-  inseto: 'olddragon2e.concepts.inseto',
-  constructo: 'olddragon2e.concepts.constructo',
-  morto_vivo: 'olddragon2e.concepts.morto_vivo',
-  planta: 'olddragon2e.concepts.planta',
-  gosma: 'olddragon2e.concepts.gosma',
-  dragao: 'olddragon2e.concepts.dragao',
-  besta: 'olddragon2e.concepts.besta',
+  Humanoide: 'olddragon2e.concepts.humanoide',
+  'Humanoide Monstruoso': 'olddragon2e.concepts.humanoide_monstruoso',
+  Gigante: 'olddragon2e.concepts.gigante',
+  Animal: 'olddragon2e.concepts.animal',
+  Inseto: 'olddragon2e.concepts.inseto',
+  Constructo: 'olddragon2e.concepts.constructo',
+  'Morto-Vivo': 'olddragon2e.concepts.morto_vivo',
+  Planta: 'olddragon2e.concepts.planta',
+  Gosma: 'olddragon2e.concepts.gosma',
+  Dragão: 'olddragon2e.concepts.dragao',
+  Besta: 'olddragon2e.concepts.besta',
 };
 
 olddragon2e.monster_sizes = {
@@ -62,6 +62,7 @@ olddragon2e.monster_sizes = {
   colossal: 'olddragon2e.sizes.colossal',
 };
 
+// Deprecated
 olddragon2e.monster_habitats = {
   qualquer: 'olddragon2e.habitats.qualquer',
   planicies: 'olddragon2e.habitats.planicies',

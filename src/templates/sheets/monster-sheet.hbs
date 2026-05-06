@@ -124,9 +124,7 @@
                     </div>
                     {{!-- Habitat --}}
                     <div class="habitat">
-                        <select name="system.habitat">
-                            {{selectOptions config.monster_habitats selected=system.habitat localize=true}}
-                        </select>
+                        <input type="text" name="system.habitat" value="{{system.habitat}}" />
                         <label class="font-bold">{{localize "olddragon2e.habitat"}}</label>
                     </div>
                 </div>
