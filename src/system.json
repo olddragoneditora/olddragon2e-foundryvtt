@@ -20,7 +20,7 @@
   "version": "This is auto replaced",
   "compatibility": {
     "minimum": "13",
-    "verified": "13"
+    "verified": "14"
   },
   "scripts": [],
   "esmodules": ["module/olddragon2e.js"],
@@ -120,6 +120,27 @@
       "path": "lang/pt-BR.json"
     }
   ],
+  "documentTypes": {
+    "Actor": {
+      "character": {},
+      "monster": {},
+      "retainer": {}
+    },
+    "Item": {
+      "weapon": {},
+      "armor": {},
+      "shield": {},
+      "misc": {},
+      "container": {},
+      "vehicle": {},
+      "spell": {},
+      "race": {},
+      "race_ability": {},
+      "class": {},
+      "class_ability": {},
+      "monster_attack": {}
+    }
+  },
   "relationships": {
     "requires": [],
     "conflicts": []
