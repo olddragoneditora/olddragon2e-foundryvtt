@@ -108,16 +108,11 @@
         <div class="body">
             {{!-- Header --}}
             <div class="header">
-                {{!-- Nome; Raça; Profissão; Nível --}}
+                {{!-- Nome; Raça; Profissão; Sincronizar --}}
                 <div class="basic-info">
                     {{!-- Nome --}}
-                    <div>
-                        <div class="name-row">
-                            <input name="name" type="text" value="{{actor.name}}">
-                            {{#if system.odo_id}}
-                            <a class="odo-sync" title="{{localize 'olddragon2e.sync_from_odo'}}"><i class="fa-solid fa-rotate"></i></a>
-                            {{/if}}
-                        </div>
+                    <div class="name">
+                        <input name="name" type="text" value="{{actor.name}}">
                         <label class="font-bold">{{localize "olddragon2e.name"}}</label>
                     </div>
                     {{!-- Raça --}}
@@ -137,6 +132,10 @@
                         <input name="system.profession" type="text" value="{{system.profession}}">
                         <label class="font-bold">{{localize "olddragon2e.profession"}}</label>
                     </div>
+                    {{!-- Sincronizar com o ODO --}}
+                    {{#if system.odo_id}}
+                        <a class="odo-sync" title="{{localize 'olddragon2e.sync_from_odo'}}"><i class="fa-solid fa-cloud-arrow-down"></i></a>
+                    {{/if}}
                 </div>
 
                 <hr>

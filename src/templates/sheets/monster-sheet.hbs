@@ -88,15 +88,13 @@
         <div class="body">
             {{!-- Header --}}
             <div class="header">
-                
-                {{!-- Nome --}}
-                <div class="name">
-                    <input name="name" type="text" value="{{actor.name}}">
-                    <label class="font-bold">{{localize "olddragon2e.name"}}</label>
-                </div>
-
-                {{!-- Conceito; Tamanho; Habitat --}}
+                {{!-- Nome; Conceito --}}
                 <div class="basic-info">
+                    {{!-- Nome --}}
+                    <div class="name">
+                        <input name="name" type="text" value="{{actor.name}}">
+                        <label class="font-bold">{{localize "olddragon2e.name"}}</label>
+                    </div>
                     {{!-- Conceito --}}
                     <div class="concept">
                         <select name="system.concept">
@@ -104,12 +102,25 @@
                         </select>
                         <label class="font-bold">{{localize "olddragon2e.concept"}}</label>
                     </div>
+                </div>
+
+                <hr>
+
+                {{!-- Tamanho; Alinhamento; Habitat --}}
+                <div class="additional-info">
                     {{!-- Tamanho --}}
                     <div class="size">
                         <select name="system.size">
                             {{selectOptions config.monster_sizes selected=system.size localize=true}}
                         </select>
                         <label class="font-bold">{{localize "olddragon2e.size"}}</label>
+                    </div>
+                    {{!-- Alinhamento --}}
+                    <div class="alignment">
+                        <select name="system.alignment">
+                            {{selectOptions config.alignment selected=system.alignment localize=true}}
+                        </select>
+                        <label class="font-bold">{{localize "olddragon2e.alignment"}}</label>
                     </div>
                     {{!-- Habitat --}}
                     <div class="habitat">
@@ -122,15 +133,8 @@
 
                 <hr>
 
-                {{!-- Alinhamento; Movimento; Experiência; Pontos de Vida --}}
-                <div class="additional-info">
-                    {{!-- Alinhamento --}}
-                    <div class="alignment">
-                        <label class="font-bold">{{localize "olddragon2e.alignment"}}</label>
-                        <select name="system.alignment">
-                            {{selectOptions config.alignment selected=system.alignment localize=true}}
-                        </select>
-                    </div>
+                {{!-- Movimento; Experiência; Pontos de Vida --}}
+                <div class="overview">
                     {{!-- Movimento --}}
                     <div class="mv">
                         <label class="font-bold">{{localize "olddragon2e.mv"}}</label>

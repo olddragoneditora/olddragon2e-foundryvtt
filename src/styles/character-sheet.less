@@ -158,7 +158,7 @@
       .header {
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 0.25rem;
         padding: 10px;
         border-radius: 0.25rem;
         background-color: @dourado-100;
@@ -168,39 +168,21 @@
           flex-direction: row;
           gap: 0.25rem;
 
-          .name-row {
+          .name,
+          .race,
+          .class,
+          .level-select,
+          .alignment-select {
             display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 0.25rem;
+            flex-direction: column;
+          }
 
-            input {
-              flex: 1;
-            }
-
-            .odo-sync {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              width: 24px;
-              height: 24px;
-              border-radius: 3px;
-              color: @dourado-700;
-              cursor: pointer;
-
-              &:hover {
-                color: @carmesim-600;
-                background-color: @dourado-200;
-                text-shadow: none;
-              }
-            }
+          .name {
+            flex: 1;
           }
 
           .race,
           .class {
-            display: flex;
-            flex-direction: column;
-
             .character-race,
             .character-class,
             .instruction-text {
@@ -226,14 +208,21 @@
             }
           }
 
-          .level-select {
+          .odo-sync {
             display: flex;
-            flex-direction: column;
-          }
+            align-items: center;
+            justify-content: center;
+            width: 26px;
+            height: 26px;
+            border-radius: 3px;
+            color: @dourado-700;
+            cursor: pointer;
 
-          .alignment-select {
-            display: flex;
-            flex-direction: column;
+            &:hover {
+              color: @carmesim-600;
+              background-color: @dourado-200;
+              text-shadow: none;
+            }
           }
         }
 
@@ -285,7 +274,7 @@
         .overview {
           display: flex;
           flex-direction: row;
-          gap: 0.1rem;
+          justify-content: space-between;
 
           a:hover {
             color: @carmesim-600;

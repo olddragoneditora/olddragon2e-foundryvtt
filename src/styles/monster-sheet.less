@@ -12,6 +12,7 @@
     }
 
     .sidebar {
+      flex: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -47,7 +48,8 @@
           gap: 0.25rem;
           font-size: larger;
 
-          label, a {
+          label,
+          a {
             display: flex;
             justify-content: end;
             align-items: center;
@@ -94,6 +96,7 @@
     }
 
     .body {
+      flex: 1;
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
@@ -106,71 +109,85 @@
         border-radius: 0.25rem;
         background-color: @dourado-100;
 
-        .name {
-          label {
-            font-size: small;
-          }
-        }
-
         .basic-info {
           display: flex;
           flex-direction: row;
           gap: 0.25rem;
 
-          .concept, .size, .habitat {
-            input, select {
-              width: 100%;
-            }
-
-            label {
-              font-size: small;
-            }
-          }
-
+          .name,
           .concept {
-            flex-basis: 43%;
+            display: flex;
+            flex-direction: column;
           }
 
-          .size {
-            flex-basis: 22%;
-          }
-
-          .habitat {
-            flex-basis: 35%;
+          .name {
+            flex: 1;
           }
         }
 
         .additional-info {
           display: flex;
           flex-direction: row;
-          gap: 0.25rem;
+          gap: 0.5rem;
 
-          .alignment, .mv, .xp, .hp {
+          .size,
+          .alignment,
+          .habitat {
+            display: flex;
+            flex-direction: column;
+
+            select {
+              width: 100%;
+            }
+          }
+        }
+
+        .overview {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .mv,
+          .xp,
+          .hp {
             display: flex;
             flex-direction: column;
             align-items: center;
 
-            .mv-values, .hp-values {
+            .mv-values,
+            .hp-values {
               display: flex;
               flex-direction: row;
+              gap: 0.25rem;
 
-              .mv-value, .hp-value {
+              .mv-value,
+              .hp-value {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+              }
 
-                label {
-                  font-size: smaller;
+              .mv-value {
+                input {
+                  width: 35px;
+                }
+              }
+
+              .hp-value {
+                input {
+                  width: 50px;
                 }
               }
             }
 
-            label {
-              font-size: small;
-            }
-
             input {
               text-align: center;
+            }
+          }
+
+          .xp {
+            input {
+              width: 60px;
             }
           }
         }
