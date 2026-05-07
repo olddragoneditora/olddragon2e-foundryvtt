@@ -206,6 +206,13 @@ export class OD2RetainerDataModel extends foundry.abstract.TypeDataModel {
     return Math.floor(this.current_movement / 2);
   }
 
+  get movement_fly() {
+    if (this.race == null) {
+      return 0;
+    }
+    return this.race.system.movement_fly ?? 0;
+  }
+
   get load_max() {
     let maxLoadValue = this._findHighestValue(this.forca, this.constituicao);
 

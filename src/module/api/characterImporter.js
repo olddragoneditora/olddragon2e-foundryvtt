@@ -193,6 +193,7 @@ const _jsonToActorData = async (json) => {
         appearance: json.appearance,
         personality: json.personality,
         background: json.background,
+        notes: json.notes,
       },
       race: raceItem ? raceItem.toObject() : null,
       class: classItem ? classItem.toObject() : null,
@@ -249,13 +250,62 @@ const _jsonToRetainerActorData = async (json) => {
   };
 
   if (json.picture) {
-    actorData.img = await _downloadAndSaveImage(json.picture);
+    const imgPath = await _downloadAndSaveImage(json.picture);
+    if (imgPath) actorData.img = imgPath;
   }
 
   return actorData;
 };
 
+// Promises pendentes aguardando resposta do GM para upload de retrato: requestId → { resolve, reject }
+const _pendingImageRequests = new Map();
+
+export const handleCharacterImporterSocket = (data) => {
+  if (data.type === 'uploadImageRequest') {
+    if (!game.user.isGM) return;
+    _downloadAndSaveImage(data.url).then(
+      (filePath) =>
+        game.socket.emit('system.olddragon2e', { type: 'uploadImageResponse', requestId: data.requestId, filePath }),
+      (error) =>
+        game.socket.emit('system.olddragon2e', {
+          type: 'uploadImageResponse',
+          requestId: data.requestId,
+          error: error.message,
+        }),
+    );
+  }
+  if (data.type === 'uploadImageResponse') {
+    const pending = _pendingImageRequests.get(data.requestId);
+    if (!pending) return;
+    _pendingImageRequests.delete(data.requestId);
+    if (data.error) pending.reject(new Error(data.error));
+    else pending.resolve(data.filePath);
+  }
+};
+
 const _downloadAndSaveImage = async (url) => {
+  if (!game.user.isGM) {
+    if (!game.users.activeGM) {
+      console.warn('olddragon2e | Nenhum GM ativo. O retrato não será atualizado.');
+      return null;
+    }
+    return new Promise((resolve, reject) => {
+      const requestId = foundry.utils.randomID();
+      _pendingImageRequests.set(requestId, { resolve, reject });
+      setTimeout(() => {
+        if (_pendingImageRequests.has(requestId)) {
+          _pendingImageRequests.delete(requestId);
+          reject(new Error('Timeout: GM não respondeu ao pedido de upload do retrato.'));
+        }
+      }, 30000);
+      game.socket.emit('system.olddragon2e', {
+        type: 'uploadImageRequest',
+        requestId,
+        url,
+      });
+    });
+  }
+
   const response = await fetch(url);
 
   if (!response.ok) {
@@ -498,7 +548,7 @@ export const updateRetainerActor = async (actor) => {
 
     if (json.picture) {
       const newImg = await _downloadAndSaveImage(json.picture);
-      updateData.img = newImg;
+      if (newImg) updateData.img = newImg;
     }
 
     await actor.update(updateData);
@@ -559,12 +609,13 @@ export const updateActor = async (actor) => {
       'system.details.appearance': json.appearance,
       'system.details.personality': json.personality,
       'system.details.background': json.background,
+      'system.details.notes': json.notes,
     };
 
     // Update picture if changed
     if (json.picture) {
       const newImg = await _downloadAndSaveImage(json.picture);
-      updateData.img = newImg;
+      if (newImg) updateData.img = newImg;
     }
 
     const vcSelections = _extractVariableConstructionSelections(json, actor);

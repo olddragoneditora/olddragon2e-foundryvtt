@@ -167,6 +167,11 @@
                                 <input name="system.movement_swim" type="text" value="{{system.movement_swim}}" data-dtype="Number" disabled>
                                 <label class="text-xs">{{localize "olddragon2e.mv_swim"}}</label>
                             </div>
+                            {{!-- Voar --}}
+                            <div class="mv-value">
+                                <input name="system.movement_fly" type="text" value="{{system.movement_fly}}" data-dtype="Number" disabled>
+                                <label class="text-xs">{{localize "olddragon2e.mv_fly"}}</label>
+                            </div>
                         </div>
                     </div>
                     {{!-- Tornar Aventureiro --}}
@@ -181,12 +186,12 @@
                             {{!-- PV Atual --}}
                             <div class="hp-value">
                                 <input name="system.hp.value" type="text" value="{{system.hp.value}}" data-dtype="Number">
-                                <label class="text-xs font-bold">{{localize "olddragon2e.hp_value"}}</label>
+                                <label class="text-xs">{{localize "olddragon2e.current"}}</label>
                             </div>
                             {{!-- PV Total --}}
                             <div class="hp-value">
                                 <input name="system.hp.max" type="text" value="{{system.hp.max}}" data-dtype="Number">
-                                <label class="text-xs font-bold">{{localize "olddragon2e.hp_max"}}</label>
+                                <label class="text-xs">{{localize "olddragon2e.total"}}</label>
                             </div>
                         </div>
                     </div>
