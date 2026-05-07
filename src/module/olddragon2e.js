@@ -186,3 +186,10 @@ Hooks.on('preUpdateActor', (actor, data) => {
   const newMod = calculateAttributeModifier(newConstituicao);
   foundry.utils.setProperty(data, 'system.hp.max', Math.max(1, 4 + newMod));
 });
+
+Hooks.on('renderGamePause', (_app, html) => {
+  const img = html.querySelector('img');
+  if (!img) return;
+  img.src = 'systems/olddragon2e/assets/game-paused.webp';
+  img.classList.remove('fa-spin');
+});

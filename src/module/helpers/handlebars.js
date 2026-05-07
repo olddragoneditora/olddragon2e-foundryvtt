@@ -122,14 +122,11 @@ export function registerHandlebarsHelper() {
 }
 
 // Print a + or a - in front of numbers
-Handlebars.registerHelper('signed_number', function (number, zero = '+0') {
-  if (number === '0') {
-    return zero;
-  } else if (number < 0) {
-    return number.toString();
-  } else {
-    return `+${number}`;
-  }
+Handlebars.registerHelper('signed_number', function (number, zero) {
+  if (typeof zero !== 'string') zero = '+0';
+  const n = Number(number);
+  if (isNaN(n) || n === 0) return zero;
+  return n < 0 ? n.toString() : `+${n}`;
 });
 
 Handlebars.registerHelper('range', function (from, to) {
@@ -161,6 +158,26 @@ Handlebars.registerHelper('lte', function (a, b) {
 });
 Handlebars.registerHelper('ne', function (a, b) {
   return a !== b;
+});
+
+Handlebars.registerHelper('diceIcon', function (damage, weapon) {
+  if (weapon === true) {
+    return new Handlebars.SafeString('<i class="fa-thin fa-dice-d6"></i>');
+  }
+  const icons = {
+    2: 'fa-hockey-puck',
+    4: 'fa-dice-d4',
+    6: 'fa-dice-d6',
+    8: 'fa-dice-d8',
+    10: 'fa-dice-d10',
+    12: 'fa-dice-d12',
+  };
+  const supported = [2, 4, 6, 8, 10, 12];
+  const matches = String(damage || '').matchAll(/d(\d+)/gi);
+  const sizes = [...matches].map((m) => parseInt(m[1], 10));
+  const largest = sizes.length ? Math.max(...sizes) : 0;
+  const icon = supported.includes(largest) ? icons[largest] : 'fa-dice-d20';
+  return new Handlebars.SafeString(`<i class="fa-thin ${icon}"></i>`);
 });
 
 Handlebars.registerHelper('raceBonusDamage', function (actor, weapon) {

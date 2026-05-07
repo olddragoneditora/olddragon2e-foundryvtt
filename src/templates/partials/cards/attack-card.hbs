@@ -27,16 +27,16 @@
 <div class="weapon-bac">
 	{{#ifCond system.type '==' "melee"}}
 		{{#ifCond system.bonus_ba '!==' null}}
-		<a data-ba="bac" data-ba-bonus class="attack-roll border-button" title="{{localize 'olddragon2e.bac_roll'}}"><i class="fa-light fa-dice-d20"></i> {{signed_number actor.bac}}+{{system.bonus_ba}}</a>
+		<a data-ba="bac" data-ba-bonus class="attack-roll border-button" title="{{localize 'olddragon2e.bac_roll'}}"><i class="fa-thin fa-dice-d20"></i> {{signed_number actor.bac}}+{{system.bonus_ba}}</a>
 		{{else}}
-		<a data-ba="bac" class="attack-roll border-button" title="{{localize 'olddragon2e.bac_roll'}}"><i class="fa-light fa-dice-d20"></i> {{signed_number actor.bac}}</a>
+		<a data-ba="bac" class="attack-roll border-button" title="{{localize 'olddragon2e.bac_roll'}}"><i class="fa-thin fa-dice-d20"></i> {{signed_number actor.bac}}</a>
 		{{/ifCond}}
 	{{/ifCond}}
 	{{#ifCond system.type '==' "throwing"}}
 		{{#ifCond system.bonus_ba '!==' null}}
-		<a data-ba="bac" data-ba-bonus class="attack-roll border-button" title="{{localize 'olddragon2e.bac_roll'}}"><i class="fa-light fa-dice-d20"></i> {{signed_number actor.bac}}+{{system.bonus_ba}}</a>
+		<a data-ba="bac" data-ba-bonus class="attack-roll border-button" title="{{localize 'olddragon2e.bac_roll'}}"><i class="fa-thin fa-dice-d20"></i> {{signed_number actor.bac}}+{{system.bonus_ba}}</a>
 		{{else}}
-		<a data-ba="bac" class="attack-roll border-button" title="{{localize 'olddragon2e.bac_roll'}}"><i class="fa-light fa-dice-d20"></i> {{signed_number actor.bac}}</a>
+		<a data-ba="bac" class="attack-roll border-button" title="{{localize 'olddragon2e.bac_roll'}}"><i class="fa-thin fa-dice-d20"></i> {{signed_number actor.bac}}</a>
 		{{/ifCond}}
 	{{/ifCond}}
 	{{#ifCond system.type '==' "ranged"}}–{{/ifCond}}
@@ -46,16 +46,16 @@
 	{{#ifCond system.type '==' "melee"}}–{{/ifCond}}
 	{{#ifCond system.type '==' "throwing"}}
 		{{#ifCond system.bonus_ba '!==' null}}
-		<a data-ba="bad" data-ba-bonus class="attack-roll border-button" title="{{localize 'olddragon2e.bad_roll'}}"><i class="fa-light fa-dice-d20"></i> {{signed_number actor.bad}}+{{system.bonus_ba}}</a>
+		<a data-ba="bad" data-ba-bonus class="attack-roll border-button" title="{{localize 'olddragon2e.bad_roll'}}"><i class="fa-thin fa-dice-d20"></i> {{signed_number actor.bad}}+{{system.bonus_ba}}</a>
 		{{else}}
-		<a data-ba="bad" class="attack-roll border-button" title="{{localize 'olddragon2e.bad_roll'}}"><i class="fa-light fa-dice-d20"></i> {{signed_number actor.bad}}</a>
+		<a data-ba="bad" class="attack-roll border-button" title="{{localize 'olddragon2e.bad_roll'}}"><i class="fa-thin fa-dice-d20"></i> {{signed_number actor.bad}}</a>
 		{{/ifCond}}
 	{{/ifCond}}
 	{{#ifCond system.type '==' "ranged"}}
 		{{#ifCond system.bonus_ba '!==' null}}
-		<a data-ba="bad" data-ba-bonus class="attack-roll border-button" title="{{localize 'olddragon2e.bad_roll'}}"><i class="fa-light fa-dice-d20"></i> {{signed_number actor.bad}}+{{system.bonus_ba}}</a>
+		<a data-ba="bad" data-ba-bonus class="attack-roll border-button" title="{{localize 'olddragon2e.bad_roll'}}"><i class="fa-thin fa-dice-d20"></i> {{signed_number actor.bad}}+{{system.bonus_ba}}</a>
 		{{else}}
-		<a data-ba="bad" class="attack-roll border-button" title="{{localize 'olddragon2e.bad_roll'}}"><i class="fa-light fa-dice-d20"></i> {{signed_number actor.bad}}</a>
+		<a data-ba="bad" class="attack-roll border-button" title="{{localize 'olddragon2e.bad_roll'}}"><i class="fa-thin fa-dice-d20"></i> {{signed_number actor.bad}}</a>
 		{{/ifCond}}
 	{{/ifCond}}
 	{{#ifCond system.type '==' "ammunition"}}–{{/ifCond}}
@@ -63,7 +63,7 @@
 <div class="weapon-damage">
 	{{#if system.damage}}
 		<a class="damage-roll border-button" title="{{localize 'olddragon2e.damage_roll'}}">
-			<i class="fa-light fa-dice-d20"></i>
+			{{{diceIcon system.damage}}}
 			{{#ifCond system.type '==' "melee"}}
 				{{system.damage}}{{#ifCond actor.mod_forca '!=' 0}}{{#ifCond actor.mod_forca '>' 0}}+{{/ifCond}}{{actor.mod_forca}}{{/ifCond}}{{#if system.bonus_damage}}+{{system.bonus_damage}}{{/if}}
 			{{else ifCond system.type '==' "throwing"}}

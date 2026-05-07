@@ -8,11 +8,7 @@ export function truncateString(string, number) {
 }
 
 export function signed_number(number, zero = '+0') {
-  if (number === '0') {
-    return zero;
-  } else if (number < 0) {
-    return number.toString();
-  } else {
-    return `+${number}`;
-  }
+  const n = Number(number);
+  if (isNaN(n) || n === 0) return zero;
+  return n < 0 ? n.toString() : `+${n}`;
 }

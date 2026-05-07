@@ -88,13 +88,18 @@ const CLASS_UUIDS = {
 
 export const importRetainerActor = async (json) => {
   const data = await _jsonToRetainerActorData(json);
+
+  // Extrair antes de Actor.create() para evitar que cleanData() do V14 mute data.system
+  const raceItemData = data.system.race;
+  delete data.system.race;
+
   const actor = await Actor.create(data);
 
-  if (data.system.race) {
-    await actor.createEmbeddedDocuments('Item', [data.system.race]);
+  if (raceItemData) {
+    await actor.createEmbeddedDocuments('Item', [raceItemData]);
   }
 
-  await _addRaceAndClassAbilities(actor, data.system.race, null);
+  await _addRaceAndClassAbilities(actor, raceItemData, null);
   await _addInventoryItems(actor, json.inventory_items);
 
   return actor;
@@ -102,20 +107,23 @@ export const importRetainerActor = async (json) => {
 
 export const importActor = async (json) => {
   const data = await _jsonToActorData(json);
+
+  // Extrair antes de Actor.create() para evitar que cleanData() do V14 mute data.system
+  const raceItemData = data.system.race;
+  const classItemData = data.system.class;
+  delete data.system.race;
+  delete data.system.class;
+
   const actor = await Actor.create(data);
 
   const itemsToAdd = [];
-  if (data.system.race) {
-    itemsToAdd.push(data.system.race);
-  }
-  if (data.system.class) {
-    itemsToAdd.push(data.system.class);
-  }
+  if (raceItemData) itemsToAdd.push(raceItemData);
+  if (classItemData) itemsToAdd.push(classItemData);
   if (itemsToAdd.length > 0) {
     await actor.createEmbeddedDocuments('Item', itemsToAdd);
   }
 
-  await _addRaceAndClassAbilities(actor, data.system.race, data.system.class);
+  await _addRaceAndClassAbilities(actor, raceItemData, classItemData);
 
   const vcSelections = _extractVariableConstructionSelections(json, actor);
   if (vcSelections) {

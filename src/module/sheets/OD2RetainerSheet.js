@@ -7,7 +7,7 @@ export default class OD2RetainerSheet extends foundry.appv1.sheets.ActorSheet {
     return foundry.utils.mergeObject(super.defaultOptions, {
       template: 'systems/olddragon2e/templates/sheets/retainer-sheet.hbs',
       classes: ['olddragon2e', 'sheet', 'retainer'],
-      width: 820,
+      width: 840,
       height: 780,
       tabs: [{ navSelector: '.tabs', contentSelector: '.section', initial: 'attacks' }],
       submitOnClose: true,

@@ -52,7 +52,7 @@ export class TalentRoll extends BaseRoll {
           alias: truncateString(this.characterName, 30),
         },
       },
-      { rollMode: this.rollMode(mode) },
+      this.toMessageOptions(mode),
     );
   }
 }

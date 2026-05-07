@@ -17,15 +17,32 @@ export class BaseRoll {
   }
 
   rollMode(mode) {
+    if (game.release.generation >= 14) {
+      switch (mode) {
+        case 'private':
+          return 'gm';
+        case 'blind':
+          return 'blind';
+        case 'self':
+          return 'self';
+        default:
+          return 'public';
+      }
+    }
     switch (mode) {
       case 'private':
-        return CONST.DICE_ROLL_MODES.PRIVATE;
+        return 'gmroll';
       case 'blind':
-        return CONST.DICE_ROLL_MODES.BLIND;
+        return 'blindroll';
       case 'self':
-        return CONST.DICE_ROLL_MODES.SELF;
+        return 'selfroll';
       default:
-        return CONST.DICE_ROLL_MODES.PUBLIC;
+        return 'roll';
     }
+  }
+
+  toMessageOptions(mode) {
+    const value = this.rollMode(mode);
+    return game.release.generation >= 14 ? { messageMode: value } : { rollMode: value };
   }
 }

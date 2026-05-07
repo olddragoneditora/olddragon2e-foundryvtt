@@ -148,7 +148,7 @@ async function handlePreUpdateCombat(combat, update) {
     if (!actor) continue;
     const isVisible = !combatant.hidden;
 
-    if (actor.type !== 'character') {
+    if (!['character', 'retainer'].includes(actor.type)) {
       await combat.setInitiative(combatant.id, INITIATIVE_NPC);
 
       if (isVisible) {
@@ -192,12 +192,17 @@ async function handlePreUpdateCombat(combat, update) {
 
   const initiativeReport = buildInitiativeReport(successes, failures, npcs, combatantsWithoutInitiative);
 
-  await ChatMessage.create({
+  const chatMessageData = {
     user: game.user.id,
     speaker: { alias: game.i18n.localize('olddragon2e.initiative.system') },
     content: initiativeReport,
-    type: CONST.CHAT_MESSAGE_STYLES.OTHER,
-  });
+  };
+  if (game.release.generation >= 14) {
+    chatMessageData.style = CONST.CHAT_MESSAGE_STYLES.OTHER;
+  } else {
+    chatMessageData.type = CONST.CHAT_MESSAGE_TYPES.OTHER;
+  }
+  await ChatMessage.create(chatMessageData);
 }
 
 async function handleCreateCombatant(combatant) {
@@ -220,7 +225,7 @@ async function handleCreateCombatant(combatant) {
     await roll.toMessage({ speaker: ChatMessage.getSpeaker({ actor }) });
   }
 
-  if (actor.type !== 'character') {
+  if (!['character', 'retainer'].includes(actor.type)) {
     await combat.setInitiative(combatant.id, INITIATIVE_NPC);
     return;
   }

@@ -39,11 +39,7 @@ export class OD2MonsterDataModel extends foundry.abstract.TypeDataModel {
       xp: new fields.StringField(),
       treasure: new fields.StringField(),
       treasure_lair: new fields.StringField(),
-      mv: new fields.NumberField({
-        required: true,
-        initial: 0,
-        integer: true,
-      }),
+      mv: new fields.StringField(),
       mvn: new fields.StringField(),
       mvv: new fields.StringField(),
       mvo: new fields.StringField(),
@@ -57,11 +53,13 @@ export class OD2MonsterDataModel extends foundry.abstract.TypeDataModel {
   }
 
   get mvc() {
-    return Math.floor(parseInt(this.mv) * 2);
+    const mv = parseInt(this.mv);
+    return isNaN(mv) ? '' : Math.floor(mv * 2);
   }
 
   get mve() {
-    return Math.floor(parseInt(this.mv) - 2);
+    const mv = parseInt(this.mv);
+    return isNaN(mv) ? '' : Math.floor(mv - 2);
   }
 
   get monster_attack_items() {

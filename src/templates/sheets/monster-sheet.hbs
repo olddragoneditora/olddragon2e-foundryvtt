@@ -21,7 +21,7 @@
                 </div>
                 {{!-- MO | Moral --}}
                 <div class="stat">
-                    <a class="font-bold mo-roll" title="Rolar teste de moral"><i class="fa-thin fa-dice-d20"></i>{{localize "olddragon2e.mo_short"}}</a>
+                    <a class="font-bold mo-roll" title="Rolar teste de moral"><i class="fa-thin fa-dice-d6"></i>{{localize "olddragon2e.mo_short"}}</a>
                     <input name="system.mo" type="text" value="{{system.mo}}" data-dtype="String">
                 </div>
 
@@ -72,7 +72,7 @@
                         {{!-- DV --}}
                         <div class="dv-value">
                             <input name="system.dv" type="text" value="{{system.dv}}" data-dtype="String">
-                            <a class="text-xs font-bold dv-roll" title="Rolar pontos de vida"><i class="fa-thin fa-dice-d20"></i>{{localize "olddragon2e.dv_short"}}</a>
+                            <a class="text-xs font-bold dv-roll" title="Rolar pontos de vida"><i class="fa-thin fa-dice-d8"></i>{{localize "olddragon2e.dv_short"}}</a>
                         </div>
                         {{!-- DV Bônus --}}
                         <div class="dv-bonus-value">
@@ -88,15 +88,13 @@
         <div class="body">
             {{!-- Header --}}
             <div class="header">
-                
-                {{!-- Nome --}}
-                <div class="name">
-                    <input name="name" type="text" value="{{actor.name}}">
-                    <label class="font-bold">{{localize "olddragon2e.name"}}</label>
-                </div>
-
-                {{!-- Conceito; Tamanho; Habitat --}}
+                {{!-- Nome; Conceito --}}
                 <div class="basic-info">
+                    {{!-- Nome --}}
+                    <div class="name">
+                        <input name="name" type="text" value="{{actor.name}}">
+                        <label class="font-bold">{{localize "olddragon2e.name"}}</label>
+                    </div>
                     {{!-- Conceito --}}
                     <div class="concept">
                         <select name="system.concept">
@@ -104,6 +102,12 @@
                         </select>
                         <label class="font-bold">{{localize "olddragon2e.concept"}}</label>
                     </div>
+                </div>
+
+                <hr>
+
+                {{!-- Tamanho; Alinhamento; Habitat --}}
+                <div class="additional-info">
                     {{!-- Tamanho --}}
                     <div class="size">
                         <select name="system.size">
@@ -111,26 +115,24 @@
                         </select>
                         <label class="font-bold">{{localize "olddragon2e.size"}}</label>
                     </div>
+                    {{!-- Alinhamento --}}
+                    <div class="alignment">
+                        <select name="system.alignment">
+                            {{selectOptions config.alignment selected=system.alignment localize=true}}
+                        </select>
+                        <label class="font-bold">{{localize "olddragon2e.alignment"}}</label>
+                    </div>
                     {{!-- Habitat --}}
                     <div class="habitat">
-                        <select name="system.habitat">
-                            {{selectOptions config.monster_habitats selected=system.habitat localize=true}}
-                        </select>
+                        <input type="text" name="system.habitat" value="{{system.habitat}}" />
                         <label class="font-bold">{{localize "olddragon2e.habitat"}}</label>
                     </div>
                 </div>
 
                 <hr>
 
-                {{!-- Alinhamento; Movimento; Experiência; Pontos de Vida --}}
-                <div class="additional-info">
-                    {{!-- Alinhamento --}}
-                    <div class="alignment">
-                        <label class="font-bold">{{localize "olddragon2e.alignment"}}</label>
-                        <select name="system.alignment">
-                            {{selectOptions config.alignment selected=system.alignment localize=true}}
-                        </select>
-                    </div>
+                {{!-- Movimento; Experiência; Pontos de Vida --}}
+                <div class="overview">
                     {{!-- Movimento --}}
                     <div class="mv">
                         <label class="font-bold">{{localize "olddragon2e.mv"}}</label>
