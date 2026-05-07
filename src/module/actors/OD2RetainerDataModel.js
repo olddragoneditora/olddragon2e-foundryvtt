@@ -296,4 +296,33 @@ export class OD2RetainerDataModel extends foundry.abstract.TypeDataModel {
 
     return null;
   }
+
+  get race_abilities() {
+    return getItemsOfActorOfType(this.parent, 'race_ability');
+  }
+
+  async getItemsFromUUIDs(uuids) {
+    const items = [];
+    for (const uuid of uuids) {
+      const item = await fromUuid(uuid);
+      if (item) items.push(item);
+    }
+    return items;
+  }
+
+  async syncRaceAbilities() {
+    const race = this.race;
+    if (!race) return [];
+
+    const raceAbilitiesUUIDs = race.system.race_abilities || [];
+    const raceAbilities = await this.getItemsFromUUIDs(raceAbilitiesUUIDs);
+    const existingAbilityNames = this.race_abilities.map((a) => a.name);
+
+    for (const raceAbility of raceAbilities) {
+      if (existingAbilityNames.includes(raceAbility.name)) continue;
+      await this.parent.createEmbeddedDocuments('Item', [raceAbility]);
+    }
+
+    return raceAbilities;
+  }
 }

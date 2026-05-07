@@ -75,6 +75,10 @@ export default class OD2RetainerSheet extends foundry.appv1.sheets.ActorSheet {
     }
 
     await super._onDropItem(event, data);
+
+    if (item.type === 'race') {
+      await this.actor.system.syncRaceAbilities();
+    }
   }
 
   async activateListeners(html) {
@@ -85,6 +89,7 @@ export default class OD2RetainerSheet extends foundry.appv1.sheets.ActorSheet {
       html.find('.item-update-quantity').change(this._onItemUpdateQuantity.bind(this));
       html.find('.item-delete').click(this._onItemDelete.bind(this));
       html.find('.odo-sync').click(this._onOdoSync.bind(this));
+      html.find('.become-adventurer-button').click(this._onBecomeAdventurer.bind(this));
     }
 
     // Owner-only Listeners
@@ -435,12 +440,72 @@ export default class OD2RetainerSheet extends foundry.appv1.sheets.ActorSheet {
     await item.update(updateObject);
   }
 
-  // Excluir habilidades de raça (no-op para ajudantes, mas mantido por simetria)
-  async removeRaceAbilities() {
-    const raceAbilities = this.actor.items.filter((item) => item.type === 'race_ability');
-    for (const ability of raceAbilities) {
-      await this.actor.deleteEmbeddedDocuments('Item', [ability.id]);
+  // Tornar Aventureiro
+  async _onBecomeAdventurer(event) {
+    event.preventDefault();
+    const confirmed = await Dialog.confirm({
+      title: 'Tornar Aventureiro',
+      content:
+        '<p class="text-center">Este ajudante está pronto para se tornar um aventureiro de 1º nível?<br>Será necessário vincular uma classe a ele.</p>',
+      yes: () => true,
+      no: () => false,
+    });
+    if (confirmed) {
+      await this.becomeAdventurer();
     }
+  }
+
+  async becomeAdventurer() {
+    const actor = this.actor;
+    const system = actor.system;
+
+    const itemsToCopy = [
+      ...system.weapon_items,
+      ...system.armor_items,
+      ...system.shield_items,
+      ...system.misc_items,
+      ...system.container_items,
+      ...system.vehicle_items,
+    ].map((item) => item.toObject());
+
+    if (system.race) {
+      itemsToCopy.unshift(system.race.toObject());
+    }
+
+    const characterData = {
+      name: actor.name,
+      img: actor.img,
+      type: 'character',
+      system: {
+        forca: system.forca,
+        destreza: system.destreza,
+        constituicao: system.constituicao,
+        inteligencia: system.inteligencia,
+        sabedoria: system.sabedoria,
+        carisma: system.carisma,
+        hp: { value: system.hp.value, max: system.hp.max },
+        ac_extra: system.ac_extra,
+        economy: {
+          cp: system.economy.cp,
+          sp: system.economy.sp,
+          gp: system.economy.gp,
+        },
+        details: { notes: system.details.notes },
+        current_xp: 0,
+      },
+    };
+
+    const newActor = await Actor.create(characterData);
+
+    if (itemsToCopy.length > 0) {
+      await newActor.createEmbeddedDocuments('Item', itemsToCopy);
+    }
+
+    if (system.race) {
+      await newActor.system.syncRaceAbilities();
+    }
+
+    newActor.sheet.render(true);
   }
 
   // Excluir item
@@ -477,7 +542,10 @@ export default class OD2RetainerSheet extends foundry.appv1.sheets.ActorSheet {
       yes: async () => {
         await this.actor.deleteEmbeddedDocuments('Item', [itemId]);
         if (itemType === 'race') {
-          await this.removeRaceAbilities();
+          const raceAbilityIds = this.actor.items.filter((item) => item.type === 'race_ability').map((item) => item.id);
+          if (raceAbilityIds.length > 0) {
+            await this.actor.deleteEmbeddedDocuments('Item', raceAbilityIds);
+          }
         }
       },
       no: () => {},
