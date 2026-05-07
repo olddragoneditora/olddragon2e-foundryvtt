@@ -18,7 +18,7 @@ export const renderActorDirectory = (app, html) => {
       'afterbegin',
       `
       <div class="header-actions action-buttons flexrow">
-        <button class="import-character-button"><i class="fas fa-file-import"></i>Importar Personagem do ODO</button>
+        <button class="import-character-button"><i class="fas fa-file-import"></i>Importar Ajudante ou Personagem do ODO</button>
       </div>
       `,
     );

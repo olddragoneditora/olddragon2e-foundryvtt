@@ -39,6 +39,20 @@ const CLASS_UUIDS = {
   legionario: 'Compendium.olddragon2e-legiao.classes.Item.AXvfz6DD6IM3JfjG',
 };
 
+export const importRetainerActor = async (json) => {
+  const data = await _jsonToRetainerActorData(json);
+  const actor = await Actor.create(data);
+
+  if (data.system.race) {
+    await actor.createEmbeddedDocuments('Item', [data.system.race]);
+  }
+
+  await _addRaceAndClassAbilities(actor, data.system.race, null);
+  await _addInventoryItems(actor, json.inventory_items);
+
+  return actor;
+};
+
 export const importActor = async (json) => {
   const data = await _jsonToActorData(json);
   const actor = await Actor.create(data);
@@ -126,6 +140,52 @@ const _jsonToActorData = async (json) => {
       },
       race: raceItem ? raceItem.toObject() : null,
       class: classItem ? classItem.toObject() : null,
+    },
+  };
+
+  if (json.picture) {
+    actorData.img = await _downloadAndSaveImage(json.picture);
+  }
+
+  return actorData;
+};
+
+const _jsonToRetainerActorData = async (json) => {
+  const raceUUID = RACE_UUIDS[json.character_race?.id];
+  const isLegiaoModuleAvailable = game.modules.get('olddragon2e-legiao')?.active;
+  let raceItem = null;
+  const raceName = json.character_race?.name;
+
+  if (raceUUID) {
+    raceItem = await fromUuid(raceUUID).catch(() => null);
+    if (!raceItem && raceUUID.startsWith('Compendium.olddragon2e-legiao') && !isLegiaoModuleAvailable) {
+      ui.notifications.warn(`A Raça "${raceName}" é exclusiva do módulo premium "Legião - A Era da Desolação".`);
+    } else if (!raceItem) {
+      ui.notifications.warn(`A Raça "${raceName}" não foi encontrada.`);
+    }
+  } else {
+    ui.notifications.warn(`Raça "${raceName}" não encontrada.`);
+  }
+
+  const actorData = {
+    name: json.name,
+    type: 'retainer',
+    system: {
+      odo_id: json.id,
+      level: json.level,
+      hp: { value: json.health_points, max: json.max_hp },
+      forca: json.forca,
+      destreza: json.destreza,
+      constituicao: json.constituicao,
+      inteligencia: json.inteligencia,
+      sabedoria: json.sabedoria,
+      carisma: json.carisma,
+      economy: { cp: json.money_cp, sp: json.money_sp, gp: json.money_gp },
+      details: { notes: json.notes },
+      profession: json.profession,
+      heroic_action_used: json.heroic_action_used,
+      url: json.url,
+      race: raceItem ? raceItem.toObject() : null,
     },
   };
 
@@ -302,6 +362,67 @@ const _removeInventoryItems = async (actor) => {
 
   if (itemIds.length > 0) {
     await actor.deleteEmbeddedDocuments('Item', itemIds);
+  }
+};
+
+/**
+ * Fetches retainer data from Old Dragon Online API and updates an existing retainer actor.
+ * @param {Actor} actor - The Foundry retainer actor to update
+ * @returns {Promise<Actor>} The updated actor
+ */
+export const updateRetainerActor = async (actor) => {
+  const odoId = actor.system.odo_id;
+  if (!odoId) {
+    ui.notifications.error('Este ajudante não possui um ID do Old Dragon Online.');
+    return actor;
+  }
+
+  const apiUrl = `https://olddragon.com.br/ajudantes/${odoId}.json`;
+
+  try {
+    const response = await fetch(apiUrl);
+    if (!response.ok) {
+      throw new Error(`Erro ao buscar dados: ${response.status}`);
+    }
+
+    const json = await response.json();
+
+    const updateData = {
+      name: json.name,
+      'system.level': json.level,
+      'system.hp.value': json.health_points,
+      'system.hp.max': json.max_hp,
+      'system.forca': json.forca,
+      'system.destreza': json.destreza,
+      'system.constituicao': json.constituicao,
+      'system.inteligencia': json.inteligencia,
+      'system.sabedoria': json.sabedoria,
+      'system.carisma': json.carisma,
+      'system.economy.cp': json.money_cp,
+      'system.economy.sp': json.money_sp,
+      'system.economy.gp': json.money_gp,
+      'system.profession': json.profession,
+      'system.heroic_action_used': json.heroic_action_used,
+      'system.url': json.url,
+      'system.details.notes': json.notes,
+    };
+
+    if (json.picture) {
+      const newImg = await _downloadAndSaveImage(json.picture);
+      updateData.img = newImg;
+    }
+
+    await actor.update(updateData);
+
+    await _removeInventoryItems(actor);
+    await _addInventoryItems(actor, json.inventory_items);
+
+    ui.notifications.info(`Ajudante "${json.name}" atualizado com sucesso!`);
+    return actor;
+  } catch (error) {
+    ui.notifications.error(`Erro ao atualizar ajudante: ${error.message}`);
+    console.error('Error updating retainer actor from ODO:', error);
+    return actor;
   }
 };
 

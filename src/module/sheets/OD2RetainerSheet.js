@@ -1,5 +1,6 @@
 import { showDialog } from '../helpers';
 import { AttackRoll, UnarmedAttackRoll, DamageRoll, KnockoutRoll, StatRoll, JPRoll, BARoll } from '../rolls';
+import { updateRetainerActor } from '../api/characterImporter';
 
 export default class OD2RetainerSheet extends foundry.appv1.sheets.ActorSheet {
   static get defaultOptions() {
@@ -83,6 +84,7 @@ export default class OD2RetainerSheet extends foundry.appv1.sheets.ActorSheet {
       html.find('.item-equip').click(this._onItemEquip.bind(this));
       html.find('.item-update-quantity').change(this._onItemUpdateQuantity.bind(this));
       html.find('.item-delete').click(this._onItemDelete.bind(this));
+      html.find('.odo-sync').click(this._onOdoSync.bind(this));
     }
 
     // Owner-only Listeners
@@ -97,6 +99,21 @@ export default class OD2RetainerSheet extends foundry.appv1.sheets.ActorSheet {
     }
 
     super.activateListeners(html);
+  }
+
+  async _onOdoSync(event) {
+    event.preventDefault();
+
+    const confirmed = await Dialog.confirm({
+      title: game.i18n.localize('olddragon2e.sync_from_odo'),
+      content: `<p>${game.i18n.localize('olddragon2e.sync_warning')}</p>`,
+      yes: () => true,
+      no: () => false,
+    });
+
+    if (confirmed) {
+      await updateRetainerActor(this.actor);
+    }
   }
 
   // Rolagem de ataque
