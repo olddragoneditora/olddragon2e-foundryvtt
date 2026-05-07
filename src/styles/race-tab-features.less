@@ -7,15 +7,61 @@
 
     .movement,
     .infravision,
-    .alignment-tendency {
+    .alignment {
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
+      flex-direction: column;
 
-      input {
-        width: 26px;
+      p {
         text-align: center;
+
+        img {
+          display: inline;
+          vertical-align: middle;
+          width: 14px;
+          height: 14px;
+          border: none;
+        }
+      }
+
+      .movement-section,
+      .infravision-section,
+      .alignment-section {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.5rem;
+        border: 1px solid #666;
+        border-radius: 3px;
+
+        .movement-base,
+        .movement-swim,
+        .movement-fly,
+        .movement-notes,
+        .infravision-value,
+        .infravision-notes,
+        .alignment-tendency,
+        .alignment-notes {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+
+          input {
+            width: 26px;
+            text-align: center;
+          }
+        }
+
+        .movement-notes,
+        .infravision-notes,
+        .alignment-notes {
+          input {
+            width: auto;
+            flex: 1;
+            margin-left: 0.5rem;
+            text-align: left;
+          }
+        }
       }
     }
   }

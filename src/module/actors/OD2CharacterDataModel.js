@@ -150,6 +150,7 @@ export class OD2CharacterDataModel extends foundry.abstract.TypeDataModel {
       campanha_url: new fields.StringField(),
       url: new fields.StringField(),
       rogue_talent_points: new fields.ObjectField({ initial: {} }),
+      variable_construction_selections: new fields.ObjectField({ initial: {} }),
     };
   }
 
@@ -164,6 +165,10 @@ export class OD2CharacterDataModel extends foundry.abstract.TypeDataModel {
   }
 
   get ac_base() {
+    for (const ability of this.race_abilities) {
+      const naturalArmor = ability.system.natural_armor;
+      if (naturalArmor && naturalArmor !== 0) return naturalArmor;
+    }
     return 10;
   }
 
@@ -326,7 +331,17 @@ export class OD2CharacterDataModel extends foundry.abstract.TypeDataModel {
   }
 
   get movement_swim() {
+    if (this.race?.system.movement_swim != null) {
+      return this.race.system.movement_swim;
+    }
     return Math.floor(this.current_movement / 2);
+  }
+
+  get movement_fly() {
+    if (this.race == null) {
+      return 0;
+    }
+    return this.race.system.movement_fly ?? 0;
   }
 
   get next_level_xp() {
@@ -353,12 +368,24 @@ export class OD2CharacterDataModel extends foundry.abstract.TypeDataModel {
   }
 
   get load_max() {
+    for (const ability of this.race_abilities) {
+      const maxLoadOverride = ability.system.max_load_override;
+      if (maxLoadOverride && maxLoadOverride !== 0) return maxLoadOverride;
+    }
+
     let maxLoadValue = this._findHighestValue(this.forca, this.constituicao);
 
     const equipped_containers = getItemsOfActorOfType(this.parent, 'container', ({ system }) => system.is_equipped);
 
     for (const item of equipped_containers) {
       maxLoadValue += item.system.increases_load_by || 0;
+    }
+
+    for (const ability of this.race_abilities) {
+      const loadModifier = ability.system.load_modifier;
+      if (loadModifier && loadModifier !== 0) {
+        maxLoadValue += loadModifier;
+      }
     }
 
     return maxLoadValue;
@@ -372,11 +399,24 @@ export class OD2CharacterDataModel extends foundry.abstract.TypeDataModel {
     let currentLoadValue = 0;
     const itemTypes = ['weapon', 'armor', 'shield', 'misc', 'container'];
 
+    let armorWeightModifier = 0;
+    for (const ability of this.race_abilities) {
+      const modifier = ability.system.armor_weight_modifier;
+      if (modifier && modifier !== 0) {
+        armorWeightModifier = modifier;
+        break;
+      }
+    }
+
     for (const type of itemTypes) {
       const items = getItemsOfActorOfType(this.parent, type);
 
       for (const item of items) {
-        currentLoadValue += item.system.total_weight;
+        if (type === 'armor' && armorWeightModifier !== 0 && item.system.is_equipped) {
+          currentLoadValue += Math.max(1, item.system.total_weight + armorWeightModifier);
+        } else {
+          currentLoadValue += item.system.total_weight;
+        }
       }
     }
 
@@ -504,6 +544,24 @@ export class OD2CharacterDataModel extends foundry.abstract.TypeDataModel {
     return getItemsOfActorOfType(this.parent, 'race_ability');
   }
 
+  get natural_weapon_attacks() {
+    const attacks = [];
+    for (const ability of this.race_abilities) {
+      const nw = ability.system.natural_weapon;
+      if (nw?.damage) {
+        attacks.push({
+          name: ability.name,
+          damage: nw.damage,
+          damage_type: nw.damage_type,
+          weapon_size: nw.weapon_size,
+          damage_type_key: `olddragon2e.damage_types.${nw.damage_type}`,
+          weapon_size_key: `olddragon2e.weapon_sizes.${nw.weapon_size}`,
+        });
+      }
+    }
+    return attacks;
+  }
+
   // Habilidades de Classe
   async updateClassAbilities(uuids) {
     const classAbilities = await this.getItemsFromUUIDs(uuids);
@@ -555,12 +613,38 @@ export class OD2CharacterDataModel extends foundry.abstract.TypeDataModel {
   get rogue_talent_race_bonus() {
     const bonuses = {};
     for (const ability of this.race_abilities) {
-      const talent = ability.system.rogue_talent;
-      if (talent && talent !== 'none') {
-        bonuses[talent] = (bonuses[talent] || 0) + 1;
+      for (const field of ['rogue_talent', 'rogue_talent_2']) {
+        const talent = ability.system[field];
+        if (talent && talent !== 'none') {
+          bonuses[talent] = (bonuses[talent] || 0) + 1;
+        }
       }
     }
     return bonuses;
+  }
+
+  raceBonusDamage(weapon) {
+    const meetsCondition = (condition) => {
+      if (!condition || condition === 'none') return false;
+      if (['arrow', 'bolt', 'bolt_small', 'polearm', 'two_handed', 'versatile', 'magic_item'].includes(condition))
+        return weapon.system[condition];
+      if (condition === 'weight_1') return weapon.system.weight_in_load === 1;
+      if (condition === 'weight_2') return weapon.system.weight_in_load === 2;
+      if (condition === 'weight_3') return weapon.system.weight_in_load === 3;
+      if (['melee', 'throwing', 'ranged', 'ammunition'].includes(condition)) return weapon.system.type === condition;
+      if (['bludgeoning', 'piercing', 'slashing'].includes(condition)) return weapon.system.damage_type === condition;
+      return false;
+    };
+
+    let bonus = 0;
+    for (const ability of this.race_abilities) {
+      const { bonus_damage, bonus_damage_condition, bonus_damage_condition_2 } = ability.system;
+      if (!bonus_damage) continue;
+      if (meetsCondition(bonus_damage_condition) || meetsCondition(bonus_damage_condition_2)) {
+        bonus += bonus_damage;
+      }
+    }
+    return bonus;
   }
 
   get rogue_talent_scores() {

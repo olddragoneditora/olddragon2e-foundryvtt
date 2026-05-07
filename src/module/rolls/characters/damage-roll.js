@@ -23,6 +23,10 @@ export class DamageRoll extends BaseRoll {
     this.item = item;
   }
 
+  get raceBonusDamage() {
+    return this.actor.system.raceBonusDamage(this.item);
+  }
+
   get itemAttackType() {
     switch (this.item.system.type) {
       case 'melee':
@@ -49,6 +53,10 @@ export class DamageRoll extends BaseRoll {
       formula += ` + ${this.item.system.bonus_damage} (bônus)`;
     }
 
+    if (this.raceBonusDamage !== 0) {
+      formula += ` + ${this.raceBonusDamage} (bônus racial)`;
+    }
+
     return formula;
   }
 
@@ -65,6 +73,10 @@ export class DamageRoll extends BaseRoll {
 
     if (this.item.system.bonus_damage) {
       formula += `+${this.item.system.bonus_damage}`;
+    }
+
+    if (this.raceBonusDamage !== 0) {
+      formula += `+${this.raceBonusDamage}`;
     }
 
     if (bonus) {

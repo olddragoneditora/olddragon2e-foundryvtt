@@ -162,7 +162,7 @@
         <div class="body">
             {{!-- Header --}}
             <div class="header">
-                {{!-- Nome; Raça; Classe; Nível --}}
+                {{!-- Nome; Raça; Classe; Nível; Alinhamento --}}
                 <div class="basic-info">
                     {{!-- Nome --}}
                     <div>
@@ -205,19 +205,19 @@
                         </select>
                         <label class="font-bold">{{localize "olddragon2e.level"}}</label>
                     </div>
+                    {{!-- Alinhamento --}}
+                    <div class="alignment-select">
+                        <select name="system.details.alignment">
+                            {{selectOptions config.alignment selected=system.details.alignment localize=true}}
+                        </select>
+                        <label class="font-bold">{{localize "olddragon2e.alignment"}}</label>
+                    </div>
                 </div>
 
                 <hr>
 
-                {{!-- Alinhamento; Movimento; Pontos de Experiência; PV --}}
+                {{!-- Movimento; Pontos de Experiência; PV --}}
                 <div class="additional-info">
-                    {{!-- Alinhamento --}}
-                    <div class="alignment">
-                        <label class="font-bold">{{localize "olddragon2e.alignment"}}</label>
-                        <select name="system.details.alignment">
-                            {{selectOptions config.alignment selected=system.details.alignment localize=true}}
-                        </select>
-                    </div>
                     {{!-- Movimento --}}
                     <div class="mv">
                         <label class="font-bold">{{localize "olddragon2e.mv"}}</label>
@@ -241,6 +241,11 @@
                             <div class="mv-value">
                                 <input name="system.movement_swim" type="text" value="{{system.movement_swim}}" data-dtype="Number" disabled>
                                 <label class="text-xs">{{localize "olddragon2e.mv_swim"}}</label>
+                            </div>
+                            {{!-- Voar --}}
+                            <div class="mv-value">
+                                <input name="system.movement_fly" type="text" value="{{system.movement_fly}}" data-dtype="Number" disabled>
+                                <label class="text-xs">{{localize "olddragon2e.mv_fly"}}</label>
                             </div>
                         </div>
                     </div>

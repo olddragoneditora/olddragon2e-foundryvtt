@@ -1,14 +1,85 @@
 <div class="race-ability-tab-mechanics">
     {{!-- Características --}}
     <div class="mechanics">
-        {{!-- % de Bônus na XP --}}
-        <div class="xp">
-            <label class="font-bold">{{localize "olddragon2e.race_ability_xp"}}</label>
-            <input name="system.xp" type="text" value="{{system.xp}}" data-dtype="Number">
+        {{!-- Usos Diários --}}
+        <div class="daily-uses">
+            <label class="font-bold">{{localize "olddragon2e.race_ability.daily_uses"}}</label>
+            <input name="system.daily_uses" type="text" value="{{system.daily_uses}}" data-dtype="Number">
+        </div>
+        {{!-- Armadura Natural --}}
+        <div class="natural-armor">
+            <label class="font-bold" title="Substitui a CA base">{{localize "olddragon2e.race_ability.natural_armor"}}&nbsp;<i class="fa-solid fa-circle-info"></i></label>
+            <input name="system.natural_armor" type="number" value="{{system.natural_armor}}" data-dtype="Number">
+        </div>
+        {{!-- Modificador de Carga --}}
+        <div class="load-modifier">
+            <label class="font-bold" title="Bônus no valor de Carga Máxima">{{localize "olddragon2e.race_ability.load_modifier"}}&nbsp;<i class="fa-solid fa-circle-info"></i></label>
+            <input name="system.load_modifier" type="number" value="{{system.load_modifier}}" data-dtype="Number">
+        </div>
+        {{!-- Sobrescrever Carga --}}
+        <div class="max-load-override">
+            <label class="font-bold" title="Substitui o valor de Carga Máxima">{{localize "olddragon2e.race_ability.max_load_override"}}&nbsp;<i class="fa-solid fa-circle-info"></i></label>
+            <input name="system.max_load_override" type="number" value="{{system.max_load_override}}" data-dtype="Number">
+        </div>
+        {{!-- Modificador de Carga de Armaduras --}}
+        <div class="armor-weight-modifier">
+            <label class="font-bold" title="Modifica a carga de armaduras equipadas">{{localize "olddragon2e.race_ability.armor_weight_modifier"}}&nbsp;<i class="fa-solid fa-circle-info"></i></label>
+            <input name="system.armor_weight_modifier" type="number" value="{{system.armor_weight_modifier}}" data-dtype="Number">
+        </div>
+        {{!-- Bônus no Dano --}}
+        <div class="bonus-damage">
+            <label class="font-bold" title="Bônus na rolagem de dano em armas equipadas com ao menos uma das condições selecionadas">{{localize "olddragon2e.race_ability.bonus_damage"}}&nbsp;<i class="fa-solid fa-circle-info"></i></label>
+            <div class="bonus-damage-fields">
+                <div class="bonus-damage-conditions">
+                    <label title="A arma deve cumprir ao menos uma das condições para que o bônus seja aplicado">{{localize "olddragon2e.race_ability.bonus_damage_condition"}}&nbsp;<i class="fa-solid fa-circle-info"></i></label>
+                    <div class="bonus-damage-selectors">
+                        <label>1&#41;</label>
+                        <select name="system.bonus_damage_condition">
+                            {{selectOptions config.bonus_damage_conditions selected=system.bonus_damage_condition localize=true}}
+                        </select>
+                        <label>2&#41;</label>
+                        <select name="system.bonus_damage_condition_2">
+                            {{selectOptions config.bonus_damage_conditions selected=system.bonus_damage_condition_2 localize=true}}
+                        </select>
+                    </div>
+                </div>
+                <div class="bonus-damage-value">
+                    <label>{{localize "olddragon2e.bonus"}}</label>
+                    <input name="system.bonus_damage" type="number" value="{{system.bonus_damage}}" data-dtype="Number">
+                </div>
+            </div>
+        </div>
+        {{!-- Arma Natural --}}
+        <div class="natural-weapon">
+            <label class="font-bold">{{localize "olddragon2e.race_ability.natural_weapon"}}</label>
+            <div class="natural-weapon-fields">
+                <div class="natural-weapon-field">
+                    <label>{{localize "olddragon2e.damage"}} <i class="fa-solid fa-circle-info" title='Ex.: "1d4", "2d6" ou "1d8+1"'></i></label>
+                    <input name="system.natural_weapon.damage" type="text" value="{{system.natural_weapon.damage}}" placeholder="Ex: 1d4">
+                </div>
+                <div class="natural-weapon-field">
+                    <label>{{localize "olddragon2e.damage_type"}}</label>
+                    <select name="system.natural_weapon.damage_type">
+                        <option value="none" {{#ifCond system.natural_weapon.damage_type '==' 'none'}}selected{{/ifCond}}>{{localize "olddragon2e.damage_types.none"}}</option>
+                        <option value="bludgeoning" {{#ifCond system.natural_weapon.damage_type '==' 'bludgeoning'}}selected{{/ifCond}}>{{localize "olddragon2e.damage_types.bludgeoning"}}</option>
+                        <option value="piercing" {{#ifCond system.natural_weapon.damage_type '==' 'piercing'}}selected{{/ifCond}}>{{localize "olddragon2e.damage_types.piercing"}}</option>
+                        <option value="slashing" {{#ifCond system.natural_weapon.damage_type '==' 'slashing'}}selected{{/ifCond}}>{{localize "olddragon2e.damage_types.slashing"}}</option>
+                    </select>
+                </div>
+                <div class="natural-weapon-field">
+                    <label>{{localize "olddragon2e.weapon_sizes.label"}}</label>
+                    <select name="system.natural_weapon.weapon_size">
+                        <option value="none" {{#ifCond system.natural_weapon.weapon_size '==' 'none'}}selected{{/ifCond}}>{{localize "olddragon2e.weapon_sizes.none"}}</option>
+                        <option value="small" {{#ifCond system.natural_weapon.weapon_size '==' 'small'}}selected{{/ifCond}}>{{localize "olddragon2e.weapon_sizes.small"}}</option>
+                        <option value="medium" {{#ifCond system.natural_weapon.weapon_size '==' 'medium'}}selected{{/ifCond}}>{{localize "olddragon2e.weapon_sizes.medium"}}</option>
+                        <option value="large" {{#ifCond system.natural_weapon.weapon_size '==' 'large'}}selected{{/ifCond}}>{{localize "olddragon2e.weapon_sizes.large"}}</option>
+                    </select>
+                </div>
+            </div>
         </div>
         {{!-- Bônus de Jogada de Proteção --}}
         <div class="jp">
-            <div><strong>{{localize "olddragon2e.race_ability_jp"}}</strong></div>
+            <div><strong>{{localize "olddragon2e.race_ability.bonus_jp"}}</strong></div>
             <div class="jp-values">
                 <div class="jp-value">
                     <label class="font-bold">{{localize "olddragon2e.jpd_short"}}</label>
@@ -24,17 +95,63 @@
                 </div>
             </div>
         </div>
-        {{!-- Bônus no Talento de Ladrão --}}
+        {{!-- Bônus em Talentos de Ladrão --}}
         <div class="rogue-talent">
-            <label class="font-bold">{{localize "olddragon2e.race_ability_rogue_talent"}}</label>
-            <select name="system.rogue_talent">
-                {{selectOptions config.rogue_talents selected=system.rogue_talent localize=true}}
-            </select>
+            <label class="font-bold">{{localize "olddragon2e.race_ability.rogue_talent_bonus"}}</label>
+            <div class="rogue-talent-selectors">
+                <div>
+                    <label>1&#41;</label>
+                    <select name="system.rogue_talent">
+                        {{selectOptions config.rogue_talents selected=system.rogue_talent localize=true}}
+                    </select>
+                </div>
+                <div>
+                    <label>2&#41;</label>
+                    <select name="system.rogue_talent_2">
+                        {{selectOptions config.rogue_talents selected=system.rogue_talent_2 localize=true}}
+                    </select>
+                </div>
+            </div>
         </div>
-        {{!-- Bônus no Dano com Arco --}}
-        <div class="checkbox">
-            <label class="font-bold">{{localize "olddragon2e.race_ability_bonus_damage_archery"}}</label>
-            <input name="system.bonus_damage_archery" type="checkbox" {{checked system.bonus_damage_archery}}>
+        {{!-- Construção Variável --}}
+        <div class="variable-construction">
+            <div class="choices-count-row">
+                <label class="font-bold" title="Quantidade de características extras que o jogador pode escolher. O valor 0 desativa a mecânica.">{{localize "olddragon2e.race_ability.variable_construction"}}&nbsp;<i class="fa-solid fa-circle-info"></i></label>
+                <input name="system.variable_construction.choices_count" type="number" value="{{system.variable_construction.choices_count}}" data-dtype="Number" min="0">
+            </div>
+            {{#if system.variable_construction.choices_count}}
+            <div class="available-options">
+                <div class="available-options-header">
+                    <label class="font-bold">{{localize "olddragon2e.race_ability.available_options"}}</label>
+                    <a class="variable-construction-option-add"><i class="fa-solid fa-plus"></i> {{localize "olddragon2e.create"}}</a>
+                </div>
+                {{#if (gt system.variable_construction.available_options.length 0)}}
+                <ol>
+                    {{#each system.variable_construction.available_options as |option|}}
+                    <li class="available-option" data-index="{{@index}}">
+                        <div class="option-fields">
+                            <div class="option-field">
+                                <input name="system.variable_construction.available_options.{{@index}}.key" type="text" value="{{option.key}}" placeholder="{{localize "olddragon2e.key"}}">
+                                <a class="variable-construction-option-delete" data-index="{{@index}}" title="{{localize 'olddragon2e.delete'}}"><i class="fa-solid fa-trash"></i></a>
+                            </div>
+                            <div class="option-field">
+                                <input name="system.variable_construction.available_options.{{@index}}.name" type="text" value="{{option.name}}" placeholder="{{localize "olddragon2e.name"}}">
+                            </div>
+                            <div class="option-field option-description">
+                                <textarea name="system.variable_construction.available_options.{{@index}}.description" placeholder="{{localize "olddragon2e.description"}}">{{option.description}}</textarea>
+                            </div>
+                        </div>
+                    </li>
+                    {{/each}}
+                </ol>
+                {{/if}}
+            </div>
+            {{/if}}
+        </div>
+        {{!-- % de Bônus na XP --}}
+        <div class="xp">
+            <label class="font-bold">{{localize "olddragon2e.race_ability.bonus_xp"}}</label>
+            <input name="system.xp" type="text" value="{{system.xp}}" data-dtype="Number">
         </div>
     </div>
 </div>

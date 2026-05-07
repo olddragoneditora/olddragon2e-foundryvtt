@@ -13,12 +13,12 @@
                         <span><strong>{{ability.name}}</strong>:</span>
                         {{#hasDailyUses ability.system.daily_uses}}
                             <div class="daily-uses">
-                                {{#generateCheckboxes 
-                                ability.system.daily_uses 
-                                actor.system.level 
-                                (lookup ability.flags.olddragon2e 'daily-uses') 
+                                {{#generateClassAbilityDailyUses
+                                ability.system.daily_uses
+                                actor.system.level
+                                (lookup ability.flags.olddragon2e 'daily-uses')
                                 ability._id}}
-                                {{/generateCheckboxes}}
+                                {{/generateClassAbilityDailyUses}}
                             </div>
                         {{/hasDailyUses}}
                     </div>

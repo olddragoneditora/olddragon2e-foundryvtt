@@ -17,11 +17,34 @@ export class OD2RaceAbilityDataModel extends foundry.abstract.TypeDataModel {
           default: false,
         }),
       }),
-      bonus_damage_archery: new fields.BooleanField({
-        default: false,
-      }),
+      bonus_damage: new fields.NumberField({ integer: true, initial: 0 }),
+      bonus_damage_condition: new fields.StringField({ default: 'none' }),
+      bonus_damage_condition_2: new fields.StringField({ default: 'none' }),
       rogue_talent: new fields.StringField({
         default: 'none',
+      }),
+      rogue_talent_2: new fields.StringField({
+        default: 'none',
+      }),
+      daily_uses: new fields.NumberField({ integer: true, initial: 0 }),
+      natural_armor: new fields.NumberField({ integer: true, initial: 0 }),
+      load_modifier: new fields.NumberField({ integer: true, initial: 0 }),
+      max_load_override: new fields.NumberField({ integer: true, initial: 0 }),
+      armor_weight_modifier: new fields.NumberField({ integer: true, initial: 0 }),
+      natural_weapon: new fields.SchemaField({
+        damage: new fields.StringField({ initial: '' }),
+        damage_type: new fields.StringField({ initial: 'none' }),
+        weapon_size: new fields.StringField({ initial: 'none' }),
+      }),
+      variable_construction: new fields.SchemaField({
+        choices_count: new fields.NumberField({ integer: true, initial: 0 }),
+        available_options: new fields.ArrayField(
+          new fields.SchemaField({
+            key: new fields.StringField({ initial: '' }),
+            name: new fields.StringField({ initial: '' }),
+            description: new fields.StringField({ initial: '' }),
+          }),
+        ),
       }),
     };
   }

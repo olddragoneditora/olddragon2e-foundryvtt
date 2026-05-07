@@ -8,7 +8,19 @@
             <ol class="item-list">
                 {{#each actor.system.race_abilities as |ability|}}
                 <li class="item" data-item-id="{{ability._id}}">
-                    <strong>{{ability.name}}</strong>:
+                    <div class="ability-header">
+                        <span class="ability-level">1</span>
+                        <span><strong>{{ability.name}}</strong>:</span>
+                        {{#if ability.system.daily_uses}}
+                        <div class="daily-uses">
+                            {{#generateRaceAbilityDailyUses
+                            ability.system.daily_uses
+                            (lookup ability.flags.olddragon2e 'daily-uses')
+                            ability._id}}
+                            {{/generateRaceAbilityDailyUses}}
+                        </div>
+                        {{/if}}
+                    </div>
                     {{{ability.system.description}}}
                     {{#if (or ability.system.jp.jpc ability.system.jp.jpd ability.system.jp.jps)}}
                     <div class="jp-selector">
@@ -27,6 +39,11 @@
                         </select>
                     </div>
                     {{/if}}
+                    {{#if ability.system.variable_construction.choices_count}}
+                    <div class="variable-construction">
+                        {{generateVariableConstructionSelectors ability actor.system.variable_construction_selections}}
+                    </div>
+                    {{/if}}
                 </li>
                 {{/each}}
             </ol>
@@ -38,12 +55,41 @@
         {{/if}}
     </div>
 
+    {{!-- Movimento - Observações --}}
+    {{#if system.race.system.movement_notes}}
+        <p class="movement-notes">
+            <img src="systems/olddragon2e/assets/icons/movement.svg" alt="Movimento">
+            <strong>{{localize "olddragon2e.mv"}}:</strong>
+            <span>{{system.race.system.movement_notes}}</span>
+        </p>
+    {{/if}}
+
     {{!-- Infravisão --}}
     {{#if system.race.system.infravision}}
-        <div class="infravision">
+        <p>
             <i class="fa-solid fa-eye fa-sm"></i>
             <strong>{{localize "olddragon2e.infravision"}}:</strong>
-            <span>{{system.race.system.infravision}}m</span>
-        </div>
+            <span> de {{system.race.system.infravision}} metros.</span>
+            {{#if system.race.system.infravision_notes}}
+                <span> {{system.race.system.infravision_notes}}</span>
+            {{/if}}
+        </p>
+    {{/if}}
+
+    {{!-- Alinhamento - Observações/Tendência --}}
+    {{#if system.race}}
+        <p class="alignment-notes">
+            <img src="systems/olddragon2e/assets/icons/alignment.svg" alt="Tendência de Alinhamento">
+            <strong>{{localize "olddragon2e.alignment_tendency"}}:</strong>
+            {{#if system.race.system.alignment_notes}}
+                <span>{{system.race.system.alignment_notes}}.</span>
+            {{else}}
+                {{#ifCond system.race.system.alignment_tendency '!=' "none"}}
+                <span>tendem a ser {{localize (lookup config.alignment_tendency system.race.system.alignment_tendency)}}.</span>
+                {{else}}
+                <span>{{localize "olddragon2e.any"}}.</span>
+                {{/ifCond}}
+            {{/if}}
+        </p>
     {{/if}}
 </div>
