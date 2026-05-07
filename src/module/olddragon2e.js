@@ -1,5 +1,6 @@
 // Import JavaScript modules
 import { registerHandlebarsHelper } from './helpers';
+import { calculateAttributeModifier } from './helpers/modifiers.js';
 import { preloadTemplates } from './preloadTemplates.js';
 
 import './macros/index.js';
@@ -10,6 +11,7 @@ import OD2Item from './OD2Item.js';
 import OD2ItemSheet from './sheets/OD2ItemSheet.js';
 import OD2CharacterSheet from './sheets/OD2CharacterSheet.js';
 import OD2MonsterSheet from './sheets/OD2MonsterSheet.js';
+import OD2RetainerSheet from './sheets/OD2RetainerSheet.js';
 import { renderActorDirectory } from './system/renderActorDirectory.js';
 import { registerSettings, getInitiativeType } from './settings.js';
 
@@ -37,6 +39,7 @@ import {
 
 import { OD2CharacterDataModel } from './actors/OD2CharacterDataModel.js';
 import { OD2MonsterDataModel } from './actors/OD2MonsterDataModel.js';
+import { OD2RetainerDataModel } from './actors/OD2RetainerDataModel.js';
 import {
   OD2WeaponDataModel,
   OD2ArmorDataModel,
@@ -63,6 +66,7 @@ Hooks.once('init', async () => {
   CONFIG.Actor.dataModels = {
     character: OD2CharacterDataModel,
     monster: OD2MonsterDataModel,
+    retainer: OD2RetainerDataModel,
   };
 
   CONFIG.Item.dataModels = {
@@ -92,6 +96,11 @@ Hooks.once('init', async () => {
   foundry.documents.collections.Actors.registerSheet('olddragon2e', OD2MonsterSheet, {
     types: ['monster'],
     label: 'Monstro/Inimigo',
+    makeDefault: true,
+  });
+  foundry.documents.collections.Actors.registerSheet('olddragon2e', OD2RetainerSheet, {
+    types: ['retainer'],
+    label: 'Ajudante',
     makeDefault: true,
   });
 
@@ -162,4 +171,15 @@ Hooks.on('renderChatLog', (_app, html) => Chat.addChatListeners(html));
 
 Hooks.on('updateItem', (item, data, options, userId) => {
   console.log('olddragon2e | Hooks.on(updateItem)', item, data, options, userId);
+});
+
+Hooks.on('preUpdateActor', (actor, data) => {
+  if (actor.type !== 'retainer') return;
+  if (!foundry.utils.hasProperty(data, 'system.constituicao')) return;
+
+  const newConstituicao = data.system.constituicao;
+  if (newConstituicao === actor.system.constituicao) return;
+
+  const newMod = calculateAttributeModifier(newConstituicao);
+  foundry.utils.setProperty(data, 'system.hp.max', Math.max(1, 4 + newMod));
 });

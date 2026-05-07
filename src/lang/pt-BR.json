@@ -1,6 +1,7 @@
 {
   "TYPES.Actor.character": "Personagem",
   "TYPES.Actor.monster": "Monstro/Inimigo",
+  "TYPES.Actor.retainer": "Ajudante",
   "TYPES.Item.weapon": "Arma",
   "TYPES.Item.armor": "Armadura",
   "TYPES.Item.shield": "Escudo",
@@ -181,6 +182,10 @@
     "personality": "Personalidade",
     "background": "Histórico",
     "notes": "Anotações",
+    "profession": "Profissão Anterior",
+    "heroic_action": "Ação Heroica",
+    "heroic_action_used": "Uma vez por aventura",
+    "heroic_action_description": "transforma qualquer teste (ataque, teste de atributo ou jogada de proteção) em um teste Muito Fácil.",
     "xp": "Experiência",
     "xp_short": "XP",
     "xp_long": "Pontos de Experiência",
@@ -375,6 +380,12 @@
       "monster": {
         "attacks_tab": "Ataques",
         "info_tab": "Informações"
+      },
+      "retainer": {
+        "attacks_tab": "Ataques",
+        "heroic_action_tab": "Ação Heroica",
+        "equipment_tab": "Equipamentos",
+        "details_tab": "Detalhes"
       },
       "race": {
         "about_tab": "Sobre",
