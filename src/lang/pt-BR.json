@@ -457,6 +457,16 @@
 
     "sync_from_odo": "Sincronizar com Old Dragon Online",
     "sync_warning": "Ao sincronizar, iremos baixar as alterações realizadas na ficha do Old Dragon Online e sobrescrever esta ficha. Alterações realizadas aqui que não foram feitas no Old Dragon Online serão perdidas. Deseja continuar?",
+    "odo_connect": "Conectar ao OldDragon.com.br",
+    "odo_disconnect": "Desconectar",
+    "odo_connected_as": "Conectado como {name}",
+    "odo_consent_intro": "Conectar sua conta permite escolher um personagem seu na lista e enviar seus pontos de vida de volta para o site.",
+    "odo_consent_permissions": "O módulo poderá ver seus personagens e atualizar seus pontos de vida.",
+    "odo_consent_per_browser": "A conexão vale só neste navegador — cada jogador conecta a própria conta.",
+    "odo_consent_revoke": "Você pode desfazer quando quiser em Conta › Aplicativos conectados.",
+    "odo_device_instructions": "Abra o endereço abaixo e informe o código para autorizar:",
+    "odo_waiting_authorization": "Aguardando a autorização no site…",
+    "odo_connect_failed": "Não foi possível conectar",
 
     "initiative": {
       "test": "Teste de Iniciativa",

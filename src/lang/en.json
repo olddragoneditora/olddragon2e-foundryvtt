@@ -457,6 +457,16 @@
 
     "sync_from_odo": "Sync from Old Dragon Online",
     "sync_warning": "Syncing will download changes from the Old Dragon Online character sheet and overwrite this sheet. Any changes made here that were not made on Old Dragon Online will be lost. Do you want to continue?",
+    "odo_connect": "Connect to OldDragon.com.br",
+    "odo_disconnect": "Disconnect",
+    "odo_connected_as": "Connected as {name}",
+    "odo_consent_intro": "Connecting your account lets you pick one of your characters from the list and send hit points back to the site.",
+    "odo_consent_permissions": "The module will be able to see your characters and update their hit points.",
+    "odo_consent_per_browser": "The connection only applies to this browser — each player connects their own account.",
+    "odo_consent_revoke": "You can revoke it anytime under Account › Connected apps.",
+    "odo_device_instructions": "Open the address below and enter the code to authorize:",
+    "odo_waiting_authorization": "Waiting for authorization on the site…",
+    "odo_connect_failed": "Could not connect",
 
     "initiative": {
       "test": "Initiative Test",

@@ -1,4 +1,20 @@
 <div class="character-importer">
+    <div class="odo-connection">
+        {{#if connected}}
+            <p class="odo-connected">{{localize "olddragon2e.odo_connected_as" name=accountName}}
+                <button type="button" class="button odo-disconnect-button">{{localize "olddragon2e.odo_disconnect"}}</button>
+            </p>
+        {{else}}
+            <button type="button" class="button odo-connect-button"><i class="fa-solid fa-link"></i>{{localize "olddragon2e.odo_connect"}}</button>
+            <p class="odo-consent">{{localize "olddragon2e.odo_consent_intro"}}</p>
+            <ul class="odo-consent-list">
+                <li>{{localize "olddragon2e.odo_consent_permissions"}}</li>
+                <li>{{localize "olddragon2e.odo_consent_per_browser"}}</li>
+                <li>{{localize "olddragon2e.odo_consent_revoke"}}</li>
+            </ul>
+        {{/if}}
+    </div>
+    <hr>
     <p>Insira o link da página da ficha do <strong>ajudante</strong> ou <strong>personagem</strong> escolhido no <a href="{{odoBaseUrl}}">ODO</a>.</p>
     <p>Utilize o botão “Compartilhar”, ou copie a URL no browser.</p>
     <input name="character-importer" id="character-importer-url-text" type="text">{{character-importer}}</input>

@@ -1,5 +1,7 @@
 import { importActor, importRetainerActor } from '../api/characterImporter';
 import { isOdoUrl, odoBaseUrl } from '../api/odoClient.js';
+import { requestDeviceCode, pollForToken, disconnect } from '../auth/deviceFlow.js';
+import { isConnected, storeTokens } from '../auth/tokenStore.js';
 
 class CharacterImporterDialog extends Application {
   constructor(options = {}) {
@@ -19,7 +21,7 @@ class CharacterImporterDialog extends Application {
 
   /** @override */
   getData() {
-    return { odoBaseUrl: odoBaseUrl() };
+    return { odoBaseUrl: odoBaseUrl(), connected: isConnected() };
   }
 
   /** @override */
@@ -27,11 +29,44 @@ class CharacterImporterDialog extends Application {
     super.activateListeners(html);
     html.find('.cancel-button').on('click', this._onCancel.bind(this));
     html.find('.character-importer-button').on('click', this._onCharacterImporter.bind(this));
+    html.find('.odo-connect-button').on('click', this._onConnect.bind(this));
+    html.find('.odo-disconnect-button').on('click', this._onDisconnect.bind(this));
   }
 
   async _onCancel(event) {
     event.preventDefault();
     await this.close();
+  }
+
+  async _onConnect(event) {
+    event.preventDefault();
+    try {
+      const device = await requestDeviceCode();
+      const instructions = `
+        <p>${game.i18n.localize('olddragon2e.odo_device_instructions')}</p>
+        <p><a href="${device.verification_uri_complete}" target="_blank">${device.verification_uri}</a></p>
+        <p class="odo-user-code"><strong>${device.user_code}</strong></p>
+        <p>${game.i18n.localize('olddragon2e.odo_waiting_authorization')}</p>`;
+      const waiting = new Dialog({
+        title: game.i18n.localize('olddragon2e.odo_connect'),
+        content: instructions,
+        buttons: {},
+      });
+      waiting.render(true);
+
+      const tokens = await pollForToken(device.device_code, device.interval, device.expires_in);
+      storeTokens(tokens);
+      await waiting.close();
+      this.render(true);
+    } catch (error) {
+      ui.notifications.error(`${game.i18n.localize('olddragon2e.odo_connect_failed')}: ${error.message}`);
+    }
+  }
+
+  async _onDisconnect(event) {
+    event.preventDefault();
+    disconnect();
+    this.render(true);
   }
 
   async _onCharacterImporter(event) {
