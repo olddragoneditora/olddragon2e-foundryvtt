@@ -1,14 +1,10 @@
 import fs from 'fs-extra';
 import gulp from 'gulp';
 import less from 'gulp-less';
-import sourcemaps from 'gulp-sourcemaps';
 import path from 'node:path';
-import buffer from 'vinyl-buffer';
-import source from 'vinyl-source-stream';
+import { rollup } from 'rollup';
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
-
-import rollupStream from '@rollup/stream';
 
 import rollupConfig from './rollup.config.mjs';
 
@@ -33,16 +29,14 @@ let cache;
 /**
  * Build the distributable JavaScript code
  */
-function buildCode() {
-  return rollupStream({ ...rollupConfig(), cache })
-    .on('bundle', (bundle) => {
-      cache = bundle;
-    })
-    .pipe(source(`${packageId}.js`))
-    .pipe(buffer())
-    .pipe(sourcemaps.init({ loadMaps: true }))
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(`${distDirectory}/module`));
+async function buildCode() {
+  const config = rollupConfig();
+  const bundle = await rollup({ ...config, cache });
+
+  cache = bundle.cache;
+
+  await bundle.write(config.output);
+  await bundle.close();
 }
 
 /**
