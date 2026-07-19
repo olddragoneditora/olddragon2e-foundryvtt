@@ -41,13 +41,13 @@
     "gulp": "^5.0.1",
     "gulp-less": "^5.0.0",
     "husky": "^9.1.7",
-    "jsdom": "^27.4.0",
+    "jsdom": "^29.1.1",
     "less": "^4.7.0",
-    "lint-staged": "^15.0.2",
+    "lint-staged": "^17.1.0",
     "prettier": "^3.9.5",
     "rollup": "^4.62.2",
     "vitest": "^4.1.10",
-    "yargs": "^17.7.3"
+    "yargs": "^18.0.0"
   },
   "lint-staged": {
     "*.(js|cjs|mjs)": "eslint --fix",
