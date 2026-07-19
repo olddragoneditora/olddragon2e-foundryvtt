@@ -25,6 +25,17 @@ const postForm = async function (path, params) {
   });
 };
 
+// The server has no request-level rate limiter and can serve a static HTML
+// error page (500/429) instead of JSON, so every /token response body must
+// be parsed defensively.
+const readJson = async function (response) {
+  try {
+    return await response.json();
+  } catch {
+    return null;
+  }
+};
+
 export const requestDeviceCode = async function () {
   const response = await postForm('/device-authorization', { client_id: CLIENT_ID, scope: SCOPE });
   if (!response.ok) throw new Error(`Falha ao iniciar a conexão (${response.status}).`);
@@ -45,9 +56,13 @@ export const pollForToken = async function (deviceCode, intervalSeconds, expires
       device_code: deviceCode,
       client_id: CLIENT_ID,
     });
-    const payload = await response.json();
+    const payload = await readJson(response);
 
-    if (response.ok) return payload;
+    if (response.ok && payload) return payload;
+    // A non-JSON body (a static error page during a deploy blip) is
+    // transient: keep polling instead of aborting, the device code stays
+    // valid for the rest of its expires_in window.
+    if (!payload) continue;
     if (payload.error === 'authorization_pending') continue;
     if (payload.error === 'slow_down') {
       interval += 5_000;
@@ -72,8 +87,12 @@ export const refreshAccessToken = async function () {
   });
 
   if (!response.ok) {
-    // invalid_grant means revoked or a year elapsed: start over.
-    clearTokens();
+    // invalid_grant means revoked or a year elapsed: start over. Any other
+    // failure (a transient 500/502/503, a static error page, ...) leaves
+    // the stored tokens alone so the caller can retry instead of forcing
+    // the whole device flow again.
+    const payload = await readJson(response);
+    if (payload?.error === 'invalid_grant') clearTokens();
     return null;
   }
 
