@@ -29,7 +29,7 @@
     "packs:extract:dist": "node scripts/manage-packs.mjs extract:dist",
     "packs:pack": "node scripts/manage-packs.mjs pack",
     "packs:sync": "node scripts/manage-packs.mjs extract:dist && node scripts/manage-packs.mjs pack && gulp build",
-    "postinstall": "husky install"
+    "postinstall": "husky"
   },
   "devDependencies": {
     "@foundryvtt/foundryvtt-cli": "^3.0.4",
@@ -40,7 +40,7 @@
     "fs-extra": "^11.3.6",
     "gulp": "^5.0.1",
     "gulp-less": "^5.0.0",
-    "husky": "^8.0.3",
+    "husky": "^9.1.7",
     "jsdom": "^27.4.0",
     "less": "^4.7.0",
     "lint-staged": "^15.0.2",
