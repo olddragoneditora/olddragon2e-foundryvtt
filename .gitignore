@@ -26,3 +26,6 @@ dist
 
 # Junit results
 junit.xml
+
+# macOS
+.DS_Store

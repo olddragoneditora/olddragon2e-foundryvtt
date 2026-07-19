@@ -7,8 +7,6 @@ on:
 env:
   package_type: system
   node_version: 20
-  fvtt_minimum: 13
-  fvtt_verified: 13
   fvtt_dry_run: false
 
 jobs:
@@ -69,6 +67,8 @@ jobs:
     outputs:
       id: ${{ steps.get_id.outputs.id }}
       version-without-v: ${{ steps.get_version.outputs.version-without-v }}
+      fvtt-minimum: ${{ steps.get_compatibility.outputs.minimum }}
+      fvtt-verified: ${{ steps.get_compatibility.outputs.verified }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -100,6 +100,15 @@ jobs:
           value=$(jq -r '.id' src/${{ env.package_type }}.json)
           echo "id is $value"
           echo "id=$value" >> "$GITHUB_OUTPUT"
+
+      - name: Extract FoundryVTT compatibility
+        id: get_compatibility
+        run: |
+          minimum=$(jq -r '.compatibility.minimum' src/${{ env.package_type }}.json)
+          verified=$(jq -r '.compatibility.verified' src/${{ env.package_type }}.json)
+          echo "compatibility is minimum=$minimum, verified=$verified"
+          echo "minimum=$minimum" >> "$GITHUB_OUTPUT"
+          echo "verified=$verified" >> "$GITHUB_OUTPUT"
 
       - name: Substitute Manifest and Download Links For Versioned Ones
         id: sub_manifest_link_version
@@ -169,8 +178,8 @@ jobs:
                 "manifest": "https://github.com/${{ github.repository }}/releases/download/${{ needs.build.outputs.version-without-v }}/${{ needs.build.outputs.id }}.json",
                 "notes": "https://github.com/${{ github.repository }}/releases/tag/${{ needs.build.outputs.version-without-v }}",
                 "compatibility": {
-                  "minimum": "${{ env.fvtt_minimum }}",
-                  "verified": "${{ env.fvtt_verified }}"
+                  "minimum": "${{ needs.build.outputs.fvtt-minimum }}",
+                  "verified": "${{ needs.build.outputs.fvtt-verified }}"
                 }
               }
             }'
