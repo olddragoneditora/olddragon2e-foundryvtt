@@ -1,4 +1,5 @@
 import { importActor, importRetainerActor } from '../api/characterImporter';
+import { isOdoUrl, odoBaseUrl } from '../api/odoClient.js';
 
 class CharacterImporterDialog extends Application {
   constructor(options = {}) {
@@ -14,6 +15,11 @@ class CharacterImporterDialog extends Application {
     options.width = 420;
     options.height = 'auto';
     return options;
+  }
+
+  /** @override */
+  getData() {
+    return { odoBaseUrl: odoBaseUrl() };
   }
 
   /** @override */
@@ -71,8 +77,10 @@ class CharacterImporterDialog extends Application {
   }
 
   _detectActorType(url) {
-    if (/olddragon\.com\.br\/ajudantes\//.test(url)) return 'retainer';
-    if (/olddragon\.com\.br\/personagens\//.test(url)) return 'character';
+    if (!isOdoUrl(url, odoBaseUrl())) return null;
+    const { pathname } = new URL(url);
+    if (pathname.startsWith('/ajudantes/')) return 'retainer';
+    if (pathname.startsWith('/personagens/')) return 'character';
     return null;
   }
 

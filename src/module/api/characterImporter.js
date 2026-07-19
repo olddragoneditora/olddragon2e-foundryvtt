@@ -1,3 +1,5 @@
+import { buildOdoUrl, odoBaseUrl } from './odoClient.js';
+
 const RACE_UUIDS = {
   anao: 'Compendium.olddragon2e.races.Item.d9seo5qPELZJetH6',
   elfo: 'Compendium.olddragon2e.races.Item.qZ5T7ZHQpGlmdfOq',
@@ -524,7 +526,7 @@ export const updateRetainerActor = async (actor) => {
     return actor;
   }
 
-  const apiUrl = `https://olddragon.com.br/ajudantes/${odoId}.json`;
+  const apiUrl = buildOdoUrl(`/ajudantes/${odoId}.json`, odoBaseUrl());
 
   try {
     const response = await fetch(apiUrl);
@@ -585,7 +587,7 @@ export const updateActor = async (actor) => {
     return actor;
   }
 
-  const apiUrl = `https://olddragon.com.br/personagens/${odoId}.json`;
+  const apiUrl = buildOdoUrl(`/personagens/${odoId}.json`, odoBaseUrl());
 
   try {
     const response = await fetch(apiUrl);
