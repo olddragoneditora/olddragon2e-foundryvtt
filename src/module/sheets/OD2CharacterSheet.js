@@ -12,6 +12,8 @@ import {
   NaturalWeaponDamageRoll,
 } from '../rolls';
 import { updateActor } from '../api/characterImporter.js';
+import { pushHealthPoints } from '../api/characterSync.js';
+import { isConnected } from '../auth/tokenStore.js';
 
 export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
   static get defaultOptions() {
@@ -112,6 +114,9 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
       spell_by_circle: spellByCircle,
       rogue_talents: rogueTalents,
       config: CONFIG.olddragon2e,
+      // A linked sheet can be open with nobody connected (another browser, or
+      // after disconnecting), so the send control reflects that.
+      odo_connected: isConnected(),
     };
 
     return sheetData;
@@ -207,6 +212,7 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
       html.find('.item-delete').click(this._onItemDelete.bind(this));
       html.find('input[name="system.current_xp"]').change(this._onCurrentXpChange.bind(this));
       html.find('.odo-sync').click(this._onOdoSync.bind(this));
+      html.find('.odo-push').click(this._onOdoPush.bind(this));
     }
 
     // Owner-only Listeners
@@ -288,6 +294,26 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
 
     if (confirmed) {
       await updateActor(this.actor);
+    }
+  }
+
+  // Enviar PV para o Old Dragon Online
+  async _onOdoPush(event) {
+    event.preventDefault();
+    // The actor stays linked to ODO across browsers, but the credentials do not
+    // — so a linked sheet can be open with nobody connected. Point at where the
+    // connection is made instead of failing at the request.
+    if (!isConnected()) {
+      ui.notifications.warn(game.i18n.localize('olddragon2e.odo_push_requires_connection'));
+      return;
+    }
+
+    try {
+      await pushHealthPoints(this.actor);
+    } catch (error) {
+      // odoFetchAuthenticated throws when there is no usable token at all —
+      // never connected, or the refresh token was revoked.
+      ui.notifications.error(error.message);
     }
   }
 

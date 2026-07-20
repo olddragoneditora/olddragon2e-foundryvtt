@@ -14,7 +14,6 @@
   "TYPES.Item.class": "Class",
   "TYPES.Item.class_ability": "Class Ability",
   "TYPES.Item.monster_attack": "Monster Attack",
-
   "olddragon2e": {
     "name": "Name",
     "key": "Key",
@@ -443,7 +442,6 @@
     "select_option": "Select an option...",
     "choice": "Choice",
     "custom": "Custom",
-
     "settings": {
       "initiativeType": {
         "name": "Initiative Type",
@@ -454,10 +452,35 @@
         }
       }
     },
-
     "sync_from_odo": "Sync from Old Dragon Online",
     "sync_warning": "Syncing will download changes from the Old Dragon Online character sheet and overwrite this sheet. Any changes made here that were not made on Old Dragon Online will be lost. Do you want to continue?",
-
+    "odo_connect": "Connect to OldDragon.com.br",
+    "odo_disconnect": "Disconnect",
+    "odo_connected_generic": "Connected to OldDragon.com.br",
+    "odo_connected_as": "Connected as @{handler}",
+    "odo_connect_actor_directory": "Connect to OD Online",
+    "odo_import_actor_directory": "Import from OD Online",
+    "odo_push_requires_connection": "Connect your account first, using the \"Connect to OD Online\" button in the Actors tab.",
+    "odo_consent_intro": "Connecting your account lets you pick one of your characters from the list and send hit points back to the site.",
+    "odo_consent_permissions": "The module will be able to see your characters and update their hit points.",
+    "odo_consent_per_browser": "The connection only applies to this browser — each player connects their own account.",
+    "odo_consent_revoke": "You can revoke it anytime under Account › Connected apps.",
+    "odo_device_instructions": "Authorize the connection with this code:",
+    "odo_open_authorization": "Open the authorization page",
+    "odo_device_manual": "Or open this address on another device and enter the code:",
+    "odo_waiting_authorization": "Waiting for authorization on the site…",
+    "odo_connect_failed": "Could not connect",
+    "odo_pick_character": "Pick a character",
+    "odo_incomplete_sheet": "incomplete sheet",
+    "odo_load_more": "Load more",
+    "odo_no_characters": "No characters found in this account.",
+    "odo_push": "Send HP to ODO",
+    "odo_push_ok": "HP sent to Old Dragon Online ({hp}).",
+    "odo_push_failed": "Could not send HP",
+    "odo_push_forbidden": "You cannot edit this character on Old Dragon Online.",
+    "odo_not_linked": "This character is not linked to Old Dragon Online.",
+    "odo_conflict_title": "Sync conflict",
+    "odo_conflict_body": "The character changed on ODO since the last sync. On the site: {remote} HP. In Foundry: {local} HP. Send anyway?",
     "initiative": {
       "test": "Initiative Test",
       "auto_rolled": "Automatically rolled for combatants without initiative.",

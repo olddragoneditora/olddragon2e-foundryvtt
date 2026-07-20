@@ -14,7 +14,6 @@
   "TYPES.Item.class": "Classe",
   "TYPES.Item.class_ability": "Habilidade de Classe",
   "TYPES.Item.monster_attack": "Ataque de Monstro",
-
   "olddragon2e": {
     "name": "Nome",
     "key": "Chave",
@@ -443,7 +442,6 @@
     "select_option": "Selecione uma opção...",
     "choice": "Escolha",
     "custom": "Personalizado",
-
     "settings": {
       "initiativeType": {
         "name": "Tipo de Iniciativa",
@@ -454,10 +452,35 @@
         }
       }
     },
-
     "sync_from_odo": "Sincronizar com Old Dragon Online",
     "sync_warning": "Ao sincronizar, iremos baixar as alterações realizadas na ficha do Old Dragon Online e sobrescrever esta ficha. Alterações realizadas aqui que não foram feitas no Old Dragon Online serão perdidas. Deseja continuar?",
-
+    "odo_connect": "Conectar ao OldDragon.com.br",
+    "odo_disconnect": "Desconectar",
+    "odo_connected_generic": "Conectado ao OldDragon.com.br",
+    "odo_connected_as": "Conectado como @{handler}",
+    "odo_connect_actor_directory": "Conectar ao OD Online",
+    "odo_import_actor_directory": "Importar do OD Online",
+    "odo_push_requires_connection": "Conecte sua conta primeiro, no botão \"Conectar ao OD Online\" na aba Atores.",
+    "odo_consent_intro": "Conectar sua conta permite escolher um personagem seu na lista e enviar seus pontos de vida de volta para o site.",
+    "odo_consent_permissions": "O módulo poderá ver seus personagens e atualizar seus pontos de vida.",
+    "odo_consent_per_browser": "A conexão vale só neste navegador — cada jogador conecta a própria conta.",
+    "odo_consent_revoke": "Você pode desfazer quando quiser em Conta › Aplicativos conectados.",
+    "odo_device_instructions": "Autorize a conexão com este código:",
+    "odo_open_authorization": "Abrir a página de autorização",
+    "odo_device_manual": "Ou acesse este endereço em outro dispositivo e informe o código:",
+    "odo_waiting_authorization": "Aguardando a autorização no site…",
+    "odo_connect_failed": "Não foi possível conectar",
+    "odo_pick_character": "Escolha um personagem",
+    "odo_incomplete_sheet": "ficha incompleta",
+    "odo_load_more": "Carregar mais",
+    "odo_no_characters": "Nenhum personagem encontrado nesta conta.",
+    "odo_push": "Enviar PV para o ODO",
+    "odo_push_ok": "PV enviado para o Old Dragon Online ({hp}).",
+    "odo_push_failed": "Não foi possível enviar o PV",
+    "odo_push_forbidden": "Você não pode editar este personagem no Old Dragon Online.",
+    "odo_not_linked": "Este personagem não está vinculado ao Old Dragon Online.",
+    "odo_conflict_title": "Conflito de sincronização",
+    "odo_conflict_body": "O personagem mudou no ODO desde a última sincronização. No site: {remote} PV. No Foundry: {local} PV. Enviar mesmo assim?",
     "initiative": {
       "test": "Teste de Iniciativa",
       "auto_rolled": "Rolado automaticamente para combatentes sem iniciativa.",

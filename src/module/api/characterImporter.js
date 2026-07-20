@@ -1,3 +1,6 @@
+import { buildOdoUrl, odoBaseUrl } from './odoClient.js';
+import { recordSyncedAt } from './characterSync.js';
+
 const RACE_UUIDS = {
   anao: 'Compendium.olddragon2e.races.Item.d9seo5qPELZJetH6',
   elfo: 'Compendium.olddragon2e.races.Item.qZ5T7ZHQpGlmdfOq',
@@ -524,7 +527,7 @@ export const updateRetainerActor = async (actor) => {
     return actor;
   }
 
-  const apiUrl = `https://olddragon.com.br/ajudantes/${odoId}.json`;
+  const apiUrl = buildOdoUrl(`/ajudantes/${odoId}.json`, odoBaseUrl());
 
   try {
     const response = await fetch(apiUrl);
@@ -585,7 +588,7 @@ export const updateActor = async (actor) => {
     return actor;
   }
 
-  const apiUrl = `https://olddragon.com.br/personagens/${odoId}.json`;
+  const apiUrl = buildOdoUrl(`/personagens/${odoId}.json`, odoBaseUrl());
 
   try {
     const response = await fetch(apiUrl);
@@ -636,6 +639,8 @@ export const updateActor = async (actor) => {
     // Sync inventory items
     await _removeInventoryItems(actor);
     await _addInventoryItems(actor, json.inventory_items);
+
+    await recordSyncedAt(actor, json.updated_at);
 
     ui.notifications.info(`Personagem "${json.name}" atualizado com sucesso!`);
     return actor;

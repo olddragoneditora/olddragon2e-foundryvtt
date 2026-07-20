@@ -210,6 +210,7 @@
                     {{!-- Sincronizar com o ODO --}}
                     {{#if system.odo_id}}
                         <a class="odo-sync" title="{{localize 'olddragon2e.sync_from_odo'}}"><i class="fa-solid fa-cloud-arrow-down"></i></a>
+                        <a class="odo-push {{#unless odo_connected}}disabled{{/unless}}" title="{{#if odo_connected}}{{localize "olddragon2e.odo_push"}}{{else}}{{localize "olddragon2e.odo_push_requires_connection"}}{{/if}}"><i class="fa-solid fa-cloud-arrow-up"></i></a>
                     {{/if}}
                 </div>
 

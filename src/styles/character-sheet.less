@@ -208,7 +208,8 @@
             }
           }
 
-          .odo-sync {
+          .odo-sync,
+          .odo-push {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -222,6 +223,17 @@
               color: @carmesim-600;
               background-color: @dourado-200;
               text-shadow: none;
+            }
+          }
+
+          // Shown but unavailable when no account is connected in this browser.
+          .odo-push.disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+
+            &:hover {
+              color: @dourado-700;
+              background-color: transparent;
             }
           }
         }

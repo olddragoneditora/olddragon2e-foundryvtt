@@ -1,3 +1,5 @@
+import { clearTokens } from './auth/tokenStore.js';
+
 // System settings
 export const registerSettings = function () {
   game.settings.register('olddragon2e', 'initiativeType', {
@@ -30,6 +32,49 @@ export const registerSettings = function () {
         }
       }
     },
+  });
+
+  // Hidden on purpose (config: false): points the ODO integration at a
+  // development or staging server. Set it from the console:
+  //   game.settings.set('olddragon2e', 'odoBaseUrl', 'http://olddragon.test:3027')
+  game.settings.register('olddragon2e', 'odoBaseUrl', {
+    scope: 'client',
+    config: false,
+    type: String,
+    default: 'https://olddragon.com.br',
+    onChange: () => {
+      // Tokens belong to one environment; a production token is meaningless
+      // against staging, so switching hosts signs the user out.
+      clearTokens();
+    },
+  });
+
+  game.settings.register('olddragon2e', 'odoAccessToken', {
+    scope: 'client',
+    config: false,
+    type: String,
+    default: '',
+  });
+
+  game.settings.register('olddragon2e', 'odoRefreshToken', {
+    scope: 'client',
+    config: false,
+    type: String,
+    default: '',
+  });
+
+  game.settings.register('olddragon2e', 'odoAccountHandler', {
+    scope: 'client',
+    config: false,
+    type: String,
+    default: '',
+  });
+
+  game.settings.register('olddragon2e', 'odoExpiresAt', {
+    scope: 'client',
+    config: false,
+    type: Number,
+    default: 0,
   });
 };
 
