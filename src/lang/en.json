@@ -460,6 +460,7 @@
     "odo_connect": "Connect to OldDragon.com.br",
     "odo_disconnect": "Disconnect",
     "odo_connected_as": "Connected as {name}",
+    "odo_connected_generic": "Connected to OldDragon.com.br",
     "odo_consent_intro": "Connecting your account lets you pick one of your characters from the list and send hit points back to the site.",
     "odo_consent_permissions": "The module will be able to see your characters and update their hit points.",
     "odo_consent_per_browser": "The connection only applies to this browser — each player connects their own account.",
