@@ -1,5 +1,5 @@
 import { importActor, importRetainerActor } from '../api/characterImporter';
-import { fetchCharacters } from '../api/characterList.js';
+import { CHARACTERS_PAGE_SIZE, fetchCharacters } from '../api/characterList.js';
 import { buildOdoUrl, isOdoUrl, odoBaseUrl } from '../api/odoClient.js';
 import { requestDeviceCode, pollForToken, disconnect } from '../auth/deviceFlow.js';
 import { isConnected, storeTokens } from '../auth/tokenStore.js';
@@ -7,6 +7,7 @@ import { isConnected, storeTokens } from '../auth/tokenStore.js';
 class CharacterImporterDialog extends Application {
   constructor(options = {}) {
     super(options);
+    this._hasMore = false;
   }
 
   /** @override */
@@ -24,16 +25,21 @@ class CharacterImporterDialog extends Application {
   async getData() {
     if (isConnected() && this._characters === undefined) {
       this._page = 1;
-      this._characters = await this._loadPage(1);
+      const page = await this._loadPage(1);
+      this._characters = page;
+      this._hasMore = page.length === CHARACTERS_PAGE_SIZE;
     }
-    if (!isConnected()) this._characters = undefined;
+    if (!isConnected()) {
+      this._characters = undefined;
+      this._hasMore = false;
+    }
 
     return {
       odoBaseUrl: odoBaseUrl(),
       connected: isConnected(),
       characters: this._characters ?? [],
-      // The API pages at a fixed 21; offer more only when a full page came back.
-      hasMore: (this._characters ?? []).length > 0 && (this._characters ?? []).length % 21 === 0,
+      // A further page exists only if the last fetch came back completely full.
+      hasMore: this._hasMore,
     };
   }
 
@@ -117,7 +123,9 @@ class CharacterImporterDialog extends Application {
   async _onLoadMore(event) {
     event.preventDefault();
     this._page += 1;
-    this._characters = [...this._characters, ...(await this._loadPage(this._page))];
+    const page = await this._loadPage(this._page);
+    if (page.length > 0) this._characters = [...this._characters, ...page];
+    this._hasMore = page.length === CHARACTERS_PAGE_SIZE;
     this.render(true);
   }
 

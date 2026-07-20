@@ -19,6 +19,8 @@ export const normalizeCharacterRow = function (json) {
 };
 
 // Paginated at a fixed 21 per page server-side; `per_page` is ignored.
+export const CHARACTERS_PAGE_SIZE = 21;
+
 export const fetchCharacters = async function (page = 1) {
   const response = await odoFetchAuthenticated(`/personagens.json?page=${page}`);
   if (!response.ok) throw new Error(`Falha ao listar personagens (${response.status}).`);

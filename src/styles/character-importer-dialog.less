@@ -14,6 +14,63 @@
     margin: 0.25rem 0 0 1rem;
     font-size: 0.9em;
   }
+
+  .odo-character-list {
+    margin: 0.5rem 0;
+    padding: 0;
+    list-style: none;
+    max-height: 12rem;
+    overflow-y: auto;
+    border: 1px solid @cinza-300;
+    border-radius: 0.25rem;
+  }
+
+  .odo-character {
+    display: flex;
+    flex-direction: column;
+    padding: 0.35rem 0.6rem;
+    cursor: pointer;
+    border-bottom: 1px solid @cinza-200;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:not(.disabled):hover {
+      background-color: @carmesim-50;
+    }
+
+    &.disabled {
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+  }
+
+  .odo-character-name {
+    font-weight: bold;
+  }
+
+  .odo-character-meta {
+    font-size: 0.85em;
+    color: @grafite-500;
+  }
+
+  .odo-character-warning {
+    font-size: 0.8em;
+    color: @vermelho-800;
+  }
+
+  .odo-empty {
+    padding: 0.35rem 0.6rem;
+    color: @grafite-500;
+    font-style: italic;
+  }
+
+  .odo-load-more {
+    display: block;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
 }
 
 // Rendered inside the device-flow waiting Dialog, not inside .odo-connection.
