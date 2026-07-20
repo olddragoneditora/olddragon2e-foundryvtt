@@ -131,13 +131,23 @@ class CharacterImporterDialog extends Application {
 
   async _onPickCharacter(event) {
     event.preventDefault();
-    const characterId = event.currentTarget.dataset.characterId;
-    const json = await this._retrieveJson(buildOdoUrl(`/personagens/${characterId}.json`, odoBaseUrl()));
-    if (json === '') return;
+    if (this._importingCharacter) return;
+    this._importingCharacter = true;
 
-    const actor = await importActor(json);
-    actor.sheet.render(true);
-    await this.close();
+    try {
+      const characterId = event.currentTarget.dataset.characterId;
+      const json = await this._retrieveJson(buildOdoUrl(`/personagens/${characterId}.json`, odoBaseUrl()));
+      if (json === '') return;
+
+      const actor = await importActor(json);
+      actor.sheet.render(true);
+      await this.close();
+    } catch (err) {
+      console.error(err);
+      ui.notifications.error(`Error importing character. Check console for error log.`);
+    } finally {
+      this._importingCharacter = false;
+    }
   }
 
   async _onCharacterImporter(event) {
