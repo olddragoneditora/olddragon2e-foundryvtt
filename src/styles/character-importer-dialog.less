@@ -95,3 +95,18 @@
     margin-right: 0.4rem;
   }
 }
+
+// The address is spelled out as well as linked, so it can be read off the
+// screen and typed on a phone when the link can't be clicked.
+.odo-device-manual {
+  text-align: center;
+  font-size: 0.9em;
+
+  .odo-device-url {
+    display: block;
+    margin-top: 0.2rem;
+    font-family: monospace;
+    word-break: break-all;
+    user-select: all;
+  }
+}

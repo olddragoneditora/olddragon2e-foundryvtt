@@ -85,6 +85,10 @@ class CharacterImporterDialog extends Application {
             <i class="fa-solid fa-arrow-up-right-from-square"></i>${game.i18n.localize('olddragon2e.odo_open_authorization')}
           </a>
         </p>
+        <p class="odo-device-manual">
+          ${game.i18n.localize('olddragon2e.odo_device_manual')}
+          <span class="odo-device-url">${device.verification_uri}</span>
+        </p>
         <p>${game.i18n.localize('olddragon2e.odo_waiting_authorization')}</p>`;
       waiting = new Dialog({
         title: game.i18n.localize('olddragon2e.odo_connect'),
