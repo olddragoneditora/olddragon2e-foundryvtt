@@ -14,7 +14,6 @@
   "TYPES.Item.class": "Classe",
   "TYPES.Item.class_ability": "Habilidade de Classe",
   "TYPES.Item.monster_attack": "Ataque de Monstro",
-
   "olddragon2e": {
     "name": "Nome",
     "key": "Chave",
@@ -443,7 +442,6 @@
     "select_option": "Selecione uma opção...",
     "choice": "Escolha",
     "custom": "Personalizado",
-
     "settings": {
       "initiativeType": {
         "name": "Tipo de Iniciativa",
@@ -454,7 +452,6 @@
         }
       }
     },
-
     "sync_from_odo": "Sincronizar com Old Dragon Online",
     "sync_warning": "Ao sincronizar, iremos baixar as alterações realizadas na ficha do Old Dragon Online e sobrescrever esta ficha. Alterações realizadas aqui que não foram feitas no Old Dragon Online serão perdidas. Deseja continuar?",
     "odo_connect": "Conectar ao OldDragon.com.br",
@@ -464,7 +461,8 @@
     "odo_consent_permissions": "O módulo poderá ver seus personagens e atualizar seus pontos de vida.",
     "odo_consent_per_browser": "A conexão vale só neste navegador — cada jogador conecta a própria conta.",
     "odo_consent_revoke": "Você pode desfazer quando quiser em Conta › Aplicativos conectados.",
-    "odo_device_instructions": "Abra o endereço abaixo e informe o código para autorizar:",
+    "odo_device_instructions": "Confira se o código na página de autorização é este:",
+    "odo_open_authorization": "Abrir a página de autorização",
     "odo_waiting_authorization": "Aguardando a autorização no site…",
     "odo_connect_failed": "Não foi possível conectar",
     "odo_pick_character": "Escolha um personagem",
@@ -478,7 +476,6 @@
     "odo_not_linked": "Este personagem não está vinculado ao Old Dragon Online.",
     "odo_conflict_title": "Conflito de sincronização",
     "odo_conflict_body": "O personagem mudou no ODO desde a última sincronização. No site: {remote} PV. No Foundry: {local} PV. Enviar mesmo assim?",
-
     "initiative": {
       "test": "Teste de Iniciativa",
       "auto_rolled": "Rolado automaticamente para combatentes sem iniciativa.",

@@ -1,4 +1,4 @@
-import { pollForToken, refreshAccessToken } from '../../src/module/auth/deviceFlow.js';
+import { pollForToken, prefilledVerificationUrl, refreshAccessToken } from '../../src/module/auth/deviceFlow.js';
 
 // The server has no request-level rate limiter and can serve a static HTML
 // error page instead of JSON, so a couple of the fixtures below deliberately
@@ -109,5 +109,48 @@ describe('pollForToken', () => {
     );
 
     await expect(pollForToken('device-code', 0, 5)).rejects.toThrow('Autorização negada.');
+  });
+});
+
+describe('prefilledVerificationUrl', () => {
+  it('adds the short c param to the server-provided verification uri', () => {
+    const url = prefilledVerificationUrl({
+      verification_uri: 'https://olddragon.com.br/dispositivo',
+      user_code: 'ABCDEFG',
+    });
+
+    expect(url).toBe('https://olddragon.com.br/dispositivo?c=ABCDEFG');
+  });
+
+  it('uses the host the server returned rather than a hardcoded one', () => {
+    const url = prefilledVerificationUrl({
+      verification_uri: 'http://olddragon.test:3023/dispositivo',
+      user_code: 'ABCDEFG',
+    });
+
+    expect(url).toBe('http://olddragon.test:3023/dispositivo?c=ABCDEFG');
+  });
+
+  it('does not duplicate an existing query string', () => {
+    const url = prefilledVerificationUrl({
+      verification_uri: 'https://olddragon.com.br/dispositivo?ref=vtt',
+      user_code: 'ABCDEFG',
+    });
+
+    expect(url).toBe('https://olddragon.com.br/dispositivo?ref=vtt&c=ABCDEFG');
+  });
+
+  it('falls back to the complete uri when the verification uri is unusable', () => {
+    const url = prefilledVerificationUrl({
+      verification_uri: 'nonsense',
+      verification_uri_complete: 'https://olddragon.com.br/dispositivo?user_code=ABCDEFG',
+      user_code: 'ABCDEFG',
+    });
+
+    expect(url).toBe('https://olddragon.com.br/dispositivo?user_code=ABCDEFG');
+  });
+
+  it('never throws when the server sends nothing usable', () => {
+    expect(prefilledVerificationUrl({})).toBe('');
   });
 });

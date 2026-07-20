@@ -51,6 +51,20 @@ export const requestDeviceCode = async function () {
   return response.json();
 };
 
+// The link we show uses the site's short `?c=` alias, which pre-fills the code
+// without submitting it, so the person still confirms it matches the code shown
+// here before authorizing — that check is what protects the device flow.
+// Built from the server-provided verification_uri, never a hardcoded path.
+export const prefilledVerificationUrl = function (device) {
+  try {
+    const url = new URL(device.verification_uri);
+    url.searchParams.set('c', device.user_code);
+    return url.toString();
+  } catch {
+    return device.verification_uri_complete ?? device.verification_uri ?? '';
+  }
+};
+
 // Polls until the user approves on the site. Honors the interval the server
 // returns, backs off on slow_down, and gives up on expired_token/access_denied.
 export const pollForToken = async function (deviceCode, intervalSeconds, expiresInSeconds) {

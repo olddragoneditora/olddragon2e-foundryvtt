@@ -14,7 +14,6 @@
   "TYPES.Item.class": "Class",
   "TYPES.Item.class_ability": "Class Ability",
   "TYPES.Item.monster_attack": "Monster Attack",
-
   "olddragon2e": {
     "name": "Name",
     "key": "Key",
@@ -443,7 +442,6 @@
     "select_option": "Select an option...",
     "choice": "Choice",
     "custom": "Custom",
-
     "settings": {
       "initiativeType": {
         "name": "Initiative Type",
@@ -454,7 +452,6 @@
         }
       }
     },
-
     "sync_from_odo": "Sync from Old Dragon Online",
     "sync_warning": "Syncing will download changes from the Old Dragon Online character sheet and overwrite this sheet. Any changes made here that were not made on Old Dragon Online will be lost. Do you want to continue?",
     "odo_connect": "Connect to OldDragon.com.br",
@@ -464,7 +461,8 @@
     "odo_consent_permissions": "The module will be able to see your characters and update their hit points.",
     "odo_consent_per_browser": "The connection only applies to this browser — each player connects their own account.",
     "odo_consent_revoke": "You can revoke it anytime under Account › Connected apps.",
-    "odo_device_instructions": "Open the address below and enter the code to authorize:",
+    "odo_device_instructions": "Check that the code on the authorization page matches this one:",
+    "odo_open_authorization": "Open the authorization page",
     "odo_waiting_authorization": "Waiting for authorization on the site…",
     "odo_connect_failed": "Could not connect",
     "odo_pick_character": "Pick a character",
@@ -478,7 +476,6 @@
     "odo_not_linked": "This character is not linked to Old Dragon Online.",
     "odo_conflict_title": "Sync conflict",
     "odo_conflict_body": "The character changed on ODO since the last sync. On the site: {remote} HP. In Foundry: {local} HP. Send anyway?",
-
     "initiative": {
       "test": "Initiative Test",
       "auto_rolled": "Automatically rolled for combatants without initiative.",

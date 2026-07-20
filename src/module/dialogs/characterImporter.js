@@ -1,7 +1,7 @@
 import { importActor, importRetainerActor } from '../api/characterImporter';
 import { CHARACTERS_PAGE_SIZE, fetchCharacters } from '../api/characterList.js';
 import { buildOdoUrl, isOdoUrl, odoBaseUrl } from '../api/odoClient.js';
-import { requestDeviceCode, pollForToken, disconnect } from '../auth/deviceFlow.js';
+import { requestDeviceCode, pollForToken, disconnect, prefilledVerificationUrl } from '../auth/deviceFlow.js';
 import { isConnected, storeTokens } from '../auth/tokenStore.js';
 
 class CharacterImporterDialog extends Application {
@@ -79,8 +79,12 @@ class CharacterImporterDialog extends Application {
       const device = await requestDeviceCode();
       const instructions = `
         <p>${game.i18n.localize('olddragon2e.odo_device_instructions')}</p>
-        <p><a href="${device.verification_uri_complete}" target="_blank">${device.verification_uri}</a></p>
         <p class="odo-user-code"><strong>${device.user_code}</strong></p>
+        <p class="odo-device-link">
+          <a href="${prefilledVerificationUrl(device)}" target="_blank" rel="noopener">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>${game.i18n.localize('olddragon2e.odo_open_authorization')}
+          </a>
+        </p>
         <p>${game.i18n.localize('olddragon2e.odo_waiting_authorization')}</p>`;
       waiting = new Dialog({
         title: game.i18n.localize('olddragon2e.odo_connect'),
