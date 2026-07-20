@@ -164,13 +164,13 @@ class CharacterImporterDialog extends Application {
       return;
     }
 
-    const parsedURL = this._parseURL(url);
-    const json = await this._retrieveJson(parsedURL);
-
-    console.debug('olddragon2e | _onCharacterImporter', json);
-    if (json === '') return;
-
     try {
+      const parsedURL = this._parseURL(url);
+      const json = await this._retrieveJson(parsedURL);
+
+      console.debug('olddragon2e | _onCharacterImporter', json);
+      if (json === '') return;
+
       const actor = actorType === 'retainer' ? await importRetainerActor(json) : await importActor(json);
       actor.sheet.render(true);
 
