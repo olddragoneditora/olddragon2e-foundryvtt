@@ -40,6 +40,11 @@ class CharacterImporterDialog extends Application {
 
   async _onConnect(event) {
     event.preventDefault();
+    const button = document.querySelector('.odo-connect-button');
+    button.disabled = true;
+
+    let waiting;
+    let tokens;
     try {
       const device = await requestDeviceCode();
       const instructions = `
@@ -47,26 +52,42 @@ class CharacterImporterDialog extends Application {
         <p><a href="${device.verification_uri_complete}" target="_blank">${device.verification_uri}</a></p>
         <p class="odo-user-code"><strong>${device.user_code}</strong></p>
         <p>${game.i18n.localize('olddragon2e.odo_waiting_authorization')}</p>`;
-      const waiting = new Dialog({
+      waiting = new Dialog({
         title: game.i18n.localize('olddragon2e.odo_connect'),
         content: instructions,
         buttons: {},
       });
       waiting.render(true);
 
-      const tokens = await pollForToken(device.device_code, device.interval, device.expires_in);
+      tokens = await pollForToken(device.device_code, device.interval, device.expires_in);
       storeTokens(tokens);
-      await waiting.close();
-      this.render(true);
     } catch (error) {
       ui.notifications.error(`${game.i18n.localize('olddragon2e.odo_connect_failed')}: ${error.message}`);
+    } finally {
+      if (waiting) {
+        try {
+          await waiting.close();
+        } catch (closeError) {
+          console.error(closeError);
+        }
+      }
+      button.disabled = false;
     }
+
+    if (tokens) this.render(true);
   }
 
   async _onDisconnect(event) {
     event.preventDefault();
-    disconnect();
-    this.render(true);
+    const button = document.querySelector('.odo-disconnect-button');
+    button.disabled = true;
+
+    try {
+      disconnect();
+      this.render(true);
+    } finally {
+      button.disabled = false;
+    }
   }
 
   async _onCharacterImporter(event) {
