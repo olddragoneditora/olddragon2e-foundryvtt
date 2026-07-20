@@ -45,15 +45,48 @@ O sistema `olddragon2e` para Foundry VTT está em desenvolvimento contínuo, por
 - Bônus no dano com arcos proveniente de Habilidades de Raça;
 - Algumas Habilidades de Classe não tiveram suas mecânicas implementadas. Nesses casos, apenas o nome, a descrição e a capacidade de uso diário estão sendo exibidos;
 
-## Importação de personagens
+## Importação e sincronização de personagens
 
-O sistema permite importar personagens criados na plataforma [ODO](https://olddragon.com.br/).
+O sistema permite importar personagens e ajudantes criados na plataforma [ODO](https://olddragon.com.br/), e depois manter a ficha do Foundry sincronizada com a do site.
 
-Passo a passo: Na aba "Actors", clique em "Importar Personagem do ODO". Insira o link da ficha do personagem escolhido no [ODO](https://olddragon.com.br/) (utilizando o botão de "Compartilhar" da ficha, ou copiando a URL no browser). Por último, basta clicar em "Importar".
+Na aba "Actors", clique em "Importar Ajudante ou Personagem do ODO". Há duas formas de escolher o personagem:
 
-Esta funcionalidade ainda será aprimorada.
+- **Colar a URL da ficha**: insira o link da ficha escolhida no ODO (utilizando o botão de "Compartilhar" da ficha, ou copiando a URL no navegador) e clique em "Importar". Funciona para qualquer ficha pública, inclusive de outra pessoa — um personagem pronto, ou o de um amigo — e não exige conta conectada.
+- **Conectar sua conta e escolher da lista**: veja abaixo.
 
 ![Importação de personagem](./static/importacao-personagem.gif)
+
+### Conectar sua conta
+
+No mesmo diálogo, o botão "Conectar ao OldDragon.com.br" mostra um código e um link para o site. Abra o link, entre com sua conta (se necessário) e confirme o código. Depois de conectado, o módulo passa a poder ver a lista dos seus personagens no ODO e atualizar os pontos de vida de um personagem já importado — nada além disso.
+
+- **A conexão vale só para este navegador.** Cada jogador conecta a própria conta; não existe uma conta "da mesa" compartilhada entre todos.
+- **Revogue quando quiser**: o botão "Desconectar" no diálogo apaga o acesso salvo neste navegador; em [Conta › Aplicativos conectados](https://olddragon.com.br/conta/aplicativos-conectados) no site você revoga o acesso de verdade, de qualquer navegador.
+
+### Escolher um personagem da lista
+
+Depois de conectado, o diálogo lista os personagens da sua conta (nome, nível, raça, classe e campanha), carregando mais conforme necessário. Personagens ainda em criação aparecem na lista, mas desabilitados com o aviso "ficha incompleta" — o ODO só libera pontos de vida, raça e classe depois que o personagem passa pela etapa de escolha de classe.
+
+Se o personagem que você quer importar não é seu, continue usando o campo de URL — ele não exige conexão.
+
+### Baixar vs. enviar pontos de vida
+
+Um personagem vinculado ao ODO ganha dois botões na ficha, um ao lado do outro:
+
+- **Baixar** (nuvem para baixo): busca a ficha inteira do site e sobrescreve o personagem no Foundry. Não exige conta conectada — fichas de personagem são públicas.
+- **Enviar PV** (nuvem para cima): envia só os pontos de vida atuais para o site. Exige conta conectada. Antes de enviar, o módulo compara o horário da última sincronização com o do site: se o personagem mudou nesse meio tempo (no site, ou em outra mesa), ele mostra os dois valores e pergunta se você quer mesmo sobrescrever.
+
+### Ambiente de desenvolvimento
+
+O módulo fala com `https://olddragon.com.br` por padrão. Para apontar
+para outro ambiente, no console do Foundry:
+
+    game.settings.set('olddragon2e', 'odoBaseUrl', 'http://olddragon.test:3027');
+
+Trocar o endereço desconecta a conta, porque um token de produção não
+vale em outro ambiente. Para voltar:
+
+    game.settings.set('olddragon2e', 'odoBaseUrl', 'https://olddragon.com.br');
 
 ## Colaboradores (Collaborators)
 
