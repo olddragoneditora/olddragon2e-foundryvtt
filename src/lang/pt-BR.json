@@ -459,7 +459,6 @@
     "sync_warning": "Ao sincronizar, iremos baixar as alterações realizadas na ficha do Old Dragon Online e sobrescrever esta ficha. Alterações realizadas aqui que não foram feitas no Old Dragon Online serão perdidas. Deseja continuar?",
     "odo_connect": "Conectar ao OldDragon.com.br",
     "odo_disconnect": "Desconectar",
-    "odo_connected_as": "Conectado como {name}",
     "odo_connected_generic": "Conectado ao OldDragon.com.br",
     "odo_consent_intro": "Conectar sua conta permite escolher um personagem seu na lista e enviar seus pontos de vida de volta para o site.",
     "odo_consent_permissions": "O módulo poderá ver seus personagens e atualizar seus pontos de vida.",

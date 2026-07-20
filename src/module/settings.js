@@ -69,13 +69,6 @@ export const registerSettings = function () {
     type: Number,
     default: 0,
   });
-
-  game.settings.register('olddragon2e', 'odoAccountName', {
-    scope: 'client',
-    config: false,
-    type: String,
-    default: '',
-  });
 };
 
 // Function to get the current initiative type

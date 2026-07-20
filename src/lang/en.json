@@ -459,7 +459,6 @@
     "sync_warning": "Syncing will download changes from the Old Dragon Online character sheet and overwrite this sheet. Any changes made here that were not made on Old Dragon Online will be lost. Do you want to continue?",
     "odo_connect": "Connect to OldDragon.com.br",
     "odo_disconnect": "Disconnect",
-    "odo_connected_as": "Connected as {name}",
     "odo_connected_generic": "Connected to OldDragon.com.br",
     "odo_consent_intro": "Connecting your account lets you pick one of your characters from the list and send hit points back to the site.",
     "odo_consent_permissions": "The module will be able to see your characters and update their hit points.",

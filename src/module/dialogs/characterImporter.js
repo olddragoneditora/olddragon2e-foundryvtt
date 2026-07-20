@@ -1,7 +1,7 @@
 import { importActor, importRetainerActor } from '../api/characterImporter';
 import { isOdoUrl, odoBaseUrl } from '../api/odoClient.js';
 import { requestDeviceCode, pollForToken, disconnect } from '../auth/deviceFlow.js';
-import { isConnected, getStoredAccountName, storeTokens } from '../auth/tokenStore.js';
+import { isConnected, storeTokens } from '../auth/tokenStore.js';
 
 class CharacterImporterDialog extends Application {
   constructor(options = {}) {
@@ -21,7 +21,7 @@ class CharacterImporterDialog extends Application {
 
   /** @override */
   getData() {
-    return { odoBaseUrl: odoBaseUrl(), connected: isConnected(), accountName: getStoredAccountName() };
+    return { odoBaseUrl: odoBaseUrl(), connected: isConnected() };
   }
 
   /** @override */
