@@ -1,8 +1,8 @@
 import { importActor, importRetainerActor } from '../api/characterImporter';
-import { CHARACTERS_PAGE_SIZE, fetchCharacters } from '../api/characterList.js';
+import { CHARACTERS_PAGE_SIZE, fetchAccountHandler, fetchCharacters } from '../api/characterList.js';
 import { buildOdoUrl, isOdoUrl, odoBaseUrl } from '../api/odoClient.js';
 import { requestDeviceCode, pollForToken, disconnect, prefilledVerificationUrl } from '../auth/deviceFlow.js';
-import { isConnected, storeTokens } from '../auth/tokenStore.js';
+import { getStoredAccountHandler, isConnected, storeAccountHandler, storeTokens } from '../auth/tokenStore.js';
 
 class CharacterImporterDialog extends Application {
   constructor(options = {}) {
@@ -28,6 +28,8 @@ class CharacterImporterDialog extends Application {
       const page = await this._loadPage(1);
       this._characters = page;
       this._hasMore = page.length === CHARACTERS_PAGE_SIZE;
+      // Learn who we are connected as, once per connection.
+      if (!getStoredAccountHandler()) storeAccountHandler(await fetchAccountHandler());
     }
     if (!isConnected()) {
       this._characters = undefined;
@@ -37,6 +39,7 @@ class CharacterImporterDialog extends Application {
     return {
       odoBaseUrl: odoBaseUrl(),
       connected: isConnected(),
+      accountHandler: getStoredAccountHandler(),
       characters: this._characters ?? [],
       // A further page exists only if the last fetch came back completely full.
       hasMore: this._hasMore,
@@ -112,7 +115,10 @@ class CharacterImporterDialog extends Application {
       button.disabled = false;
     }
 
-    if (tokens) this.render(true);
+    if (tokens) {
+      this.render(true);
+      ui.actors?.render();
+    }
   }
 
   async _onDisconnect(event) {
@@ -123,6 +129,7 @@ class CharacterImporterDialog extends Application {
     try {
       disconnect();
       this.render(true);
+      ui.actors?.render();
     } finally {
       button.disabled = false;
     }

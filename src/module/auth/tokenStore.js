@@ -16,10 +16,19 @@ export const storeTokens = function (payload, now = Date.now()) {
   game.settings.set('olddragon2e', 'odoExpiresAt', tokenExpiryFrom(payload.expires_in, now));
 };
 
+export const storeAccountHandler = function (handler) {
+  game.settings.set('olddragon2e', 'odoAccountHandler', handler ?? '');
+};
+
+export const getStoredAccountHandler = function () {
+  return game.settings.get('olddragon2e', 'odoAccountHandler');
+};
+
 export const clearTokens = function () {
   game.settings.set('olddragon2e', 'odoAccessToken', '');
   game.settings.set('olddragon2e', 'odoRefreshToken', '');
   game.settings.set('olddragon2e', 'odoExpiresAt', 0);
+  game.settings.set('olddragon2e', 'odoAccountHandler', '');
 };
 
 export const getStoredAccessToken = function () {

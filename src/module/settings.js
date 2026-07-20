@@ -63,6 +63,13 @@ export const registerSettings = function () {
     default: '',
   });
 
+  game.settings.register('olddragon2e', 'odoAccountHandler', {
+    scope: 'client',
+    config: false,
+    type: String,
+    default: '',
+  });
+
   game.settings.register('olddragon2e', 'odoExpiresAt', {
     scope: 'client',
     config: false,

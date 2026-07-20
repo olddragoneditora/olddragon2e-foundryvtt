@@ -28,3 +28,17 @@ export const fetchCharacters = async function (page = 1) {
   const json = await response.json();
   return json.map(normalizeCharacterRow);
 };
+
+// Identifies which account the stored tokens belong to, so the connected state
+// can name it. Returns null rather than throwing: not knowing the handler must
+// never stop someone from using a connection that works.
+export const fetchAccountHandler = async function () {
+  try {
+    const response = await odoFetchAuthenticated('/perfil.json');
+    if (!response.ok) return null;
+    const json = await response.json();
+    return json.handler ?? null;
+  } catch {
+    return null;
+  }
+};

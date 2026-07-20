@@ -1,7 +1,12 @@
 <div class="character-importer">
     <div class="odo-connection">
         {{#if connected}}
-            <p class="odo-connected">{{localize "olddragon2e.odo_connected_generic"}}
+            <p class="odo-connected">
+                {{#if accountHandler}}
+                    {{localize "olddragon2e.odo_connected_as" handler=accountHandler}}
+                {{else}}
+                    {{localize "olddragon2e.odo_connected_generic"}}
+                {{/if}}
                 <button type="button" class="button odo-disconnect-button">{{localize "olddragon2e.odo_disconnect"}}</button>
             </p>
             <h3>{{localize "olddragon2e.odo_pick_character"}}</h3>
