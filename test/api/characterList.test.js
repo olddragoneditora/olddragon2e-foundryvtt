@@ -33,15 +33,15 @@ describe('normalizeCharacterRow', () => {
     expect(row.reason).toBe('incomplete');
   });
 
-  it('marks a character that has passed the race step but not the class step as not importable', () => {
-    // On the real server, character_race is set before max_hp and
-    // character_class. If importable used `||` instead of `&&`, this
-    // intermediate shape would wrongly pass as importable.
+  it('marks a character that has max_hp but no class as not importable', () => {
+    // On the real server, max_hp is set before character_class. If
+    // importable used `||` instead of `&&`, a character with max_hp but no
+    // character_class would wrongly pass as importable.
     const row = normalizeCharacterRow({
       id: 'def',
-      name: 'Meio-Elfo sem classe',
+      name: 'Sem classe',
       level: 1,
-      character_race: { name: 'Meio-Elfo' },
+      max_hp: 12,
     });
 
     expect(row.importable).toBe(false);
