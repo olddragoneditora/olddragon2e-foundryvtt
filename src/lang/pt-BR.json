@@ -471,6 +471,13 @@
     "odo_incomplete_sheet": "ficha incompleta",
     "odo_load_more": "Carregar mais",
     "odo_no_characters": "Nenhum personagem encontrado nesta conta.",
+    "odo_push": "Enviar PV para o ODO",
+    "odo_push_ok": "PV enviado para o Old Dragon Online ({hp}).",
+    "odo_push_failed": "Não foi possível enviar o PV",
+    "odo_push_forbidden": "Você não pode editar este personagem no Old Dragon Online.",
+    "odo_not_linked": "Este personagem não está vinculado ao Old Dragon Online.",
+    "odo_conflict_title": "Conflito de sincronização",
+    "odo_conflict_body": "O personagem mudou no ODO desde a última sincronização. No site: {remote} PV. No Foundry: {local} PV. Enviar mesmo assim?",
 
     "initiative": {
       "test": "Teste de Iniciativa",

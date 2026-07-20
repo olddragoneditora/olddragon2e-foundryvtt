@@ -12,6 +12,7 @@ import {
   NaturalWeaponDamageRoll,
 } from '../rolls';
 import { updateActor } from '../api/characterImporter.js';
+import { pushHealthPoints } from '../api/characterSync.js';
 
 export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
   static get defaultOptions() {
@@ -207,6 +208,7 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
       html.find('.item-delete').click(this._onItemDelete.bind(this));
       html.find('input[name="system.current_xp"]').change(this._onCurrentXpChange.bind(this));
       html.find('.odo-sync').click(this._onOdoSync.bind(this));
+      html.find('.odo-push').click(this._onOdoPush.bind(this));
     }
 
     // Owner-only Listeners
@@ -288,6 +290,18 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
 
     if (confirmed) {
       await updateActor(this.actor);
+    }
+  }
+
+  // Enviar PV para o Old Dragon Online
+  async _onOdoPush(event) {
+    event.preventDefault();
+    try {
+      await pushHealthPoints(this.actor);
+    } catch (error) {
+      // odoFetchAuthenticated throws when there is no usable token at all —
+      // never connected, or the refresh token was revoked.
+      ui.notifications.error(error.message);
     }
   }
 
