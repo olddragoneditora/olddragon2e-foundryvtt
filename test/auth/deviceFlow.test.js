@@ -33,6 +33,7 @@ const stubGame = function (overrides = {}) {
       get: vi.fn((_scope, key) => store[key]),
       set,
     },
+    system: { version: '2.4.0' },
   });
   return { store, set };
 };

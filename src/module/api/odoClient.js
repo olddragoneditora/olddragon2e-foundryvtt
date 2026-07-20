@@ -16,6 +16,12 @@ export const odoBaseUrl = function () {
   return game.settings.get('olddragon2e', 'odoBaseUrl').replace(/\/+$/, '') || DEFAULT_BASE_URL;
 };
 
+// Shared with deviceFlow.js's postForm, so the two never send a different
+// User-Agent for the same module.
+export const userAgent = function () {
+  return `olddragon2e/${game.system.version} (+https://olddragon.com.br)`;
+};
+
 // Single choke point for every ODO request, so headers and the base URL cannot
 // drift between call sites. Never sends credentials: the API answers with
 // `Access-Control-Allow-Origin: *`, which browsers reject for credentialed
@@ -24,7 +30,7 @@ export const odoBaseUrl = function () {
 export const odoFetch = async function (path, { method = 'GET', body = null, token = null } = {}) {
   const headers = {
     Accept: 'application/json',
-    'User-Agent': `olddragon2e/${game.system.version} (+https://olddragon.com.br)`,
+    'User-Agent': userAgent(),
   };
   if (token) headers.Authorization = `Bearer ${token}`;
   if (body) headers['Content-Type'] = 'application/json';

@@ -1,3 +1,4 @@
+import { buildOdoUrl, odoBaseUrl, userAgent } from '../api/odoClient.js';
 import {
   clearTokens,
   getStoredAccessToken,
@@ -16,10 +17,18 @@ const form = function (params) {
   return new URLSearchParams(params).toString();
 };
 
+// These OAuth endpoints take form-encoded bodies, not JSON, so this can't
+// simply call odoFetch. It still goes through odoClient.js's buildOdoUrl/
+// odoBaseUrl for the base URL and sends the same User-Agent, so it doesn't
+// drift from the choke point — don't fold this back into odoFetch.
 const postForm = async function (path, params) {
-  return fetch(`${game.settings.get('olddragon2e', 'odoBaseUrl').replace(/\/+$/, '')}${path}`, {
+  return fetch(buildOdoUrl(path, odoBaseUrl()), {
     method: 'POST',
-    headers: { Accept: 'application/json', 'Content-Type': 'application/x-www-form-urlencoded' },
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/x-www-form-urlencoded',
+      'User-Agent': userAgent(),
+    },
     credentials: 'omit',
     body: form(params),
   });
