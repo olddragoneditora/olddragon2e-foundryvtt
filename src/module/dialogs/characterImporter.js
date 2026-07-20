@@ -1,5 +1,6 @@
 import { importActor, importRetainerActor } from '../api/characterImporter';
-import { isOdoUrl, odoBaseUrl } from '../api/odoClient.js';
+import { fetchCharacters } from '../api/characterList.js';
+import { buildOdoUrl, isOdoUrl, odoBaseUrl } from '../api/odoClient.js';
 import { requestDeviceCode, pollForToken, disconnect } from '../auth/deviceFlow.js';
 import { isConnected, storeTokens } from '../auth/tokenStore.js';
 
@@ -20,8 +21,29 @@ class CharacterImporterDialog extends Application {
   }
 
   /** @override */
-  getData() {
-    return { odoBaseUrl: odoBaseUrl(), connected: isConnected() };
+  async getData() {
+    if (isConnected() && this._characters === undefined) {
+      this._page = 1;
+      this._characters = await this._loadPage(1);
+    }
+    if (!isConnected()) this._characters = undefined;
+
+    return {
+      odoBaseUrl: odoBaseUrl(),
+      connected: isConnected(),
+      characters: this._characters ?? [],
+      // The API pages at a fixed 21; offer more only when a full page came back.
+      hasMore: (this._characters ?? []).length > 0 && (this._characters ?? []).length % 21 === 0,
+    };
+  }
+
+  async _loadPage(page) {
+    try {
+      return await fetchCharacters(page);
+    } catch (error) {
+      ui.notifications.error(error.message);
+      return [];
+    }
   }
 
   /** @override */
@@ -31,6 +53,8 @@ class CharacterImporterDialog extends Application {
     html.find('.character-importer-button').on('click', this._onCharacterImporter.bind(this));
     html.find('.odo-connect-button').on('click', this._onConnect.bind(this));
     html.find('.odo-disconnect-button').on('click', this._onDisconnect.bind(this));
+    html.find('.odo-character:not(.disabled)').on('click', this._onPickCharacter.bind(this));
+    html.find('.odo-load-more').on('click', this._onLoadMore.bind(this));
   }
 
   async _onCancel(event) {
@@ -88,6 +112,24 @@ class CharacterImporterDialog extends Application {
     } finally {
       button.disabled = false;
     }
+  }
+
+  async _onLoadMore(event) {
+    event.preventDefault();
+    this._page += 1;
+    this._characters = [...this._characters, ...(await this._loadPage(this._page))];
+    this.render(true);
+  }
+
+  async _onPickCharacter(event) {
+    event.preventDefault();
+    const characterId = event.currentTarget.dataset.characterId;
+    const json = await this._retrieveJson(buildOdoUrl(`/personagens/${characterId}.json`, odoBaseUrl()));
+    if (json === '') return;
+
+    const actor = await importActor(json);
+    actor.sheet.render(true);
+    await this.close();
   }
 
   async _onCharacterImporter(event) {

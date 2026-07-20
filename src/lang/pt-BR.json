@@ -467,6 +467,10 @@
     "odo_device_instructions": "Abra o endereço abaixo e informe o código para autorizar:",
     "odo_waiting_authorization": "Aguardando a autorização no site…",
     "odo_connect_failed": "Não foi possível conectar",
+    "odo_pick_character": "Escolha um personagem",
+    "odo_incomplete_sheet": "ficha incompleta",
+    "odo_load_more": "Carregar mais",
+    "odo_no_characters": "Nenhum personagem encontrado nesta conta.",
 
     "initiative": {
       "test": "Teste de Iniciativa",

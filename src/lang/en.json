@@ -467,6 +467,10 @@
     "odo_device_instructions": "Open the address below and enter the code to authorize:",
     "odo_waiting_authorization": "Waiting for authorization on the site…",
     "odo_connect_failed": "Could not connect",
+    "odo_pick_character": "Pick a character",
+    "odo_incomplete_sheet": "incomplete sheet",
+    "odo_load_more": "Load more",
+    "odo_no_characters": "No characters found in this account.",
 
     "initiative": {
       "test": "Initiative Test",
