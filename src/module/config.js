@@ -177,6 +177,7 @@ olddragon2e.bonus_damage_conditions = {
   arrow: 'olddragon2e.arrow',
   bolt: 'olddragon2e.bolt',
   bolt_small: 'olddragon2e.bolt_small',
+  stone: 'olddragon2e.stone',
   polearm: 'olddragon2e.polearm',
   two_handed: 'olddragon2e.two_handed',
   versatile: 'olddragon2e.versatile',

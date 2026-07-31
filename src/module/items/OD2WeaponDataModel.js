@@ -49,6 +49,10 @@ export class OD2WeaponDataModel extends OD2EquipmentDataModel {
         required: true,
         initial: false,
       }),
+      stone: new fields.BooleanField({
+        required: true,
+        initial: false,
+      }),
       polearm: new fields.BooleanField({
         required: true,
         initial: false,

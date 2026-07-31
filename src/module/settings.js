@@ -76,6 +76,33 @@ export const registerSettings = function () {
     type: Number,
     default: 0,
   });
+
+  game.settings.register('olddragon2e', 'ammoTracking', {
+    name: game.i18n.localize('olddragon2e.settings.ammoTracking.name'),
+    hint: game.i18n.localize('olddragon2e.settings.ammoTracking.hint'),
+    scope: 'world',
+    config: true,
+    type: Boolean,
+    default: false,
+    onChange: (value) => {
+      // O módulo Forien's Ammo Swapper depende deste setting; não bloqueamos desligar,
+      // só avisamos que o rastreamento vai parar de funcionar corretamente pra ele.
+      if (value === false && game.modules.get('forien-ammo-swapper')?.active) {
+        const message = game.i18n.localize('olddragon2e.settings.ammoTracking.disableWarning');
+        ui.notifications.warn(message);
+        ChatMessage.create({ user: game.user.id, content: `<div class="title">${message}</div>` });
+        return;
+      }
+
+      // Lembrete de que a arma E a munição precisam estar equipadas, tanto ao ativar
+      // manualmente quanto quando a ativação automática (Hooks 'setup') dispara este onChange.
+      if (value === true) {
+        const message = game.i18n.localize('olddragon2e.settings.ammoTracking.equipReminder');
+        ui.notifications.info(message);
+        ChatMessage.create({ user: game.user.id, content: `<div class="title">${message}</div>` });
+      }
+    },
+  });
 };
 
 // Function to get the current initiative type

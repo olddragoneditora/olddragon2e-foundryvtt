@@ -449,6 +449,14 @@ export class OD2CharacterDataModel extends foundry.abstract.TypeDataModel {
     );
   }
 
+  get equipped_ammunition() {
+    return getItemsOfActorOfType(
+      this.parent,
+      'weapon',
+      ({ system }) => system.type === 'ammunition' && system.is_equipped,
+    );
+  }
+
   get weapon_items() {
     return getItemsOfActorOfType(this.parent, 'weapon').sort((a, b) => (a.sort || 0) - (b.sort || 0));
   }
@@ -626,7 +634,9 @@ export class OD2CharacterDataModel extends foundry.abstract.TypeDataModel {
   raceBonusDamage(weapon) {
     const meetsCondition = (condition) => {
       if (!condition || condition === 'none') return false;
-      if (['arrow', 'bolt', 'bolt_small', 'polearm', 'two_handed', 'versatile', 'magic_item'].includes(condition))
+      if (
+        ['arrow', 'bolt', 'bolt_small', 'stone', 'polearm', 'two_handed', 'versatile', 'magic_item'].includes(condition)
+      )
         return weapon.system[condition];
       if (condition === 'weight_1') return weapon.system.weight_in_load === 1;
       if (condition === 'weight_2') return weapon.system.weight_in_load === 2;
