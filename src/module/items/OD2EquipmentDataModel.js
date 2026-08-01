@@ -9,6 +9,7 @@ export class OD2EquipmentDataModel extends OD2ItemDataModel {
         required: true,
         initial: 1,
         integer: true,
+        min: 0,
       }),
       cost: new fields.StringField(),
       weight_in_load: new fields.NumberField({

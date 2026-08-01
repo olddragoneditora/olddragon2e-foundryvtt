@@ -34,6 +34,13 @@
                     {{selectOptions config.weapon_types selected=system.type localize=true}}
                 </select>
             </div>
+            {{!-- Tipo de munição --}}
+            <div class="ammo-type">
+                <label class="font-bold">{{localize "olddragon2e.ammo_type"}}</label>
+                <select name="system.ammo_type">
+                    {{selectOptions config.ammo_types selected=system.ammo_type localize=true}}
+                </select>
+            </div>
             {{!-- Tipo de dano --}}
             <div class="damage-type">
                 <label class="font-bold">{{localize "olddragon2e.damage_type"}}</label>
@@ -86,11 +93,6 @@
                 <div class="checkbox">
                     <input name="system.bolt_small" type="checkbox" {{checked system.bolt_small}}>
                     <label class="font-bold">{{localize "olddragon2e.bolt_small"}}</label>
-                </div>
-                {{!-- Pedra --}}
-                <div class="checkbox">
-                    <input name="system.stone" type="checkbox" {{checked system.stone}}>
-                    <label class="font-bold">{{localize "olddragon2e.stone"}}</label>
                 </div>
                 {{!-- Haste --}}
                 <div class="checkbox">

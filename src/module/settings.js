@@ -85,21 +85,35 @@ export const registerSettings = function () {
     type: Boolean,
     default: false,
     onChange: (value) => {
+      // onChange roda em TODO cliente conectado quando um setting de mundo muda (não só em
+      // quem chamou .set()) — sem essa checagem, cada jogador conectado geraria seu próprio
+      // aviso/mensagem duplicada.
+      if (!game.user.isGM) return;
+
       // O módulo Forien's Ammo Swapper depende deste setting; não bloqueamos desligar,
       // só avisamos que o rastreamento vai parar de funcionar corretamente pra ele.
       if (value === false && game.modules.get('forien-ammo-swapper')?.active) {
         const message = game.i18n.localize('olddragon2e.settings.ammoTracking.disableWarning');
         ui.notifications.warn(message);
-        ChatMessage.create({ user: game.user.id, content: `<div class="title">${message}</div>` });
+        ChatMessage.create({
+          user: game.user.id,
+          content: `<div class="title">${message}</div>`,
+          whisper: [game.user.id],
+        });
         return;
       }
 
-      // Lembrete de que a arma E a munição precisam estar equipadas, tanto ao ativar
-      // manualmente quanto quando a ativação automática (Hooks 'setup') dispara este onChange.
+      // Lembrete de que o rastreamento só afeta armas com um Tipo de Munição definido, e que
+      // arma e munição precisam estar equipadas — tanto ao ativar manualmente quanto quando a
+      // ativação automática (Hooks 'setup') dispara este onChange.
       if (value === true) {
         const message = game.i18n.localize('olddragon2e.settings.ammoTracking.equipReminder');
         ui.notifications.info(message);
-        ChatMessage.create({ user: game.user.id, content: `<div class="title">${message}</div>` });
+        ChatMessage.create({
+          user: game.user.id,
+          content: `<div class="title">${message}</div>`,
+          whisper: [game.user.id],
+        });
       }
     },
   });

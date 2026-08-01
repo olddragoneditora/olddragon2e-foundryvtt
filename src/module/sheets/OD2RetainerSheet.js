@@ -164,8 +164,9 @@ export default class OD2RetainerSheet extends foundry.appv1.sheets.ActorSheet {
             attackRoll.sendMessage(mode, adjustment);
 
             if (ammoItem) {
-              const remaining = ammoItem.system.quantity - 1;
-              await ammoItem.update({ 'system.quantity': remaining });
+              const liveAmmoItem = this.actor.items.get(ammoItem.id);
+              const remaining = liveAmmoItem.system.quantity - 1;
+              await liveAmmoItem.update({ 'system.quantity': remaining });
               if (remaining <= 0) {
                 ChatMessage.create({
                   user: game.user.id,

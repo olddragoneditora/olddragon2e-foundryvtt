@@ -3,11 +3,7 @@ import { resolveAmmo } from '../../src/module/rolls/ammo.js';
 const makeWeapon = (overrides = {}) => ({
   name: 'Arma de Teste',
   system: {
-    type: 'ranged',
-    arrow: false,
-    bolt: false,
-    bolt_small: false,
-    stone: false,
+    ammo_type: 'none',
     quantity: 1,
     ...overrides,
   },
@@ -18,7 +14,6 @@ const makeAmmo = (overrides = {}) => ({
     arrow: false,
     bolt: false,
     bolt_small: false,
-    stone: false,
     quantity: 5,
     ...overrides,
   },
@@ -29,30 +24,31 @@ const makeActor = (equippedAmmunition = []) => ({
 });
 
 describe('resolveAmmo', () => {
-  it('does not require ammo for melee weapons', () => {
-    const weapon = makeWeapon({ type: 'melee' });
+  it('does not require ammo when ammo_type is "none" (every real compendium item today)', () => {
+    const weapon = makeWeapon({ ammo_type: 'none' });
     const result = resolveAmmo(makeActor(), weapon);
 
     expect(result).toEqual({ requiresAmmo: false, ammoItem: null });
   });
 
-  it('does not require ammo for ammunition items themselves', () => {
-    const weapon = makeWeapon({ type: 'ammunition', arrow: true });
+  it('does not require ammo when ammo_type is missing entirely (fail-open for un-migrated items)', () => {
+    const weapon = makeWeapon();
+    delete weapon.system.ammo_type;
     const result = resolveAmmo(makeActor(), weapon);
 
     expect(result).toEqual({ requiresAmmo: false, ammoItem: null });
   });
 
-  it('treats a pure thrown weapon (no family flag) as its own ammunition', () => {
-    const weapon = makeWeapon({ type: 'throwing' });
+  it('treats ammo_type "self" as its own ammunition', () => {
+    const weapon = makeWeapon({ ammo_type: 'self' });
     const result = resolveAmmo(makeActor(), weapon);
 
     expect(result.requiresAmmo).toBe(true);
     expect(result.ammoItem).toBe(weapon);
   });
 
-  it('resolves a matching equipped ammo item for a ranged weapon', () => {
-    const weapon = makeWeapon({ type: 'ranged', arrow: true });
+  it('resolves a matching equipped ammo item for ammo_type "arrow"', () => {
+    const weapon = makeWeapon({ ammo_type: 'arrow' });
     const arrowAmmo = makeAmmo({ arrow: true });
     const boltAmmo = makeAmmo({ bolt: true });
     const actor = makeActor([boltAmmo, arrowAmmo]);
@@ -63,19 +59,19 @@ describe('resolveAmmo', () => {
     expect(result.ammoItem).toBe(arrowAmmo);
   });
 
-  it('resolves a matching equipped ammo item for a sling (throwing + stone flag)', () => {
-    const weapon = makeWeapon({ type: 'throwing', stone: true });
-    const stoneAmmo = makeAmmo({ stone: true });
-    const actor = makeActor([stoneAmmo]);
+  it('does not match ammo_type "bolt" against bolt_small ammunition', () => {
+    const weapon = makeWeapon({ ammo_type: 'bolt' });
+    const boltSmallAmmo = makeAmmo({ bolt_small: true });
+    const actor = makeActor([boltSmallAmmo]);
 
     const result = resolveAmmo(actor, weapon);
 
     expect(result.requiresAmmo).toBe(true);
-    expect(result.ammoItem).toBe(stoneAmmo);
+    expect(result.ammoItem).toBeNull();
   });
 
-  it('returns no ammo item when no equipped ammo shares a family flag', () => {
-    const weapon = makeWeapon({ type: 'ranged', arrow: true });
+  it('returns no ammo item when no equipped ammo matches the ammo_type', () => {
+    const weapon = makeWeapon({ ammo_type: 'arrow' });
     const boltAmmo = makeAmmo({ bolt: true });
     const actor = makeActor([boltAmmo]);
 
@@ -86,19 +82,9 @@ describe('resolveAmmo', () => {
   });
 
   it('returns no ammo item when the actor has no equipped ammunition', () => {
-    const weapon = makeWeapon({ type: 'ranged', arrow: true });
+    const weapon = makeWeapon({ ammo_type: 'arrow' });
 
     const result = resolveAmmo(makeActor([]), weapon);
-
-    expect(result.requiresAmmo).toBe(true);
-    expect(result.ammoItem).toBeNull();
-  });
-
-  it('returns no ammo item when the weapon has no family flag set at all', () => {
-    const weapon = makeWeapon({ type: 'ranged' });
-    const arrowAmmo = makeAmmo({ arrow: true });
-
-    const result = resolveAmmo(makeActor([arrowAmmo]), weapon);
 
     expect(result.requiresAmmo).toBe(true);
     expect(result.ammoItem).toBeNull();

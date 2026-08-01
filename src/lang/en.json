@@ -314,6 +314,14 @@
       "unarmed": "Unarmed",
       "natural_weapon": "Natural Weapon"
     },
+    "ammo_type": "Ammo Type",
+    "ammo_types": {
+      "none": "None (untracked)",
+      "self": "Itself (thrown)",
+      "arrow": "Arrow",
+      "bolt": "Bolt",
+      "bolt_small": "Small Bolt"
+    },
     "weapon_sizes": {
       "label": "Size",
       "none": "None",
@@ -344,7 +352,6 @@
     "arrow": "Arrow",
     "bolt": "Bolt",
     "bolt_small": "Small Bolt",
-    "stone": "Stone",
     "polearm": "Polearm",
     "two_handed": "Two-Handed",
     "versatile": "Versatile",
@@ -449,7 +456,7 @@
         "hint": "When enabled, ranged and thrown weapons require compatible equipped ammunition, consuming 1 unit per attack and blocking the attack when ammo runs out.",
         "disableWarning": "Warning: the Forien's Ammo Swapper module is active and depends on this tracking — disabling it may cause weapons and ammunition to stop working correctly in the module.",
         "autoEnabled": "Ammo Tracking automatically enabled (Forien's Ammo Swapper module detected).",
-        "equipReminder": "Ammo Tracking enabled: bows, crossbows, slings and thrown weapons only consume ammunition correctly when both the weapon AND the ammunition are equipped."
+        "equipReminder": "Ammo Tracking enabled: it only affects weapons with an Ammo Type set on their sheet. For those weapons, both the weapon and the ammunition need to be equipped."
       },
       "initiativeType": {
         "name": "Initiative Type",
