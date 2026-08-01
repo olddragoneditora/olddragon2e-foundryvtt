@@ -1,27 +1,27 @@
 <div class="form-group">
-    <label>Fórmula</label>
+    <label>{{localize "olddragon2e.dialog.formula"}}</label>
     <input type="text" name="formula" value="{{formula}}" disabled>
 </div>
 <div class="form-group">
-    <label>Ajuste de Moral</em></label>
+    <label>{{localize "olddragon2e.dialog.morale_adjustment"}}</label>
     <select name="adjustment" id="adjustment">
-        <option value="none" selected>Nenhum</option>
-        <option value="easy">Fácil (F)</option>
-        <option value="very-easy">Muito Fácil (MF)</option>
-        <option value="hard">Difícil (D)</option>
-        <option value="very-hard">Muito Difícil (MD)</option>
+        <option value="none" selected>{{localize "olddragon2e.dialog.adjustments.none"}}</option>
+        <option value="easy">{{localize "olddragon2e.dialog.adjustments.easy"}}</option>
+        <option value="very-easy">{{localize "olddragon2e.dialog.adjustments.very_easy"}}</option>
+        <option value="hard">{{localize "olddragon2e.dialog.adjustments.hard"}}</option>
+        <option value="very-hard">{{localize "olddragon2e.dialog.adjustments.very_hard"}}</option>
     </select>
 </div>
 <div class="form-group">
-    <label title="Aceita valores inteiros ou dados. Por exemplo: -1, 10, 2d4, 1d6 + 1d8 + 1d10">Modificador Opcional&nbsp;<i class="fa-solid fa-circle-info"></i></label>
+    <label title="{{localize 'olddragon2e.dialog.optional_modifier_hint'}}">{{localize "olddragon2e.dialog.optional_modifier"}}&nbsp;<i class="fa-solid fa-circle-info"></i></label>
     <input type="text" name="bonus" id="bonus" value="">
 </div>
 <div class="form-group">
-    <label>Modo de Rolagem</label>
+    <label>{{localize "olddragon2e.dialog.roll_mode"}}</label>
     <select name="rollMode" id="rollMode">
-        <option value="public" selected>Public Roll</option>
-        <option value="private">Private GM Roll</option>
-        <option value="blind">Blind GM Roll</option>
-        <option value="self">Self Roll</option>
+        <option value="public" selected>{{localize "CHAT.RollPublic"}}</option>
+        <option value="private">{{localize "CHAT.RollPrivate"}}</option>
+        <option value="blind">{{localize "CHAT.RollBlind"}}</option>
+        <option value="self">{{localize "CHAT.RollSelf"}}</option>
     </select>
 </div>

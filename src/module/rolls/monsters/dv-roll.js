@@ -153,17 +153,17 @@ export class MonsterDVRoll extends BaseRoll {
       resultText = ` ${hp.total} &div; 2 &cong; ${hp.half}`;
 
       if (hasBonus) {
-        bonusText = ` + ${bonus} <em>(DV Bônus)</em> = <strong>${hp.halfWithBonus}</strong>`;
+        bonusText = ` + ${bonus} <em>(${game.i18n.localize('olddragon2e.dv_bonus')})</em> = <strong>${hp.halfWithBonus}</strong>`;
         resultText += `${bonusText}`;
       }
     }
 
     if (!this.dvInputIsHalf && hasBonus) {
-      bonusText = ` + ${bonus} <em>(DV Bônus)</em> = <strong>${hp.totalWithBonus}</strong>`;
+      bonusText = ` + ${bonus} <em>(${game.i18n.localize('olddragon2e.dv_bonus')})</em> = <strong>${hp.totalWithBonus}</strong>`;
       resultText = ` ${hp.total}${bonusText}`;
     }
 
-    return `<div class="title">Rolagem de <strong>Pontos de Vida</strong></div><p class="result">PV Totais: ${resultText}</p>`;
+    return `<div class="title">${game.i18n.localize('olddragon2e.chat.hp_roll')}</div><p class="result">${game.i18n.format('olddragon2e.chat.hp_total', { total: resultText })}</p>`;
   }
 
   /**

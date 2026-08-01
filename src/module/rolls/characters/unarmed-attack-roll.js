@@ -23,6 +23,6 @@ export class UnarmedAttackRoll extends AttackRoll {
   formatMessage(adjustment) {
     return `<div class='title'>${this.messageAdjustment(adjustment)} ${
       this.messageBa
-    } <strong>desarmado</strong></div>`;
+    } <strong>${game.i18n.localize('olddragon2e.chat.unarmed')}</strong></div>`;
   }
 }

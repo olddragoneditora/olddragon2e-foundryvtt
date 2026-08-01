@@ -50,13 +50,13 @@ export const odoFetchAuthenticated = async function (path, options = {}) {
   const { getValidAccessToken, refreshAccessToken } = await import('../auth/deviceFlow.js');
 
   let token = await getValidAccessToken();
-  if (!token) throw new Error('Não conectado ao Old Dragon Online.');
+  if (!token) throw new Error(game.i18n.localize('olddragon2e.errors.odo_not_connected'));
 
   let response = await odoFetch(path, { ...options, token });
 
   if (response.status === 401) {
     token = await refreshAccessToken();
-    if (!token) throw new Error('Sua conexão expirou. Conecte-se novamente.');
+    if (!token) throw new Error(game.i18n.localize('olddragon2e.errors.odo_session_expired'));
     response = await odoFetch(path, { ...options, token });
   }
 

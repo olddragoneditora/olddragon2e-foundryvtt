@@ -54,7 +54,7 @@ export class DamageRoll extends BaseRoll {
     }
 
     if (this.raceBonusDamage !== 0) {
-      formula += ` ${signed_number(this.raceBonusDamage)} (raça)`;
+      formula += ` ${signed_number(this.raceBonusDamage)} (${game.i18n.localize('olddragon2e.formula_race')})`;
     }
 
     return formula;
@@ -87,7 +87,7 @@ export class DamageRoll extends BaseRoll {
   }
 
   formatMessage() {
-    return `<div class='title'>Dano com <strong>${this.item.name}</strong></div>`;
+    return `<div class='title'>${game.i18n.localize('olddragon2e.chat.damage_with')} <strong>${this.item.name}</strong></div>`;
   }
 
   /**

@@ -52,7 +52,7 @@ export default class OD2MonsterSheet extends foundry.appv1.sheets.ActorSheet {
     const jpRoll = new MonsterJPRoll(this.actor);
 
     await showDialog({
-      title: `Teste de Jogada de Proteção`,
+      title: game.i18n.format('olddragon2e.dialog.test_of', { label: game.i18n.localize('olddragon2e.jp') }),
       content: 'systems/olddragon2e/templates/dialog/monsters/jp-roll-dialog.hbs',
       data: {
         formula: jpRoll.formula(),
@@ -60,7 +60,7 @@ export default class OD2MonsterSheet extends foundry.appv1.sheets.ActorSheet {
       buttons: {
         roll: {
           icon: "<i class='fa-solid fa-dice-d20'></i>",
-          label: 'Rolar',
+          label: game.i18n.localize('olddragon2e.roll'),
           callback: async (html) => {
             let adjustment = html.find('#adjustment').val();
             const bonus = html.find('#bonus').val();
@@ -81,7 +81,7 @@ export default class OD2MonsterSheet extends foundry.appv1.sheets.ActorSheet {
     const moRoll = new MonsterMORoll(this.actor);
 
     await showDialog({
-      title: `Teste de Moral`,
+      title: game.i18n.format('olddragon2e.dialog.test_of', { label: game.i18n.localize('olddragon2e.mo') }),
       content: 'systems/olddragon2e/templates/dialog/monsters/mo-roll-dialog.hbs',
       data: {
         formula: moRoll.formula(),
@@ -89,7 +89,7 @@ export default class OD2MonsterSheet extends foundry.appv1.sheets.ActorSheet {
       buttons: {
         roll: {
           icon: "<i class='fa-solid fa-dice-d20'></i>",
-          label: 'Rolar',
+          label: game.i18n.localize('olddragon2e.roll'),
           callback: async (html) => {
             let adjustment = html.find('#adjustment').val();
             const bonus = html.find('#bonus').val();
@@ -110,7 +110,7 @@ export default class OD2MonsterSheet extends foundry.appv1.sheets.ActorSheet {
     const dvRoll = new MonsterDVRoll(this.actor);
 
     await showDialog({
-      title: `Rolar Dado de Vida`,
+      title: game.i18n.localize('olddragon2e.dialog.roll_dv'),
       content: 'systems/olddragon2e/templates/dialog/monsters/dv-roll-dialog.hbs',
       data: {
         formula: dvRoll.formula(),
@@ -118,7 +118,7 @@ export default class OD2MonsterSheet extends foundry.appv1.sheets.ActorSheet {
       buttons: {
         roll: {
           icon: "<i class='fa-solid fa-dice-d20'></i>",
-          label: 'Rolar',
+          label: game.i18n.localize('olddragon2e.roll'),
           callback: async (html) => {
             const bonus = html.find('#bonus').val();
             const mode = html.find('#rollMode').val();
@@ -147,7 +147,7 @@ export default class OD2MonsterSheet extends foundry.appv1.sheets.ActorSheet {
     const attackRoll = new MonsterAttackRoll(this.actor, item, ba, baBonus);
 
     await showDialog({
-      title: `Rolar Ataque`,
+      title: game.i18n.localize('olddragon2e.dialog.roll_attack'),
       content: 'systems/olddragon2e/templates/dialog/monsters/attack-roll-dialog.hbs',
       data: {
         formula: attackRoll.printFormula,
@@ -155,7 +155,7 @@ export default class OD2MonsterSheet extends foundry.appv1.sheets.ActorSheet {
       buttons: {
         roll: {
           icon: "<i class='fa-solid fa-dice-d20'></i>",
-          label: 'Rolar',
+          label: game.i18n.localize('olddragon2e.roll'),
           callback: async (html) => {
             let adjustment = html.find('#adjustment').val();
             const bonus = html.find('#bonus').val();
@@ -186,12 +186,12 @@ export default class OD2MonsterSheet extends foundry.appv1.sheets.ActorSheet {
     const damageRoll = new MonsterDamageRoll(this.actor, item);
 
     await showDialog({
-      title: `Rolar Dano`,
+      title: game.i18n.localize('olddragon2e.dialog.roll_damage'),
       content: 'systems/olddragon2e/templates/dialog/monsters/damage-roll-dialog.hbs',
       buttons: {
         roll: {
           icon: "<i class='fa-solid fa-dice-d20'></i>",
-          label: 'Rolar',
+          label: game.i18n.localize('olddragon2e.roll'),
           callback: async (html) => {
             const bonus = html.find('#bonus').val();
             const mode = html.find('#rollMode').val();
@@ -226,7 +226,7 @@ export default class OD2MonsterSheet extends foundry.appv1.sheets.ActorSheet {
     let itemName = '';
 
     if (itemType === 'monster_attack') {
-      itemName = 'Novo Ataque de Monstro';
+      itemName = game.i18n.localize('olddragon2e.new_monster_attack');
     }
 
     let itemData = {
@@ -258,7 +258,7 @@ export default class OD2MonsterSheet extends foundry.appv1.sheets.ActorSheet {
         <form>
             <div>
                 <center>
-                    Excluir <strong>${itemName}</strong>?
+                    ${game.i18n.format('olddragon2e.dialog.delete_item_confirm', { name: `<strong>${itemName}</strong>` })}
                 </center>
                 <br>
             </div>

@@ -2,9 +2,9 @@ Hooks.once('ready', async () => {
   // Apenas o GM executa a criação do macro "global"
   if (!game.user.isGM) return;
 
-  const macroName = 'Teste de Chance em 1d6';
-  // Procura um macro global pelo nome (macros globais têm folder === null)
-  let macro = game.macros.find((m) => m.name === macroName && m.folder === null);
+  const macroName = game.i18n.localize('olddragon2e.dialog.chance_test');
+  // Procura um macro global pelo flag ou pelo nome (macros globais têm folder === null)
+  let macro = game.macros.find((m) => (m.flags?.olddragon2e === true || m.name === macroName) && m.folder === null);
 
   if (!macro) {
     macro = await Macro.create({
@@ -12,29 +12,26 @@ Hooks.once('ready', async () => {
       type: 'script',
       img: 'systems/olddragon2e/assets/icons/d6.svg',
       command: `
+const options = [1, 2, 3, 4, 5, 6]
+  .map((n) => \`<option value="\${n}">\${game.i18n.format('olddragon2e.dialog.chance_option', { n })}</option>\`)
+  .join('');
+
 const content = \`
 <form>
   <div class="form-group">
-    <label for="chance">Chance (1 a 6):</label>
-    <select id="chance" name="chance">
-      <option value="1">1 em 1d6</option>
-      <option value="2">2 em 1d6</option>
-      <option value="3">3 em 1d6</option>
-      <option value="4">4 em 1d6</option>
-      <option value="5">5 em 1d6</option>
-      <option value="6">6 em 1d6</option>
-    </select>
+    <label for="chance">\${game.i18n.localize('olddragon2e.dialog.chance_label')}</label>
+    <select id="chance" name="chance">\${options}</select>
   </div>
 </form>
 \`;
 
 new Dialog({
-  title: "Teste de Chance em 1d6",
+  title: game.i18n.localize('olddragon2e.dialog.chance_test'),
   content,
   buttons: {
     roll: {
       icon: '<i class="fas fa-dice"></i>',
-      label: "Rolar",
+      label: game.i18n.localize('olddragon2e.roll'),
       callback: async html => {
         const diff = parseInt(html.find('[name="chance"]').val());
         const roll = new Roll("1d6");
@@ -42,16 +39,16 @@ new Dialog({
         await roll.toMessage({
           roll,
           speaker: ChatMessage.getSpeaker(),
-          flavor: \`<div class="title">Teste de <strong>Chance de \${diff} em 1d6</strong></div>\` +
+          flavor: \`<div class="title">\${game.i18n.format('olddragon2e.chat.chance_flavor', { n: diff })}</div>\` +
                   (roll.total <= diff
-                    ? '<p class="result"><strong class="success">Sucesso!</strong></p>'
-                    : '<p class="result"><strong class="failure">Falha</strong></p>')
+                    ? \`<p class="result"><strong class="success">\${game.i18n.localize('olddragon2e.chat.success')}</strong></p>\`
+                    : \`<p class="result"><strong class="failure">\${game.i18n.localize('olddragon2e.chat.failure')}</strong></p>\`)
         });
       }
     },
     cancel: {
       icon: '<i class="fas fa-times"></i>',
-      label: "Cancelar"
+      label: game.i18n.localize('olddragon2e.cancel')
     }
   },
   default: "roll"

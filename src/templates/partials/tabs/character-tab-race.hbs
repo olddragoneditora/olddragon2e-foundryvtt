@@ -48,10 +48,10 @@
                 {{/each}}
             </ol>
             {{else}}
-            <p class="text-center">A raça <strong>{{actor.system.race.name}}</strong> não possui habilidades vinculadas.</p>
+            <p class="text-center">{{{localize "olddragon2e.sheet.race_no_abilities" name=actor.system.race.name}}}</p>
             {{/if}}
         {{else}}
-        <p class="text-center">Adicione uma raça, para visualizar as habilidades listadas aqui.</p>
+        <p class="text-center">{{localize "olddragon2e.sheet.race_add_hint"}}</p>
         {{/if}}
     </div>
 

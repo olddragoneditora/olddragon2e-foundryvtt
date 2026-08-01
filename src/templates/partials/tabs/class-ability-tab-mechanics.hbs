@@ -20,11 +20,11 @@
                     {{#each system.rogue_talents as |talent|}}
                     <li>
                         <div class="rogue-talent-fields">
-                            <input name="system.rogue_talents.{{@index}}.key" type="text" value="{{talent.key}}" placeholder="Chave">
+                            <input name="system.rogue_talents.{{@index}}.key" type="text" value="{{talent.key}}" placeholder="{{localize 'olddragon2e.key'}}">
                             <a class="rogue-talent-delete" data-index="{{@index}}" title="{{localize 'olddragon2e.delete'}}"><i class="fa-solid fa-trash"></i></a>
                         </div>
-                        <input name="system.rogue_talents.{{@index}}.name" type="text" value="{{talent.name}}" placeholder="Nome">
-                        <textarea name="system.rogue_talents.{{@index}}.description" placeholder="Descrição">{{talent.description}}</textarea>
+                        <input name="system.rogue_talents.{{@index}}.name" type="text" value="{{talent.name}}" placeholder="{{localize 'olddragon2e.name'}}">
+                        <textarea name="system.rogue_talents.{{@index}}.description" placeholder="{{localize 'olddragon2e.description'}}">{{talent.description}}</textarea>
                     </li>
                     {{/each}}
                 </ol>

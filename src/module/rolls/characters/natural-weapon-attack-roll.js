@@ -7,7 +7,7 @@ export class NaturalWeaponAttackRoll extends AttackRoll {
   }
 
   formatMessage(adjustment) {
-    return `<div class='title'>${this.messageAdjustment(adjustment)} ${this.messageBa} com <strong>${
+    return `<div class='title'>${this.messageAdjustment(adjustment)} ${this.messageBa} ${game.i18n.localize('olddragon2e.chat.with')} <strong>${
       this.weaponName
     }</strong></div>`;
   }

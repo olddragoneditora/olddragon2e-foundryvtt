@@ -27,7 +27,7 @@ export class MonsterDamageRoll extends BaseRoll {
     let formula = this.item.system.damage;
 
     if (this.item.system.damage_bonus) {
-      formula += ` + ${this.item.system.damage_bonus} (bônus)`;
+      formula += ` + ${this.item.system.damage_bonus} (${game.i18n.localize('olddragon2e.formula_bonus')})`;
     }
 
     return formula;
@@ -48,7 +48,7 @@ export class MonsterDamageRoll extends BaseRoll {
   }
 
   formatMessage() {
-    return `<div class='title'>Dano com <strong>${this.item.system.description}</strong></div>`;
+    return `<div class='title'>${game.i18n.localize('olddragon2e.chat.damage_with')} <strong>${this.item.system.description}</strong></div>`;
   }
 
   /**

@@ -136,29 +136,23 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
 
     if (item.type === 'race') {
       if (this.actor.system.race !== null) {
-        ui.notifications.error('Este personagem já possui uma raça. Remova a raça atual antes de adicionar uma nova.');
+        ui.notifications.error(game.i18n.localize('olddragon2e.notifications.race_already_linked'));
         return;
       }
     }
 
     if (item.type === 'race_ability') {
-      ui.notifications.error(
-        'Habilidades de raça não podem ser adicionadas diretamente ao personagem. Adicione-as à raça do personagem.',
-      );
+      ui.notifications.error(game.i18n.localize('olddragon2e.notifications.race_ability_not_direct'));
       return;
     }
 
     if (item.type === 'class') {
       if (this.actor.system.race === null) {
-        ui.notifications.error(
-          'Este personagem ainda não possui uma raça definida. Adicione a raça antes de adicionar a classe.',
-        );
+        ui.notifications.error(game.i18n.localize('olddragon2e.notifications.class_requires_race'));
         return;
       }
       if (this.actor.system.class !== null) {
-        ui.notifications.error(
-          'Este personagem já possui uma classe. Remova a classe atual antes de adicionar uma nova.',
-        );
+        ui.notifications.error(game.i18n.localize('olddragon2e.notifications.class_already_linked'));
         return;
       }
 
@@ -177,18 +171,17 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
 
       if (classRestrictions.length > 0 && !classRestrictions.includes(raceName)) {
         ui.notifications.error(
-          `Para vincular a classe ${
-            item.name
-          }, o personagem deve ser de uma das seguintes raças: ${classRestrictions.join(', ')}.`,
+          game.i18n.format('olddragon2e.notifications.class_race_restriction', {
+            class: item.name,
+            races: classRestrictions.join(', '),
+          }),
         );
         return;
       }
     }
 
     if (item.type === 'class_ability') {
-      ui.notifications.error(
-        'Habilidades de classe não podem ser adicionadas diretamente ao personagem. Adicione-as à classe do personagem.',
-      );
+      ui.notifications.error(game.i18n.localize('olddragon2e.notifications.class_ability_not_direct'));
       return;
     }
 
@@ -331,7 +324,7 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
     const attackRoll = new AttackRoll(this.actor, item, ba, baBonus);
 
     await showDialog({
-      title: `Rolar Ataque`,
+      title: game.i18n.localize('olddragon2e.dialog.roll_attack'),
       content: 'systems/olddragon2e/templates/dialog/characters/attack-roll-dialog.hbs',
       data: {
         formula: attackRoll.printFormula,
@@ -339,7 +332,7 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
       buttons: {
         roll: {
           icon: "<i class='fa-solid fa-dice-d20'></i>",
-          label: 'Rolar',
+          label: game.i18n.localize('olddragon2e.roll'),
           callback: async (html) => {
             let adjustment = html.find('#adjustment').val();
             const bonus = html.find('#bonus').val();
@@ -360,7 +353,7 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
     const unarmedAttackRoll = new UnarmedAttackRoll(this.actor);
 
     await showDialog({
-      title: `Rolar Ataque Desarmado`,
+      title: game.i18n.localize('olddragon2e.dialog.roll_unarmed_attack'),
       content: 'systems/olddragon2e/templates/dialog/characters/unarmed-attack-roll-dialog.hbs',
       data: {
         formula: unarmedAttackRoll.printFormula,
@@ -368,7 +361,7 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
       buttons: {
         roll: {
           icon: "<i class='fa-solid fa-dice-d20'></i>",
-          label: 'Rolar',
+          label: game.i18n.localize('olddragon2e.roll'),
           callback: async (html) => {
             let adjustment = html.find('#adjustment').val();
             const bonus = html.find('#bonus').val();
@@ -390,13 +383,13 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
     const attackRoll = new NaturalWeaponAttackRoll(this.actor, weaponName);
 
     await showDialog({
-      title: `Rolar Ataque`,
+      title: game.i18n.localize('olddragon2e.dialog.roll_attack'),
       content: 'systems/olddragon2e/templates/dialog/characters/attack-roll-dialog.hbs',
       data: { formula: attackRoll.printFormula },
       buttons: {
         roll: {
           icon: "<i class='fa-solid fa-dice-d20'></i>",
-          label: 'Rolar',
+          label: game.i18n.localize('olddragon2e.roll'),
           callback: async (html) => {
             const adjustment = html.find('#adjustment').val();
             const bonus = html.find('#bonus').val();
@@ -418,12 +411,12 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
     const damageRoll = new NaturalWeaponDamageRoll(this.actor, weaponName, damage);
 
     await showDialog({
-      title: `Rolar Dano`,
+      title: game.i18n.localize('olddragon2e.dialog.roll_damage'),
       content: 'systems/olddragon2e/templates/dialog/characters/damage-roll-dialog.hbs',
       buttons: {
         roll: {
           icon: "<i class='fa-solid fa-dice-d20'></i>",
-          label: 'Rolar',
+          label: game.i18n.localize('olddragon2e.roll'),
           callback: async (html) => {
             const bonus = html.find('#bonus').val();
             const mode = html.find('#rollMode').val();
@@ -452,12 +445,12 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
     const damageRoll = new DamageRoll(this.actor, item);
 
     await showDialog({
-      title: `Rolar Dano`,
+      title: game.i18n.localize('olddragon2e.dialog.roll_damage'),
       content: 'systems/olddragon2e/templates/dialog/characters/damage-roll-dialog.hbs',
       buttons: {
         roll: {
           icon: "<i class='fa-solid fa-dice-d20'></i>",
-          label: 'Rolar',
+          label: game.i18n.localize('olddragon2e.roll'),
           callback: async (html) => {
             const bonus = html.find('#bonus').val();
             const mode = html.find('#rollMode').val();
@@ -498,7 +491,7 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
     const knockoutRoll = new KnockoutRoll(this.actor);
 
     await showDialog({
-      title: `Chance de nocaute`,
+      title: game.i18n.localize('olddragon2e.dialog.knockout_chance'),
       content: 'systems/olddragon2e/templates/dialog/characters/knockout-roll-dialog.hbs',
       data: {
         formula: knockoutRoll.printFormula,
@@ -506,7 +499,7 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
       buttons: {
         roll: {
           icon: "<i class='fa-solid fa-dice-d20'></i>",
-          label: 'Rolar',
+          label: game.i18n.localize('olddragon2e.roll'),
           callback: async (html) => {
             const bonus = html.find('#bonus').val();
             const mode = html.find('#rollMode').val();
@@ -530,11 +523,11 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
     if (item.type === 'spell') {
       const spellFlags = item.getFlag('olddragon2e', 'spell') || {};
       if (!spellFlags.memorized) {
-        ui.notifications.warn(`A magia "${item.name}" não está preparada. Memorize a magia para poder lançá-la.`);
+        ui.notifications.warn(game.i18n.format('olddragon2e.notifications.spell_not_memorized', { name: item.name }));
         return;
       }
       if (!spellFlags.slots || Number(spellFlags.slots) < 1) {
-        ui.notifications.warn('É necessário determinar a quantidade de usos de uma magia para poder lançá-la.');
+        ui.notifications.warn(game.i18n.localize('olddragon2e.notifications.spell_requires_slots'));
         return;
       }
     }
@@ -572,7 +565,7 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
           await item.update({ 'flags.olddragon2e.spell.daily-uses': dailyUses });
         }
         if (slots > 0 && !used) {
-          ui.notifications.warn(`Não há mais usos disponíveis para a magia "${item.name}".`);
+          ui.notifications.warn(game.i18n.format('olddragon2e.notifications.spell_no_uses_left', { name: item.name }));
           return;
         }
       }
@@ -669,7 +662,7 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
       ChatMessage.create({
         user: game.user.id,
         speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-        content: `<div class="title">Usou a habilidade:<br><strong>${ability.name}</strong></div>`,
+        content: `<div class="title">${game.i18n.localize('olddragon2e.chat.used_ability')}<br><strong>${ability.name}</strong></div>`,
       });
     }
   }
@@ -691,7 +684,7 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
       ChatMessage.create({
         user: game.user.id,
         speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-        content: `<div class="title">Usou a habilidade:<br><strong>${ability.name}</strong></div>`,
+        content: `<div class="title">${game.i18n.localize('olddragon2e.chat.used_ability')}<br><strong>${ability.name}</strong></div>`,
       });
     }
   }
@@ -764,7 +757,7 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
     const statRoll = new StatRoll(this.actor, statLabel, statName);
 
     await showDialog({
-      title: `Teste de ${statLabel}`,
+      title: game.i18n.format('olddragon2e.dialog.test_of', { label: statLabel }),
       content: 'systems/olddragon2e/templates/dialog/characters/stat-roll-dialog.hbs',
       data: {
         formula: statRoll.formula(),
@@ -772,7 +765,7 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
       buttons: {
         roll: {
           icon: "<i class='fa-solid fa-dice-d20'></i>",
-          label: 'Rolar',
+          label: game.i18n.localize('olddragon2e.roll'),
           callback: async (html) => {
             let adjustment = html.find('#adjustment').val();
             const bonus = html.find('#bonus').val();
@@ -796,7 +789,7 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
     const jpRoll = new JPRoll(this.actor, jpLabel, jpName);
 
     await showDialog({
-      title: `Teste de ${jpLabel}`,
+      title: game.i18n.format('olddragon2e.dialog.test_of', { label: jpLabel }),
       content: 'systems/olddragon2e/templates/dialog/characters/jp-roll-dialog.hbs',
       data: {
         formula: jpRoll.formula(),
@@ -804,7 +797,7 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
       buttons: {
         roll: {
           icon: "<i class='fa-solid fa-dice-d20'></i>",
-          label: 'Rolar',
+          label: game.i18n.localize('olddragon2e.roll'),
           callback: async (html) => {
             let adjustment = html.find('#adjustment').val();
             const bonus = html.find('#bonus').val();
@@ -829,7 +822,7 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
     const baRoll = new BARoll(this.actor, ba);
 
     await showDialog({
-      title: `Teste de ${baLabel}`,
+      title: game.i18n.format('olddragon2e.dialog.test_of', { label: baLabel }),
       content: 'systems/olddragon2e/templates/dialog/characters/ba-roll-dialog.hbs',
       data: {
         formula: baRoll.printFormula,
@@ -837,7 +830,7 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
       buttons: {
         roll: {
           icon: "<i class='fa-solid fa-dice-d20'></i>",
-          label: 'Rolar',
+          label: game.i18n.localize('olddragon2e.roll'),
           callback: async (html) => {
             let adjustment = html.find('#adjustment').val();
             const bonus = html.find('#bonus').val();
@@ -861,7 +854,7 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
     const talentRoll = new TalentRoll(this.actor, talentLabel, talentScore);
 
     await showDialog({
-      title: `Teste de ${talentLabel}`,
+      title: game.i18n.format('olddragon2e.dialog.test_of', { label: talentLabel }),
       content: 'systems/olddragon2e/templates/dialog/characters/talent-roll-dialog.hbs',
       data: {
         formula: talentRoll.formula(),
@@ -869,7 +862,7 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
       buttons: {
         roll: {
           icon: "<i class='fa-solid fa-dice-d6'></i>",
-          label: 'Rolar',
+          label: game.i18n.localize('olddragon2e.roll'),
           callback: async (html) => {
             const bonus = html.find('#bonus').val();
             const mode = html.find('#rollMode').val();
@@ -899,25 +892,25 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
 
     switch (itemType) {
       case 'weapon':
-        itemName = 'Nova Arma';
+        itemName = game.i18n.localize('olddragon2e.new_weapon');
         break;
       case 'armor':
-        itemName = 'Nova Armadura';
+        itemName = game.i18n.localize('olddragon2e.new_armor');
         break;
       case 'shield':
-        itemName = 'Novo Escudo';
+        itemName = game.i18n.localize('olddragon2e.new_shield');
         break;
       case 'misc':
-        itemName = 'Novo Item';
+        itemName = game.i18n.localize('olddragon2e.new_misc');
         break;
       case 'container':
-        itemName = 'Novo Recipiente/Vasilhame';
+        itemName = game.i18n.localize('olddragon2e.new_container');
         break;
       case 'vehicle':
-        itemName = 'Nova Montaria/Transporte';
+        itemName = game.i18n.localize('olddragon2e.new_vehicle');
         break;
       case 'spell':
-        itemName = 'Nova Magia';
+        itemName = game.i18n.localize('olddragon2e.new_spell');
     }
 
     let itemData = {
@@ -994,11 +987,13 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
     let itemName = this.actor.items.get(itemId).name;
     let itemType = this.actor.items.get(itemId).type;
 
+    const boldName = `<strong>${itemName}</strong>`;
+
     const standardTemplate = `
         <form>
             <div>
                 <center>
-                    Excluir <strong>${itemName}</strong>?
+                    ${game.i18n.format('olddragon2e.dialog.delete_item_confirm', { name: boldName })}
                 </center>
             </div>
         </form>`;
@@ -1007,11 +1002,11 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
         <form>
             <div>
                 <center>
-                    Excluir a raça <strong>${itemName}</strong>?
+                    ${game.i18n.format('olddragon2e.dialog.delete_race_confirm', { name: boldName })}
                 </center>
                 <br>
                 <center>
-                    Ao excluir a raça, todas as características e habilidades de raça serão removidas do personagem.
+                    ${game.i18n.localize('olddragon2e.dialog.delete_race_note')}
                 </center>
             </div>
         </form>`;
@@ -1020,11 +1015,11 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
         <form>
             <div>
                 <center>
-                    Excluir a classe <strong>${itemName}</strong>?
+                    ${game.i18n.format('olddragon2e.dialog.delete_class_confirm', { name: boldName })}
                 </center>
                 <br>
                 <center>
-                    Ao excluir a classe, todas as características e habilidades de classe serão removidas do personagem.
+                    ${game.i18n.localize('olddragon2e.dialog.delete_class_note')}
                 </center>
             </div>
         </form>`;
@@ -1037,7 +1032,10 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
         const classRestrictions = characterClass.system.restrictions.races;
         if (classRestrictions.length > 0 && classRestrictions.includes(itemName)) {
           ui.notifications.error(
-            `Não é possível excluir a raça ${itemName} enquanto a classe ${characterClass.name} estiver vinculada ao personagem.`,
+            game.i18n.format('olddragon2e.notifications.race_delete_blocked', {
+              race: itemName,
+              class: characterClass.name,
+            }),
           );
           return;
         }

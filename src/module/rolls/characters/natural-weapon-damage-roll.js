@@ -20,7 +20,7 @@ export class NaturalWeaponDamageRoll extends BaseRoll {
   }
 
   formatMessage() {
-    return `<div class='title'>Dano com <strong>${this.weaponName}</strong></div>`;
+    return `<div class='title'>${game.i18n.localize('olddragon2e.chat.damage_with')} <strong>${this.weaponName}</strong></div>`;
   }
 
   async roll(bonus, critical) {

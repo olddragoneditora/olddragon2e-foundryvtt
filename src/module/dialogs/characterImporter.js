@@ -14,7 +14,7 @@ class CharacterImporterDialog extends Application {
   static get defaultOptions() {
     const options = super.defaultOptions;
     options.id = 'character-importer-dialog';
-    options.title = 'Importar Ajudante ou Personagem do ODO';
+    options.title = 'olddragon2e.odo_import_title';
     options.template = 'systems/olddragon2e/templates/dialog/character-importer-dialog.hbs';
     options.width = 420;
     options.height = 'auto';
@@ -159,7 +159,7 @@ class CharacterImporterDialog extends Application {
       await this.close();
     } catch (err) {
       console.error(err);
-      ui.notifications.error(`Error importing character. Check console for error log.`);
+      ui.notifications.error(game.i18n.localize('olddragon2e.notifications.import_failed'));
     } finally {
       this._importingCharacter = false;
     }
@@ -174,7 +174,7 @@ class CharacterImporterDialog extends Application {
     const actorType = this._detectActorType(url);
 
     if (actorType === null) {
-      ui.notifications.error('URL não reconhecida. Informe uma URL de personagem ou ajudante do Old Dragon Online.');
+      ui.notifications.error(game.i18n.localize('olddragon2e.notifications.url_not_recognized'));
       button.disabled = false;
       return;
     }
@@ -192,7 +192,7 @@ class CharacterImporterDialog extends Application {
       await this.close();
     } catch (err) {
       console.error(err);
-      ui.notifications.error(`Error importing character. Check console for error log.`);
+      ui.notifications.error(game.i18n.localize('olddragon2e.notifications.import_failed'));
     } finally {
       button.disabled = false;
     }
@@ -222,14 +222,14 @@ class CharacterImporterDialog extends Application {
       const response = await fetch(url);
 
       if (!response.ok) {
-        ui.notifications.error(`Error making external request. Check console for error log.`);
+        ui.notifications.error(game.i18n.localize('olddragon2e.notifications.external_request_failed'));
         return '';
       }
 
       return response.json();
     } catch (error) {
       console.error(error);
-      ui.notifications.error(`Error making external request. Check console for error log.`);
+      ui.notifications.error(game.i18n.localize('olddragon2e.notifications.external_request_failed'));
       return '';
     }
   }

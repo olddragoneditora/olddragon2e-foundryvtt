@@ -32,13 +32,13 @@ export class KnockoutRoll extends BaseRoll {
   }
 
   formatMessage() {
-    let result = '<strong class="failure">Falha</strong>';
+    let result = `<strong class="failure">${game.i18n.localize('olddragon2e.chat.failure')}</strong>`;
 
     if (this._success) {
-      result = '<strong class="success">Sucesso!</strong>';
+      result = `<strong class="success">${game.i18n.localize('olddragon2e.chat.success')}</strong>`;
     }
 
-    return `<div class='title'>Chance de <strong>nocaute</strong></div><p class='result'>${result}</p>`;
+    return `<div class='title'>${game.i18n.localize('olddragon2e.chat.knockout_flavor')}</div><p class='result'>${result}</p>`;
   }
 
   async roll(bonus) {

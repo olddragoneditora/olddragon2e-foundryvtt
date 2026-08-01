@@ -23,7 +23,8 @@ export const CHARACTERS_PAGE_SIZE = 21;
 
 export const fetchCharacters = async function (page = 1) {
   const response = await odoFetchAuthenticated(`/personagens.json?page=${page}`);
-  if (!response.ok) throw new Error(`Falha ao listar personagens (${response.status}).`);
+  if (!response.ok)
+    throw new Error(game.i18n.format('olddragon2e.errors.odo_list_characters_failed', { status: response.status }));
 
   const json = await response.json();
   return json.map(normalizeCharacterRow);

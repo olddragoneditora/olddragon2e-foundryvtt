@@ -39,15 +39,15 @@ export class MonsterMORoll extends BaseRoll {
   messageAdjustment(adjustment) {
     switch (adjustment) {
       case 'very-easy':
-        return `Teste (MF) de`;
+        return game.i18n.localize('olddragon2e.chat.test_very_easy');
       case 'easy':
-        return `Teste (F) de`;
+        return game.i18n.localize('olddragon2e.chat.test_easy');
       case 'hard':
-        return `Teste (D) de`;
+        return game.i18n.localize('olddragon2e.chat.test_hard');
       case 'very-hard':
-        return `Teste (MD) de`;
+        return game.i18n.localize('olddragon2e.chat.test_very_hard');
       default:
-        return `Teste de`;
+        return game.i18n.localize('olddragon2e.chat.test');
     }
   }
 
@@ -59,15 +59,15 @@ export class MonsterMORoll extends BaseRoll {
   }
 
   formatMessage(adjustment) {
-    let result = '<strong class="failure">Falha</strong>';
+    let result = `<strong class="failure">${game.i18n.localize('olddragon2e.chat.failure')}</strong>`;
 
     if (this._success(adjustment)) {
-      result = '<strong class="success">Sucesso!</strong>';
+      result = `<strong class="success">${game.i18n.localize('olddragon2e.chat.success')}</strong>`;
     }
 
     return `<div class='title'>${this.messageAdjustment(
       adjustment,
-    )} <strong>Moral</strong></div><p class='result'>${result}</p>`;
+    )} <strong>${game.i18n.localize('olddragon2e.mo')}</strong></div><p class='result'>${result}</p>`;
   }
 
   async roll(bonus) {

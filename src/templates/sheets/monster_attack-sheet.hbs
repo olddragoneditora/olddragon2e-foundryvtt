@@ -1,7 +1,7 @@
 <form class="{{cssClass}}" autocomplete="off">
     <header class="sheet-header">
         <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
-        <h1><input class="monster-attack-name" name="name" type="text" value="{{system.times}} × {{system.description}} {{signed_number system.ba}} ({{system.damage_description}})" data-dtype="String" onkeydown="return false;" title="Não altere o nome do ataque"/></h1>
+        <h1><input class="monster-attack-name" name="name" type="text" value="{{system.times}} × {{system.description}} {{signed_number system.ba}} ({{system.damage_description}})" data-dtype="String" onkeydown="return false;" title="{{localize 'olddragon2e.sheet.monster_attack_name_hint'}}"/></h1>
     </header>
     <div class="monster-attack">
         {{!-- Ataque --}}
@@ -9,7 +9,7 @@
             <label class="tab-title">{{localize "olddragon2e.atq"}}</label>
             {{!-- Vezes --}}
             <div class="times">
-                <label class="font-bold" title="Quantos ataques em uma mesma rodada podem ser desferidos. Aceita apenas números inteiros positivos.">{{localize "olddragon2e.times"}}&nbsp;<i class="fa-solid fa-circle-info"></i></label>
+                <label class="font-bold" title="{{localize 'olddragon2e.tooltips.monster_attack_times'}}">{{localize "olddragon2e.times"}}&nbsp;<i class="fa-solid fa-circle-info"></i></label>
                 <input name="system.times" type="text" value="{{system.times}}" data-dtype="Number">
             </div>
             {{!-- Descrição --}}
@@ -26,7 +26,7 @@
             <div class="checkboxes">
                 <div class="checkbox">
                     <input class="weapon-checkbox" name="system.weapon" type="checkbox" {{checked system.weapon}}>
-                    <label class="font-bold">{{localize "olddragon2e.weapon"}} <i class="fa-solid fa-circle-info" title="Se marcada, a rolagem de dano deste ataque terá seu valor considerado como 1d6"></i></label>
+                    <label class="font-bold">{{localize "olddragon2e.weapon"}} <i class="fa-solid fa-circle-info" title="{{localize 'olddragon2e.tooltips.weapon_attack_1d6'}}"></i></label>
                 </div>
             </div>
         </div>
@@ -35,12 +35,12 @@
             <label class="tab-title">{{localize "olddragon2e.damage"}}</label>
             {{!-- Dano --}}
             <div class="damage">
-                <label class="font-bold" title="Apenas dados. Por exemplo: 1d6, 2d4">{{localize "olddragon2e.damage"}}&nbsp;<i class="fa-solid fa-circle-info"></i></label>
+                <label class="font-bold" title="{{localize 'olddragon2e.tooltips.dice_values'}}">{{localize "olddragon2e.damage"}}&nbsp;<i class="fa-solid fa-circle-info"></i></label>
                 <input name="system.damage" type="text" value="{{system.damage}}" data-dtype="String">
             </div>
             {{!-- Bônus no dano --}}
             <div class="damage-bonus">
-                <label class="font-bold" title="Apenas valores inteiros, positivos ou negativos. Por exemplo: 2, -1">{{localize "olddragon2e.bonus_damage"}}&nbsp;<i class="fa-solid fa-circle-info"></i></label>
+                <label class="font-bold" title="{{localize 'olddragon2e.tooltips.integer_values'}}">{{localize "olddragon2e.bonus_damage"}}&nbsp;<i class="fa-solid fa-circle-info"></i></label>
                 <input name="system.damage_bonus" type="text" value="{{system.damage_bonus}}" data-dtype="Number">
             </div>
             {{!-- Descrição do Dano --}}

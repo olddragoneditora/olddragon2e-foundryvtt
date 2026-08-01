@@ -16,12 +16,12 @@
                 </div>
                 {{!-- JP | Jogada de Proteção --}}
                 <div class="stat">
-                    <a class="font-bold jp-roll" title="Rolar jogada de proteção"><i class="fa-thin fa-dice-d20"></i>{{localize "olddragon2e.jp_short"}}</a>
+                    <a class="font-bold jp-roll" title="{{localize 'olddragon2e.tooltips.roll_jp'}}"><i class="fa-thin fa-dice-d20"></i>{{localize "olddragon2e.jp_short"}}</a>
                     <input name="system.jp" type="text" value="{{system.jp}}" data-dtype="String">
                 </div>
                 {{!-- MO | Moral --}}
                 <div class="stat">
-                    <a class="font-bold mo-roll" title="Rolar teste de moral"><i class="fa-thin fa-dice-d6"></i>{{localize "olddragon2e.mo_short"}}</a>
+                    <a class="font-bold mo-roll" title="{{localize 'olddragon2e.tooltips.roll_mo'}}"><i class="fa-thin fa-dice-d6"></i>{{localize "olddragon2e.mo_short"}}</a>
                     <input name="system.mo" type="text" value="{{system.mo}}" data-dtype="String">
                 </div>
 
@@ -72,7 +72,7 @@
                         {{!-- DV --}}
                         <div class="dv-value">
                             <input name="system.dv" type="text" value="{{system.dv}}" data-dtype="String">
-                            <a class="text-xs font-bold dv-roll" title="Rolar pontos de vida"><i class="fa-thin fa-dice-d8"></i>{{localize "olddragon2e.dv_short"}}</a>
+                            <a class="text-xs font-bold dv-roll" title="{{localize 'olddragon2e.tooltips.roll_hp'}}"><i class="fa-thin fa-dice-d8"></i>{{localize "olddragon2e.dv_short"}}</a>
                         </div>
                         {{!-- DV Bônus --}}
                         <div class="dv-bonus-value">

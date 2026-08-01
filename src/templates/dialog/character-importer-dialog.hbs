@@ -35,8 +35,8 @@
         {{/if}}
     </div>
     <hr>
-    <p>Insira o link da página da ficha do <strong>ajudante</strong> ou <strong>personagem</strong> escolhido no <a href="{{odoBaseUrl}}">ODO</a>.</p>
-    <p>Utilize o botão “Compartilhar”, ou copie a URL no browser.</p>
+    <p>{{{localize "olddragon2e.odo_import_hint" url=odoBaseUrl}}}</p>
+    <p>{{localize "olddragon2e.odo_import_hint2"}}</p>
     <input name="character-importer" id="character-importer-url-text" type="text">{{character-importer}}</input>
     <div class="button-row">
         <button type="submit" class="button character-importer-button" name="character-importer" value="1"><i class="fa-solid fa-file-import"></i>{{localize "olddragon2e.import"}}</button>

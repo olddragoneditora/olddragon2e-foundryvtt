@@ -154,25 +154,25 @@ const _jsonToActorData = async (json) => {
   if (raceUUID) {
     raceItem = await fromUuid(raceUUID).catch(() => null);
     if (!raceItem && raceUUID.startsWith('Compendium.olddragon2e-legiao') && !isLegiaoModuleAvailable) {
-      ui.notifications.warn(`A Raça "${raceName}" é exclusiva do módulo premium "Legião - A Era da Desolação".`);
+      ui.notifications.warn(game.i18n.format('olddragon2e.notifications.race_premium_legiao', { name: raceName }));
     } else if (!raceItem && raceUUID.startsWith('Compendium.olddragon2e-racas') && !isRacasModuleAvailable) {
-      ui.notifications.warn(`A Raça "${raceName}" é exclusiva do módulo premium "Guia de Campanha: Raças".`);
+      ui.notifications.warn(game.i18n.format('olddragon2e.notifications.race_premium_racas', { name: raceName }));
     } else if (!raceItem) {
-      ui.notifications.warn(`A Raça "${raceName}" não foi encontrada.`);
+      ui.notifications.warn(game.i18n.format('olddragon2e.notifications.race_not_found', { name: raceName }));
     }
   } else {
-    ui.notifications.warn(`Raça "${raceName}" não encontrada.`);
+    ui.notifications.warn(game.i18n.format('olddragon2e.notifications.race_not_found', { name: raceName }));
   }
 
   if (classUUID) {
     classItem = await fromUuid(classUUID).catch(() => null);
     if (!classItem && classUUID.startsWith('Compendium.olddragon2e-legiao') && !isLegiaoModuleAvailable) {
-      ui.notifications.warn(`A Classe "${className}" é exclusiva do módulo premium "Legião - A Era da Desolação".`);
+      ui.notifications.warn(game.i18n.format('olddragon2e.notifications.class_premium_legiao', { name: className }));
     } else if (!classItem) {
-      ui.notifications.warn(`A Classe "${className}" não foi encontrada.`);
+      ui.notifications.warn(game.i18n.format('olddragon2e.notifications.class_not_found', { name: className }));
     }
   } else {
-    ui.notifications.warn(`Classe "${className}" não encontrada.`);
+    ui.notifications.warn(game.i18n.format('olddragon2e.notifications.class_not_found', { name: className }));
   }
 
   const actorData = {
@@ -228,14 +228,14 @@ const _jsonToRetainerActorData = async (json) => {
   if (raceUUID) {
     raceItem = await fromUuid(raceUUID).catch(() => null);
     if (!raceItem && raceUUID.startsWith('Compendium.olddragon2e-legiao') && !isLegiaoModuleAvailable) {
-      ui.notifications.warn(`A Raça "${raceName}" é exclusiva do módulo premium "Legião - A Era da Desolação".`);
+      ui.notifications.warn(game.i18n.format('olddragon2e.notifications.race_premium_legiao', { name: raceName }));
     } else if (!raceItem && raceUUID.startsWith('Compendium.olddragon2e-racas') && !isRacasModuleAvailable) {
-      ui.notifications.warn(`A Raça "${raceName}" é exclusiva do módulo premium "Guia de Campanha: Raças".`);
+      ui.notifications.warn(game.i18n.format('olddragon2e.notifications.race_premium_racas', { name: raceName }));
     } else if (!raceItem) {
-      ui.notifications.warn(`A Raça "${raceName}" não foi encontrada.`);
+      ui.notifications.warn(game.i18n.format('olddragon2e.notifications.race_not_found', { name: raceName }));
     }
   } else {
-    ui.notifications.warn(`Raça "${raceName}" não encontrada.`);
+    ui.notifications.warn(game.i18n.format('olddragon2e.notifications.race_not_found', { name: raceName }));
   }
 
   const actorData = {
@@ -306,7 +306,7 @@ const _downloadAndSaveImage = async (url) => {
       setTimeout(() => {
         if (_pendingImageRequests.has(requestId)) {
           _pendingImageRequests.delete(requestId);
-          reject(new Error('Timeout: GM não respondeu ao pedido de upload do retrato.'));
+          reject(new Error(game.i18n.localize('olddragon2e.errors.gm_upload_timeout')));
         }
       }, 30000);
       game.socket.emit('system.olddragon2e', {
@@ -523,7 +523,7 @@ const _removeInventoryItems = async (actor) => {
 export const updateRetainerActor = async (actor) => {
   const odoId = actor.system.odo_id;
   if (!odoId) {
-    ui.notifications.error('Este ajudante não possui um ID do Old Dragon Online.');
+    ui.notifications.error(game.i18n.localize('olddragon2e.notifications.retainer_no_odo_id'));
     return actor;
   }
 
@@ -567,10 +567,12 @@ export const updateRetainerActor = async (actor) => {
     await _removeInventoryItems(actor);
     await _addInventoryItems(actor, json.inventory_items);
 
-    ui.notifications.info(`Ajudante "${json.name}" atualizado com sucesso!`);
+    ui.notifications.info(game.i18n.format('olddragon2e.notifications.retainer_updated', { name: json.name }));
     return actor;
   } catch (error) {
-    ui.notifications.error(`Erro ao atualizar ajudante: ${error.message}`);
+    ui.notifications.error(
+      game.i18n.format('olddragon2e.notifications.retainer_update_failed', { error: error.message }),
+    );
     console.error('Error updating retainer actor from ODO:', error);
     return actor;
   }
@@ -584,7 +586,7 @@ export const updateRetainerActor = async (actor) => {
 export const updateActor = async (actor) => {
   const odoId = actor.system.odo_id;
   if (!odoId) {
-    ui.notifications.error('Este personagem não possui um ID do Old Dragon Online.');
+    ui.notifications.error(game.i18n.localize('olddragon2e.notifications.character_no_odo_id'));
     return actor;
   }
 
@@ -642,10 +644,12 @@ export const updateActor = async (actor) => {
 
     await recordSyncedAt(actor, json.updated_at);
 
-    ui.notifications.info(`Personagem "${json.name}" atualizado com sucesso!`);
+    ui.notifications.info(game.i18n.format('olddragon2e.notifications.character_updated', { name: json.name }));
     return actor;
   } catch (error) {
-    ui.notifications.error(`Erro ao atualizar personagem: ${error.message}`);
+    ui.notifications.error(
+      game.i18n.format('olddragon2e.notifications.character_update_failed', { error: error.message }),
+    );
     console.error('Error updating actor from ODO:', error);
     return actor;
   }
