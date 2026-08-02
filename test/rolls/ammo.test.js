@@ -28,7 +28,7 @@ describe('resolveAmmo', () => {
     const weapon = makeWeapon({ ammo_type: 'none' });
     const result = resolveAmmo(makeActor(), weapon);
 
-    expect(result).toEqual({ requiresAmmo: false, ammoItem: null });
+    expect(result).toEqual({ requiresAmmo: false, ammoItem: null, ambiguous: false });
   });
 
   it('does not require ammo when ammo_type is missing entirely (fail-open for un-migrated items)', () => {
@@ -36,7 +36,7 @@ describe('resolveAmmo', () => {
     delete weapon.system.ammo_type;
     const result = resolveAmmo(makeActor(), weapon);
 
-    expect(result).toEqual({ requiresAmmo: false, ammoItem: null });
+    expect(result).toEqual({ requiresAmmo: false, ammoItem: null, ambiguous: false });
   });
 
   it('treats ammo_type "self" as its own ammunition', () => {
@@ -57,6 +57,18 @@ describe('resolveAmmo', () => {
 
     expect(result.requiresAmmo).toBe(true);
     expect(result.ammoItem).toBe(arrowAmmo);
+    expect(result.ambiguous).toBe(false);
+  });
+
+  it('returns ambiguous when more than one equipped ammo matches the ammo_type', () => {
+    const weapon = makeWeapon({ ammo_type: 'arrow' });
+    const huntingArrow = makeAmmo({ arrow: true });
+    const warArrow = makeAmmo({ arrow: true });
+    const actor = makeActor([huntingArrow, warArrow]);
+
+    const result = resolveAmmo(actor, weapon);
+
+    expect(result).toEqual({ requiresAmmo: true, ammoItem: null, ambiguous: true });
   });
 
   it('does not match ammo_type "bolt" against bolt_small ammunition', () => {

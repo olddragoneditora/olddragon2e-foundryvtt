@@ -332,6 +332,10 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
     let ammoItem = null;
     if (game.settings.get('olddragon2e', 'ammoTracking')) {
       const resolved = resolveAmmo(this.actor, item);
+      if (resolved.ambiguous) {
+        ui.notifications.warn(game.i18n.localize('olddragon2e.warnings.ambiguousAmmo'));
+        return;
+      }
       if (resolved.requiresAmmo && (!resolved.ammoItem || resolved.ammoItem.system.quantity <= 0)) {
         ui.notifications.warn(game.i18n.format('olddragon2e.ammoTracking.outOfAmmo', { weapon: item.name }));
         return;

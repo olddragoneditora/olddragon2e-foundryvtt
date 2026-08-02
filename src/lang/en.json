@@ -471,6 +471,9 @@
       "outOfAmmo": "{weapon} has no ammunition equipped!",
       "ranOut": "{weapon} ran out of ammunition!"
     },
+    "warnings": {
+      "ambiguousAmmo": "More than one compatible ammunition is equipped. Unequip one to continue."
+    },
     "sync_from_odo": "Sync from Old Dragon Online",
     "sync_warning": "Syncing will download changes from the Old Dragon Online character sheet and overwrite this sheet. Any changes made here that were not made on Old Dragon Online will be lost. Do you want to continue?",
     "odo_connect": "Connect to OldDragon.com.br",

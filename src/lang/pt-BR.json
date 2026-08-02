@@ -471,6 +471,9 @@
       "outOfAmmo": "{weapon} está sem munição equipada!",
       "ranOut": "{weapon} ficou sem munição!"
     },
+    "warnings": {
+      "ambiguousAmmo": "Mais de uma munição compatível está equipada. Desequipe uma para continuar."
+    },
     "sync_from_odo": "Sincronizar com Old Dragon Online",
     "sync_warning": "Ao sincronizar, iremos baixar as alterações realizadas na ficha do Old Dragon Online e sobrescrever esta ficha. Alterações realizadas aqui que não foram feitas no Old Dragon Online serão perdidas. Deseja continuar?",
     "odo_connect": "Conectar ao OldDragon.com.br",
