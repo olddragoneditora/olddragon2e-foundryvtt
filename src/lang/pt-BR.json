@@ -14,6 +14,10 @@
   "TYPES.Item.class": "Classe",
   "TYPES.Item.class_ability": "Habilidade de Classe",
   "TYPES.Item.monster_attack": "Ataque de Monstro",
+  "CHAT.RollPublic": "Público como Personagem",
+  "CHAT.RollPrivate": "Privado para Mestres",
+  "CHAT.RollBlind": "Cego para Mestres",
+  "CHAT.RollSelf": "Somente para Si",
   "olddragon2e": {
     "name": "Nome",
     "key": "Chave",
@@ -130,6 +134,7 @@
     "class_ability_level3_description": "Descrição - 3º Nível",
     "class_ability_level6_description": "Descrição - 6º Nível",
     "class_ability_level10_description": "Descrição - 10º Nível",
+    "class_ability_mechanics_in_development": "As mecânicas de habilidades de classe ainda estão em desenvolvimento.",
     "class_ability": {
       "equipment_restrictions": {
         "weapons": "Armas",
@@ -574,6 +579,8 @@
       "roll_mo": "Rolar teste de moral",
       "roll_hp": "Rolar pontos de vida",
       "monster_attack_times": "Quantos ataques em uma mesma rodada podem ser desferidos. Aceita apenas números inteiros positivos.",
+      "monster_attack_type": "Descrição do ataque. Por exemplo: \"Garra\", \"Mordida\", \"Caudas\", \"Chifres\"",
+      "monster_attack_damage_description": "Texto exibido entre parêntesis para representar o dano. Por exemplo: \"1d4+2\", \"arma+1\" ou \"1d3 + veneno\"",
       "integer_values": "Apenas valores inteiros, positivos ou negativos. Por exemplo: 2, -1",
       "dice_values": "Apenas dados. Por exemplo: 1d6, 2d4",
       "weapon_attack_1d6": "Se marcada, a rolagem de dano deste ataque terá seu valor considerado como 1d6",
