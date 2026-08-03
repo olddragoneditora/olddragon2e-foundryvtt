@@ -91,7 +91,7 @@ export function registerHandlebarsHelper() {
       const maxUses = dailyUses[currentLevel] || 0;
       for (let i = 0; i < maxUses; i++) {
         const checked = dailyUsesState && dailyUsesState[i + 1] ? 'checked' : '';
-        const title = checked ? 'Recuperar' : 'Usar';
+        const title = checked ? game.i18n.localize('olddragon2e.recover') : game.i18n.localize('olddragon2e.use');
         result += `<input type="checkbox"
         class="class-ability-use-checkbox"
         name="daily_use_${currentLevel}_${i + 1}"
@@ -108,7 +108,7 @@ export function registerHandlebarsHelper() {
     let result = '';
     for (let i = 0; i < dailyUses; i++) {
       const checked = dailyUsesState && dailyUsesState[i + 1] ? 'checked' : '';
-      const title = checked ? 'Recuperar' : 'Usar';
+      const title = checked ? game.i18n.localize('olddragon2e.recover') : game.i18n.localize('olddragon2e.use');
       result += `<input type="checkbox"
       class="race-ability-use-checkbox"
       name="race_daily_use_${i + 1}"

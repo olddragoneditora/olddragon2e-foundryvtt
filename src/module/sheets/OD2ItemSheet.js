@@ -74,7 +74,7 @@ export default class OD2ItemSheet extends foundry.appv1.sheets.ItemSheet {
 
     if (receivingItem.type === 'race') {
       if (item.type !== 'race_ability') {
-        ui.notifications.error('Apenas habilidades de raça podem ser adicionadas.');
+        ui.notifications.error(game.i18n.localize('olddragon2e.notifications.only_race_abilities'));
         return;
       }
       // Adiciona o UUID do Item
@@ -83,7 +83,7 @@ export default class OD2ItemSheet extends foundry.appv1.sheets.ItemSheet {
       receivingItem.parent && (await receivingItem.parent.system.updateRaceAbilities(raceAbilities));
     } else if (receivingItem.type === 'class') {
       if (item.type !== 'class_ability') {
-        ui.notifications.error('Apenas habilidades de classe podem ser adicionadas.');
+        ui.notifications.error(game.i18n.localize('olddragon2e.notifications.only_class_abilities'));
         return;
       }
       // Adiciona o UUID do Item
@@ -91,7 +91,7 @@ export default class OD2ItemSheet extends foundry.appv1.sheets.ItemSheet {
       await receivingItem.update({ 'system.class_abilities': classAbilities });
       receivingItem.parent && (await receivingItem.parent.system.updateClassAbilities(classAbilities));
     } else {
-      ui.notifications.error('Apenas raças e classes podem receber habilidades.');
+      ui.notifications.error(game.i18n.localize('olddragon2e.notifications.only_races_and_classes'));
       return;
     }
 

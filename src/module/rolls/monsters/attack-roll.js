@@ -60,15 +60,15 @@ export class MonsterAttackRoll extends BaseRoll {
   messageAdjustment(adjustment) {
     switch (adjustment) {
       case 'very-easy':
-        return 'Ataque (MF)';
+        return game.i18n.localize('olddragon2e.chat.attack_very_easy');
       case 'easy':
-        return 'Ataque (F)';
+        return game.i18n.localize('olddragon2e.chat.attack_easy');
       case 'hard':
-        return 'Ataque (D)';
+        return game.i18n.localize('olddragon2e.chat.attack_hard');
       case 'very-hard':
-        return 'Ataque (MD)';
+        return game.i18n.localize('olddragon2e.chat.attack_very_hard');
       default:
-        return 'Ataque';
+        return game.i18n.localize('olddragon2e.chat.attack');
     }
   }
 
@@ -77,7 +77,7 @@ export class MonsterAttackRoll extends BaseRoll {
   }
 
   formatMessage(adjustment) {
-    return `<div class='title'>${this.messageAdjustment(adjustment)} com <strong>${
+    return `<div class='title'>${this.messageAdjustment(adjustment)} ${game.i18n.localize('olddragon2e.chat.with')} <strong>${
       this.item.system.description
     }</strong></div>`;
   }

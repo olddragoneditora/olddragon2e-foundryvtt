@@ -47,7 +47,8 @@ const readJson = async function (response) {
 
 export const requestDeviceCode = async function () {
   const response = await postForm('/device-authorization', { client_id: CLIENT_ID, scope: SCOPE });
-  if (!response.ok) throw new Error(`Falha ao iniciar a conexão (${response.status}).`);
+  if (!response.ok)
+    throw new Error(game.i18n.format('olddragon2e.errors.odo_connection_start_failed', { status: response.status }));
   return response.json();
 };
 
@@ -91,12 +92,15 @@ export const pollForToken = async function (deviceCode, intervalSeconds, expires
       interval += 5_000;
       continue;
     }
-    if (payload.error === 'access_denied') throw new Error('Autorização negada.');
-    if (payload.error === 'expired_token') throw new Error('O código expirou. Tente novamente.');
-    throw new Error(`Falha ao autorizar (${payload.error ?? response.status}).`);
+    if (payload.error === 'access_denied')
+      throw new Error(game.i18n.localize('olddragon2e.errors.odo_authorization_denied'));
+    if (payload.error === 'expired_token') throw new Error(game.i18n.localize('olddragon2e.errors.odo_code_expired'));
+    throw new Error(
+      game.i18n.format('olddragon2e.errors.odo_authorization_failed', { error: payload.error ?? response.status }),
+    );
   }
 
-  throw new Error('O código expirou. Tente novamente.');
+  throw new Error(game.i18n.localize('olddragon2e.errors.odo_code_expired'));
 };
 
 export const refreshAccessToken = async function () {

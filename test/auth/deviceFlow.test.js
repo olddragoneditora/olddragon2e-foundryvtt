@@ -34,6 +34,10 @@ const stubGame = function (overrides = {}) {
       set,
     },
     system: { version: '2.4.0' },
+    i18n: {
+      localize: vi.fn((key) => key),
+      format: vi.fn((key) => key),
+    },
   });
   return { store, set };
 };
@@ -108,7 +112,7 @@ describe('pollForToken', () => {
       vi.fn().mockResolvedValue(jsonResponse({ error: 'access_denied' }, { ok: false, status: 400 })),
     );
 
-    await expect(pollForToken('device-code', 0, 5)).rejects.toThrow('Autorização negada.');
+    await expect(pollForToken('device-code', 0, 5)).rejects.toThrow('olddragon2e.errors.odo_authorization_denied');
   });
 });
 

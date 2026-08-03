@@ -91,17 +91,17 @@ Hooks.once('init', async () => {
   foundry.documents.collections.Actors.unregisterSheet('core', foundry.appv1.sheets.ActorSheet);
   foundry.documents.collections.Actors.registerSheet('olddragon2e', OD2CharacterSheet, {
     types: ['character'],
-    label: 'Personagem',
+    label: 'TYPES.Actor.character',
     makeDefault: true,
   });
   foundry.documents.collections.Actors.registerSheet('olddragon2e', OD2MonsterSheet, {
     types: ['monster'],
-    label: 'Monstro/Inimigo',
+    label: 'TYPES.Actor.monster',
     makeDefault: true,
   });
   foundry.documents.collections.Actors.registerSheet('olddragon2e', OD2RetainerSheet, {
     types: ['retainer'],
-    label: 'Ajudante',
+    label: 'TYPES.Actor.retainer',
     makeDefault: true,
   });
 

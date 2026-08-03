@@ -1,29 +1,29 @@
 <div class="form-group">
-    <label>Tipo de Ataque</label>
+    <label>{{localize "olddragon2e.dialog.attack_type"}}</label>
     <select name="attack-mode" id="attack-mode">
-        <option value="melee" selected>Corpo a corpo</option>
-        <option value="throwing">Arremesso</option>
-        <option value="ranged">Disparo</option>
+        <option value="melee" selected>{{localize "olddragon2e.weapon_types.melee"}}</option>
+        <option value="throwing">{{localize "olddragon2e.weapon_types.throwing"}}</option>
+        <option value="ranged">{{localize "olddragon2e.weapon_types.ranged"}}</option>
     </select>
 </div>
 <div class="form-group">
-    <label>Fórmula</label>
+    <label>{{localize "olddragon2e.dialog.formula"}}</label>
     <input type="text" id="formula" name="formula" value="" disabled>
 </div>
 <div class="form-group">
-    <label title="Aceita valores inteiros ou dados. Por exemplo: -1, 10, 2d4, 1d6 + 1d8 + 1d10">Modificador Opcional&nbsp;<i class="fa-solid fa-circle-info"></i></label>
+    <label title="{{localize 'olddragon2e.dialog.optional_modifier_hint'}}">{{localize "olddragon2e.dialog.optional_modifier"}}&nbsp;<i class="fa-solid fa-circle-info"></i></label>
     <input type="text" name="bonus" id="bonus" value="">
 </div>
 <div class="form-group">
-    <label>Modo de Rolagem</label>
+    <label>{{localize "olddragon2e.dialog.roll_mode"}}</label>
     <select name="rollMode" id="rollMode">
-        <option value="public" selected>Public Roll</option>
-        <option value="private">Private GM Roll</option>
-        <option value="blind">Blind GM Roll</option>
-        <option value="self">Self Roll</option>
+        <option value="public" selected>{{localize "CHAT.RollPublic"}}</option>
+        <option value="private">{{localize "CHAT.RollPrivate"}}</option>
+        <option value="blind">{{localize "CHAT.RollBlind"}}</option>
+        <option value="self">{{localize "CHAT.RollSelf"}}</option>
     </select>
 </div>
 <div class="form-group">
-    <label for="critical" title="Se você obteve um acerto crítico na rolagem de ataque, marque esta opção para causar dano crítico (em dobro)">Acerto crítico?&nbsp;<i class="fa-solid fa-circle-info"></i></label>
+    <label for="critical" title="{{localize 'olddragon2e.dialog.critical_hit_hint'}}">{{localize "olddragon2e.dialog.critical_hit"}}&nbsp;<i class="fa-solid fa-circle-info"></i></label>
     <input type="checkbox" name="critical" id="critical">
 </div>

@@ -39,7 +39,7 @@ export async function showDialog(options) {
 
     _buttons.push({
       action: 'cancel',
-      label: 'Cancelar',
+      label: game.i18n.localize('olddragon2e.cancel'),
       icon: "<i class='fa-solid fa-xmark'></i>",
     });
 
@@ -73,7 +73,7 @@ export async function showDialog(options) {
         ..._buttons,
         cancel: {
           icon: "<i class='fa-solid fa-xmark'></i>",
-          label: 'Cancelar',
+          label: game.i18n.localize('olddragon2e.cancel'),
         },
       },
       render: renderCallback || (() => {}),

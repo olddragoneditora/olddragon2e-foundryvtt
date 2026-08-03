@@ -4,16 +4,16 @@
     {{!-- Tipo e Círculo --}}
     <div class="italic">
         {{#ifCond system.arcane '<=' "9"}}
-        {{localize 'olddragon2e.arcane_spell'}} <span class="text-xs">({{system.arcane}}º {{localize 'olddragon2e.circle'}})</span>
+        {{localize 'olddragon2e.arcane_spell'}} <span class="text-xs">({{localize (concat 'olddragon2e.spell_circle.' system.arcane)}} {{localize 'olddragon2e.circle'}})</span>
         {{/ifCond}}
         {{#ifCond system.divine '<=' "7"}}
-        {{localize 'olddragon2e.divine_spell'}} <span class="text-xs">({{system.divine}}º {{localize 'olddragon2e.circle'}})</span>
+        {{localize 'olddragon2e.divine_spell'}} <span class="text-xs">({{localize (concat 'olddragon2e.spell_circle.' system.divine)}} {{localize 'olddragon2e.circle'}})</span>
         {{/ifCond}}
         {{#ifCond system.necromancer '<=' "9"}}
-        {{localize 'olddragon2e.necromancer_spell'}} <span class="text-xs">({{system.necromancer}}º {{localize 'olddragon2e.circle'}})</span>
+        {{localize 'olddragon2e.necromancer_spell'}} <span class="text-xs">({{localize (concat 'olddragon2e.spell_circle.' system.necromancer)}} {{localize 'olddragon2e.circle'}})</span>
         {{/ifCond}}
         {{#ifCond system.illusionist '<=' "9"}}
-        {{localize 'olddragon2e.illusionist_spell'}} <span class="text-xs">({{system.illusionist}}º {{localize 'olddragon2e.circle'}})</span>
+        {{localize 'olddragon2e.illusionist_spell'}} <span class="text-xs">({{localize (concat 'olddragon2e.spell_circle.' system.illusionist)}} {{localize 'olddragon2e.circle'}})</span>
         {{/ifCond}}
     </div>
     {{!-- Alcance --}}

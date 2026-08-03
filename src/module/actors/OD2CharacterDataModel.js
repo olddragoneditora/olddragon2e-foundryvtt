@@ -363,7 +363,7 @@ export class OD2CharacterDataModel extends foundry.abstract.TypeDataModel {
     const nextLevelXp = this.next_level_xp;
 
     if (currentXp >= nextLevelXp) {
-      ui.notifications.info(`Parabéns! ${this.parent.name} já pode subir de nível!`);
+      ui.notifications.info(game.i18n.format('olddragon2e.notifications.level_up', { name: this.parent.name }));
     }
   }
 
