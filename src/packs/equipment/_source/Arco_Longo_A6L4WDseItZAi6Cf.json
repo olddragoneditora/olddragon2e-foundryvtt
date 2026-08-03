@@ -20,7 +20,7 @@
     "bonus_ba": null,
     "shoot_range": 45,
     "throw_range": null,
-    "arrow": false,
+    "arrow": true,
     "bolt": false,
     "bolt_small": false,
     "polearm": false,
