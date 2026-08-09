@@ -34,6 +34,13 @@
                     {{selectOptions config.weapon_types selected=system.type localize=true}}
                 </select>
             </div>
+            {{!-- Tipo de munição --}}
+            <div class="ammo-type">
+                <label class="font-bold">{{localize "olddragon2e.ammo_type"}}</label>
+                <select name="system.ammo_type">
+                    {{selectOptions config.ammo_types selected=system.ammo_type localize=true}}
+                </select>
+            </div>
             {{!-- Tipo de dano --}}
             <div class="damage-type">
                 <label class="font-bold">{{localize "olddragon2e.damage_type"}}</label>

@@ -319,6 +319,14 @@
       "unarmed": "Desarmado",
       "natural_weapon": "Arma Natural"
     },
+    "ammo_type": "Tipo de Munição",
+    "ammo_types": {
+      "none": "Nenhum (sem rastreamento)",
+      "self": "Ela mesma (arremesso)",
+      "arrow": "Flecha",
+      "bolt": "Virote",
+      "bolt_small": "Virote pequeno"
+    },
     "weapon_sizes": {
       "label": "Tamanho",
       "none": "Nenhum",
@@ -619,7 +627,21 @@
           "individual": "Individual (1d12)",
           "standard": "Padrão (Destreza/Sabedoria)"
         }
+      },
+      "ammoTracking": {
+        "name": "Rastreamento de Munição",
+        "hint": "Ao ativar, armas de disparo e arremesso passam a exigir munição equipada compatível, consumindo 1 unidade a cada ataque e bloqueando o ataque se a munição acabar.",
+        "disableWarning": "Atenção: o módulo Forien's Ammo Swapper está ativo e depende deste rastreamento — desativá-lo pode fazer armas e munições pararem de funcionar corretamente no módulo.",
+        "autoEnabled": "Rastreamento de Munição ativado automaticamente (módulo Forien's Ammo Swapper detectado).",
+        "equipReminder": "Rastreamento de Munição ativado: só afeta armas com um Tipo de Munição definido na ficha. Nessas armas, tanto ela quanto a munição precisam estar equipadas."
       }
+    },
+    "ammoTracking": {
+      "outOfAmmo": "{weapon} está sem munição equipada!",
+      "ranOut": "{weapon} ficou sem munição!"
+    },
+    "warnings": {
+      "ambiguousAmmo": "Mais de uma munição compatível está equipada. Desequipe uma para continuar."
     },
     "sync_from_odo": "Sincronizar com Old Dragon Online",
     "sync_warning": "Ao sincronizar, iremos baixar as alterações realizadas na ficha do Old Dragon Online e sobrescrever esta ficha. Alterações realizadas aqui que não foram feitas no Old Dragon Online serão perdidas. Deseja continuar?",

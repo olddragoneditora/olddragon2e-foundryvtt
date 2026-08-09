@@ -270,6 +270,14 @@ export class OD2RetainerDataModel extends foundry.abstract.TypeDataModel {
     );
   }
 
+  get equipped_ammunition() {
+    return getItemsOfActorOfType(
+      this.parent,
+      'weapon',
+      ({ system }) => system.type === 'ammunition' && system.is_equipped,
+    );
+  }
+
   get weapon_items() {
     return getItemsOfActorOfType(this.parent, 'weapon').sort((a, b) => (a.sort || 0) - (b.sort || 0));
   }

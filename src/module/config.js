@@ -84,6 +84,14 @@ olddragon2e.weapon_types = {
   ammunition: 'olddragon2e.weapon_types.ammunition',
 };
 
+olddragon2e.ammo_types = {
+  none: 'olddragon2e.ammo_types.none',
+  self: 'olddragon2e.ammo_types.self',
+  arrow: 'olddragon2e.ammo_types.arrow',
+  bolt: 'olddragon2e.ammo_types.bolt',
+  bolt_small: 'olddragon2e.ammo_types.bolt_small',
+};
+
 olddragon2e.damage_types = {
   none: 'olddragon2e.damage_types.none',
   bludgeoning: 'olddragon2e.damage_types.bludgeoning',

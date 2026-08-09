@@ -14,6 +14,7 @@ import {
 import { updateActor } from '../api/characterImporter.js';
 import { pushHealthPoints } from '../api/characterSync.js';
 import { isConnected } from '../auth/tokenStore.js';
+import { resolveAmmo } from '../rolls/ammo.js';
 
 export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
   static get defaultOptions() {
@@ -321,6 +322,20 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
     const item = this.actor.items.get(itemID);
     if (!item) return;
 
+    let ammoItem = null;
+    if (game.settings.get('olddragon2e', 'ammoTracking')) {
+      const resolved = resolveAmmo(this.actor, item);
+      if (resolved.ambiguous) {
+        ui.notifications.warn(game.i18n.localize('olddragon2e.warnings.ambiguousAmmo'));
+        return;
+      }
+      if (resolved.requiresAmmo && (!resolved.ammoItem || resolved.ammoItem.system.quantity <= 0)) {
+        ui.notifications.warn(game.i18n.format('olddragon2e.ammoTracking.outOfAmmo', { weapon: item.name }));
+        return;
+      }
+      ammoItem = resolved.ammoItem;
+    }
+
     const attackRoll = new AttackRoll(this.actor, item, ba, baBonus);
 
     await showDialog({
@@ -340,6 +355,19 @@ export default class OD2CharacterSheet extends foundry.appv1.sheets.ActorSheet {
 
             await attackRoll.roll(bonus, adjustment);
             attackRoll.sendMessage(mode, adjustment);
+
+            if (ammoItem) {
+              const liveAmmoItem = this.actor.items.get(ammoItem.id);
+              const remaining = liveAmmoItem.system.quantity - 1;
+              await liveAmmoItem.update({ 'system.quantity': remaining });
+              if (remaining <= 0) {
+                ChatMessage.create({
+                  user: game.user.id,
+                  speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+                  content: `<div class="title">${game.i18n.format('olddragon2e.ammoTracking.ranOut', { weapon: item.name })}</div>`,
+                });
+              }
+            }
           },
         },
       },

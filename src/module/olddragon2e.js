@@ -138,7 +138,20 @@ Hooks.once('init', async () => {
 
 // Setup system
 Hooks.once('setup', async () => {
-  // Do anything after initialization but before ready
+  // Ativa o rastreamento de munição automaticamente se o módulo que depende
+  // dele (Forien's Ammo Swapper) estiver ativo neste mundo. Settings de escopo
+  // 'world' só podem ser alterados por um GM — sem essa checagem, cada cliente
+  // jogador tentaria (e falharia) a mesma chamada.
+  const ammoModuleActive = game.modules.get('forien-ammo-swapper')?.active;
+  if (game.user.isGM && ammoModuleActive && !game.settings.get('olddragon2e', 'ammoTracking')) {
+    ChatMessage.create({
+      user: game.user.id,
+      content: `<div class="title">${game.i18n.localize('olddragon2e.settings.ammoTracking.autoEnabled')}</div>`,
+      whisper: [game.user.id],
+    });
+    // Dispara o onChange do setting, que já avisa (tela + chat) sobre equipar arma e munição.
+    await game.settings.set('olddragon2e', 'ammoTracking', true);
+  }
 });
 
 // When ready
